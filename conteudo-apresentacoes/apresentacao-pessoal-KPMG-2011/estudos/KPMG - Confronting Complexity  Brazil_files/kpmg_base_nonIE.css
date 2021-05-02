@@ -1,0 +1,528 @@
+﻿.2ColumnLeft_nonIE
+{
+	width:220px;
+}
+.mainZoneLeftWrapper_nonIE
+{
+	width:220px;
+}
+.2ColumnRight_nonIE
+{
+	width:220px;
+}
+/* Added class for bug 1383*/
+.sideZoneWrapperForWebPartHeader_NonIE
+{
+	padding: 10px 0 0px 10px;
+	width:209px; 
+	overflow:auto;
+}
+/* Added class for bug 1355*/
+.podAndZoneWrapperForNonIE 
+{
+	padding: 10px 10px 0px 10px;
+}
+/* Added class for bug 1355*/
+.rightZoneWrapperForNonIE 
+{
+	padding: 0px 10px 10px 0px;
+}
+/* Added class for bug 1317 */
+.ms-PartSpacingVertical {
+	margin: 0;
+	padding:0;
+	width: 0;
+	font-size: 0;
+	height: 4px;
+}
+
+/* I. RSS FEEDS */
+/* removed margin for defect #1355*/
+.ms-WPBody .rssFeedsWbPt {
+	display: inline;
+	margin: 0px 0px 0px 0px;
+	width: auto;
+}
+
+.ms-WPBody .rssFeedsWbPt .podWrapper {
+	float: left;
+	width: 210px;
+	clear: both;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper {
+	width: auto;
+}
+.ms-WPBody .rssFeedsWbPt h3.podHeader {
+	color: #002664 !important;
+	width: 200px;
+	background-color: #E0EEFB;
+	border-bottom: 1px solid #cae2f9;
+	border-right: 1px solid #cae2f9;
+	background-image: url(../images/blu_pod_arrow.gif);
+	background-position: 195px 8px;
+	background-repeat: no-repeat;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul.rss {
+	/*margin: 10px 0px 10px 20px;*/
+	margin: 0px 0px 0px 0px;
+	padding: 0;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul {
+	line-height: 18px;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul.rss li {
+	list-style: url(../images/caret_RSSfeed.gif);
+	/*margin: 3px 0px;*/
+	margin: 0px 0px 0px 0px;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul li img {
+	/*margin-right: 6px;*/
+	margin: 0px 0px 0px 0px;
+}
+
+.checkboxpossition_nonIE
+{
+	padding-top:3px;
+}
+
+.HomePage_centerleftcol_WPZoneContainer
+{
+	width:235px;
+}
+
+.HomePage_centerrightcol_WPZoneContainer
+{
+	width:208px;
+}
+
+.HomePage_Image_Overlay
+{
+	position:relative; left:0; top:0; z-index:1;
+}
+
+#searchContainer_New {
+	float: right;
+	display: inline;
+	width: 174px;
+}
+
+#mainNavWrapper_New li a:link {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	line-height:11px;
+}
+#mainNavWrapper_New li a:visited {
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+#mainNavWrapper_New li a:hover 
+{
+	color: #fa9a00;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+
+#mainNavWrapper_New li.selected a.selected:link {
+	color: #fa9a00;
+	font-weight: bold;
+	text-decoration: none;
+	line-height:11px;
+}
+#mainNavWrapper_New li.selected a.selected:visited {
+	color: #fa9a00;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+#mainNavWrapper_New li.selected a.selected:hover {
+	color: #fa9a00;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+
+#mainNavWrapper_New li.selected a:link {
+	color: #fa9a00;
+	font-weight: bold;
+	text-decoration: none;
+	line-height:11px;
+}
+#mainNavWrapper_New li.selected a:visited {
+	color: #fa9a00;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+#mainNavWrapper_New li.selected a:hover {
+	color: #fa9a00;
+	text-decoration: none;
+	font-weight: bold;
+	line-height:11px;
+}
+
+#mainNavWrapper_New li {
+	display: inline;
+	list-style-type: none;
+	padding: 3px 13px 0px 13px;
+	float: left;
+	/*border-left: 1px solid #5581A6;*/
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+	line-height:11px;
+	/*font-size: .750em;*/
+}
+
+#loginRow_New {
+	float: left;
+	display: block;
+	width: 750px;
+	margin: 0;
+	height:30px;
+}
+#localeWrapper {
+	float: left;
+	display: inline;
+	/*width: 295px;*/ 
+	/********changed the width for bug 623***********/
+	/*width: 205px;*/
+	width:194px;
+}
+
+/* New Classes added for Top Section */
+
+#navWrapper {
+	float: left;
+	display: inline;
+	margin: 0 0;
+	width: 750px;
+	/*height: 80px;*/
+	margin-top: 3px;
+	margin-left: 230px;
+	/*margin-left: 219px;*/
+}
+#subNavWrapper {
+	float: right;
+	display: inline;
+	margin: 0;
+	width: 450px;
+	text-align: right;
+	/*margin-right:0px;*/
+}
+
+.DisplayLinks
+{
+	position: relative;
+	margin-left:144px;
+	/*width: 996px;*/
+	/*float: right;*/
+	display: block;
+	/*margin: 0 10px;*/
+	margin-right:0px;
+	background-color:#f3f4f8;
+	/*background-color:yellow;	*/
+	width: 980px;
+	background-position:left top;
+	text-align:right;
+	
+	
+	/*width: 980px;
+	height: 109px;
+	background-position: top;
+	background-repeat: no-repeat;
+	font-size:.689em;
+	line-height:normal;*/
+	/*background-color:#f3f4f8;*/
+}
+
+.bandWrapper1 	
+{	
+	/*Z-INDEX: 10;*/
+	-moz-opacity: .80
+	FILTER: alpha(opacity=80);		
+	WIDTH: 286px;
+	height:65px;
+	/*WIDTH: 287px;
+	height:46px;*/	
+	POSITION: absolute;	
+	/*TOP: 166px;	*/
+	BACKGROUND-COLOR: #002664;	
+	bottom:0px;	
+	right:0;	
+	/*background-image: url(../images/mastheadBG.jpg);*/
+	opacity: 80%;	
+	background: rgba(0, 38, 100, 0.8);
+
+	
+}
+
+.HomePage_Image_Overlay_page_Text2
+{
+	position:absolute; right:286px; bottom:0px; z-index:1;
+	-moz-opacity: .80;
+	opacity:.80;
+}
+
+#mainNavWrapper_New li.topnav_separator
+{
+	padding-left:0px; padding-right:0px; padding-top:4px; color:#fa9a00; font-size:12px;
+}
+
+.HomePage_Image_Overlay
+{
+	background-image:url('../images/image-overlay.png');
+	background-repeat:no-repeat;
+	background-position:left top;
+
+}
+
+#mainNavWrapper_New li.topnav_separator {
+	background-image:url('/style%20library/images/divider.png');
+	background-position:right center;
+	background-repeat:no-repeat;
+	margin-top:1px;
+}
+
+.topnav_height
+{
+	height:48px;
+}
+
+span.ms-rteCustom-HomepageImageCopy
+{
+	float:right;
+}
+
+span.ms-rteCustom-HomepageImageHeader
+{
+	float:right;
+}
+
+.bandWrapper2 	
+{
+	top:-66px;
+	left:0px;
+	opacity:0.8
+	    
+}
+.bandWrapper3 	
+{
+	
+opacity:0.8
+	    
+}
+.bandWrapper3 	
+{
+	
+bottom:0px;
+	    
+}
+.bandWrapper4 	
+{
+bottom:0px;	
+opacity:0.8
+	    
+}
+.threeCellCentreGrid
+{
+	padding:0 10 10px 10px;
+	
+}
+
+
+.threeCellLeftGrid
+{
+	padding: 0 10px 10px 0;
+	width:230px;
+}
+
+.threeCellRightGrid
+{
+	padding:0 0 10px 10px;
+}
+
+
+
+.CentreLeftZonewebpart
+{
+	padding: 0 10px 10px 0;
+	width:230px; 
+	overflow:auto;
+}
+.CentreMiddleZonewebpart
+{
+	padding:0 10 10px 10px;
+	width:230px; 
+	overflow:auto;
+}
+.CentreRightZonewebpart
+{
+	padding:0 0 10px 10px;
+	width:230px; 
+	overflow:auto;	
+}
+.twocolumntwozone_Image_Overlay_page_Text2
+{
+	
+	position:absolute; right:286px; bottom:0px; 
+	filter:alpha(opacity=80);
+	opacity:0.8
+
+}
+
+.twocolumnthreezone_Image_Overlay_page_Text2
+{
+	
+	position:absolute; right:286px; bottom:0px; 
+	filter:alpha(opacity=80);
+	opacity:0.8
+
+}
+.sethomepagecountry
+{
+	padding-left:10px;
+	float:left;
+}
+
+.podAndZoneWrapper1 {
+	padding: 0 0 23px 0;
+}
+
+/* Kishore Bavisetti 10/18/2010: Added for CQWP Padding issue in FF and Safari */
+.sideZoneWrapper .item 
+{
+	padding:0 0px 0px;
+}
+
+/* Kishore Bavisetti 10/21/2010 - Orange Arrow Padding */
+.podWrapperOrange ul li a{
+	line-height: 16px;
+}
+.podWrapperOrange ul li {
+	padding-bottom: 2px;
+
+
+
+}
+.CentreLeftZonewebpart1
+{
+	width:480px; 
+	overflow:auto;
+	padding: 0 20px 10px 10;	
+	
+	
+}
+.CentreRightZonewebpart1
+{	
+	width:211px; 
+	overflow:auto;
+	padding:0 0 10px 9px;
+	
+}
+
+.CentreLeftGrid1
+{
+	padding: 0 20px 10px 10;
+	width:480px; 
+}
+
+.CentreRightGrid1
+{
+	padding:0 0 10px 9px;
+	width:211px; 
+}
+.twocolumnlayoutwidth
+{
+	width:480px;
+}
+.breadcrumbWrapper 
+{
+	padding-bottom:10px;
+}
+.twoCellRightGridnew
+{	
+	width:260px;
+}
+/*Classes for One Column One Zone Starts*/
+
+
+.CentreFirstZonewebpart
+{
+	padding: 0 5px 10px 0;
+	width:230px; 
+	overflow:auto;
+}
+.CentreSecondZonewebpart
+{
+	padding:0 5 10px 5px;
+	width:230px; 
+	overflow:auto;
+}
+.CentreThirdZonewebpart
+{
+	padding:0 5 10px 5px;
+	width:230px; 
+	overflow:auto;	
+}
+.CentreFourthZonewebpart
+{
+	padding:0 0 10px 5px;
+	width:230px; 
+	overflow:auto;	
+}
+.FourCellFirstGrid
+{
+	padding:0 5 10px 0px;
+	
+}
+
+
+.FourCellSecondGrid
+{
+	padding: 0 5px 10px 5;
+}
+
+.FourCellThirdGrid
+{
+	padding:0 5 10px 5px;
+}
+
+.FourCellFourthGrid
+{
+	padding:0 0 10px 5px;
+}
+/*Classes for One Column One Zone Ends*/
+
+/* Kishore Bavisetti 11/10/2010 - Page Layouts Longword Issue */
+#divoptionalTitle2Col2ZoneParent
+{
+	width: 480px;
+}
+/* Kishore Bavisetti 11/10/2010 - Page Layouts Longword Issue */
+#divOptionalTitle
+{
+	float:none;
+	word-wrap:break-word;	
+}
+.twocolumntwozonetablehiddennonIE
+{
+	display: none;
+}
+.twocolumnthreezonetablehiddennonIE
+{
+	display: none;
+}
+.onecolumnonezonetablehiddennonIE
+{
+	display: none;
+	background-color:Yellow;
+}
+.orangeArrowLeftArticleDate
+{
+	display: -moz-inline-box;
+	width: 65px; 
+}

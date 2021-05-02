@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="400"
+   height="400"
+   viewBox="0 0 105.83333 105.83334"
+   version="1.1"
+   id="svg8"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="diagrama-wordpressmu-3.svg"
+   inkscape:export-filename="/home/tercmt-francisco/Downloads/diagramas-wp/diagrama-wordpressmu-3.svg.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2.8"
+     inkscape:cx="188.60528"
+     inkscape:cy="111.7522"
+     inkscape:document-units="mm"
+     inkscape:current-layer="g4042"
+     showgrid="false"
+     units="px"
+     inkscape:measure-start="0,0"
+     inkscape:measure-end="0,0"
+     inkscape:window-width="1540"
+     inkscape:window-height="875"
+     inkscape:window-x="60"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-191.16665)">
+    <g
+       id="g4042"
+       transform="translate(8.5044643,-0.71815463)">
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,41.72909,96.913001)"
+         id="g3722">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.26458332"
+           id="rect10"
+           width="37.986607"
+           height="12.662203"
+           x="59.53125"
+           y="228.20831" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.26019907px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15650497"
+           x="72.056496"
+           y="236.77695"
+           id="text14"><tspan
+             sodipodi:role="line"
+             id="tspan12"
+             x="72.056496"
+             y="236.77695"
+             style="stroke-width:0.15650497">URL</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.26019907px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15650497"
+           x="61.034859"
+           y="246.88464"
+           id="text14-8"><tspan
+             sodipodi:role="line"
+             id="tspan12-0"
+             x="61.034859"
+             y="246.88464"
+             style="stroke-width:0.15650497">S1.URL</tspan><tspan
+             id="tspan3809"
+             sodipodi:role="line"
+             x="61.034859"
+             y="254.7099"
+             style="stroke-width:0.15650497">s2.URL</tspan><tspan
+             id="tspan3811"
+             sodipodi:role="line"
+             x="61.034859"
+             y="262.53516"
+             style="stroke-width:0.15650497">.....</tspan></text>
+      </g>
+      <rect
+         ry="2.08075"
+         y="216.21205"
+         x="62.833839"
+         height="7.3321662"
+         width="7.3321662"
+         id="rect3730"
+         style="fill:#000000;stroke:#000000;stroke-width:0.13871665" />
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,39.846506,92.30563)"
+         id="g3764">
+        <circle
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.22668727"
+           id="path3728"
+           cx="24.946428"
+           cy="217.05803"
+           r="18.539782" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:5.12192488px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12804812"
+           x="19.811998"
+           y="217.88834"
+           id="text3734"><tspan
+             sodipodi:role="line"
+             id="tspan3732"
+             x="19.811998"
+             y="217.88834"
+             style="stroke-width:0.12804812">wp_</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,41.283215,92.30563)"
+         id="g3770">
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.26458332"
+           id="rect3726"
+           width="28.915178"
+           height="28.915178"
+           x="7.7485118"
+           y="-287.17261"
+           transform="scale(1,-1)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:3.35400033px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08385001"
+           x="10.321344"
+           y="271.54407"
+           id="text3738"><tspan
+             sodipodi:role="line"
+             id="tspan3736"
+             x="10.321344"
+             y="271.54407"
+             style="stroke-width:0.08385001">wp-config.php</tspan><tspan
+             sodipodi:role="line"
+             x="10.321344"
+             y="275.73657"
+             style="stroke-width:0.08385001"
+             id="tspan3740">wp-content</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.6853404px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06713351"
+         x="50.42701"
+         y="195.68684"
+         id="text3734-2-3-2"><tspan
+           sodipodi:role="line"
+           id="tspan3732-4-4-2"
+           x="50.42701"
+           y="195.68684"
+           style="stroke-width:0.06713351">db1</tspan></text>
+      <g
+         transform="matrix(0.47467504,0,0,0.47467504,42.697213,104.02119)"
+         id="g5929"
+         style="stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5378"
+           d="m 35.71875,229.15326 14.363096,14.36309 -17.197918,17.19792"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5382"
+           d="M 50.081846,243.51635 H 66.712798"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+      <g
+         transform="matrix(0.47467504,0,0,0.47467504,-1.1221449,149.71594)"
+         id="g5929-3"
+         style="stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1">
+        <path
+           inkscape:connector-curvature="0"
+           id="path5378-3"
+           d="m 35.71875,229.15326 14.363096,14.36309 -17.197918,17.19792"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1" />
+        <path
+           inkscape:connector-curvature="0"
+           id="path5382-3"
+           d="M 50.081846,243.51635 H 66.712798"
+           style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1, 1;stroke-dashoffset:0;stroke-opacity:1" />
+      </g>
+    </g>
+    <g
+       id="g4062">
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,6.1993297,141.58761)"
+         id="g3722-3">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:0.26458332"
+           id="rect10-7"
+           width="37.986607"
+           height="12.662203"
+           x="59.53125"
+           y="228.20831" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.26019907px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15650497"
+           x="72.056496"
+           y="236.77695"
+           id="text14-0"><tspan
+             sodipodi:role="line"
+             id="tspan12-03"
+             x="72.056496"
+             y="236.77695"
+             style="stroke-width:0.15650497">URL2</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:6.26019907px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.15650497"
+           x="61.034859"
+           y="246.88464"
+           id="text14-8-4"><tspan
+             sodipodi:role="line"
+             id="tspan12-0-9"
+             x="61.034859"
+             y="246.88464"
+             style="stroke-width:0.15650497">S1.URL2</tspan><tspan
+             id="tspan3809-2"
+             sodipodi:role="line"
+             x="61.034859"
+             y="254.7099"
+             style="stroke-width:0.15650497">s2.URL2</tspan><tspan
+             id="tspan3811-7"
+             sodipodi:role="line"
+             x="61.034859"
+             y="262.53516"
+             style="stroke-width:0.15650497">.....</tspan></text>
+      </g>
+      <rect
+         ry="2.08075"
+         y="260.88666"
+         x="27.304079"
+         height="7.3321662"
+         width="7.3321662"
+         id="rect3730-4"
+         style="fill:#000000;stroke:#000000;stroke-width:0.13871665" />
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,4.3167457,136.98024)"
+         id="g3764-2">
+        <circle
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.22668727"
+           id="path3728-5"
+           cx="24.946428"
+           cy="217.05803"
+           r="18.539782" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:5.12192488px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.12804812"
+           x="19.811998"
+           y="217.88834"
+           id="text3734-2"><tspan
+             sodipodi:role="line"
+             id="tspan3732-4"
+             x="19.811998"
+             y="217.88834"
+             style="stroke-width:0.12804812">wp_</tspan></text>
+      </g>
+      <g
+         transform="matrix(0.52428344,0,0,0.52428344,5.7534547,136.98024)"
+         id="g3770-4">
+        <rect
+           style="fill:#cccccc;stroke:#000000;stroke-width:0.26458332"
+           id="rect3726-3"
+           width="28.915178"
+           height="28.915178"
+           x="7.7485118"
+           y="-287.17261"
+           transform="scale(1,-1)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-weight:normal;font-size:3.35400033px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.08385001"
+           x="10.321344"
+           y="271.54407"
+           id="text3738-8"><tspan
+             sodipodi:role="line"
+             id="tspan3736-6"
+             x="10.321344"
+             y="271.54407"
+             style="stroke-width:0.08385001">wp-config.php</tspan><tspan
+             sodipodi:role="line"
+             x="10.321344"
+             y="275.73657"
+             style="stroke-width:0.08385001"
+             id="tspan3740-0">wp-content</tspan></text>
+      </g>
+      <text
+         xml:space="preserve"
+         style="font-style:normal;font-weight:normal;font-size:2.6853404px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.06713351"
+         x="14.897251"
+         y="240.51942"
+         id="text3734-2-3"><tspan
+           sodipodi:role="line"
+           id="tspan3732-4-4"
+           x="14.897251"
+           y="240.51942"
+           style="stroke-width:0.06713351">db2</tspan></text>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.26499999;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:0.26499999,0.52999997;stroke-dashoffset:0"
+       d="M 101.86458,293.40921 1.5119047,193.43451"
+       id="path4064"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>

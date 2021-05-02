@@ -1,0 +1,46 @@
+﻿/* KPMG controls.css. Used in KPMG Extended Content Query web part styles */
+.orangearrow{
+border-style: none;
+border-color: inherit;
+border-width: 0;
+vertical-align:top;
+background-image:url("/style%20library/images/caret_standardlink.gif");
+background-repeat:no-repeat;
+background-position:left;
+padding-left:10px;
+padding-right: 0px;
+}
+
+.rssfeed{
+border-style: none;
+border-color: inherit;
+border-width: 0;
+vertical-align:top;
+background-image:url("/style%20library/images/caret_rssfeed.gif");
+background-repeat:no-repeat;
+background-position:left;
+padding-left:20px;
+padding-right: 0px;
+}
+.document{
+border-style: none;
+border-color: inherit;
+border-width: 0;
+vertical-align:top;
+background-image:url("/style%20library/images/caret_document.gif");
+background-repeat:no-repeat;
+background-position:left;
+padding-left:20px;
+padding-right: 0px;
+}
+.webpage{
+border-style: none;
+border-color: inherit;
+border-width: 0;
+vertical-align:top;
+background-image:url("/style%20library/images/caret_webpage.gif");
+background-repeat:no-repeat;
+background-position:left;
+padding-left:20px;
+padding-right: 0px;
+}

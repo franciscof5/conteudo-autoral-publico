@@ -1,0 +1,60 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Wikidot Extended NewPage Module</title>
+	<!-- © James Kanjo 2010 -->
+	<style type="text/css">
+		@import url("/common--theme/base/css/style.css");
+	</style>
+	<script type="text/javascript">
+		str_raw = /^#(\d)(\d)(.+)\|(.+)\|(\/.+\/)\|(.+)\|$/.exec(unescape(window.location.hash));
+		bln_window = eval(str_raw[1]);
+		str_syntax = unescape(str_raw[5]);
+		str_url = str_raw[6];
+		
+		bln_userinput = false;
+		
+		function textbox_focus() {
+			document.newpage.textbox.style.color = "#000";
+			document.newpage.textbox.style.fontStyle = "normal";
+			if (!bln_userinput) {
+				document.newpage.textbox.value = "";
+				bln_userinput = true;
+			}
+		}
+
+		function validation() {
+			str_userinput = document.newpage.textbox.value;
+			str_redirect = str_url.replace(/#/g, str_userinput);
+			try {
+				if (eval(str_syntax + ".test(str_userinput)")) {
+					if (bln_window) {
+						window.open(str_redirect);
+					} else {
+						window.parent.location = str_redirect;
+					}
+				} else {
+					alert("Please note:\nYour input is not correct. Please fix it and try again.");
+				}
+			} catch(error) {
+				alert("Please note:\nThe provided regular expression in the “format” attribute of this module is invalid.");
+			}
+			return false;
+		}
+	</script>
+</head>
+<body>
+	<form name="newpage" onsubmit="return validation();" style="padding: 2px; width: 100%;">
+		<input value="Page Title" name="textbox" class="text" style="width: 60%; margin: 0; background-color: #fff; color: #333; font-style: italic;" onfocus="textbox_focus();" type="text">
+		<input name="submitbutton" onclick="return validation();" style="" value="New Page" type="submit">
+	</form>
+	<script type="text/javascript">
+		document.newpage.textbox.value = /^#\d\d(.+)\|.+\|\/.+\/\|.+\|$/.exec(unescape(window.location.hash))[1];
+		document.newpage.submitbutton.value = /^#\d\d.+\|(.+)\|\/.+\/\|.+\|$/.exec(unescape(window.location.hash))[1];
+		if (eval(/^#\d(\d).+\|.+\|\/.+\/\|.+\|$/.exec(unescape(window.location.hash))[1])==0) {
+			document.newpage.textbox.style.width = "95%";
+			document.newpage.submitbutton.style.display = "none";
+		}
+	</script>
+
+
+</body></html>

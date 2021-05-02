@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="245mm"
+   height="44mm"
+   viewBox="0 0 868.11024 155.90551"
+   id="svg5942"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="/home/francisco/Downloads/fmmlogo.png"
+   inkscape:export-xdpi="25.4"
+   inkscape:export-ydpi="25.4"
+   sodipodi:docname="franciscomat-logo-2017-retangular.svg">
+  <defs
+     id="defs5944" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="305.8775"
+     inkscape:cy="158.89219"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata5947">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-896.45669)">
+    <g
+       id="g5194"
+       transform="matrix(3.790718,0,0,3.790718,-366.07145,-353.2577)"
+       style="fill:#000000;fill-opacity:1">
+      <text
+         sodipodi:linespacing="125%"
+         id="text5108-0"
+         y="268.14264"
+         x="102.69048"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:36.37393188px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="268.14264"
+           x="102.69048"
+           id="tspan5110-9"
+           sodipodi:role="line">FRANCISCO MAT</tspan></text>
+    </g>
+    <g
+       id="g5194-3"
+       transform="matrix(3.5313747,0,0,3.5313747,-332.62387,59.666739)">
+      <g
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:39.58467102px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         id="text4267-1-8"
+         transform="matrix(1.0302039,0,0,1.0302039,106.25535,361.60419)">
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:14.64009666px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           x="188.79684"
+           y="-80.080315"
+           id="text4430-0"
+           sodipodi:linespacing="125%"><tspan
+             sodipodi:role="line"
+             id="tspan4432-4"
+             x="188.79684"
+             y="-80.080315">.com</tspan></text>
+      </g>
+      <text
+         sodipodi:linespacing="125%"
+         id="text5108-0-6"
+         y="268.14264"
+         x="102.69048"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:36.37393188px;line-height:125%;font-family:Impact;-inkscape-font-specification:'Impact Condensed';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           y="268.14264"
+           x="102.69048"
+           id="tspan5110-9-7"
+           sodipodi:role="line">FRANCISCO MAT</tspan></text>
+    </g>
+  </g>
+</svg>

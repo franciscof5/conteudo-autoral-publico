@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1240"
+   height="350"
+   viewBox="0 0 1240 350.00001"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cursowp-banner-mercado.svg"
+   inkscape:export-filename="/home/francisco/pessoal/conteudo-arte-digital/banners-web/cursowp/cursowp-banner-principal.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4423"
+       x="-0.021956044"
+       width="1.0439121"
+       y="-0.026463577"
+       height="1.0529272">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.1892857"
+         id="feGaussianBlur4425" />
+    </filter>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask4431">
+      <rect
+         style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:14.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4423)"
+         id="rect4433"
+         width="130"
+         height="107.85714"
+         x="956.42859"
+         y="-85.714287"
+         ry="23.571428"
+         transform="matrix(1.433274,0,0,1.6335498,-375.77274,205.85212)" />
+    </mask>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="652.18127"
+     inkscape:cy="204.47793"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer3"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     borderlayer="true" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer4"
+     inkscape:label="Layer 4">
+    <rect
+       style="opacity:1;fill:#355c7d;fill-opacity:1;stroke:none;stroke-width:14.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4806"
+       width="1311.178"
+       height="389.91888"
+       x="-22.223356"
+       y="-13.654916" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-702.36216)">
+    <image
+       sodipodi:absref="/home/francisco/pessoal/conteudo-arte-digital/banners-web/cursowp/hire-wordpress-developer.png"
+       xlink:href="hire-wordpress-developer.png"
+       y="658.74164"
+       x="151.9671"
+       id="image4802"
+       preserveAspectRatio="none"
+       height="468.0329"
+       width="936.0658" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2"
+     style="opacity:1">
+    <rect
+       style="opacity:1;fill:#355c7d;fill-opacity:1;stroke:none;stroke-width:14.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4887-1"
+       width="299.81735"
+       height="74.954338"
+       x="112.13919"
+       y="62.522827"
+       ry="16.915125" />
+    <rect
+       style="opacity:1;fill:#355c7d;fill-opacity:1;stroke:none;stroke-width:14.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4887-1-7-0"
+       width="609.81732"
+       height="72.097198"
+       x="355.09134"
+       y="318.80856"
+       ry="16.270346" />
+    <rect
+       style="opacity:1;fill:#355c7d;fill-opacity:1;stroke:none;stroke-width:14.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4887-1-5"
+       width="299.81735"
+       height="74.954338"
+       x="835.5199"
+       y="62.522827"
+       ry="16.915125" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Layer 3">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.06105423px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#edf4f2;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="380.24719"
+       y="95.317383"
+       id="text4335"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="380.24719"
+         y="95.317383"
+         id="tspan4339"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:end;text-anchor:end;fill:#edf4f2;fill-opacity:1">Prepara-se para</tspan><tspan
+         sodipodi:role="line"
+         x="380.24719"
+         y="117.19238"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:end;text-anchor:end;fill:#edf4f2;fill-opacity:1"
+         id="tspan4808">atuar no mercado</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.06105423px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#edf4f2;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="865.44531"
+       y="95.586548"
+       id="text4335-3"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="865.44531"
+         y="95.586548"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start;fill:#edf4f2;fill-opacity:1"
+         id="tspan4808-7">Cases detalhados</tspan><tspan
+         sodipodi:role="line"
+         x="865.44531"
+         y="117.46155"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:17.5px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:start;text-anchor:start;fill:#edf4f2;fill-opacity:1"
+         id="tspan4833">de clientes reais</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:33.06105423px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#141412;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="785.92371"
+       y="623.15314"
+       id="text4335-3-5"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="791.67065"
+         y="623.15314"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:center;text-anchor:middle;fill:#141412;fill-opacity:1"
+         id="tspan4858">Após o término do módulo profissional você pode deixar seu currículo cadastrado </tspan><tspan
+         sodipodi:role="line"
+         x="785.92371"
+         y="664.47943"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:center;text-anchor:middle;fill:#141412;fill-opacity:1"
+         id="tspan4862">em nossa base para receber propostas de trabalhos</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:18.8860817px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#edf4f2;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="682.73523"
+       y="342.27258"
+       id="text4335-3-5-6"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         x="682.73523"
+         y="342.27258"
+         style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:16.25px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold Italic';text-align:center;text-anchor:middle;fill:#edf4f2;fill-opacity:1"
+         id="tspan4862-9">Seu currículo disponível para parceiros</tspan></text>
+  </g>
+</svg>

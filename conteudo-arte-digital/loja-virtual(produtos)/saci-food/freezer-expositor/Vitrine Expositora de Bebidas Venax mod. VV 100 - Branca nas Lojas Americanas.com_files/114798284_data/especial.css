@@ -1,0 +1,174 @@
+#container {
+	width: 800px;
+	background-repeat: repeat-y;
+	background-image: url(img/bg.jpg);
+}
+#container #duplo1 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#container #triplo {
+	padding-bottom: 40px;
+}
+#container #duplo2 {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#container *{
+	text-decoration: none;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #333;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	list-style-type: none;
+	background-repeat: repeat-y;
+	line-height: 1.5em;
+}
+#container p {
+	margin-bottom: 10px;
+	font-size: 13px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#container a {
+	text-decoration:underline;
+}
+#container h2 {
+	font-size: 36px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#container #topo {
+	margin-bottom: 20px;
+	position: relative;
+}
+#container #video {
+	background-image: url(img/bg_video.jpg);
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 315px;
+	padding-top: 40px;
+	margin-top: 20px;
+}
+#container #txt_vendedor {
+	padding-bottom: 40px;
+}
+#container #destaques {
+	background-image: url(img/destaques.jpg);
+	background-repeat: no-repeat;
+	height: 340px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#container .ponto {
+	background-image: url(img/linha_video.jpg);
+	background-repeat: no-repeat;
+	height: 23px;
+	padding-top: 10px;
+}
+#container h3 {
+	font-size: 24px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+#container .clear{
+	clear: both;
+}
+#container .lighter {
+	font-weight: lighter;
+	
+}
+#container .coluna {
+	float: left;
+	width: 330px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#container .coluna1 {
+	float: left;
+	width: 220px;
+	margin-right: 15px;
+	margin-left: 15px;
+}
+#container .coluna2 {
+	float: left;
+	width: 330px;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-left: 10px;
+}
+#container #lifestyle {
+	background-image: url(img/lifestyle.jpg);
+	background-repeat: no-repeat;
+	height: 419px;
+	position: relative;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#container #txt_corrido {
+	padding-bottom: 20px;
+}
+#container #txt_lifestyle {
+	position: absolute;
+	width: 376px;
+	height: 311px;
+	left: 29px;
+	top: 51px;
+}
+#container .linha {
+	width: 730px;
+}
+#container .branco {
+	color: #FFF;
+}
+#container .left {
+	margin-left: 14px;
+}
+#container .ptop {
+	padding-top: 15px;
+}
+#container .ptop2 {
+	padding-top: 40px;
+}
+#container .left2 {
+	margin-left: 28px;
+}
+#container .bloco {
+	display: block;
+}
+#container .vermelho {
+	color: #ef1100;
+}
+#container .azul {
+	color: #2e77bb;
+}
+#container .automatico {
+	width:auto;
+}
+#container #unico_esquerda {
+	background-image: url(img/unico_esquerda.jpg);
+	background-repeat: no-repeat;
+	height: 423px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	position: relative;	
+}
+#container #txt_unico_esquerda {
+	position: absolute;
+	left: 401px;
+	width: 382px;
+	height: 285px;
+	top: 74px;
+}
+#container #topo #txt_topo {
+	position: absolute;
+	left: 38px;
+	top: 164px;
+	width: 407px;
+	height: 104px;
+}
+#container #img_corrido {
+	text-align: center;
+}

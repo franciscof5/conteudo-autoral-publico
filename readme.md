@@ -1,0 +1,2 @@
+# Conteúdo Autoral Público
+Aqui temos arquivos de diversos projetos encerrados ou sem confidencialidade de clientes. A maioria são projetos autorais, literários, gráficos, artísticos, que ficavam no fundo de um HD como backup, mas achei mais interessante guardar tudo de forma aberta

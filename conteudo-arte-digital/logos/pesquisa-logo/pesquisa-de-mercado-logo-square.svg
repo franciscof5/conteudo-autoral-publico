@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1900"
+   height="1900"
+   viewBox="0 0 1900 1900"
+   id="svg4179"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="pesquisa-de-mercado-logo-square.svg"
+   inkscape:export-filename="/home/francisco/pessoal/conteudo-arte-digital/logos/pesquisa-logo/pesquisa-de-mercado-logo-square.svg.png"
+   inkscape:export-xdpi="37.894737"
+   inkscape:export-ydpi="37.894737">
+  <defs
+     id="defs4181" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.175"
+     inkscape:cx="350.91959"
+     inkscape:cy="991.6118"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1215"
+     inkscape:window-height="1000"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1"
+     units="px" />
+  <metadata
+     id="metadata4184">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,847.63773)">
+    <rect
+       style="opacity:1;fill:#ececec;fill-opacity:1;stroke:#ff0000;stroke-width:11.39999962;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:22.79999924, 11.39999961999999911;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4162"
+       width="2222.8572"
+       height="2234.2856"
+       x="-137.14285"
+       y="-1010.4949"
+       rx="25.322599"
+       ry="27.1998" />
+    <g
+       id="g4156"
+       transform="translate(-14.906848,-357.29172)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text4727"
+         y="157.82224"
+         x="966.05762"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:22.07141495px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         xml:space="preserve"><tspan
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:288.93487549px;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:center;text-anchor:middle"
+           y="157.82224"
+           x="991.45233"
+           id="tspan4729"
+           sodipodi:role="line">PESQUISA </tspan><tspan
+           id="tspan4731"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:condensed;font-size:288.93487549px;font-family:Impact;-inkscape-font-specification:'Impact Condensed';text-align:center;text-anchor:middle"
+           y="518.99084"
+           x="966.05762"
+           sodipodi:role="line">DE MERCADO</tspan></text>
+      <path
+         inkscape:connector-curvature="0"
+         id="rect4733"
+         d="m 1574.7167,607.25402 -369.1771,272.51511 41.2524,24.39921 402.2291,-296.91432 -74.3044,0 z m -327.9247,296.91432 -12.8213,9.4637 -74.3047,0 45.8736,-33.86291 -460.1749,-272.16506 -489.61615,0 653.15777,386.30329 489.61608,0 -151.7304,-89.73902 z"
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#b5b5b5;stroke-width:1.57216132;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:1.57216125, 4.71648375;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

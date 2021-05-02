@@ -1,0 +1,218 @@
+﻿.ms-rteCustom-WelcomeHeader
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: #98C6F3;
+	line-height: 23px;	
+	
+}
+.ms-rteCustom-WelcomeCopy
+{
+	font-weight: bold;
+	font-size: 12px;
+	color: #E7ECF8;
+	line-height: 20px;
+	/*width:173px;*/
+}
+.ms-rteCustom-WhatWeDoCopy
+{
+	font-family: Arial, Verdana, sans-serif;
+	font-weight: bold;
+	font-size: 11px;
+	color: #022662;
+	line-height: 20px;	
+}
+.ms-rteCustom-ContentTitle
+{
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #002664;	
+}
+.ms-rteCustom-HomePageTitle
+{	
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 24px;
+	color: #002664;	
+}
+.ms-rteCustom-SubHeaders1
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #002664;	
+}
+.ms-rteCustom-SubHeaders2
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #444444;	
+}
+.ms-rteCustom-IntroCopy
+{
+	font-size: 12px;
+	line-height: 16px;
+	color: #444444;	
+}
+.ms-rteCustom-BodyCopy
+{
+	font-size: 11px;
+	line-height: 14px;
+	color: #444444;	
+	/*added width =100% to resolve bug 1255 */
+	width: 100%;
+	
+}
+.ms-rteCustom-IntroCopy td
+{
+	font-size: 12px;
+	line-height: 16px;
+	color: #444444;	
+}
+.ms-rteCustom-BodyCopy td
+{
+	font-size: 11px;
+	line-height: 14px;
+	color: #444444;	
+}
+.ms-rteCustom-SubtitleLinks
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #007C92;	
+}
+/*.ms-rteCustom-OrangeArrowList
+{
+}*/
+.ms-rteCustom-Quote
+{
+	font-family: Arial;
+	font-size: 11px;
+	color: #00505C;
+	padding: 0 15px 0 15px;
+	line-height: 14px;
+	display: block;
+}
+.ms-rteCustom-Subscript
+{
+	font-family: Arial;
+	font-size: 9px;
+	vertical-align: baseline;
+	position: relative;
+	top: 3px;
+}
+.ms-rteCustom-Superscript
+{
+	font-family: Arial;
+	font-size: 9px;
+	vertical-align: baseline;
+	position: relative;
+	top: -5px;
+}
+
+/* Table Styling */
+
+.ms-rteTable-KPMG 
+{
+	border-collapse:collapse;
+	border: none;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-family: Arial;
+	font-size: 11px;
+}
+.ms-rteTable-KPMG td
+{
+	border-bottom: 1px solid;	
+	padding: 4px 8px 4px 8px;
+}
+.ms-rteTableHeaderRow-KPMG
+{
+	background: #E0EEFB;
+	color: #002664;
+	text-align: right;
+	font-weight: bold;
+	border-bottom: 1px solid #E0EEFB;
+}
+.ms-rteTableHeaderFirstCol-KPMG 
+{	
+	text-align: left;
+	border-bottom: 0px;
+}
+.ms-rteTableHeaderLastCol-KPMG 
+{
+	border-bottom: 0px;
+}
+.ms-rteTableHeaderOddCol-KPMG {}
+.ms-rteTableHeaderEvenCol-KPMG {}
+.ms-rteTableOddRow-KPMG 
+{
+	color: #444444;
+	background: transparent;
+	font-weight: normal;
+	text-align: right;
+	border-bottom: 1px solid #E0EEFB;
+}
+.ms-rteTableEvenRow-KPMG 
+{
+	color: #444444;
+	background: transparent;
+	font-weight: normal;
+	text-align: right;
+	border-bottom: 1px solid #E0EEFB;
+}
+.ms-rteTableFirstCol-KPMG 
+{
+	background: #E0EEFB;
+	color: #002664;
+	text-align: left;
+	font-weight: bold;
+	border-bottom: 0px;
+}
+.ms-rteTableLastCol-KPMG 
+{
+	background: #E0EEFB;
+	color: #444444;
+	text-align: right;
+	font-weight: normal;
+	border-bottom: 0px;
+}
+.ms-rteTableOddCol-KPMG {}
+.ms-rteTableEvenCol-KPMG {}
+.ms-rteTableFooterRow-KPMG 
+{
+	background: #E0EEFB;
+	color: #444444;
+	text-align: right;
+	font-weight: normal;
+	border-bottom: 0px;
+}
+.ms-rteTableFooterFirstCol-KPMG 
+{
+	background: #E0EEFB;
+	color: #002664;
+	text-align: left;
+	font-weight: bold;
+}
+.ms-rteTableFooterLastCol-KPMG 
+{
+	background: #E0EEFB;
+	color: #444444;
+	text-align: right;
+	font-weight: normal;
+}
+.ms-rteTableFooterOddCol-KPMG {}
+.ms-rteTableFooterEvenCol-KPMG {}
+.ms-rteCustom-OptionalPageTitle
+{	
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 30px;
+	color: #002664;	
+	padding: 0 0 0px 0;
+}

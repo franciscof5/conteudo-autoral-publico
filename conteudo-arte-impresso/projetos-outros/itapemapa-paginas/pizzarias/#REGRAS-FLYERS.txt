@@ -1,0 +1,5 @@
+Regras
+Nome minusculas e - no lugar de espaço
+Não pode ter mais que 800kb a imagem
+Imagem   = frente
+Imagem-1 = tras

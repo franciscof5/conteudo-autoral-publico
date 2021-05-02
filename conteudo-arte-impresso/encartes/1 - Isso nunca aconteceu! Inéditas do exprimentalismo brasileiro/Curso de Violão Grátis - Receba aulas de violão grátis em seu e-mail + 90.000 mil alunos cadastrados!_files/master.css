@@ -1,0 +1,36 @@
+/*ATRs Página*/
+body {
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	margin-top:0px;
+}
+
+.links {
+	cursor:pointer;
+}
+.txt001 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:26px;
+	color:#CC0000;
+	text-align:center;
+}
+.txt002 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:15px;
+}
+.txt003 {
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:18px;
+}
+.txt004 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000000;
+	font-size:12px;
+	font-weight:normal;
+}
+.dvMain {
+	width:100px;
+	text-align:center;
+}

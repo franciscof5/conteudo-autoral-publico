@@ -1,0 +1,868 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LiveBrushProject size="2" width="1024" height="768" name="Bird01" version="1">
+  <styles>
+    <style xml="Smooth.xml"/>
+    <style xml="Smooth Loose.xml"/>
+    <style xml="Smooth Normal.xml"/>
+    <style xml="Straight.xml"/>
+    <style xml="Straight Normal.xml"/>
+    <style xml="Straight Width.xml"/>
+    <style xml="Smooth Colors.xml"/>
+    <style xml="Smooth Angle.xml"/>
+    <style xml="Smooth Thick Ends.xml"/>
+    <style xml="Floral Basic.xml"/>
+    <style xml="Floral Basic Thick Ends.xml"/>
+    <style xml="Floral Threads.xml"/>
+    <style xml="Floral Graphic Plain.xml"/>
+    <style xml="Floral Celtic Thin.xml"/>
+    <style xml="Floral Celtic Thick.xml"/>
+    <style xml="Life Branches Thick.xml"/>
+    <style xml="Ligatures 1.xml"/>
+    <style xml="Sketchy 1.xml"/>
+    <style xml="Ink Splats.xml"/>
+    <style xml="Ink Path Thick.xml"/>
+    <style xml="Ink Path Drip.xml"/>
+    <style xml="Ink Path Thin.xml"/>
+    <style xml="Marker - Medium.xml"/>
+    <style xml="Geometry Small.xml"/>
+    <style xml="Geometry Origami.xml"/>
+    <style xml="Geometry Shatter Thin.xml"/>
+    <style xml="Geometry Raccoon.xml"/>
+    <style xml="Fractal Nerves (on black).xml"/>
+    <style xml="Fractal Nodes (on black).xml"/>
+    <style xml="Fractal Crystal (on black).xml"/>
+    <style xml="Fractal Paths (on black).xml"/>
+    <style xml="Light Path (on black).xml"/>
+    <style xml="Effect Smoke (on black).xml"/>
+    <style xml="Effect Smoke Smooth (on black).xml"/>
+    <style xml="Ribbon Snake.xml"/>
+    <style xml="Ribbon Candy.xml"/>
+    <style xml="Ribbon Green.xml"/>
+    <style xml="Ribbon Blue (on black).xml"/>
+    <style xml="Ribbon Thick And Thin 2.xml"/>
+  </styles>
+  <layers>
+    <layer type="background" label="Background [LOCKED]" blendMode="layer" alpha="1" color="0" colorPercent="1">
+      <solid color="0"/>
+    </layer>
+    <layer enabled="true" type="image" label="Paper" matrix="1,0,0,1,0,0" blendMode="layer" alpha="1" color="4294967295" colorPercent="0" scaleX="1" scaleY="1" rotation="0" x="0" y="0">
+      <solid src="paper-1024W.jpg"/>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (6)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_35028_Line Layer (6)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="347" y="152" width="0.9506337558372249" color="0" alpha="1" angle="79.34455113612032" decorate="false"/>
+        <stroke x="347" y="152.135" width="1.0172781854569712" color="0" alpha="1" angle="79.34455113612032" decorate="false"/>
+        <stroke x="347.135" y="152.85252499999999" width="1.3110638431409005" color="0" alpha="1" angle="79.34455113612032" decorate="false"/>
+        <stroke x="347.582525" y="154.950320375" width="2.009539585074945" color="0" alpha="1" angle="77.95754711500805" decorate="false"/>
+        <stroke x="349.05527037499996" y="159.141035043125" width="3.143465893997229" color="0" alpha="1" angle="70.63696418958249" decorate="false"/>
+        <stroke x="351.600544293125" y="165.19281691295936" width="4.191650181715987" color="0" alpha="1" angle="67.18922692025149" decorate="false"/>
+        <stroke x="354.8248440767094" y="172.61508847113532" width="4.945525932998951" color="0" alpha="1" angle="66.51945134350704" decorate="false"/>
+        <stroke x="358.7294250289666" y="182.48707372871124" width="6.191409790059042" color="0" alpha="1" angle="68.42014506281721" decorate="false"/>
+        <stroke x="362.95301407857187" y="195.36871214124437" width="7.642907111124807" color="0" alpha="1" angle="71.84688830167585" decorate="false"/>
+        <stroke x="367.019972250287" y="211.1056732878163" width="8.974616687267744" color="0" alpha="1" angle="75.50988572676324" decorate="false"/>
+        <stroke x="370.4674071737701" y="228.02803990991848" width="9.476161249660219" color="0" alpha="1" angle="78.48523851647853" decorate="false"/>
+        <stroke x="373.1706529208785" y="244.00931950202545" width="8.952060364476985" color="0" alpha="1" angle="80.39925191138254" decorate="false"/>
+        <stroke x="375.1740753627587" y="257.8146371857002" width="7.83718939002989" color="0" alpha="1" angle="81.74290035453663" decorate="false"/>
+        <stroke x="376.59211528763234" y="268.77705412328424" width="6.40745571311338" color="0" alpha="1" angle="82.62945055304787" decorate="false"/>
+        <stroke x="377.55529768999514" y="276.9802394385537" width="5.028057501942694" color="0" alpha="1" angle="83.30324082716193" decorate="false"/>
+        <stroke x="378.1837645829091" y="282.83434050622026" width="3.857189341669869" color="0" alpha="1" angle="83.87248099394333" decorate="false"/>
+        <stroke x="378.5767664660276" y="286.84105001833046" width="2.9380878208486996" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="378.81075384051724" y="289.47552754630544" width="2.256295969990867" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="378.9415963905677" y="291.13684621514295" width="1.7733040325356686" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="379.0083600253638" y="292.13596537707554" width="1.4449613255001177" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="379.0372750575979" y="292.70221367404" width="1.2305334875841536" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="379.0452546893276" y="292.99722656167864" width="1.096323803684413" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="379.0427361405467" y="293.1303567752894" width="1.0163669015476358" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="379.40895196319474" y="295.0657371272921" width="1.9606361754142099" color="0" alpha="1" angle="84.3980088533022" decorate="false"/>
+        <stroke x="380.0749127540603" y="299.3345332340096" width="3.083468269321217" color="0" alpha="1" angle="81.1329492303036" decorate="false"/>
+        <stroke x="381.03948188815167" y="305.66532949544114" width="4.111977069877508" color="0" alpha="1" angle="81.33695806708569" decorate="false"/>
+        <stroke x="382.2782079435923" y="314.3643683312008" width="5.288343096257619" color="0" alpha="1" angle="81.89567802323182" decorate="false"/>
+        <stroke x="383.8780765961556" y="325.6547460825805" width="6.579948842811702" color="0" alpha="1" angle="81.93477148975668" decorate="false"/>
+        <stroke x="385.6944771493281" y="339.42202534955305" width="7.805920037952779" color="0" alpha="1" angle="82.48403058096758" decorate="false"/>
+        <stroke x="387.49810298309643" y="354.74032759750105" width="8.564942049047994" color="0" alpha="1" angle="83.28473030782659" decorate="false"/>
+        <stroke x="389.3224907055742" y="371.11861938341497" width="9.085987580729173" color="0" alpha="1" angle="83.64399058462712" decorate="false"/>
+        <stroke x="390.90992893543665" y="387.51783707031524" width="9.084152097104202" color="0" alpha="1" angle="84.47101588462291" decorate="false"/>
+        <stroke x="392.1764357325908" y="404.0075770249278" width="9.114974244668089" color="0" alpha="1" angle="85.60797766289701" decorate="false"/>
+        <stroke x="393.1275449674104" y="419.66193710613817" width="8.692853719208014" color="0" alpha="1" angle="86.52316419985841" decorate="false"/>
+        <stroke x="393.80832555247883" y="433.7720376333542" width="7.924363171497253" color="0" alpha="1" angle="87.23774966053566" decorate="false"/>
+        <stroke x="394.27555286617496" y="445.5523577900986" width="6.770707604778262" color="0" alpha="1" angle="87.72874343783091" decorate="false"/>
+        <stroke x="394.5836055204046" y="454.6939335589703" width="5.4660479371040624" color="0" alpha="1" angle="88.069978189471" decorate="false"/>
+        <stroke x="394.77844246955334" y="461.41396162450155" width="4.269453275068161" color="0" alpha="1" angle="88.33926163684114" decorate="false"/>
+        <stroke x="394.89602936328055" y="466.13708943468293" width="3.2829870346136096" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="394.9629795014149" y="469.32398987558236" width="2.524233934313928" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="394.99810483088436" y="471.3893564407835" width="1.9703750962659257" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="395.0141670769762" y="472.67120827561826" width="1.5834855397019045" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="395.01948253232575" y="473.4274284840854" width="1.3239604924057684" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="395.0192443453691" y="473.8450247325441" width="1.156785372999475" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+        <stroke x="395.01653917461374" y="474.0538647054571" width="1.0537388556099576" color="0" alpha="1" angle="88.5738600371517" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (7)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_38847_Line Layer (7)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="346" y="155" width="0.9506337558372249" color="0" alpha="1" angle="99.98065070919891" decorate="false"/>
+        <stroke x="345.865" y="156.08" width="1.4879383249199634" color="0" alpha="1" angle="99.98065070919891" decorate="false"/>
+        <stroke x="345.28247500000003" y="159.39020000000002" width="2.609865418998439" color="0" alpha="1" angle="99.98065070919891" decorate="false"/>
+        <stroke x="344.44220462500004" y="165.55211300000002" width="4.020691313005569" color="0" alpha="1" angle="97.76525284410845" decorate="false"/>
+        <stroke x="343.329385331875" y="173.515438595" width="4.920027340094503" color="0" alpha="1" angle="97.9551699396996" decorate="false"/>
+        <stroke x="341.83914963016565" y="183.779350902425" width="6.070670096477844" color="0" alpha="1" angle="98.26114887304081" decorate="false"/>
+        <stroke x="339.9752583643241" y="195.98789906893887" width="7.047369686371439" color="0" alpha="1" angle="98.68037615142964" decorate="false"/>
+        <stroke x="337.92484741551164" y="208.50337936956336" width="7.211422542200709" color="0" alpha="1" angle="99.30411264055749" decorate="false"/>
+        <stroke x="334.98730808745194" y="220.95238928995332" width="7.265018026902446" color="0" alpha="1" angle="103.27697467170307" decorate="false"/>
+        <stroke x="331.37212879801905" y="232.5008711999851" width="6.92449915137787" color="0" alpha="1" angle="107.38239947122595" decorate="false"/>
+        <stroke x="327.8050607300417" y="242.35507044750142" width="6.1241882909863605" color="0" alpha="1" angle="109.89947430280384" decorate="false"/>
+        <stroke x="324.7411969008963" y="250.11652559847107" width="5.069904377461983" color="0" alpha="1" angle="111.54181600036807" decorate="false"/>
+        <stroke x="322.3173965961598" y="255.88844946061383" width="4.041051839968836" color="0" alpha="1" angle="112.77896526517885" decorate="false"/>
+        <stroke x="320.5088379185469" y="259.9858745213952" width="3.1616561083573345" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="319.2212933946172" y="262.77662273835847" width="2.4678767007400753" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="318.3420237505755" y="264.60261536631356" width="1.951121315292546" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="317.76517920442905" y="265.747958974441" width="1.5837087520283357" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="317.40229996606524" y="266.43238913654886" width="1.3330631839349225" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="317.1846938133827" y="266.81701017606326" width="1.1687888703177032" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="317.0618373798689" y="267.0147932700762" width="1.0655753518081825" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="316.9982039385054" y="267.10179857092174" width="1.0038466680561586" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="316.7168506388909" y="267.2983580901252" width="1.1325605752360488" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="315.2860125776993" y="267.64351618242216" width="1.6772457866531072" color="0" alpha="1" angle="113.81613964002368" decorate="false"/>
+        <stroke x="312.1735237521737" y="267.3069626393288" width="2.4961090553676404" color="0" alpha="1" angle="138.70645745674082" decorate="false"/>
+        <stroke x="306.8344780741437" y="265.62907358862736" width="3.713411560217625" color="0" alpha="1" angle="-162.55375635657194" decorate="false"/>
+        <stroke x="298.9192529790208" y="261.27909858134706" width="5.409284894117316" color="0" alpha="1" angle="-151.20809857923237" decorate="false"/>
+        <stroke x="288.4833025340477" y="253.74893151958906" width="7.30360097117414" color="0" alpha="1" angle="-144.1872811524579" decorate="false"/>
+        <stroke x="276.7018789917134" y="243.50925058665345" width="8.656402546806266" color="0" alpha="1" angle="-139.00485983710712" decorate="false"/>
+        <stroke x="264.6904847337816" y="230.7326453376342" width="9.607553757993868" color="0" alpha="1" angle="-133.23182822682173" decorate="false"/>
+        <stroke x="253.3871418786518" y="216.64926585499492" width="9.865405726973119" color="0" alpha="1" angle="-128.75058352184277" decorate="false"/>
+        <stroke x="243.3883734402254" y="202.52909419738293" width="9.49191589545847" color="0" alpha="1" angle="-125.30305299615448" decorate="false"/>
+        <stroke x="234.51649722850308" y="188.00358923481085" width="9.353059743971347" color="0" alpha="1" angle="-121.41571715209531" decorate="false"/>
+        <stroke x="226.80942580738014" y="173.63662745495395" width="8.999126417953997" color="0" alpha="1" angle="-118.21106957416444" decorate="false"/>
+        <stroke x="220.12697118387848" y="160.33554994759956" width="8.298975596716346" color="0" alpha="1" angle="-116.67493033255099" decorate="false"/>
+        <stroke x="214.40272549347915" y="148.49976582636415" width="7.440985953101117" color="0" alpha="1" angle="-115.81021731888283" decorate="false"/>
+        <stroke x="209.74744699117977" y="138.24619458524904" width="6.509705578379706" color="0" alpha="1" angle="-114.41877673329977" decorate="false"/>
+        <stroke x="206.20166632133578" y="130.08885125773864" width="5.341588728015616" color="0" alpha="1" angle="-113.49330607049262" decorate="false"/>
+        <stroke x="203.49884006652564" y="123.84105184056423" width="4.311175962318205" color="0" alpha="1" angle="-113.39352701434747" decorate="false"/>
+        <stroke x="201.54022484288012" y="119.29600010435958" width="3.3938224393079337" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="200.1809176384508" y="116.13076680897895" width="2.651185715342301" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="199.27480551526676" y="114.0137583068455" width="2.0874263713158117" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="198.69495631527292" y="112.65424710946131" width="1.680268813623297" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="198.34020507271384" y="111.81914371086114" width="1.3985480641549302" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="198.1346393287459" y="111.33276278052482" width="1.211306076194781" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="198.0239584345796" y="111.06896838650262" width="1.0918572353851221" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+        <stroke x="197.97091764353655" y="110.94095017701477" width="1.0190411705909126" color="0" alpha="1" angle="-113.31283068046368" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (8)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_42400_Line Layer (8)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="346" y="151" width="0.9506337558372249" color="0" alpha="1" angle="-170.49490234351853" decorate="false"/>
+        <stroke x="345.595" y="151" width="1.1505670446964642" color="0" alpha="1" angle="-170.49490234351853" decorate="false"/>
+        <stroke x="343.98242500000003" y="150.73" width="1.7577828881420232" color="0" alpha="1" angle="-170.49490234351853" decorate="false"/>
+        <stroke x="341.504138875" y="149.96994999999998" width="2.2303128956502545" color="0" alpha="1" angle="-162.95007610850362" decorate="false"/>
+        <stroke x="338.700851370625" y="148.01198424999998" width="2.638645376295023" color="0" alpha="1" angle="-145.06749443014448" decorate="false"/>
+        <stroke x="335.9947570586219" y="144.42928178875" width="3.167101338684824" color="0" alpha="1" angle="-127.0645569381079" decorate="false"/>
+        <stroke x="333.6977224153065" y="140.05911263970626" width="3.387884104078053" color="0" alpha="1" angle="-117.72717315495274" decorate="false"/>
+        <stroke x="331.8948642997482" y="135.38455631627622" width="3.423965071298329" color="0" alpha="1" angle="-111.09036520552395" decorate="false"/>
+        <stroke x="330.55777146728093" y="130.79909086803542" width="3.3085792510404772" color="0" alpha="1" angle="-106.25635167232812" decorate="false"/>
+        <stroke x="329.6107805445877" y="126.19775414914228" width="3.2697489091442944" color="0" alpha="1" angle="-101.62953529808267" decorate="false"/>
+        <stroke x="328.42717925585646" y="121.67045581550616" width="3.260707210868532" color="0" alpha="1" angle="-104.65128608930252" decorate="false"/>
+        <stroke x="326.48688947638675" y="116.57266003027657" width="3.64334613648444" color="0" alpha="1" angle="-110.83749923340565" decorate="false"/>
+        <stroke x="323.5230289963132" y="110.96134282283592" width="4.083401364792691" color="0" alpha="1" angle="-117.84271664502728" decorate="false"/>
+        <stroke x="319.2836828657778" y="104.52646879840478" width="4.754707590176482" color="0" alpha="1" angle="-123.3772093630838" decorate="false"/>
+        <stroke x="313.96267992015686" y="97.50970219962612" width="5.297893885270674" color="0" alpha="1" angle="-127.1740212386066" decorate="false"/>
+        <stroke x="307.25326680540627" y="88.2083474332262" width="6.612307628391275" color="0" alpha="1" angle="-125.8043132301495" decorate="false"/>
+        <stroke x="299.60983988503864" y="76.83961088486069" width="7.713451485865625" color="0" alpha="1" angle="-123.91372260094182" decorate="false"/>
+        <stroke x="292.037969386393" y="65.26533196864003" width="7.778489591617921" color="0" alpha="1" angle="-123.19263265667517" decorate="false"/>
+        <stroke x="285.2505017948394" y="54.756086640574324" width="7.1266242373762685" color="0" alpha="1" angle="-122.85667086642479" decorate="false"/>
+        <stroke x="279.59732363633697" y="46.009854546467224" width="6.09171982327618" color="0" alpha="1" angle="-122.87684259400633" decorate="false"/>
+        <stroke x="275.08275477410535" y="39.102719740345954" width="5.024166897815711" color="0" alpha="1" angle="-123.16901174083634" decorate="false"/>
+        <stroke x="271.6900268915969" y="33.95564191264468" width="3.9938940517797707" color="0" alpha="1" angle="-123.39111853629173" decorate="false"/>
+        <stroke x="269.2601457141025" y="30.295445231972074" width="3.1194565452260243" color="0" alpha="1" angle="-123.57884315689377" decorate="false"/>
+        <stroke x="267.59157951282623" y="27.798471619353172" width="2.4331827310957888" color="0" alpha="1" angle="-123.57884315689377" decorate="false"/>
+        <stroke x="266.49086148802036" y="26.16203982506199" width="1.9242243536080277" color="0" alpha="1" angle="-123.57884315689377" decorate="false"/>
+        <stroke x="265.79427207597496" y="25.133770141247588" width="1.5637647643215256" color="0" alpha="1" angle="-123.57884315689377" decorate="false"/>
+        <stroke x="265.3735801102979" y="24.517989814462684" width="1.31879049113719" color="0" alpha="1" angle="-123.57884315689377" decorate="false"/>
+        <stroke x="265.133835410853" y="24.170960042457015" width="1.158855859156994" color="0" alpha="1" angle="-124.63856426309863" decorate="false"/>
+        <stroke x="265.0078825156377" y="23.991717039322765" width="1.0587809740423135" color="0" alpha="1" angle="-125.09546423343643" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (9)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_45686_Line Layer (9)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="266" y="25" width="0.9506337558372249" color="0" alpha="1" angle="10.655448863879688" decorate="false"/>
+        <stroke x="266.135" y="25" width="1.0172781854569712" color="0" alpha="1" angle="10.655448863879688" decorate="false"/>
+        <stroke x="266.852525" y="25.135" width="1.3110638431409005" color="0" alpha="1" angle="10.655448863879688" decorate="false"/>
+        <stroke x="268.950320375" y="25.312525" width="1.9899380666142559" color="0" alpha="1" angle="4.837105132045009" decorate="false"/>
+        <stroke x="273.006035043125" y="25.755220375" width="2.9646797589853007" color="0" alpha="1" angle="6.22937199728557" decorate="false"/>
+        <stroke x="279.69029191295937" y="26.257478543125" width="4.259702599380697" color="0" alpha="1" angle="4.297156268841244" decorate="false"/>
+        <stroke x="287.46501809613534" y="27.123735115459375" width="4.812474220864062" color="0" alpha="1" angle="6.357648465444327" decorate="false"/>
+        <stroke x="295.3558674355862" y="28.30684633242283" width="4.889591572590755" color="0" alpha="1" angle="8.527100017040505" decorate="false"/>
+        <stroke x="303.17870753453496" y="30.0128221251793" width="4.903238845871772" color="0" alpha="1" angle="12.302243045414501" decorate="false"/>
+        <stroke x="310.85986006189967" y="32.263780245020506" width="4.901997387900686" color="0" alpha="1" angle="16.333197837065732" decorate="false"/>
+        <stroke x="319.73529759085733" y="35.94110106587128" width="5.693290730984191" color="0" alpha="1" angle="22.5054781100422" decorate="false"/>
+        <stroke x="330.10997930412253" y="40.978846791361505" width="6.64410291294568" color="0" alpha="1" angle="25.900317101501518" decorate="false"/>
+        <stroke x="341.2437388690353" y="46.623688050998304" width="7.11301303549041" color="0" alpha="1" angle="26.885111328384514" decorate="false"/>
+        <stroke x="352.56602592592634" y="52.184668730950094" width="7.1778032202263145" color="0" alpha="1" angle="26.158123390620922" decorate="false"/>
+        <stroke x="363.3896416015272" y="56.957179758250135" width="6.790214286749077" color="0" alpha="1" angle="23.794361572189747" decorate="false"/>
+        <stroke x="373.47266703934145" y="60.73059045317139" width="6.265386963212762" color="0" alpha="1" angle="20.51755665501096" decorate="false"/>
+        <stroke x="383.6162184360468" y="63.13999555470781" width="6.097449275785954" color="0" alpha="1" angle="13.36188476530427" decorate="false"/>
+        <stroke x="394.03762707569786" y="63.66532845051365" width="6.101824106736305" color="0" alpha="1" angle="2.885780873535905" decorate="false"/>
+        <stroke x="404.9321813083216" y="62.19190891280693" width="6.377829341047467" color="0" alpha="1" angle="-7.702158907505336" decorate="false"/>
+        <stroke x="416.8638862363789" y="59.342962417609975" width="7.006447058595753" color="0" alpha="1" angle="-13.429139572691659" decorate="false"/>
+        <stroke x="429.40652881209354" y="55.989636568394" width="7.359936659701237" color="0" alpha="1" angle="-14.968178448766368" decorate="false"/>
+        <stroke x="442.0158365815325" y="52.862038999513615" width="7.364000665314167" color="0" alpha="1" angle="-13.930436194346264" decorate="false"/>
+        <stroke x="453.8978871392731" y="50.25824482858311" width="6.955543158898207" color="0" alpha="1" angle="-12.360233836302998" decorate="false"/>
+        <stroke x="465.0635951264545" y="48.78167439980566" width="6.510712768488284" color="0" alpha="1" angle="-7.533172163452119" decorate="false"/>
+        <stroke x="476.4245783786148" y="49.766691662882046" width="6.58016508047405" color="0" alpha="1" angle="4.955253280735218" decorate="false"/>
+        <stroke x="487.9597027609739" y="54.291446056777346" width="7.06751773610251" color="0" alpha="1" angle="21.418032878848106" decorate="false"/>
+        <stroke x="498.2859488603041" y="60.60824031636529" width="6.926462944949977" color="0" alpha="1" angle="31.455052281941605" decorate="false"/>
+        <stroke x="506.8091565088616" y="67.68868529047054" width="6.420666887055681" color="0" alpha="1" angle="39.71727307493196" decorate="false"/>
+        <stroke x="513.3703638220161" y="74.4269130146044" width="5.593506167219354" color="0" alpha="1" angle="45.76258303469819" decorate="false"/>
+        <stroke x="518.1629079969634" y="80.23648223349304" width="4.668524025048212" color="0" alpha="1" angle="50.479425200865194" decorate="false"/>
+        <stroke x="521.5125602960997" y="84.84386328047137" width="3.7626959893221046" color="0" alpha="1" angle="53.98214634371717" decorate="false"/>
+        <stroke x="523.7607081907375" y="88.28826320874798" width="2.9811448421742015" color="0" alpha="1" angle="56.86765462737322" decorate="false"/>
+        <stroke x="525.209679137575" y="90.74432764329147" width="2.358374276958985" color="0" alpha="1" angle="56.86765462737322" decorate="false"/>
+        <stroke x="526.1034093800793" y="92.4240724069917" width="1.8899290361932823" color="0" alpha="1" angle="56.86765462737322" decorate="false"/>
+        <stroke x="526.6266277228955" y="93.52770777571293" width="1.5535830588375612" color="0" alpha="1" angle="64.63501364135843" decorate="false"/>
+        <stroke x="526.9124812345718" y="94.22310314191623" width="1.32179666064426" color="0" alpha="1" angle="67.65409421549022" decorate="false"/>
+        <stroke x="527.0529303481591" y="94.64091213254902" width="1.1682321335545" color="0" alpha="1" angle="71.4196063305361" decorate="false"/>
+        <stroke x="527.1089868522719" y="94.87740304043966" width="1.0706153438998987" color="0" alpha="1" angle="76.66503128621021" decorate="false"/>
+        <stroke x="527.119499054066" y="95.00037453853109" width="1.0115615730417902" color="0" alpha="1" angle="85.11395682452533" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (10)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_48703_Line Layer (10)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="345" y="153" width="0.9506337558372249" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="346.485" y="153" width="1.6837224816544363" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="351.002775" y="153" width="3.1808895930620404" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="359.650399125" y="153" width="5.219640995663776" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="370.609026099375" y="153" width="6.360496304894931" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="382.0731897144281" y="153" width="6.610060757264386" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="393.43218272975423" y="153" width="6.558141982215693" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="404.56038491813416" y="153" width="6.444209219080153" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="416.512423938957" y="153" width="6.8509065212868" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="429.6516642665681" y="152.055" width="7.453737772657624" color="0" alpha="1" angle="-4.113741735388382" decorate="false"/>
+        <stroke x="443.4413477380064" y="150.137325" width="7.823593100495435" color="0" alpha="1" angle="-7.9171135636490195" decorate="false"/>
+        <stroke x="457.1471233555228" y="146.825832375" width="7.911348908931358" color="0" alpha="1" angle="-13.583082260658324" decorate="false"/>
+        <stroke x="470.0448607304096" y="142.524173323125" width="7.662553348077368" color="0" alpha="1" angle="-18.444596691740507" decorate="false"/>
+        <stroke x="481.51278635050335" y="137.6826633511594" width="7.095760343503678" color="0" alpha="1" angle="-22.88841848582804" decorate="false"/>
+        <stroke x="490.9241267222276" y="132.98182431136834" width="6.1439817704527" color="0" alpha="1" angle="-26.541516921399666" decorate="false"/>
+        <stroke x="498.40947278200275" y="128.43890046142764" width="5.273171038411196" color="0" alpha="1" angle="-31.25394028858521" decorate="false"/>
+        <stroke x="504.4225996833312" y="124.17533316666159" width="4.589555573934546" color="0" alpha="1" angle="-35.338291451789374" decorate="false"/>
+        <stroke x="508.9614558316793" y="120.61305790651755" width="3.798985626584245" color="0" alpha="1" angle="-38.12623649336679" decorate="false"/>
+        <stroke x="512.3591445611593" y="117.44227122207286" width="3.2448726277643667" color="0" alpha="1" angle="-43.02155579948154" decorate="false"/>
+        <stroke x="514.9196199736688" y="114.47071059909291" width="2.8870373077575673" color="0" alpha="1" angle="-43.02155579948154" decorate="false"/>
+        <stroke x="516.7576852128527" y="111.9899623878744" width="2.474811688552319" color="0" alpha="1" angle="-43.02155579948154" decorate="false"/>
+        <stroke x="518.0225270667504" y="110.06498077046302" width="2.087706631407442" color="0" alpha="1" angle="-43.02155579948154" decorate="false"/>
+        <stroke x="518.8586647469931" y="108.6499666386154" width="1.7620128776612092" color="0" alpha="1" angle="-53.527140343479104" decorate="false"/>
+        <stroke x="519.3890069622582" y="107.65546478307088" width="1.5070280785591508" color="0" alpha="1" angle="-53.527140343479104" decorate="false"/>
+        <stroke x="519.7101450192226" y="106.98445120236129" width="1.317869799328291" color="0" alpha="1" angle="-53.527140343479104" decorate="false"/>
+        <stroke x="519.8937875672616" y="106.5495941787232" width="1.1836639813322478" color="0" alpha="1" angle="-53.527140343479104" decorate="false"/>
+        <stroke x="519.9907653922988" y="106.27971330395842" width="1.0922042195397341" color="0" alpha="1" angle="-53.527140343479104" decorate="false"/>
+        <stroke x="520.0356520856052" y="106.12050561427988" width="1.0322926025200267" color="0" alpha="1" angle="-74.2548402383818" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (11)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_50758_Line Layer (11)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="528" y="94" width="0.9506337558372249" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="528.135" y="94" width="1.0172781854569712" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="528.717525" y="94" width="1.2382044696464316" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="530.367795375" y="94.135" width="1.768031629580134" color="0" alpha="1" angle="4.6766549252043745" decorate="false"/>
+        <stroke x="533.490764668125" y="94.582525" width="2.5080754526352305" color="0" alpha="1" angle="8.155030105507299" decorate="false"/>
+        <stroke x="539.1498476198344" y="95.78527037500001" width="3.8067095368586736" color="0" alpha="1" angle="11.998742251070842" decorate="false"/>
+        <stroke x="546.266205519426" y="97.435494293125" width="4.556931275536343" color="0" alpha="1" angle="13.055659581195842" decorate="false"/>
+        <stroke x="554.0226288291196" y="99.46930332670938" width="4.909131902928695" color="0" alpha="1" angle="14.692739323878817" decorate="false"/>
+        <stroke x="561.9649644265506" y="101.67116144271658" width="5.019348984500681" color="0" alpha="1" angle="15.494999361406938" decorate="false"/>
+        <stroke x="570.4037452478102" y="104.19139080015309" width="5.2983561199561064" color="0" alpha="1" angle="16.628177093860746" decorate="false"/>
+        <stroke x="580.3566910089227" y="107.59465625297885" width="6.143327811860009" color="0" alpha="1" angle="18.877379140980764" decorate="false"/>
+        <stroke x="591.5373633152187" y="112.1508471125983" width="6.910803993062295" color="0" alpha="1" angle="22.171189619861135" decorate="false"/>
+        <stroke x="603.6511218054974" y="117.28576863922628" width="7.445823944174301" color="0" alpha="1" angle="22.97168409857004" decorate="false"/>
+        <stroke x="618.3294116823806" y="123.74290455991331" width="8.866904649985607" color="0" alpha="1" angle="23.745204936292136" decorate="false"/>
+        <stroke x="634.8801715498568" y="130.8683236086342" width="9.846141228170891" color="0" alpha="1" angle="23.292803489683948" decorate="false"/>
+        <stroke x="652.0641903309903" y="138.412538493393" width="10.21526769824461" color="0" alpha="1" angle="23.702678147326168" decorate="false"/>
+        <stroke x="668.4283330878167" y="145.66674249492638" width="9.787172760547344" color="0" alpha="1" angle="23.90764992362344" decorate="false"/>
+        <stroke x="683.1593723615333" y="152.08112405880135" width="8.88229775781792" color="0" alpha="1" angle="23.5299015387842" decorate="false"/>
+        <stroke x="696.5168247658988" y="157.7916440146069" width="8.122031410544237" color="0" alpha="1" angle="23.14746599612062" decorate="false"/>
+        <stroke x="709.072907004467" y="162.81950605274747" width="7.627582031451899" color="0" alpha="1" angle="21.82276337534491" decorate="false"/>
+        <stroke x="721.7333015662196" y="167.5364106527898" width="7.620281534489799" color="0" alpha="1" angle="20.433969288741977" decorate="false"/>
+        <stroke x="734.8914834075686" y="172.28660228468223" width="7.8566531947171745" color="0" alpha="1" angle="19.8499213218683" decorate="false"/>
+        <stroke x="748.2523149761539" y="177.22049721060174" width="7.981730836251619" color="0" alpha="1" angle="20.268206314346827" decorate="false"/>
+        <stroke x="762.4656266602366" y="182.65098280383427" width="8.461905361791363" color="0" alpha="1" angle="20.910376476882142" decorate="false"/>
+        <stroke x="776.7637573189418" y="188.38181864227127" width="8.554942766186212" color="0" alpha="1" angle="21.841413780925787" decorate="false"/>
+        <stroke x="790.114808877302" y="193.8791492528613" width="8.078394977029001" color="0" alpha="1" angle="22.37954352363091" decorate="false"/>
+        <stroke x="801.2372828801283" y="198.52926287849056" width="6.901938414717674" color="0" alpha="1" angle="22.68895955357745" decorate="false"/>
+        <stroke x="809.8553629925829" y="202.17036352142748" width="5.569186084823974" color="0" alpha="1" angle="22.903842279318834" decorate="false"/>
+        <stroke x="816.1830250391887" y="204.8658597353564" width="4.345976662040791" color="0" alpha="1" angle="23.07333153598444" decorate="false"/>
+        <stroke x="820.6257645798709" y="206.7719419673513" width="3.337178141968245" color="0" alpha="1" angle="23.220933075861588" decorate="false"/>
+        <stroke x="823.6205191548953" y="208.06546680615656" width="2.5610451959271376" color="0" alpha="1" angle="23.220933075861588" decorate="false"/>
+        <stroke x="825.5593886277454" y="208.9087149647878" width="1.9943863341816135" color="0" alpha="1" angle="23.505062711802164" decorate="false"/>
+        <stroke x="826.7613624257823" y="209.43550011592552" width="1.59848810333625" color="0" alpha="1" angle="23.66624107492079" decorate="false"/>
+        <stroke x="827.4694667074183" y="209.74876091828753" width="1.3328777045699833" color="0" alpha="1" angle="23.864291823912417" decorate="false"/>
+        <stroke x="827.859735628653" y="209.92364555538163" width="1.161754238792322" color="0" alpha="1" angle="24.13777889113449" decorate="false"/>
+        <stroke x="828.0542923333404" y="210.01265149209746" width="1.0562525648100005" color="0" alpha="1" angle="24.583180094303348" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (12)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_54103_Line Layer (12)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="522" y="111" width="0.9506337558372249" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="522.945" y="111" width="1.4171447631754504" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="524.187675" y="111" width="1.5640957304869878" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="527.691542625" y="111.54" width="2.7007829221438024" color="0" alpha="1" angle="8.761232264467383" decorate="false"/>
+        <stroke x="534.709924801875" y="113.0601" width="4.495679824220776" color="0" alpha="1" angle="12.220838035982226" decorate="false"/>
+        <stroke x="545.3323569332156" y="116.03103150000001" width="6.3957662553053325" color="0" alpha="1" angle="15.625491863619514" decorate="false"/>
+        <stroke x="560.1925832063348" y="121.00876142250002" width="8.687193984554886" color="0" alpha="1" angle="18.519303776443504" decorate="false"/>
+        <stroke x="577.1136862963832" y="127.02755709558751" width="9.816646713255588" color="0" alpha="1" angle="19.580350395755254" decorate="false"/>
+        <stroke x="594.1628350368933" y="133.10729494057256" width="9.886287848019085" color="0" alpha="1" angle="19.62626838110939" decorate="false"/>
+        <stroke x="611.1279692401422" y="139.60869215383855" width="9.919597882482853" color="0" alpha="1" angle="20.967886054800314" decorate="false"/>
+        <stroke x="628.600003784185" y="146.36714745904004" width="10.19872086104551" color="0" alpha="1" angle="21.147247183167867" decorate="false"/>
+        <stroke x="647.4514188181392" y="153.67888743941032" width="10.932353926424561" color="0" alpha="1" angle="21.199360599126432" decorate="false"/>
+        <stroke x="666.6736140429699" y="160.92752062625655" width="11.0921890876898" color="0" alpha="1" angle="20.66131155690261" decorate="false"/>
+        <stroke x="685.8976639983428" y="168.38419027579272" width="11.12973326988829" color="0" alpha="1" angle="21.20039399818042" decorate="false"/>
+        <stroke x="704.2823018384843" y="175.73782593085198" width="10.72553487320222" color="0" alpha="1" angle="21.80081981737868" decorate="false"/>
+        <stroke x="721.1572781183526" y="182.59235547496363" width="9.94219609732599" color="0" alpha="1" angle="22.106739217644183" decorate="false"/>
+        <stroke x="736.1547848983157" y="188.56692578069377" width="8.920197346618373" color="0" alpha="1" angle="21.720898421932386" decorate="false"/>
+        <stroke x="748.5527669880265" y="193.3389474378787" width="7.508770691006958" color="0" alpha="1" angle="21.051869844660644" decorate="false"/>
+        <stroke x="758.3772353850128" y="197.06059927949826" width="6.136930034813843" color="0" alpha="1" angle="20.747418025474648" decorate="false"/>
+        <stroke x="765.71731938668" y="199.80716170549482" width="4.819525185559442" color="0" alpha="1" angle="20.515184898108586" decorate="false"/>
+        <stroke x="770.9485190702284" y="201.74414796695146" width="3.704428078535582" color="0" alpha="1" angle="20.318368095435307" decorate="false"/>
+        <stroke x="774.9295088533444" y="203.3253318090685" width="3.065239691088623" color="0" alpha="1" angle="21.66216418493455" decorate="false"/>
+        <stroke x="777.945470560545" y="204.66794474379694" width="2.5803655237525085" color="0" alpha="1" angle="21.66216418493455" decorate="false"/>
+        <stroke x="780.2550148031117" y="205.72194802401214" width="2.20388680195128" color="0" alpha="1" angle="21.66216418493455" decorate="false"/>
+        <stroke x="782.6098827138467" y="206.63878651686733" width="2.198144796067991" color="0" alpha="1" angle="21.66216418493455" decorate="false"/>
+        <stroke x="785.4772391073082" y="207.50512765887507" width="2.42933857347857" color="0" alpha="1" angle="21.617156919756688" decorate="false"/>
+        <stroke x="788.4581222048791" y="208.23178893883042" width="2.4652767450708817" color="0" alpha="1" angle="21.617156919756688" decorate="false"/>
+        <stroke x="791.3576731011274" y="208.93249500806823" width="2.423236712776389" color="0" alpha="1" angle="21.617156919756688" decorate="false"/>
+        <stroke x="794.9091851357869" y="209.79692591313602" width="2.7550681372625143" color="0" alpha="1" angle="21.617156919756688" decorate="false"/>
+        <stroke x="798.2746255580524" y="210.61833482214317" width="2.6607948751477877" color="0" alpha="1" angle="13.672699419141532" decorate="false"/>
+        <stroke x="801.1019992977349" y="211.30949363020704" width="2.387500413093541" color="0" alpha="1" angle="13.672699419141532" decorate="false"/>
+        <stroke x="803.4405475753978" y="211.84873345375783" width="2.1353812046771434" color="0" alpha="1" angle="13.672699419141532" decorate="false"/>
+        <stroke x="805.3784203776673" y="212.3818123580984" width="1.9428245415142875" color="0" alpha="1" angle="13.672699419141532" decorate="false"/>
+        <stroke x="807.4143763877036" y="212.84015319670834" width="1.9808628242762518" color="0" alpha="1" angle="13.672699419141532" decorate="false"/>
+        <stroke x="809.4896157798798" y="213.6079858925272" width="2.042976736556208" color="0" alpha="1" angle="14.926585437601219" decorate="false"/>
+        <stroke x="811.5723753760755" y="214.68143251015454" width="2.107340287070886" color="0" alpha="1" angle="14.926585437601219" decorate="false"/>
+        <stroke x="813.3773465185933" y="215.74749009921595" width="1.9854896093765544" color="0" alpha="1" angle="14.926585437601219" decorate="false"/>
+        <stroke x="815.2186417527162" y="216.93630485089943" width="2.03260496449573" color="0" alpha="1" angle="14.926585437601219" decorate="false"/>
+        <stroke x="816.8277079714549" y="218.01987033428557" width="1.9082890483224295" color="0" alpha="1" angle="14.926585437601219" decorate="false"/>
+        <stroke x="818.1150471937408" y="218.90979230668077" width="1.7232120686855334" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="819.0838184726144" y="219.5924352328567" width="1.535685017471221" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="819.7784500543047" y="220.08964579320022" width="1.3723415197130957" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="820.2559435087342" y="220.43628836327278" width="1.2419201445715644" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="820.5712631895483" y="220.6683785907636" width="1.143915289518035" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="820.7710365153256" y="220.8175880833814" width="1.0737259434518143" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+        <stroke x="820.8918445823565" y="220.9093579638029" width="1.0255278964610495" color="0" alpha="1" angle="31.577855072101425" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (15)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_68697_Line Layer (15)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="824" y="207" width="0.9506337558372249" color="0" alpha="1" angle="-97.31735927796207" decorate="false"/>
+        <stroke x="824" y="206.325" width="1.2838559039359574" color="0" alpha="1" angle="-97.31735927796207" decorate="false"/>
+        <stroke x="823.73" y="204.222375" width="1.997143628778033" color="0" alpha="1" angle="-97.31735927796207" decorate="false"/>
+        <stroke x="823.23995" y="200.411173125" width="2.847570389280082" color="0" alpha="1" angle="-97.32697352893847" decorate="false"/>
+        <stroke x="822.71703425" y="195.130623909375" width="3.5701929695049177" color="0" alpha="1" angle="-95.6553781477533" decorate="false"/>
+        <stroke x="822.24992253875" y="188.95674253457813" width="4.00715801189576" color="0" alpha="1" angle="-94.32671683908522" decorate="false"/>
+        <stroke x="821.8709827259562" y="182.13433567375148" width="4.3237909919008315" color="0" alpha="1" angle="-93.17913696877167" decorate="false"/>
+        <stroke x="822.257877142195" y="175.13111727042303" width="4.41313142084174" color="0" alpha="1" angle="-86.8378957808814" decorate="false"/>
+        <stroke x="824.6921662153061" y="168.45196815741812" width="4.4600423866746475" color="0" alpha="1" angle="-69.97517659673667" decorate="false"/>
+        <stroke x="828.3941538591398" y="162.55033535531447" width="4.389799056632041" color="0" alpha="1" angle="-57.900694149332686" decorate="false"/>
+        <stroke x="833.6518375278811" y="157.93030532140037" width="4.405844687120016" color="0" alpha="1" angle="-41.306408662000564" decorate="false"/>
+        <stroke x="839.9797971125507" y="155.05070058775" width="4.382748733840582" color="0" alpha="1" angle="-24.468409003425478" decorate="false"/>
+        <stroke x="846.6101063154578" y="153.74803387826105" width="4.2863434466438495" color="0" alpha="1" angle="-11.115408057917797" decorate="false"/>
+        <stroke x="853.4263811041791" y="154.1408492854258" width="4.321155639947337" color="0" alpha="1" angle="3.298253005721759" decorate="false"/>
+        <stroke x="859.9461433100395" y="156.05360156511745" width="4.304848291009723" color="0" alpha="1" angle="16.350507606438487" decorate="false"/>
+        <stroke x="866.1273069558214" y="159.47210387968784" width="4.437615261690805" color="0" alpha="1" angle="28.9448569084688" decorate="false"/>
+        <stroke x="871.9966441573873" y="164.32169589748665" width="4.709206661964316" color="0" alpha="1" angle="39.5655226334859" decorate="false"/>
+        <stroke x="877.7432989368447" y="170.91558335933541" width="5.268512432485552" color="0" alpha="1" angle="48.92744526330687" decorate="false"/>
+        <stroke x="883.1989482311265" y="178.6192289636571" width="5.610719997763409" color="0" alpha="1" angle="54.694233172911126" decorate="false"/>
+        <stroke x="887.9221324023512" y="187.13227357550812" width="5.756695536597641" color="0" alpha="1" angle="60.97773010915061" decorate="false"/>
+        <stroke x="891.6780774050849" y="196.48028671814748" width="5.923960618669054" color="0" alpha="1" angle="68.11019591074268" decorate="false"/>
+        <stroke x="894.4917122066286" y="206.2920539253853" width="5.989554332502602" color="0" alpha="1" angle="73.99915917741072" decorate="false"/>
+        <stroke x="896.2314667194283" y="216.7429218887153" width="6.18083267629685" color="0" alpha="1" angle="80.54864964578395" decorate="false"/>
+        <stroke x="897.1181082430654" y="227.01551801723724" width="6.04068289962138" color="0" alpha="1" angle="85.06695015544503" decorate="false"/>
+        <stroke x="897.2311523158883" y="236.76609134274509" width="5.7644490735875795" color="0" alpha="1" angle="89.3357664326437" decorate="false"/>
+        <stroke x="896.3058165860136" y="246.45042700795304" width="5.753200687688551" color="0" alpha="1" angle="95.45802679017643" decorate="false"/>
+        <stroke x="894.3631302684582" y="255.60757041122295" width="5.571781093417332" color="0" alpha="1" angle="101.97770092610133" decorate="false"/>
+        <stroke x="891.4148988393164" y="263.8312629371793" width="5.263367490268919" color="0" alpha="1" angle="109.72298922658042" decorate="false"/>
+        <stroke x="887.0621833528949" y="270.9297040773405" width="5.061214760139627" color="0" alpha="1" angle="121.51634051093433" decorate="false"/>
+        <stroke x="882.1250666313643" y="276.69849253997205" width="4.699025445712828" color="0" alpha="1" angle="130.55798679061348" decorate="false"/>
+        <stroke x="877.0514801114415" y="281.09015085526005" width="4.263250100664422" color="0" alpha="1" angle="139.12078265385927" decorate="false"/>
+        <stroke x="871.7914163624316" y="284.2692267316795" width="3.984742482749858" color="0" alpha="1" angle="148.85208545684904" decorate="false"/>
+        <stroke x="866.2125464664489" y="286.47346526729154" width="3.9118866176512044" color="0" alpha="1" angle="158.4407837694462" decorate="false"/>
+        <stroke x="860.028361240286" y="287.4014547972326" width="4.037714306555904" color="0" alpha="1" angle="171.46595663226984" decorate="false"/>
+        <stroke x="853.4616491210742" y="286.95485368807965" width="4.199861317398323" color="0" alpha="1" angle="-176.10931380502402" decorate="false"/>
+        <stroke x="847.3393060360838" y="285.5449779410701" width="4.052108442613293" color="0" alpha="1" angle="-167.03179894179186" decorate="false"/>
+        <stroke x="841.7034453329668" y="280.7869618328713" width="4.591763006692702" color="0" alpha="1" angle="-139.82762200537172" decorate="false"/>
+        <stroke x="836.7773428966136" y="273.27461473674424" width="5.385411060254274" color="0" alpha="1" angle="-123.25422359893473" decorate="false"/>
+        <stroke x="833.1056555092118" y="264.0519855540266" width="5.851042986563477" color="0" alpha="1" angle="-111.70835260606735" decorate="false"/>
+        <stroke x="830.4941326911375" y="254.08978437201006" width="6.034769839456283" color="0" alpha="1" angle="-104.68917436503149" decorate="false"/>
+        <stroke x="828.8472395097004" y="244.73467294988126" width="5.6399168110210764" color="0" alpha="1" angle="-99.98416729168306" decorate="false"/>
+        <stroke x="827.8567602442442" y="236.91569196168933" width="4.841417710444256" color="0" alpha="1" angle="-97.21956177940663" decorate="false"/>
+        <stroke x="827.295381941816" y="230.84353210217492" width="3.9610143214892384" color="0" alpha="1" angle="-95.28204724002276" decorate="false"/>
+        <stroke x="827.0028851435782" y="226.3771833315998" width="3.16022546947263" color="0" alpha="1" angle="-93.74689391550511" decorate="false"/>
+        <stroke x="826.8708720899881" y="223.23640663507504" width="2.5024862536464836" color="0" alpha="1" angle="-93.74689391550511" decorate="false"/>
+        <stroke x="826.8288984837242" y="221.11614222590376" width="1.997533739446597" color="0" alpha="1" angle="-93.74689391550511" decorate="false"/>
+        <stroke x="826.8331090656027" y="219.7413440412797" width="1.6293231674607183" color="0" alpha="1" angle="-93.74689391550511" decorate="false"/>
+        <stroke x="826.8575341035917" y="218.8876034126261" width="1.3722658861561876" color="0" alpha="1" angle="-88.36124706416443" decorate="false"/>
+        <stroke x="826.8877582667018" y="218.38359366902748" width="1.1998914079457228" color="0" alpha="1" angle="-86.56822974002336" decorate="false"/>
+        <stroke x="826.9165117740966" y="218.10500413908937" width="1.0888935186697424" color="0" alpha="1" angle="-84.10730947604239" decorate="false"/>
+        <stroke x="826.9407217629213" y="217.96546329184017" width="1.0205489274195256" color="0" alpha="1" angle="-80.15730431720242" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (16)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_71143_Line Layer (16)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="844" y="282" width="0.9506337558372249" color="0" alpha="1" angle="27.26810005616977" decorate="false"/>
+        <stroke x="844.945" y="282.54" width="1.4879383249199634" color="0" alpha="1" angle="27.26810005616977" decorate="false"/>
+        <stroke x="846.322675" y="283.25010000000003" width="1.7157676089362608" color="0" alpha="1" angle="27.26810005616977" decorate="false"/>
+        <stroke x="847.979067625" y="284.07588150000004" width="1.8643163354195869" color="0" alpha="1" angle="26.49818817347503" decorate="false"/>
+        <stroke x="850.212270176875" y="285.6522391725" width="2.3000668033161746" color="0" alpha="1" angle="35.21724022294642" decorate="false"/>
+        <stroke x="853.8885548513406" y="288.4335478368375" width="3.226345161824691" color="0" alpha="1" angle="37.109480962604266" decorate="false"/>
+        <stroke x="858.1229280499191" y="292.0566077778163" width="3.701732636219811" color="0" alpha="1" angle="40.55131362298298" decorate="false"/>
+        <stroke x="863.1168007025403" y="297.0543427012515" width="4.438425056619474" color="0" alpha="1" angle="45.02214776794146" decorate="false"/>
+        <stroke x="868.7232753013769" y="303.07598715212845" width="5.012271587081806" color="0" alpha="1" angle="47.04481739912898" decorate="false"/>
+        <stroke x="874.7935467051675" y="310.23046888948573" width="5.582513626909495" color="0" alpha="1" angle="49.68682154898517" decorate="false"/>
+        <stroke x="881.6030400316756" y="318.81887237121595" width="6.36136044631502" color="0" alpha="1" angle="51.590132454551394" decorate="false"/>
+        <stroke x="888.7709016243281" y="328.2431061678804" width="6.7957809857990785" color="0" alpha="1" angle="52.74419258471507" decorate="false"/>
+        <stroke x="895.9423676217374" y="337.98619204371556" width="6.9228812395228525" color="0" alpha="1" angle="53.644815558373246" decorate="false"/>
+        <stroke x="903.2273076916371" y="348.1774447619398" width="7.134866404844349" color="0" alpha="1" angle="54.44194984557557" decorate="false"/>
+        <stroke x="910.2548441847209" y="358.13955344227884" width="6.96906285034501" color="0" alpha="1" angle="54.79983921104449" decorate="false"/>
+        <stroke x="917.0278316416714" y="367.59866263372373" width="6.693863346815704" color="0" alpha="1" angle="54.39627423081448" decorate="false"/>
+        <stroke x="923.0419187256734" y="376.22944231432126" width="6.143709266358238" color="0" alpha="1" angle="55.13050209861353" decorate="false"/>
+        <stroke x="928.5775988855085" y="384.26731845815675" width="5.768617522508445" color="0" alpha="1" angle="55.44484031529288" decorate="false"/>
+        <stroke x="933.8256791078906" y="392.16827473103154" width="5.6330800735591" color="0" alpha="1" angle="56.40655369922507" decorate="false"/>
+        <stroke x="938.6408485283973" y="399.48098796513597" width="5.272975640920114" color="0" alpha="1" angle="56.636474732769166" decorate="false"/>
+        <stroke x="943.0161602162917" y="406.0817755451896" width="4.860045999517501" color="0" alpha="1" angle="56.46171513280954" decorate="false"/>
+        <stroke x="947.1428688466448" y="411.87609025761316" width="4.462368324283342" color="0" alpha="1" angle="54.54154555325847" decorate="false"/>
+        <stroke x="951.2756004360066" y="417.470259693426" width="4.384133300030328" color="0" alpha="1" angle="53.544606604496664" decorate="false"/>
+        <stroke x="955.2581235923585" y="423.29915088092923" width="4.435641067333179" color="0" alpha="1" angle="55.65760484693675" decorate="false"/>
+        <stroke x="959.1754123277485" y="429.39176654638027" width="4.526369438768236" color="0" alpha="1" angle="57.26073324664179" decorate="false"/>
+        <stroke x="963.2095115944279" y="435.8605551120719" width="4.7141156842702046" color="0" alpha="1" angle="58.05129745088346" decorate="false"/>
+        <stroke x="967.8315721991859" y="443.11033502650344" width="5.195061582908207" color="0" alpha="1" angle="57.48065801984327" decorate="false"/>
+        <stroke x="972.4992372244369" y="450.4078407594197" width="5.22703538896092" color="0" alpha="1" angle="57.3960136722881" decorate="false"/>
+        <stroke x="977.0972894605009" y="457.28165983671033" width="5.0331795589819475" color="0" alpha="1" angle="56.220545063506755" decorate="false"/>
+        <stroke x="981.1782788895621" y="463.7118543435352" width="4.710315707568364" color="0" alpha="1" angle="57.59832364716932" decorate="false"/>
+        <stroke x="984.7456564825487" y="469.7493415352292" width="4.412521817695445" color="0" alpha="1" angle="59.422380232154936" decorate="false"/>
+        <stroke x="987.8703127742486" y="474.9300496642355" width="3.937320643803465" color="0" alpha="1" angle="58.90443287433501" decorate="false"/>
+        <stroke x="990.37391588099" y="479.02581161761657" width="3.320382882966739" color="0" alpha="1" angle="58.563942039699896" decorate="false"/>
+        <stroke x="992.26005863509" y="482.0804199282598" width="2.7228864880165853" color="0" alpha="1" angle="58.563942039699896" decorate="false"/>
+        <stroke x="993.6137149586979" y="484.25413697773416" width="2.214778955950223" color="0" alpha="1" angle="58.563942039699896" decorate="false"/>
+        <stroke x="994.5450087848972" y="485.7380011580035" width="1.815482042081207" color="0" alpha="1" angle="58.563942039699896" decorate="false"/>
+        <stroke x="995.1605148207258" y="486.71110988279423" width="1.519050906233916" color="0" alpha="1" angle="57.68602588682411" decorate="false"/>
+        <stroke x="995.5508230360507" y="487.32300897477285" width="1.3089255768452144" color="0" alpha="1" angle="57.467675236460444" decorate="false"/>
+        <stroke x="995.78710062308" y="487.6897573545689" width="1.1660038462278" color="0" alpha="1" angle="57.20834735155424" decorate="false"/>
+        <stroke x="995.9221669531274" y="487.8966768826103" width="1.0726179395489743" color="0" alpha="1" angle="56.865582556779394" decorate="false"/>
+        <stroke x="995.9934542629766" y="488.00373929107656" width="1.014130798057959" color="0" alpha="1" angle="56.34241107526893" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (18)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_82422_Line Layer (18)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="897" y="208" width="0.9506337558372249" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="897.27" y="208" width="1.0839226150767178" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="897.76005" y="208" width="1.1925530353569058" color="0" alpha="1" angle="0" decorate="false"/>
+        <stroke x="899.4979657499999" y="209.215" width="1.9974514706580293" color="0" alpha="1" angle="34.95790890164183" decorate="false"/>
+        <stroke x="902.50780246125" y="212.432725" width="3.1257124458337646" color="0" alpha="1" angle="46.91193610813543" decorate="false"/>
+        <stroke x="906.6286756490438" y="217.467283375" width="4.1624144191608625" color="0" alpha="1" angle="50.69908063760937" decorate="false"/>
+        <stroke x="911.36819737093" y="223.85475138812498" width="4.877122339316564" color="0" alpha="1" angle="53.424466636539606" decorate="false"/>
+        <stroke x="916.2862755007033" y="230.93372055663437" width="5.2058578766283174" color="0" alpha="1" angle="55.210554105262524" decorate="false"/>
+        <stroke x="921.2957634665063" y="238.58320440731794" width="5.464597736172814" color="0" alpha="1" angle="56.78004432952656" decorate="false"/>
+        <stroke x="926.2101049831393" y="246.80673954513762" width="5.6799426897044905" color="0" alpha="1" angle="59.137681909160534" decorate="false"/>
+        <stroke x="930.9581944929004" y="255.5284205185629" width="5.852880097967472" color="0" alpha="1" angle="61.436095112317176" decorate="false"/>
+        <stroke x="935.8004785157513" y="264.9168401865983" width="6.1654978545158325" color="0" alpha="1" angle="62.716583336999776" decorate="false"/>
+        <stroke x="940.8414417264078" y="274.82285561202343" width="6.437630207406173" color="0" alpha="1" angle="63.029412600630295" decorate="false"/>
+        <stroke x="945.9662805381381" y="285.6494770458416" width="6.863871273331566" color="0" alpha="1" angle="64.66921691578032" decorate="false"/>
+        <stroke x="951.3820101307681" y="297.7237772898711" width="7.483391288618905" color="0" alpha="1" angle="65.8421619552286" decorate="false"/>
+        <stroke x="956.872517079798" y="311.15950246555184" width="8.11578957123411" color="0" alpha="1" angle="67.77262808590176" decorate="false"/>
+        <stroke x="962.1954554010887" y="325.28404596175864" width="8.402098364401805" color="0" alpha="1" angle="69.3507125217064" decorate="false"/>
+        <stroke x="967.2643911665225" y="339.7017443302143" width="8.495180706087636" color="0" alpha="1" angle="70.6294822050386" decorate="false"/>
+        <stroke x="971.8047194534872" y="353.6549731114404" width="8.194315108890049" color="0" alpha="1" angle="71.97530641570965" decorate="false"/>
+        <stroke x="975.8992300564006" y="367.94550469294774" width="8.289193034247795" color="0" alpha="1" angle="74.01197957447255" decorate="false"/>
+        <stroke x="979.3753637700975" y="382.7536007710781" width="8.459549689893105" color="0" alpha="1" angle="76.78926898105618" decorate="false"/>
+        <stroke x="982.508949832298" y="398.0905079021412" width="8.678305243048504" color="0" alpha="1" angle="78.45245077945071" decorate="false"/>
+        <stroke x="985.200355332928" y="412.53989754433053" width="8.206439326183848" color="0" alpha="1" angle="79.44875565146364" decorate="false"/>
+        <stroke x="987.7344398382662" y="425.5842367148311" width="7.5105210454585185" color="0" alpha="1" angle="79.00625646194848" decorate="false"/>
+        <stroke x="989.8556284875025" y="436.23531738505415" width="6.311929711722092" color="0" alpha="1" angle="78.73676926816948" decorate="false"/>
+        <stroke x="991.504653533846" y="444.3715358396722" width="5.0488448286420455" color="0" alpha="1" angle="78.54265747102417" decorate="false"/>
+        <stroke x="992.7185865776313" y="450.2776768058946" width="3.9272232040672392" color="0" alpha="1" angle="78.38532621736223" decorate="false"/>
+        <stroke x="993.5728472593545" y="454.3829538718989" width="3.0206670446000485" color="0" alpha="1" angle="78.2451596630425" decorate="false"/>
+        <stroke x="994.1499301861171" y="457.1236297788945" width="2.3332701700213936" color="0" alpha="1" angle="78.2451596630425" decorate="false"/>
+        <stroke x="994.5243769280345" y="458.88024391689174" width="1.8372910250470202" color="0" alpha="1" angle="78.2451596630425" decorate="false"/>
+        <stroke x="995.0270870766126" y="461.8468873502101" width="2.4360320300827265" color="0" alpha="1" angle="78.2451596630425" decorate="false"/>
+        <stroke x="995.65464988813" y="465.22754710292503" width="2.6480499373845836" color="0" alpha="1" angle="79.13330534262393" decorate="false"/>
+        <stroke x="996.2536754184154" y="468.3381251327519" width="2.514424166137422" color="0" alpha="1" angle="79.13330534262393" decorate="false"/>
+        <stroke x="996.7589907255576" y="470.90723835325247" width="2.2432081710860166" color="0" alpha="1" angle="79.13330534262393" decorate="false"/>
+        <stroke x="997.1539188658214" y="472.8858621247886" width="1.946672850741157" color="0" alpha="1" angle="79.13330534262393" decorate="false"/>
+        <stroke x="997.4458574820542" y="474.33165143513344" width="1.6787707770424025" color="0" alpha="1" angle="79.13330534262393" decorate="false"/>
+        <stroke x="997.6520390992816" y="475.34248368104556" width="1.4599184523128441" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="997.791795548631" y="476.02112289476486" width="1.2926827141919122" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="997.8827935517729" y="476.4586589501453" width="1.1712508527618906" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="997.9395655236975" y="476.7286312167969" width="1.0868238356301114" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="997.9732715653644" y="476.8867535225225" width="1.0304465626720836" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.1364193325585" y="477.81688431703753" width="1.3542959984875673" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.3134447101454" y="478.8795667693078" width="1.4824692925658434" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.4857910941898" y="479.9140323589729" width="1.4683494778491601" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.6327651692942" y="480.93114750586085" width="1.4579603939713246" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.7484802052364" y="481.8031444086692" width="1.3848795579893096" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.8345071437035" y="482.49211851976264" width="1.2933954877668934" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.8955608016137" y="483.0057208695867" width="1.2059650777019988" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.9371342394554" y="483.37106960961336" width="1.1321566326358874" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.9643291641577" y="483.62038214532754" width="1.0744400291264398" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.9813824431125" y="483.7838211967797" width="1.0317554858157618" color="0" alpha="1" angle="78.82955798103298" decorate="false"/>
+        <stroke x="998.991569788822" y="483.8865529083679" width="1.0015972881496278" color="0" alpha="1" angle="84.33680362158756" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (19)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_86519_Line Layer (19)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="889" y="272" width="0.9506337558372249" color="0" alpha="1" angle="52.01222952703937" decorate="false"/>
+        <stroke x="889.54" y="272.54" width="1.3276315807366836" color="0" alpha="1" angle="52.01222952703937" decorate="false"/>
+        <stroke x="891.4651" y="275.0051" width="2.49467919394533" color="0" alpha="1" angle="52.01222952703937" decorate="false"/>
+        <stroke x="894.5636065" y="279.6237065" width="3.696225578979444" color="0" alpha="1" angle="56.14333720855582" decorate="false"/>
+        <stroke x="898.5818475475" y="285.8028790475" width="4.589312235643518" color="0" alpha="1" angle="56.96453846831213" decorate="false"/>
+        <stroke x="902.6065065999626" y="292.1201180224625" width="4.648339729233232" color="0" alpha="1" angle="57.49913570766964" decorate="false"/>
+        <stroke x="906.3607247825757" y="298.1866596281632" width="4.472529742966903" color="0" alpha="1" angle="58.24912361695562" decorate="false"/>
+        <stroke x="909.8914251191039" y="303.8614043009265" width="4.250004515086818" color="0" alpha="1" angle="58.111041752671035" decorate="false"/>
+        <stroke x="913.2498978794625" y="309.5387498230449" width="4.206994952299594" color="0" alpha="1" angle="59.393271392845286" decorate="false"/>
+        <stroke x="916.6174744078965" y="314.85582408188714" width="4.057643760545613" color="0" alpha="1" angle="57.65181691476609" decorate="false"/>
+        <stroke x="919.9395248006257" y="319.96797124731137" width="3.960358380054535" color="0" alpha="1" angle="56.98279272597819" decorate="false"/>
+        <stroke x="923.7376116292694" y="325.9177613533652" width="4.4352565316725014" color="0" alpha="1" angle="57.44761231587931" decorate="false"/>
+        <stroke x="927.9121731322077" y="332.52126911838513" width="4.807312255625902" color="0" alpha="1" angle="57.700017451784426" decorate="false"/>
+        <stroke x="932.3675824356819" y="339.8774762816621" width="5.196258641781763" color="0" alpha="1" angle="58.798108726907635" decorate="false"/>
+        <stroke x="937.2928929934283" y="348.0643102071123" width="5.667188523736175" color="0" alpha="1" angle="58.96831247551416" decorate="false"/>
+        <stroke x="942.4397421903013" y="356.7347035956048" width="5.928204961561321" color="0" alpha="1" angle="59.306125485342505" decorate="false"/>
+        <stroke x="947.6664591332035" y="365.5321956350198" width="6.002285071271871" color="0" alpha="1" angle="59.284842187529996" decorate="false"/>
+        <stroke x="952.763509774527" y="374.54922064202884" width="6.063953610087952" color="0" alpha="1" angle="60.52184145759224" decorate="false"/>
+        <stroke x="957.6541087435614" y="383.662737108509" width="6.056500663907477" color="0" alpha="1" angle="61.78059690754774" decorate="false"/>
+        <stroke x="962.1965735992461" y="392.39935000877637" width="5.811702324056071" color="0" alpha="1" angle="62.52853082334215" decorate="false"/>
+        <stroke x="966.104145348406" y="400.59691356271185" width="5.433707533437712" color="0" alpha="1" angle="64.51404006123117" decorate="false"/>
+        <stroke x="969.4684930134931" y="408.52523383101675" width="5.202357169201757" color="0" alpha="1" angle="67.00627448629606" decorate="false"/>
+        <stroke x="972.6742029059608" y="416.61207138456666" width="5.245029341772641" color="0" alpha="1" angle="68.37608976656901" decorate="false"/>
+        <stroke x="975.5107549652665" y="424.8935186467476" width="5.272038608775142" color="0" alpha="1" angle="71.09269968557432" decorate="false"/>
+        <stroke x="978.3382514716432" y="433.08954489741814" width="5.230706563596763" color="0" alpha="1" angle="70.96639370504442" decorate="false"/>
+        <stroke x="981.3199609508408" y="441.6256681490684" width="5.414281168877413" color="0" alpha="1" angle="70.74544265853622" decorate="false"/>
+        <stroke x="984.6435354881163" y="450.6474584121868" width="5.6969573854865185" color="0" alpha="1" angle="69.77649899102857" decorate="false"/>
+        <stroke x="988.4822667389946" y="460.15485714494486" width="6.012214455804851" color="0" alpha="1" angle="68.0129902451963" decorate="false"/>
+        <stroke x="992.1695897921255" y="469.13728086011844" width="5.743999137883894" color="0" alpha="1" angle="67.68164186385638" decorate="false"/>
+        <stroke x="995.2909905440976" y="476.80583861583057" width="5.03790599245036" color="0" alpha="1" angle="67.8517683988986" decorate="false"/>
+        <stroke x="997.7363371590318" y="482.8479013927639" width="4.168398207886491" color="0" alpha="1" angle="67.96581189033087" decorate="false"/>
+        <stroke x="999.5473376192829" y="487.3423629543608" width="3.34272794867363" color="0" alpha="1" angle="68.0534994915725" decorate="false"/>
+        <stroke x="1000.8283972477927" y="490.5336516582407" width="2.648246758192843" color="0" alpha="1" angle="68.12829339753998" decorate="false"/>
+        <stroke x="1001.6980404521702" y="492.7076886011241" width="2.106554238428269" color="0" alpha="1" angle="68.1979446657997" decorate="false"/>
+        <stroke x="1002.265144433097" y="494.1304672642699" width="1.7067444741406974" color="0" alpha="1" angle="68.2683158473835" decorate="false"/>
+        <stroke x="1002.619546726046" y="495.02310458200907" width="1.4247559560058318" color="0" alpha="1" angle="68.34552077986872" decorate="false"/>
+        <stroke x="1002.8303889498568" y="495.5566722564205" width="1.2338553058130404" color="0" alpha="1" angle="68.4382713779674" decorate="false"/>
+        <stroke x="1002.948165442341" y="495.85662695528885" width="1.109715758454123" color="0" alpha="1" angle="68.5626651466806" decorate="false"/>
+        <stroke x="1003.0081625292428" y="496.0109619308156" width="1.032377660484399" color="0" alpha="1" angle="68.75661191350042" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (21)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_96094_Line Layer (21)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="862" y="188" width="0.9506337558372249" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="861.73" y="188" width="1.0839226150767178" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="861.23995" y="188" width="1.1925530353569058" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="860.71703425" y="188" width="1.2087776217478339" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="860.11492253875" y="188" width="1.2478736933455634" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="859.5584577259563" y="188" width="1.225339534000915" color="0" alpha="1" angle="180" decorate="false"/>
+        <stroke x="858.827656767195" y="188.135" width="1.3175066779824576" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="858.1170626721811" y="188.312525" width="1.3122087539271303" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="857.3764918686804" y="188.48522037499998" width="1.3260343625567308" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="856.5874086048333" y="188.63242854312497" width="1.3468951684778987" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="855.6130209744496" y="188.88329436545936" width="1.4473388678508075" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="854.6867887092262" y="189.14693924617282" width="1.4260424344712703" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="853.9072677141302" y="189.38074264426055" width="1.3523903758200264" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="853.1640021249294" y="189.70455391642486" width="1.3508650739717032" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="852.4023923229236" y="190.16015421018145" width="1.3887494018228528" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="851.6003449484263" y="190.7485535239974" width="1.4416960779179537" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="850.753377061865" y="191.45227848947493" width="1.4942418331358915" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="850.0005356095606" y="192.11289712786072" width="1.4450822813743578" color="0" alpha="1" angle="169.53380578796438" decorate="false"/>
+        <stroke x="849.391684648733" y="193.06993440287312" width="1.510591439835388" color="0" alpha="1" angle="152.39080955660515" decorate="false"/>
+        <stroke x="848.9298242887816" y="194.30116003224083" width="1.5998010946334604" color="0" alpha="1" angle="152.39080955660515" decorate="false"/>
+        <stroke x="848.4614608478179" y="196.0295549611038" width="1.8346498186156333" color="0" alpha="1" angle="152.39080955660515" decorate="false"/>
+        <stroke x="848.0534000849289" y="198.28834275934312" width="2.083762301605973" color="0" alpha="1" angle="152.39080955660515" decorate="false"/>
+        <stroke x="847.7275637301634" y="201.0208709960395" width="2.309136817030524" color="0" alpha="1" angle="152.39080955660515" decorate="false"/>
+        <stroke x="847.4827162669469" y="204.27269111808752" width="2.5604793449616157" color="0" alpha="1" angle="99.67041105018936" decorate="false"/>
+        <stroke x="847.3073682124616" y="207.99419687206733" width="2.7898395525250548" color="0" alpha="1" angle="99.67041105018936" decorate="false"/>
+        <stroke x="847.3219668792609" y="212.09965788362916" width="2.977358476176822" color="0" alpha="1" angle="89.79626198706578" decorate="false"/>
+        <stroke x="847.6900707506204" y="216.22866152454205" width="2.9970519407969807" color="0" alpha="1" angle="84.90550518777772" decorate="false"/>
+        <stroke x="848.3025579413984" y="220.21584385713967" width="2.9420440297920116" color="0" alpha="1" angle="81.26682977705147" decorate="false"/>
+        <stroke x="849.6173318551597" y="224.00593698609475" width="2.931040882511884" color="0" alpha="1" angle="70.86846654534368" decorate="false"/>
+        <stroke x="851.7456403159057" y="227.73567740100174" width="3.0705481449435332" color="0" alpha="1" angle="60.28954512645661" decorate="false"/>
+        <stroke x="853.9527176805941" y="230.93474413857464" width="2.869274189365905" color="0" alpha="1" angle="60.28954512645661" decorate="false"/>
+        <stroke x="856.3022856078237" y="233.1931337117749" width="2.5594578334229996" color="0" alpha="1" angle="60.28954512645661" decorate="false"/>
+        <stroke x="858.8037826180208" y="234.4533359686254" width="2.333381904126113" color="0" alpha="1" angle="60.28954512645661" decorate="false"/>
+        <stroke x="861.4409456191767" y="234.6892266284437" width="2.257699869194786" color="0" alpha="1" angle="35.64838844159469" decorate="false"/>
+        <stroke x="864.053141311108" y="233.89233183052204" width="2.298848176447707" color="0" alpha="1" angle="35.64838844159469" decorate="false"/>
+        <stroke x="866.3014552954775" y="232.3332643743368" width="2.301286176369986" color="0" alpha="1" angle="35.64838844159469" decorate="false"/>
+        <stroke x="868.4875001235542" y="230.101693328518" width="2.4927819154634707" color="0" alpha="1" angle="35.64838844159469" decorate="false"/>
+        <stroke x="870.4854077795089" y="227.32875775854959" width="2.6378335159564337" color="0" alpha="1" angle="-39.139022397246926" decorate="false"/>
+        <stroke x="872.1289361744549" y="224.55155445465962" width="2.543721829389129" color="0" alpha="1" angle="-39.139022397246926" decorate="false"/>
+        <stroke x="873.3911175686292" y="221.8773531165301" width="2.4104441521540183" color="0" alpha="1" angle="-39.139022397246926" decorate="false"/>
+        <stroke x="874.3112983242427" y="219.34051984364024" width="2.282814182110421" color="0" alpha="1" angle="-39.139022397246926" decorate="false"/>
+        <stroke x="874.953354390496" y="216.80297469194838" width="2.242801339423382" color="0" alpha="1" angle="-66.99992261285084" decorate="false"/>
+        <stroke x="874.978576777593" y="214.06767779027402" width="2.301004509089302" color="0" alpha="1" angle="-66.99992261285084" decorate="false"/>
+        <stroke x="874.5878189868116" y="211.20765768283357" width="2.375635236904137" color="0" alpha="1" angle="-66.99992261285084" decorate="false"/>
+        <stroke x="873.7926224177404" y="208.13761484730284" width="2.516213235682855" color="0" alpha="1" angle="-66.99992261285084" decorate="false"/>
+        <stroke x="872.9227799352634" y="205.11751756692811" width="2.50214919577217" color="0" alpha="1" angle="-99.8578162139248" decorate="false"/>
+        <stroke x="871.8667755268882" y="202.3926089192242" width="2.3933002641027814" color="0" alpha="1" angle="-99.8578162139248" decorate="false"/>
+        <stroke x="870.5995588469895" y="200.03339782366217" width="2.272664641666777" color="0" alpha="1" angle="-99.8578162139248" decorate="false"/>
+        <stroke x="869.2733708966914" y="198.02224412446486" width="2.1398904184973455" color="0" alpha="1" angle="-99.8578162139248" decorate="false"/>
+        <stroke x="867.964681248004" y="196.43922200302333" width="1.9645817570662452" color="0" alpha="1" angle="-99.8578162139248" decorate="false"/>
+        <stroke x="866.5705389376142" y="195.1275670779665" width="1.8955907684115663" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="865.0561521413608" y="194.11510080616543" width="1.8499202565345545" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="863.6920975439631" y="193.3739523750226" width="1.7169953591052052" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="862.579839806699" y="192.8549520103803" width="1.5565485798308094" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="861.7310454510259" y="192.5059833248899" width="1.403683300802208" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="860.9803968550845" y="192.28063966755911" width="1.337538235184893" color="0" alpha="1" angle="-122.45077568544443" decorate="false"/>
+        <stroke x="860.3752514114744" y="192.14134866663977" width="1.2571830240786694" color="0" alpha="1" angle="-167.03756463314883" decorate="false"/>
+        <stroke x="859.9172770213008" y="192.0595856462297" width="1.1802933198306613" color="0" alpha="1" angle="-169.87752532782756" decorate="false"/>
+        <stroke x="859.5873561478471" y="192.01474822480415" width="1.115000500302692" color="0" alpha="1" angle="-172.26071474787122" decorate="false"/>
+        <stroke x="859.3595986748336" y="191.9925803748141" width="1.0636003781393268" color="0" alpha="1" angle="-174.44085802705715" decorate="false"/>
+        <stroke x="859.208561990875" y="191.9836064917187" width="1.0253263849123333" color="0" alpha="1" angle="-176.59975404038744" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (22)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_99238_Line Layer (22)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="384" y="242" width="0.9506337558372249" color="0" alpha="1" angle="5.13258986271845" decorate="false"/>
+        <stroke x="386.16" y="242.135" width="2.0190252383148444" color="0" alpha="1" angle="5.13258986271845" decorate="false"/>
+        <stroke x="392.6454" y="242.717525" width="4.16512115252875" color="0" alpha="1" angle="5.13258986271845" decorate="false"/>
+        <stroke x="404.791701" y="244.097795375" width="6.98539763443358" color="0" alpha="1" angle="6.483115129620675" decorate="false"/>
+        <stroke x="421.49065681499997" y="246.32571466812502" width="9.2673259473493" color="0" alpha="1" angle="7.599335480853135" decorate="false"/>
+        <stroke x="440.54894826172495" y="249.03930686983438" width="10.45388650239811" color="0" alpha="1" angle="8.103523176671297" decorate="false"/>
+        <stroke x="459.9860713974183" y="252.01011693317596" width="10.657441761736699" color="0" alpha="1" angle="8.689953993851223" decorate="false"/>
+        <stroke x="477.91465716982884" y="254.96561567570092" width="9.920755547279919" color="0" alpha="1" angle="9.360929258562624" decorate="false"/>
+        <stroke x="492.8790420494867" y="257.51523199361753" width="8.444445200261992" color="0" alpha="1" angle="9.66914687220032" decorate="false"/>
+        <stroke x="504.48934456865203" y="259.53800301754166" width="6.768539926131087" color="0" alpha="1" angle="9.88299256535264" decorate="false"/>
+        <stroke x="513.0229191855084" y="261.0506195709394" width="5.229007220473157" color="0" alpha="1" angle="10.051545651720923" decorate="false"/>
+        <stroke x="519.0199336730501" y="262.1294633778915" width="3.9586582737725338" color="0" alpha="1" angle="10.198247103645793" decorate="false"/>
+        <stroke x="523.0658991465821" y="262.8674655350046" width="2.9809302329769114" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="525.8226872248829" y="263.4874586584799" width="2.345548768004118" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="527.6271790847591" y="263.97064864514897" width="1.8728268344648389" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="528.7595312452609" y="264.32704657205494" width="1.5366676112041708" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="529.4365529993764" y="264.5782743519352" width="1.3071229380890246" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="529.8172781338126" y="264.7482598153701" width="1.1564659457745086" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="528.9332718962442" y="265.5337381988408" width="1.534418203691697" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="525.9794773833454" y="267.70514881455915" width="2.7604251845396046" color="0" alpha="1" angle="10.337359588787862" decorate="false"/>
+        <stroke x="519.9280404057894" y="271.9620885016669" width="4.6031161913790175" color="0" alpha="1" angle="144.87517310708813" decorate="false"/>
+        <stroke x="511.4096083111076" y="277.9328294131404" width="6.085991144153693" color="0" alpha="1" angle="144.97261112029784" decorate="false"/>
+        <stroke x="501.98601674650126" y="284.27373085252947" width="6.557802694924839" color="0" alpha="1" angle="146.06436644714952" decorate="false"/>
+        <stroke x="492.48228828165077" y="290.6001828351631" width="6.586712136995581" color="0" alpha="1" angle="146.34904587194194" decorate="false"/>
+        <stroke x="483.95550155444516" y="296.3360615446012" width="6.023754497220055" color="0" alpha="1" angle="146.07169804380038" decorate="false"/>
+        <stroke x="475.6694548173526" y="301.57183865532716" width="5.7893298958887245" color="0" alpha="1" angle="147.71207677404038" decorate="false"/>
+        <stroke x="468.0703573853183" y="306.2807401366847" width="5.36387755252809" color="0" alpha="1" angle="148.2149169196077" decorate="false"/>
+        <stroke x="461.6712652938849" y="310.25184588484314" width="4.668474413576772" color="0" alpha="1" angle="148.1773659230811" decorate="false"/>
+        <stroke x="456.2710530380654" y="313.4898442770606" width="4.059019059487609" color="0" alpha="1" angle="149.05285524850325" decorate="false"/>
+        <stroke x="452.0493653628078" y="315.9608145761553" width="3.3654627511959228" color="0" alpha="1" angle="149.6593945838018" decorate="false"/>
+        <stroke x="448.7929415849628" y="317.88804124296695" width="2.818642157655444" color="0" alpha="1" angle="149.6593945838018" decorate="false"/>
+        <stroke x="446.1405037709626" y="319.44540767523165" width="2.4690624349369275" color="0" alpha="1" angle="149.6593945838018" decorate="false"/>
+        <stroke x="444.11793874558253" y="320.6260925335945" width="2.1067724357169455" color="0" alpha="1" angle="149.6593945838018" decorate="false"/>
+        <stroke x="442.6518627535079" y="321.4778782278225" width="1.7876671675207425" color="0" alpha="1" angle="149.58375763745727" decorate="false"/>
+        <stroke x="441.6341270853507" y="322.0666682294691" width="1.5310723804421351" color="0" alpha="1" angle="149.58375763745727" decorate="false"/>
+        <stroke x="440.95553887815765" y="322.45762351923173" width="1.3372467800942687" color="0" alpha="1" angle="149.58375763745727" decorate="false"/>
+        <stroke x="443.0861764363695" y="323.65177422452865" width="2.1563846705428826" color="0" alpha="1" angle="149.58375763745727" decorate="false"/>
+        <stroke x="451.4583295186549" y="325.8561525216009" width="5.224514196229244" color="0" alpha="1" angle="14.751115768206907" decorate="false"/>
+        <stroke x="466.77392392066497" y="328.8925421648673" width="8.658522583018524" color="0" alpha="1" angle="11.213751897604926" decorate="false"/>
+        <stroke x="486.92646167227974" y="332.7034243120801" width="11.07550000590738" color="0" alpha="1" angle="10.708291635992198" decorate="false"/>
+        <stroke x="508.83003133474864" y="337.02335899619504" width="11.971897353588348" color="0" alpha="1" angle="11.156978593067912" decorate="false"/>
+        <stroke x="530.3195834526686" y="341.52917613956043" width="11.789905672390388" color="0" alpha="1" angle="11.841931338382983" decorate="false"/>
+        <stroke x="549.9367381396223" y="345.6453550752342" width="10.845773071162599" color="0" alpha="1" angle="11.850201971686285" decorate="false"/>
+        <stroke x="566.3329980999025" y="349.0305126611308" width="9.21556085087149" color="0" alpha="1" angle="11.665333524714066" decorate="false"/>
+        <stroke x="579.2013603385417" y="351.6297143655316" width="7.4315510896730395" color="0" alpha="1" angle="11.419186638642794" decorate="false"/>
+        <stroke x="588.7449397002263" y="353.5243436931652" width="5.75388375381388" color="0" alpha="1" angle="11.228592227910456" decorate="false"/>
+        <stroke x="595.5039835534537" y="354.846140492023" width="4.350524680182506" color="0" alpha="1" angle="11.065101186388308" decorate="false"/>
+        <stroke x="600.0975155076899" y="355.7317200850859" width="3.2600448576156853" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="603.096440293558" y="356.3014486904776" width="2.4575694342598666" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="604.9729370075682" y="356.6521309896894" width="1.8930272101037087" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="606.0910140328511" y="356.8569003407266" width="1.5117667876816432" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="606.5818617997936" y="357.37336500269527" width="1.302372065687305" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="605.3741919519456" y="358.6353698252173" width="1.8129367987623302" color="0" alpha="1" angle="10.912083953796005" decorate="false"/>
+        <stroke x="599.6502246069014" y="361.8174970689479" width="4.183641710736408" color="0" alpha="1" angle="150.92898846019324" decorate="false"/>
+        <stroke x="589.6966589796998" y="366.78409222431867" width="6.44207174211942" color="0" alpha="1" angle="153.4818826582089" decorate="false"/>
+        <stroke x="575.6735054851996" y="373.5032075939525" width="8.62697115265695" color="0" alpha="1" angle="154.39885034310868" decorate="false"/>
+        <stroke x="558.3371631721726" y="382.1288764851041" width="10.509740331668334" color="0" alpha="1" angle="153.54743334478198" decorate="false"/>
+        <stroke x="538.8802921030672" y="392.0680291606333" width="11.736413493355744" color="0" alpha="1" angle="152.94069342946898" decorate="false"/>
+        <stroke x="518.3958606880557" y="402.7414639279359" width="12.353425540541814" color="0" alpha="1" angle="152.47818520879215" decorate="false"/>
+        <stroke x="497.37942535841296" y="413.51941194295074" width="12.610421427469108" color="0" alpha="1" angle="152.84969475713018" decorate="false"/>
+        <stroke x="477.880807036688" y="423.29436793740905" width="11.718201315889607" color="0" alpha="1" angle="153.37469092998484" decorate="false"/>
+        <stroke x="461.5625198419589" y="431.4333584633651" width="9.952763821524869" color="0" alpha="1" angle="153.4915849755907" decorate="false"/>
+        <stroke x="448.8783504256663" y="437.73740080749104" width="7.9430464621771" color="0" alpha="1" angle="153.57258689289446" decorate="false"/>
+        <stroke x="439.54189688086973" y="442.36467075333644" width="6.094705171458388" color="0" alpha="1" angle="153.63637593075595" decorate="false"/>
+        <stroke x="432.97233670679384" y="445.6127116772664" width="4.5685055956896825" color="0" alpha="1" angle="153.69185541545744" decorate="false"/>
+        <stroke x="428.53476917304255" y="447.80161401660393" width="3.3933052018151875" color="0" alpha="1" angle="153.74443133281986" decorate="false"/>
+        <stroke x="425.6556699444937" y="449.2184021770643" width="2.534705769253896" color="0" alpha="1" angle="153.74443133281986" decorate="false"/>
+        <stroke x="423.86655984914006" y="450.0964725553678" width="1.9344873377605714" color="0" alpha="1" angle="153.74443133281986" decorate="false"/>
+        <stroke x="422.80947472659705" y="450.6135804306297" width="1.5315696912602772" color="0" alpha="1" angle="153.74443133281986" decorate="false"/>
+        <stroke x="422.22450733336206" y="450.89844561636255" width="1.27183127912468" color="0" alpha="1" angle="154.0350210913738" decorate="false"/>
+        <stroke x="421.9309635164024" y="451.0403447917334" width="1.111588417378805" color="0" alpha="1" angle="154.2008623023933" decorate="false"/>
+        <stroke x="421.80818872405627" y="451.0987528737663" width="1.0177521596455228" color="0" alpha="1" angle="154.5580016889093" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (23)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_100622_Line Layer (23)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="551" y="286" width="0.9506337558372249" color="0" alpha="1" angle="40.82474806789335" decorate="false"/>
+        <stroke x="551.27" y="286" width="1.0839226150767178" color="0" alpha="1" angle="40.82474806789335" decorate="false"/>
+        <stroke x="551.89505" y="286.54" width="1.3584023698664838" color="0" alpha="1" angle="40.82474806789335" decorate="false"/>
+        <stroke x="552.59549075" y="290.2201" width="2.7999747854658192" color="0" alpha="1" angle="79.22367525539615" decorate="false"/>
+        <stroke x="553.23529783625" y="298.8664315" width="5.230672933084352" color="0" alpha="1" angle="85.76796752731698" decorate="false"/>
+        <stroke x="553.7614458171687" y="314.52031242249996" width="8.682730697673865" color="0" alpha="1" angle="88.07493654019031" decorate="false"/>
+        <stroke x="554.1654172232644" y="334.45431666058744" width="10.793323475057218" color="0" alpha="1" angle="88.83903461938044" decorate="false"/>
+        <stroke x="554.4598730308668" y="355.78328581854754" width="11.480948091583846" color="0" alpha="1" angle="89.20905679004247" decorate="false"/>
+        <stroke x="554.6652952851208" y="375.80557835412566" width="10.835407775330227" color="0" alpha="1" angle="89.41218443271998" decorate="false"/>
+        <stroke x="554.8029204360438" y="393.34685691732886" width="9.61037067937761" color="0" alpha="1" angle="89.55047869044348" decorate="false"/>
+        <stroke x="554.8914574950933" y="408.3486065869309" width="8.356563101136922" color="0" alpha="1" angle="89.66185671471438" decorate="false"/>
+        <stroke x="554.9459524098279" y="420.1823320490161" width="6.792561503434901" color="0" alpha="1" angle="89.73615185190106" decorate="false"/>
+        <stroke x="554.9777715461317" y="428.9928936803373" width="5.300105487153024" color="0" alpha="1" angle="89.79307853821197" decorate="false"/>
+        <stroke x="554.9950909987407" y="435.2536057675863" width="4.041323997319699" color="0" alpha="1" angle="89.84149901915677" decorate="false"/>
+        <stroke x="555.0035474675847" y="439.92668942822417" width="3.2575634229159234" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0068739704406" y="443.25447400270093" width="2.593436834852917" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0074429107162" y="445.52762307085084" width="2.0728021101523657" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0066941408936" y="447.01931103695347" width="1.687024172102562" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0054534854528" y="447.9579636317109" width="1.4140116923652264" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0041589699683" y="448.5210322090708" width="1.228600299143614" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.0030149770546" y="448.83907372065823" width="1.1076399206772982" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+        <stroke x="555.002093158341" y="449.0039174485837" width="1.0320121854274618" color="0" alpha="1" angle="89.89631697597376" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (24)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_113542_Line Layer (24)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="590" y="421" width="0.9506337558372249" color="0" alpha="1" angle="-86.85590456411525" decorate="false"/>
+        <stroke x="590" y="420.055" width="1.4171447631754504" color="0" alpha="1" angle="-86.85590456411525" decorate="false"/>
+        <stroke x="590.135" y="417.597325" width="2.165724606505622" color="0" alpha="1" angle="-86.85590456411525" decorate="false"/>
+        <stroke x="590.582525" y="413.44073237500004" width="3.014446310963727" color="0" alpha="1" angle="-83.85484669037699" decorate="false"/>
+        <stroke x="591.515270375" y="406.785766823125" width="4.268051990958979" color="0" alpha="1" angle="-82.02152195333207" decorate="false"/>
+        <stroke x="592.540444293125" y="397.87995380365936" width="5.376132028139945" color="0" alpha="1" angle="-83.43341970789969" decorate="false"/>
+        <stroke x="593.4688125767094" y="387.27354418140584" width="6.206638848434607" color="0" alpha="1" angle="-84.99770722705314" decorate="false"/>
+        <stroke x="594.2282886064667" y="375.57873138690195" width="6.736084832335422" color="0" alpha="1" angle="-86.28435669530862" decorate="false"/>
+        <stroke x="594.8092338579844" y="363.3529368921434" width="6.9928593381725666" color="0" alpha="1" angle="-87.27946577706093" decorate="false"/>
+        <stroke x="595.2314126503395" y="350.2436828890627" width="7.425535171031194" color="0" alpha="1" angle="-88.15544761551841" decorate="false"/>
+        <stroke x="595.5251523991035" y="337.4266213976529" width="7.279597048523036" color="0" alpha="1" angle="-88.687132594538" decorate="false"/>
+        <stroke x="595.7214397121683" y="324.85134983783536" width="7.159329225250385" color="0" alpha="1" angle="-89.10574325748973" decorate="false"/>
+        <stroke x="595.8473746419047" y="311.9225454078097" width="7.33340169575431" color="0" alpha="1" angle="-89.44191964421661" decorate="false"/>
+        <stroke x="595.924649783629" y="298.55503978424383" width="7.549779482399402" color="0" alpha="1" angle="-89.66878711046874" decorate="false"/>
+        <stroke x="595.969595876615" y="284.7697318827663" width="7.755958684557585" color="0" alpha="1" angle="-89.81319152775374" decorate="false"/>
+        <stroke x="595.5889261751157" y="271.1724295229279" width="7.665741257352898" color="0" alpha="1" angle="-91.60363218708326" decorate="false"/>
+        <stroke x="594.9331197758004" y="258.9553654754054" width="6.9904224675101325" color="0" alpha="1" angle="-93.07266216642905" decorate="false"/>
+        <stroke x="594.2420357263754" y="248.87371231484053" width="5.9392466777909325" color="0" alpha="1" angle="-93.92141577826067" decorate="false"/>
+        <stroke x="593.6283730810735" y="241.11401723008288" width="4.793263947849374" color="0" alpha="1" angle="-94.52173101541953" decorate="false"/>
+        <stroke x="593.1323945247427" y="235.44676211588074" width="3.7590383526119457" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="592.7563309135536" y="231.4861844288459" width="2.914616250201441" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="592.4849976151887" y="228.828289571786" width="2.2695559453998415" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="592.432422952874" y="227.25041779391793" width="1.7300020660281854" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="592.6203872561945" y="226.5065690916984" width="1.329386261666508" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="595.5912189131024" y="227.04845034832033" width="2.441418809543646" color="0" alpha="1" angle="-95.00158504221444" decorate="false"/>
+        <stroke x="602.2482786054421" y="229.44575611677695" width="4.443570913184281" color="0" alpha="1" angle="19.80469941974675" decorate="false"/>
+        <stroke x="613.1754378552603" y="233.43436663681754" width="6.693093504210016" color="0" alpha="1" angle="20.052995481558067" decorate="false"/>
+        <stroke x="627.1139754072183" y="238.54560187486544" width="8.279610187376178" color="0" alpha="1" angle="20.137890974486094" decorate="false"/>
+        <stroke x="641.0659306256249" y="243.60700147888016" width="8.277403017945698" color="0" alpha="1" angle="19.93942973345747" decorate="false"/>
+        <stroke x="653.5454098394486" y="248.09768610103797" width="7.498013225150206" color="0" alpha="1" angle="19.791040142058247" decorate="false"/>
+        <stroke x="664.6225451573437" y="251.99530655736885" width="6.747634520420919" color="0" alpha="1" angle="19.385021421965146" decorate="false"/>
+        <stroke x="674.248212454155" y="255.50486937747294" width="6.008457887116934" color="0" alpha="1" angle="20.032089493745058" decorate="false"/>
+        <stroke x="682.7312540564092" y="258.5010152805609" width="5.391919295782248" color="0" alpha="1" angle="19.45283393131361" decorate="false"/>
+        <stroke x="690.0949034798083" y="260.9966438740748" width="4.7888868561560765" color="0" alpha="1" angle="18.722132518926806" decorate="false"/>
+        <stroke x="695.9607337505638" y="262.93012981815593" width="3.9996271453580845" color="0" alpha="1" angle="18.243173937179073" decorate="false"/>
+        <stroke x="700.4956583160777" y="264.3496309675414" width="3.2964667911929153" color="0" alpha="1" angle="17.380922794779785" decorate="false"/>
+        <stroke x="703.8194604978884" y="265.34620630414673" width="2.6636369756073073" color="0" alpha="1" angle="17.380922794779785" decorate="false"/>
+        <stroke x="706.1495443124883" y="266.01792735455933" width="2.1477524282788014" color="0" alpha="1" angle="17.380922794779785" decorate="false"/>
+        <stroke x="707.7178935468723" y="266.4527816343795" width="1.7540786788394311" color="0" alpha="1" angle="17.380922794779785" decorate="false"/>
+        <stroke x="707.9217350735174" y="267.39734053965736" width="1.4276616132435478" color="0" alpha="1" angle="17.380922794779785" decorate="false"/>
+        <stroke x="703.5690295255829" y="271.00875107417863" width="3.742701052664962" color="0" alpha="1" angle="140.31773393177775" decorate="false"/>
+        <stroke x="694.3784930430586" y="277.6277044196991" width="6.541815956746907" color="0" alpha="1" angle="144.23885817476696" decorate="false"/>
+        <stroke x="681.5516550651098" y="286.05649332852397" width="8.527544241315198" color="0" alpha="1" angle="146.69023036468005" decorate="false"/>
+        <stroke x="667.200104541243" y="294.9718217381444" width="9.29119304225473" color="0" alpha="1" angle="148.15103145359987" decorate="false"/>
+        <stroke x="653.4248926924352" y="303.0375235878241" width="8.830884412545892" color="0" alpha="1" angle="149.65005028360304" decorate="false"/>
+        <stroke x="641.6336868469929" y="309.7670237358237" width="7.652793811406103" color="0" alpha="1" angle="150.28564796110496" decorate="false"/>
+        <stroke x="632.3270964921998" y="314.9867505980873" width="6.218226507338178" color="0" alpha="1" angle="150.71352382111385" decorate="false"/>
+        <stroke x="625.3949728060959" y="318.82241635536417" width="4.861695147914127" color="0" alpha="1" angle="151.04347434671513" decorate="false"/>
+        <stroke x="620.4671958185262" y="321.51743973816457" width="3.7233356551726255" color="0" alpha="1" angle="151.3255526636926" decorate="false"/>
+        <stroke x="617.1066247386188" y="323.33534589577255" width="2.8368003580455183" color="0" alpha="1" angle="151.3255526636926" decorate="false"/>
+        <stroke x="614.904973412947" y="324.51313197076684" width="2.1832534750053485" color="0" alpha="1" angle="151.3255526636926" decorate="false"/>
+        <stroke x="613.9270589056468" y="325.5138628884607" width="1.6413695100497587" color="0" alpha="1" angle="151.3255526636926" decorate="false"/>
+        <stroke x="616.0618444250995" y="327.5148203114808" width="2.3950617005586894" color="0" alpha="1" angle="151.3255526636926" decorate="false"/>
+        <stroke x="624.9791489114647" y="333.6107504097899" width="6.283072143647486" color="0" alpha="1" angle="34.35677757323419" decorate="false"/>
+        <stroke x="640.4697508272812" y="344.23646764870733" width="10.223930161595915" color="0" alpha="1" angle="34.448020597642795" decorate="false"/>
+        <stroke x="663.1721053277157" y="361.2711172736447" width="14.962093940149087" color="0" alpha="1" angle="36.88262951408119" decorate="false"/>
+        <stroke x="690.2399306336696" y="384.4251087729245" width="18.53482124851926" color="0" alpha="1" angle="40.54389200172268" decorate="false"/>
+        <stroke x="717.2380613858035" y="409.09701526325557" width="19.005469724004282" color="0" alpha="1" angle="42.422241207292295" decorate="false"/>
+        <stroke x="740.6950819371802" y="431.25627612336507" width="16.880445752461668" color="0" alpha="1" angle="43.37040416397691" decorate="false"/>
+        <stroke x="759.3919051237805" y="449.2933462337601" width="13.775477542450863" color="0" alpha="1" angle="43.97105915985632" decorate="false"/>
+        <stroke x="773.4225683660402" y="463.0404260418802" width="10.647573034620923" color="0" alpha="1" angle="44.41508676785105" decorate="false"/>
+        <stroke x="783.4593200956416" y="473.00115443988045" width="7.931245783762071" color="0" alpha="1" angle="44.782182803358" decorate="false"/>
+        <stroke x="790.3438501610507" y="479.9133263695967" width="5.766686609690946" color="0" alpha="1" angle="45.114792654370184" decorate="false"/>
+        <stroke x="794.880468918743" y="484.52050467807345" width="4.142572865430976" color="0" alpha="1" angle="45.442123134769616" decorate="false"/>
+        <stroke x="797.7480840556742" y="487.4684667853481" width="2.980883021196841" color="0" alpha="1" angle="45.79153783610846" decorate="false"/>
+        <stroke x="799.4775195197773" y="489.2718067175997" width="2.1840967543349845" color="0" alpha="1" angle="45.79153783610846" decorate="false"/>
+        <stroke x="800.4613003434537" y="490.31661578023693" width="1.6590781783354087" color="0" alpha="1" angle="46.72317048112154" decorate="false"/>
+        <stroke x="800.9767261677418" y="490.8790367280917" width="1.327237409013793" color="0" alpha="1" angle="47.49656814789841" decorate="false"/>
+        <stroke x="801.2118097560264" y="491.148456196334" width="1.1271490720258377" color="0" alpha="1" angle="48.893478705126896" decorate="false"/>
+        <stroke x="801.2890030536909" y="491.24965337053794" width="1.0134660930289217" color="0" alpha="1" angle="52.66357846603074" decorate="false"/>
+      </line>
+    </layer>
+    <layer enabled="true" type="line" label="Line Layer (25)" blendMode="normal" alpha="1" color="-1" colorPercent="0" comp="Layer_113552_Line Layer (25)">
+      <line lines="2" type="solid" smooth="true" weight="3">
+        <stroke x="705" y="445" width="0.9506337558372249" color="0" alpha="1" angle="-109.91337281273343" decorate="false"/>
+        <stroke x="704.865" y="444.73" width="1.0996552307886784" color="0" alpha="1" angle="-109.91337281273343" decorate="false"/>
+        <stroke x="704.6874750000001" y="444.23995" width="1.2079375763591569" color="0" alpha="1" angle="-109.91337281273343" decorate="false"/>
+        <stroke x="704.5147796250001" y="441.15203425000004" width="2.477403867413563" color="0" alpha="1" angle="-93.20100035595458" decorate="false"/>
+        <stroke x="704.3675714568751" y="434.88194753875" width="4.046793034586357" color="0" alpha="1" angle="-91.34493475698414" decorate="false"/>
+        <stroke x="704.2517056345407" y="426.00134560095626" width="5.335026512753458" color="0" alpha="1" angle="-90.74749955079866" decorate="false"/>
+        <stroke x="704.1655857538273" y="414.44489307282" width="6.6557787351588615" color="0" alpha="1" angle="-90.42696617735903" decorate="false"/>
+        <stroke x="703.8344777307395" y="400.67942887032797" width="7.748091982046551" color="0" alpha="1" angle="-91.37790012453154" decorate="false"/>
+        <stroke x="703.0328246267002" y="385.8882470817123" width="8.263201138329796" color="0" alpha="1" angle="-93.10228390919184" decorate="false"/>
+        <stroke x="701.8576494052779" y="371.0123019208041" width="8.317208573047402" color="0" alpha="1" angle="-94.51689176161844" decorate="false"/>
+        <stroke x="700.2680378859254" y="356.75646583908684" width="8.031820589088383" color="0" alpha="1" angle="-96.3625413595374" decorate="false"/>
+        <stroke x="698.4365275876169" y="343.75921671403734" width="7.430278449115265" color="0" alpha="1" angle="-98.02103446852506" decorate="false"/>
+        <stroke x="696.6084167290497" y="331.46296035137004" width="7.087553080971057" color="0" alpha="1" angle="-98.45634503680304" decorate="false"/>
+        <stroke x="694.8936305842728" y="319.3871453407348" width="6.971814130954646" color="0" alpha="1" angle="-98.08206307444293" decorate="false"/>
+        <stroke x="693.3263366902464" y="308.5007639649497" width="6.380240879007204" color="0" alpha="1" angle="-98.19248433027117" decorate="false"/>
+        <stroke x="692.0369989847512" y="299.48428921057825" width="5.447007336654441" color="0" alpha="1" angle="-98.13801036455318" decorate="false"/>
+        <stroke x="691.046802154337" y="292.52649652768304" width="4.420043691170788" color="0" alpha="1" angle="-98.0996472143621" decorate="false"/>
+        <stroke x="690.3248952898151" y="287.434412789143" width="3.4895405244429227" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.8211763366552" y="283.86932938026564" width="2.7280621031551835" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.4836440022848" y="281.47268237993495" width="2.14544423218112" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.2664625115096" y="279.92537910849495" width="1.7219669395688337" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.132758401607" y="278.9691664567001" width="1.427272301655106" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.0546691679339" y="278.4080332917379" width="1.230313617804243" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="689.0121486751099" y="278.1004388731203" width="1.1039255376260517" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="688.9913743821993" y="277.94846213687117" width="1.0263566498383887" color="0" alpha="1" angle="-98.06907390872057" decorate="false"/>
+        <stroke x="688.9965767506031" y="277.3006838961958" width="1.277920644423516" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9978081742377" y="276.1517528719028" width="1.5178181763289933" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9986582113511" y="274.39924727326405" width="1.8157800503967345" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9992218695197" y="272.34172137198595" width="1.9663570540886601" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9995805633105" y="270.4247023311927" width="1.8969940727282462" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9997985994694" y="268.69470894812474" width="1.8046665201052705" color="0" alpha="1" angle="-97.46769559955429" decorate="false"/>
+        <stroke x="688.9999239048125" y="267.0124262177473" width="1.781113558327322" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="688.9999905650672" y="265.57872144968155" width="1.6583999529789242" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000218358978" y="264.18042690834494" width="1.6409192534008175" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000329599253" y="262.9868367321169" width="1.539864396562443" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000335161478" y="262.0464981939785" width="1.414843574531377" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.000029241768" y="261.34706859562914" width="1.2959158791115424" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000233706584" y="260.850471015962" width="1.1957853295392764" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000175736202" y="260.51218851795693" width="1.1176311197868727" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000125925143" y="260.29081594393045" width="1.0599170812682197" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="689.0000086510272" y="260.1519381331879" width="1.019192515003908" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="690.2150006552334" y="260.5246063784061" width="1.6063859035108514" color="0" alpha="1" angle="-89.9813595451434" decorate="false"/>
+        <stroke x="694.3777253010188" y="261.91039165533607" width="3.1164945149502437" color="0" alpha="1" angle="18.412777039070058" decorate="false"/>
+        <stroke x="702.5449584759847" y="264.9760921564842" width="5.257176301604113" color="0" alpha="1" angle="20.574420836707194" decorate="false"/>
+        <stroke x="716.9466440104615" y="271.6238849408755" width="8.781086415045017" color="0" alpha="1" angle="24.77796437605772" decorate="false"/>
+        <stroke x="735.1796055595637" y="280.8761672268334" width="11.044136901845533" color="0" alpha="1" angle="26.9054303260245" decorate="false"/>
+        <stroke x="754.9701915061186" y="291.67141167989195" width="12.079460481945715" color="0" alpha="1" angle="28.611306178838227" decorate="false"/>
+        <stroke x="774.6799793287423" y="303.0536311069829" width="12.186532508382989" color="0" alpha="1" angle="30.006034770603765" decorate="false"/>
+        <stroke x="792.9075866395427" y="313.97338964973113" width="11.440081244503176" color="0" alpha="1" angle="30.924897587016346" decorate="false"/>
+        <stroke x="808.2774857330646" y="323.48087339125414" width="9.872495585186883" color="0" alpha="1" angle="31.740029622906963" decorate="false"/>
+        <stroke x="820.4214797511858" y="331.4743231671202" width="8.12781048987017" color="0" alpha="1" angle="33.35381088117859" decorate="false"/>
+        <stroke x="829.4743772929302" y="337.97734193869866" width="6.453236510103114" color="0" alpha="1" angle="35.6910334527459" decorate="false"/>
+        <stroke x="835.9141402521695" y="342.93175922418465" width="4.9616767168875064" color="0" alpha="1" angle="37.57280345293915" decorate="false"/>
+        <stroke x="840.3086246497844" y="346.6554595073884" width="3.794122431196073" color="0" alpha="1" angle="40.27653135843737" decorate="false"/>
+        <stroke x="843.1894783009902" y="349.32263760133264" width="2.8887324296766055" color="0" alpha="1" angle="40.27653135843737" decorate="false"/>
+        <stroke x="844.7302828733991" y="351.2893116674277" width="2.1839884460442645" color="0" alpha="1" angle="40.27653135843737" decorate="false"/>
+        <stroke x="845.0550567430743" y="352.9452579220677" width="1.78368617356495" color="0" alpha="1" angle="40.27653135843737" decorate="false"/>
+        <stroke x="842.493772324113" y="355.5878239171766" width="2.767374113899054" color="0" alpha="1" angle="40.27653135843737" decorate="false"/>
+        <stroke x="837.4945350718252" y="359.39762238615674" width="4.053526539919245" color="0" alpha="1" angle="142.689846441372" decorate="false"/>
+        <stroke x="829.6431160735993" y="364.9733526750666" width="5.704517165042059" color="0" alpha="1" angle="144.61931588039752" decorate="false"/>
+        <stroke x="817.5181568544617" y="373.15602869394206" width="8.171800365619204" color="0" alpha="1" angle="145.98607645062572" decorate="false"/>
+        <stroke x="799.7069740304975" y="385.45716902875387" width="11.636530459365304" color="0" alpha="1" angle="145.3694353509775" decorate="false"/>
+        <stroke x="780.9315002655964" y="398.4909643605374" width="12.233798719129357" color="0" alpha="1" angle="145.23190392000265" decorate="false"/>
+        <stroke x="763.1767845355354" y="411.03989207116746" width="11.683739856880813" color="0" alpha="1" angle="144.74755694188116" decorate="false"/>
+        <stroke x="747.8732965447107" y="421.8115241113434" width="10.18917784600107" color="0" alpha="1" angle="144.85952024725907" decorate="false"/>
+        <stroke x="735.7388319153036" y="430.3292027743912" width="8.269436796411032" color="0" alpha="1" angle="144.93340816567184" decorate="false"/>
+        <stroke x="726.6685805235045" y="436.68271579821993" width="6.417520999359961" color="0" alpha="1" angle="144.9895969083341" decorate="false"/>
+        <stroke x="720.2017090265217" y="441.20463002618317" width="4.84613203547562" color="0" alpha="1" angle="145.03710185675024" decorate="false"/>
+        <stroke x="715.7793861342991" y="444.2918663752319" width="3.61311636086266" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="712.8741237046685" y="446.3167207716475" width="2.6988251858363075" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="711.0437489112045" y="447.5901479458621" width="2.0513890523206975" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="709.9441741511331" y="448.3535202015673" width="1.6114414295890214" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="709.321901998698" y="448.78431248942303" width="1.3242565341562955" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="708.9984227602779" y="449.007286832886" width="1.1445849120906126" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+        <stroke x="708.8530700303513" y="449.10664156500474" width="1.0375502859518169" color="0" alpha="1" angle="145.08099580980226" decorate="false"/>
+      </line>
+    </layer>
+  </layers>
+</LiveBrushProject>

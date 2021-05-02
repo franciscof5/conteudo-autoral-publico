@@ -1,0 +1,125 @@
+﻿.table {
+	color: #4C4C4C;
+}
+.tablePadding {
+	margin: 8px;
+}
+.textboxField {
+	width: 200px;
+	font-size: 8pt;
+	border: solid 1px #D0D0FF;
+}
+.sectionHeading {
+	font-size: 14px;
+	font-weight: bold;
+	width: 100%;
+	background-color: #EFEFEF;
+	border: solid 1px #CCCCCC;
+	color: #336699;
+	padding: 3px;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.section td {
+	font-size: 11px;
+}
+.sectionSubheading {
+	font-size: 13px;
+	font-weight: bold;
+	padding-top: 5px;
+	border-bottom: solid 1px #EEEEEE;
+}
+.catmgrTextArea {
+	border: solid 1px #a5a5a5;
+	width: 390px;
+	height: 50px;
+	font: 8pt Verdana;
+}
+.checkBoxList {
+	height: 100px;
+	overflow: auto;
+	border: solid 1px #CCC;
+	width: auto;
+}
+img {
+	border: 0;
+}
+
+/* begin: catalogue details */
+.messageLabelGreen, .messageLabelRed {
+	margin-top: 5px;
+	padding: 5 0 5 10;
+	font-weight: bold;
+	font-size: 14px;
+}
+.messageLabelGreen {
+	border: solid 1px #009933;
+	background-color: #EFFFEF;
+	color: green;
+}
+.messageLabelRed {
+	border: solid 1px #990033;
+	background-color: #FFEFEF;
+	color: red;
+}
+/* end: catalogue details */
+/* begin: asset management */
+.ms-bodyareaframe {
+	padding: 0px;
+}
+.assetDetails {
+	/*background-color:#F0FBFE;*/
+	width: 100%;
+}
+.assetDetails td {
+	vertical-align: top;
+	padding: 8 0 0 0;
+}
+.assetSearchBar {
+	background-image: url(/_layouts/images/kpmg/CM_AssetFooter_bg.gif);
+	background-repeat: repeat-x;
+	padding-left: 15px;
+	padding-bottom: 5px;
+}
+/*
+#assetDetailsContentViewBar {
+	background-color: #EFEFEF;
+	border: solid 1px #CCC;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+*/
+#assetDetailsIcon {
+	width: 80px;
+	vertical-align: middle;
+}
+#assetDetailsTable td {
+	padding-top: 0px;
+}
+#assetDetailsButtons {
+	width: 350px;
+	text-align: right;
+	padding-right: 10px;
+}
+.assetDetailsProperties {
+	margin-left: 5px;
+	margin-right: 5px;
+	width:98%
+}
+.selectedGridRow {
+	/*background-image: url(/_layouts/images/listheadergrad.gif); 	background-repeat:repeat-x;*/
+	border: solid 1px #FFFFCC;
+	background-color: #FFFFCC;
+	cursor:pointer;
+}
+.progress {
+	background-color: #FFFFCC;
+	padding: 2px;
+	width: 100%;
+}
+.assetGridRow {
+	cursor: pointer;
+}
+/* end: asset management */
+/* begin: category management */
+/* end: category management */

@@ -1,0 +1,5221 @@
+/*  -------------------------------------------------
+KPMG.COM
+SCREEN -  Web Parts Stylesheet
+filename: kmpg_webparts.css
+author:BMH
+--------------------------------------------------- */
+
+/* ::COMMON ELEMENT LAYOUT CLASSES :: */
+/*div, h4, p, ul, li {font-size:100%;}*/
+.radio input{border:0 !important;}
+.radio label{
+	padding-left:10px;
+	font-family: arial, verdana, sans-serif; /* override core.css */
+    font-size: 11px;
+}
+
+.checkbox input{
+	border:0 none !important;
+	margin:0 !important;
+	padding:0 !important;
+	float:left;
+	width:20px;
+}
+.checkbox label {
+	display:block;
+	/*margin-left:10px;*/
+	padding-left:6px;
+	float:left;
+	width:420px;
+}
+.extendedField .checkbox label {
+	width:80%;
+}
+.sitesList .checkbox label {
+	width:auto;
+	margin-top: 3px;
+}
+
+.podWrapper {
+	/*float: left;*/
+	width: auto;
+	margin: 0;
+}
+.podWrapper_PL {
+	width: 210px;
+}
+.contentWrapper {
+	float: left;
+	display: inline;
+	margin: 0 10px;
+}
+.contentRow {
+	float: left;
+	display: inline;
+	margin: 0;
+}
+.colWrapper {
+	float: left;
+	display: inline;
+	margin: 0;
+}
+.column1, .column2, .column3, .column4, .podFooterLink, .btnWrapper, .secondaryLevel {
+	float: left;
+	display: inline;
+	margin: 0;
+}
+
+.rowDivider {
+	float: left;
+	display: inline;
+	border-top: 1px solid #e7ecf8;
+}
+label {
+	color: #002664;
+}
+
+.functionBar {
+	float: left;
+	width: 480px;
+	padding: 5px 0 5px 0;
+	background-color: #F8F9FD;
+	margin-top: 10px;
+	/*margin-bottom: 20px;*/
+	margin-bottom:0px;
+	border-bottom: 1px solid #CAE2F9;
+}
+.functionBar .previousPgHolder {
+	float: left;
+	width: 90px;
+	display: inline;
+	margin-left: 10px;
+}
+.functionBar .pgRangeHolder {
+	float: left;
+	width: 280px;
+	display: inline;
+	text-align: center;
+	color: #000066;
+	font-weight: bold;
+}
+.functionBar .nextPgHolder {
+	float: left;
+	width: 90px;
+	display: inline;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.functionBar .pgRangeHolder a:link {
+	padding: 0 5px 0 5px;
+	font-weight: normal;
+}
+.functionBar .pgRangeHolder a:visited {
+	padding: 0 5px 0 5px;
+	font-weight: normal;
+}
+.functionBar .pgRangeHolder a:hover {
+	padding: 0 5px 0 5px;
+	font-weight: normal;
+}
+
+.paging {
+	float: left;
+	display: block;
+	background-color: #F8F9FD;
+	border-bottom: 1px solid #CAE2F9;
+	color: #002664;
+	padding: 5px 10px 5px 10px;
+	margin: 20px 0px 0px 0px;
+	width: 460px;
+}
+.paging .back {
+	float: left;
+	width: 25%;
+	text-align: left;
+	min-height: 20px;
+}
+.paging .pages {
+	float: left;
+	width: 50%;
+	text-align: center;
+	min-height: 20px;
+}
+.paging .next {
+	float: left;
+	width: 25%;
+	text-align: right;
+	min-height: 20px;
+}
+.paging .next a {
+	background-image: url(../images/org_navBullet.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 12px;
+}
+.paging .back a {
+	background-image: url(../images/orangePreviousBullet.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 12px;
+}
+
+/* ::COMMON ELEMENT TABLE CLASSES :: */
+.podTable {
+	border: 0;
+	padding: 0;
+	margin: 10px 0 0 0;
+	clear: both;
+}
+.functionBarTable {
+	border: 0;
+	padding: 0;
+	margin: 5px 0 0 0;
+	clear: both;
+}
+
+/* ::COMMON ELEMENT TYPE CLASSES :: */
+h4.podHeaderLink {
+	margin-bottom: 5px;
+}
+h4.podHeaderLink a, h4.podHeaderLink a:link, h4.podHeaderLink a:visited {
+	/*font-size:109.5%;*/
+	color: #007C92;
+	text-decoration: none;
+}
+h4.podHeaderLink a:hover {
+	text-decoration: underline;
+}
+h4.subheader1 {
+	color: #002664;
+	margin: 0;
+	font-size:.689em;
+}
+h4.subheader2 {
+	color: #666666;
+	margin-bottom: 5px;
+	font-size:.689em;
+}
+
+p.phoneCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_phone.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+p.emailCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_email.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+div.emailCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_email.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	line-height: 18px;
+}
+p.rssCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_rssFeed.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+p.documentCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_document.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+p.podcastCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_podcast.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+p.webcastCallout {
+	margin: 5px 0 5px 0;
+	background-image: url(../images/caret_movie.gif);
+	background-repeat: no-repeat;
+	background-position: left top;
+	padding-left: 15px;
+	line-height: 18px;
+}
+
+a.orangeLink {
+	background-image: url(../images/bg-orangeArrow.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 12px;
+}
+a:hover.orangeLink {
+	text-decoration: underline;
+}
+a.orangeArrowRight {
+	background-image: url(../images/org_navBullet.gif);
+	background-repeat: no-repeat;
+	background-position: right center;
+	padding-right: 12px;
+}
+
+/* ::COMMON ELEMENT FORM CLASSES ::*/
+#column1 input, #column2 input, #column3 input {
+	padding: 2px; /*font-size:91%;*/
+	color: #999999;
+	border: solid 1px #ccc;
+}
+
+#column2 .ms-formfieldcontainer .formButton {
+	margin-top: 5px;
+	padding-top: 0.1em;
+	padding-bottom: 0.4em;
+	font: 8pt tahoma;
+	height: 2.1em;
+	line-height: normal;
+	color: #000;
+	border-top: 2px solid #ffffff;
+	border-left: 2px solid #ffffff;
+	border-bottom: 2px solid #cccccc;
+	border-right: 2px solid #cccccc;
+	border-style: outset;
+}
+
+
+.frmTxtField {
+	color: #666666;
+	border-color: #CCCCCC;
+	border: 1px solid;
+}
+.frmSelector {
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+	height: 16px;
+	border-color: #CCCCCC;
+	border: 1px solid;
+}
+#column2 div.ieNoBorder input {
+	border: 0;
+}
+.txtField100 {
+	width: 100px;
+	padding: 2px;
+}
+.txtField110 {
+	width: 110px;
+}
+.txtField130 {
+	width: 130px;
+}
+.txtField140 {
+	width: 140px;
+}
+.txtField160 {
+	width: 160px;
+}
+.txtField180 {
+	width: 180px;
+	margin-bottom: 5px;
+	font-size: 8pt;
+	line-height: 13px;
+	color: #666666;
+}
+.txtField190 {
+	width: 190px;
+	font-size: .625em;
+	line-height: 13px;
+	color: #666666;
+}
+.txtField210 {
+	width: 210px;
+	font-size: 8pt;
+	line-height: 13px;
+	height: 16px;
+	color: #666666;
+	border: 1px solid #666666;
+}
+.txtField165 {
+	width: 165px;
+	line-height: 12pt;
+}
+
+select {
+	font-size: 1em;
+}
+
+.selector110 {
+	width: 110px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector120 {
+	width: 120px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector130 {
+	width: 130px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector140 {
+	width: 140px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector160 {
+	width: 160px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector170 {
+	width: 170px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector180 {
+	width: 180px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+.selector190 {
+	width: 190px;
+	font-size: 8pt;
+	line-height: 12pt;
+	color: #666666;
+}
+
+/* ::COMMON ELEMENT LINK CLASSES :: */
+
+ul.relatedLink {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 18px; /*padding-bottom:5px;*/
+}
+
+ul.relatedLink li {
+	padding: 0 0 0 12px;
+	background-image: url(../images/caret_standardLink.gif);
+	background-position: 0 7px;
+	background-repeat: no-repeat;
+}
+ul.relatedLink a, ul.relatedLink a:link, ul.relatedLink a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+ul.relatedLink a:hover {
+	text-decoration: underline;
+}
+
+/* KPMG_Rss_Feed XSLT */
+
+ul.rssLink {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+}
+
+ul.rssLink li {
+	padding: 0 0 0 18px;
+	background-image: url(../images/caret_RSSFeed.gif);
+	background-position: 0 .5em;
+	background-repeat: no-repeat;
+}
+ul.rssLink a, ul.rssLink a:link, ul.rssLink a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* KPMG_Document XSLT */
+
+ul.kpmgdoc {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+	padding-left:15px;
+}
+
+ul.kpmgdoc li {
+	padding: 5px 0 5px 18px;
+    background-image:url("/style%20library/images/caret_document.gif");
+	background-position: 0 .8em;
+	background-repeat: no-repeat;
+}
+ul.kpmgdoc a, ul.kpmgdoc a:link, ul.kpmgdoc a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* KPMG_Bullet XSLT */
+
+ul.kpmgbullet {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+}
+
+ul.kpmgbullet li {
+	padding: 0 0 0 10px;
+    background-image:url("/style%20library/images/blk_lstbulet.gif");
+	background-position: 0 .2em;
+	background-repeat: no-repeat;
+}
+ul.kpmgbullet a, ul.kpmgbullet a:link, ul.kpmgbullet a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* KPMG_PDF XSLT */
+
+ul.kpmgpdf {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+}
+
+ul.kpmgpdf li {
+	padding: 0 0 0 22px;
+    background-image:url("/style%20library/images/caret_pdf.gif");
+	background-position: 0 .1em;
+	background-repeat: no-repeat;
+}
+ul.kpmgpdf a, ul.kpmgpdf a:link, ul.kpmgpdf a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* KPMG_Webpage XSLT */
+
+ul.kpmgwebpage {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+}
+
+ul.kpmgwebpage li {
+	padding: 0 0 0 18px;
+    background-image:url("/style%20library/images/caret_webpage.gif");
+	background-position: 0 .4em;
+	background-repeat: no-repeat;
+}
+ul.kpmgwebpage a, ul.kpmgwebpage a:link, ul.kpmgwebpage a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+/* KPMG_Video XSLT */
+
+ul.kpmgvideo {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 20px; /*padding-bottom:5px;*/
+}
+
+ul.kpmgvideo li {
+	padding: 0 0 0 18px;
+    background-image:url("/style%20library/images/caret_movie.gif");
+	background-position: 0 .5em;
+	background-repeat: no-repeat;
+}
+ul.kpmgvideo a, ul.kpmgvideo a:link, ul.kpmgvideo a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+
+ul.rss a:hover {
+	text-decoration: underline;
+}
+
+ul.filterLink {
+	list-style-type: none;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+ul.filterLink li {
+	padding: 0 0 0 16px;
+	background-image: url(../images/caret_filterLink.gif);
+	background-position: 0 7px;
+	background-repeat: no-repeat;
+}
+ul li.filterLinkSelected {
+	color: #002664;
+	background-image: url(../images/caret_filterLinkSelected.gif);
+}
+ul.filterLink a, ul.filterLink a:link, ul.filterLink a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+ul.filterLink a:hover {
+	text-decoration: underline;
+}
+
+.ms-WPBody a:link {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody a:visited {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+
+/* START: POD HEADERS =========================================================================================*/
+/*.ms-WPBody ul.bluepodheaders, .ms-WPBody ul.redpodheaders, .ms-WPBody ul.turqpodheaders {
+	margin-left: 0;
+	margin-bottom: 10px;
+	padding-left: 0;
+	width: 100%;
+}
+
+.ms-WPBody ul.bluepodheaders li, .ms-WPBody ul.redpodheaders li, .ms-WPBody ul.turqpodheaders li {
+	display: block; 
+	font-size:1.09em;
+	font-weight: bold;
+	line-height: 19px;
+	_height: 19px;
+	min-height: 19px;
+	padding-left: 10px;
+}
+
+*html .ms-WPBody ul.bluepodheaders li a, *html .ms-WPBody ul.redpodheaders li a, *html .ms-WPBody ul.turqpodheaders li a {
+	height: 1px;
+	width: 100%;
+}
+
+.ms-WPBody ul.turqpodheaders li a {
+	background-repeat: no-repeat;
+	background-position: 95.5% 8px;
+	display: block;
+	font-weight: bold;
+	padding-left: 10px;
+	text-decoration: none;
+	width: 100%;
+}
+
+.ms-WPBody ul.bluepodheaders li {
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2F9;
+	border-bottom: 1px solid #CAE2F9;
+	color: #002664;
+}
+.ms-WPBody ul.bluepodheaders li a, .ms-WPBody ul.bluepodheaders li a:link, .ms-WPBody ul.bluepodheaders li a:visited, .ms-WPBody ul.bluepodheaders li a:hover {
+	color: #002664;
+	background-image: url(../images/podHeaderArrow_blue.gif);
+	background-repeat: no-repeat;
+	background-position: 95.5% 55%;
+	display: block;
+	font-weight: bold;
+	margin-left: -10px;
+	padding: 0 15px 0 10px;
+	text-decoration: none;
+	width: auto;
+}
+.ms-WPBody ul.bluepodheaders li a:hover {
+	background-color: #C1DDFB;
+}
+
+.ms-WPBody ul.redpodheaders li {
+	background-color: #9E3039;
+	border-right: 1px solid #6E2228;
+	border-bottom: 1px solid #6E2228;
+	color: #FFFFFF;
+}
+.ms-WPBody ul.redpodheaders li a, .ms-WPBody ul.redpodheaders li a:link, .ms-WPBody ul.redpodheaders li a:visited, .ms-WPBody ul.redpodheaders li a:hover {
+	color: #FFFFFF;
+	background-image: url(../images/podHeaderArrow_white.gif);
+	background-repeat: no-repeat;
+	background-position: 95.5% 55%;
+	display: block;
+	font-weight: bold;
+	margin-left: -10px;
+	padding: 0 15px 0 10px;
+	text-decoration: none;
+	width: auto;
+}
+.ms-WPBody ul.redpodheaders li a:hover {
+	background-color: #7E262E;
+}
+
+.ms-WPBody ul.turqpodheaders li {
+	background-color: #007C92;
+	border-right: 1px solid #CAE2F9;
+	border-bottom: 1px solid #CAE2F9;
+	color: #FFFFFF;
+}
+.ms-WPBody ul.turqpodheaders li a, .ms-WPBody ul.turqpodheaders li a:link, .ms-WPBody ul.turqpodheaders li a:visited, .ms-WPBody ul.turqpodheaders li a:hover {
+	color: #FFFFFF;
+	background-image: url(../images/podHeaderArrow_white.gif);
+	background-repeat: no-repeat;
+	background-position: 95.5% 55%;
+	display: block;
+	font-weight: bold;
+	margin-left: -10px;
+	padding: 0 15px 0 10px;
+	text-decoration: none;
+	width: auto;
+}
+.ms-WPBody ul.turqpodheaders li a:hover {
+	background-color: #006375;
+}*/
+/* END: POD HEADERS ===========================================================================================*/
+
+
+.ms-WPBody a.orangeArrow, .ms-WPBody a.orangeArrow:link, .ms-WPBody a.orangeArrow:visited {
+	background: url(../images/org_navBullet.gif) no-repeat 1px 2px;
+	padding-left: 10px;
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody a.orangeArrow:hover {
+	text-decoration: underline;
+}
+
+#searchContainer a.whiteArrow:link, #searchContainer a.whiteArrow:visited, #searchContainer a.whiteArrow:hover {
+	color: #FFFFFF;
+	/*font-size: .689em;*/
+	background: url(../images/caret_whiteArrow.jpg) no-repeat 0 50%;
+	margin-left: 5px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+#searchContainer a.whiteArrow:hover {
+	text-decoration: underline;
+}
+
+.ms-WPBody .sectionIntro {
+	/*font-size: .750em;*/
+	line-height: 1.125em;
+}
+
+/* A. Local Site Selector */
+.ms-WPBody .localSiteSelectorWbPt {
+	display: inline;
+	float: left;
+	margin: 5px 10px 10px 10px;
+	width: auto;
+}
+
+
+.ms-WPBody .localSiteSelectorWbPt .contentWrapper {
+	float: left;
+	display: inline;
+	width: 190px;
+}
+.ms-WPBody .localSiteSelectorWbPt .selectorWrapper {
+	float: left;
+	margin: 12px 0 0 0;
+	width: 145px;
+}
+#column3 .ms-WPBody .localSiteSelectorWbPt .selectorWrapper {
+	float: left;
+	margin: 12px 0 0 0;
+	width: 158px;
+}
+.ms-WPBody .localSiteSelectorWbPt .btnWrapper {
+	margin: 13px 0px 0px 5px;
+	width: 26px;
+}
+.ms-WPBody .localSiteSelectorWbPt .dropDown {
+	width: 145px;
+	height: 17px;
+	border: 1px solid #ccc;
+	padding: 2px; /*font-size:91%;*/
+	color: #B2B2B2;
+}
+.ms-WPBody .localSiteSelectorWbPt select {
+	width: 155px;
+}
+
+/* C. Audit Services Intro */
+.ms-WPBody .auditServicesIntroWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .auditServicesIntroWbPt .podHeader {
+	color: #FFFFFF;
+	background-color: #007C92;
+	width: 470px;
+	border-right: 1px solid;
+	border-bottom: 1px solid;
+}
+.ms-WPBody .auditServicesIntroWbPt .contentWrapper {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .auditServicesIntroWbPt .colWrapper {
+	width: 220px;
+	margin: 10px 0 0 10px;
+}
+
+/* D. ISSUES & INSIGHTS HOMEPAGE SEARCH */
+.ms-WPBody .issuesInsightsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .issuesInsightsWbPt .podWrapper {
+	float: left;
+	display: inline;
+	width: 210px;
+}
+.ms-WPBody .issuesInsightsWbPt .contentWrapper {
+	float: left;
+	display: inline;
+	width: 190px;
+}
+.ms-WPBody .issuesInsightsWbPt h3.podHeader {
+	color: #003366 !important;
+	width: 199px;
+	background-color: #E0EEFB;
+	border-bottom: 1px solid #cae2f9;
+	border-right: 1px solid #cae2f9;
+	background-image: url(../images/blu_pod_arrow.gif);
+	background-position: 195px 8px;
+	background-repeat: no-repeat;
+}
+/*.ms-WPBody  .issuesInsightsWbPt td {font-size:110%}*/
+.ms-WPBody .issuesInsightsWbPt h3.podHeader a:link, .ms-WPBody .issuesInsightsWbPt h3.podHeader a:visited, .ms-WPBody .issuesInsightsWbPt h3.podHeader a:hover {
+	color: #003366;
+	text-decoration: none;
+}
+.ms-WPBody .issuesInsightsWbPt ul.relatedLink {
+	margin-bottom: 10px;
+}
+.ms-WPBody .issuesInsightsWbPt .issuesSearchFld {
+	width: 100px;
+	height: 14px;
+	padding: 2px;
+	border: 1px solid #ccc; /*font-size:91%;*/
+	color: #B2B2B2;
+}
+.ms-WPBody .issuesInsightsWbPt .selector170 {
+	width: 150px;
+}
+.ms-WPBody .issuesInsightsWbPt .selectorWrapper .btnWrapper {
+	margin: 14px 0 0 9px;
+	width: 26px;
+	background-color: #999999;
+}
+
+
+/* E. SUMMARY */
+.ms-WPBody .summaryHE {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHE h4 {
+	color: #666666;
+	margin: 0;
+}
+.ms-WPBody .summaryHE .contentWrapper {
+	width: auto;
+}
+
+#template5_z4 .ms-WPBody .summaryHE {
+	display: inline;
+	float: left;
+	margin: 0 0 5px 0;
+	width: auto;
+}
+
+#template5_z4 .ms-WPBody .summaryHE .contentWrapper {
+	width: auto;
+	margin: 0;
+}
+
+.ms-WPBody .summaryHEBluePod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHEBluePod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHEBluePod .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHEBluePod ul.relatedLink {
+	margin-top: 0;
+}
+
+.ms-WPBody .summaryHERedPod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHERedPod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHERedPod .contentWrapper {
+	width: 190px;
+}
+
+.ms-WPBody .summaryHETurqPod {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 100%;
+}
+
+.ms-WPBody .summaryHETurqPod .podWrapper {
+	width: 160px;
+	margin: 10px 10px 0 10px;
+}
+.ms-WPBody .summaryHETurqPod .contentWrapper {
+	margin: 0 10px 0 10px;
+	width: auto;
+}
+.ms-WPBody .summaryHETurqPod .contentRow {
+	width: 190px;
+	margin-top: 10px;
+	border-top: 1px solid #ccc;
+}
+.ms-WPBody .summaryHETurqPod .contentRow p {
+	margin-top: 10px;
+}
+
+.ms-WPBody .summaryHEW {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .summaryHEW .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+
+.ms-WPBody .summaryHEWTurqPod {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+.ms-WPBody .summaryHEWTurqPod .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryHEWTurqPod .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryHEWTurqPod .contentRow {
+	width: 460px;
+	margin-bottom: 10px;
+}
+
+.ms-WPBody .summaryHIE {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHIE .contentWrapper {
+	margin: 0 10px;
+	width: auto;
+}
+.ms-WPBody .summaryHIE .contentWrapper img {
+	margin: 10px 0 7px 0;
+}
+
+/* ===== FOR THE NARROW AND WIDE MIDDLE COLUMNS ==== */
+#template5_z3 .ms-WPBody .summaryHIE {
+	display: inline;
+	float: left;
+	margin: 0 0 5px 0;
+	width: auto;
+}
+
+#template5_z3 .ms-WPBody .summaryHIE .contentWrapper {
+	margin: 0;
+	width: auto;
+}
+#template5_z4 .ms-WPBody .summaryHIE, #template6_z4 .ms-WPBody .summaryHIE, #template4_z2 .ms-WPBody .summaryE, #template6_z4 .ms-WPBody .summaryE {
+	display: inline;
+	float: left;
+	margin: 0 0 5px 0;
+	width: auto;
+}
+
+#template4_z2 .ms-WPBody .summaryE .contentWrapper, #template6_z4 .ms-WPBody .summaryE .contentWrapper {
+	margin: 0;
+	width: auto !important;
+}
+#template6_z4 .ms-WPBody .summaryE .rad-PullQuote_PL {
+	margin: 10px 0;
+	width: auto;
+}
+
+#template5_z4 .ms-WPBody .summaryHIE .contentWrapper, #template6_z4 .ms-WPBody .summaryHIE .contentWrapper {
+	margin: 0;
+	width: auto;
+}
+
+.ms-WPBody .summaryHSE {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHSE .podWrapper {
+	width: auto;
+}
+.ms-WPBody .summaryHSE .contentWrapper {
+	margin: 0 10px;
+	width: auto;
+}
+
+/*#template1_z5 .summaryHSE {
+	margin: 0 0 10px 10px; 
+	*margin:0 0 -3px 5px;
+}
+
+#template1_z5 .summaryHSE .rowDivider {
+	margin: 10px 0 0 10px;
+	width: 270px; 
+	*width:275px;
+}*/
+
+.ms-WPBody .summaryHIEBluePod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHIEBluePod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHIEBluePod .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHIEBluePod .contentRow {
+	width: 190px;
+}
+.ms-WPBody .summaryHIEBluePod .colWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHIEBluePod .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .summaryHIEBluePod .column2 {
+	width: 110px;
+}
+.ms-WPBody .summaryHIEBluePod .podTable {
+	width: 190px;
+	padding: 0;
+}
+.ms-WPBody .summaryHIEBluePod .podTable td.left {
+}
+.ms-WPBody .summaryHIEBluePod .podTable td.middle {
+	width: 170px;
+}
+.ms-WPBody .summaryHIEBluePod .podTable td.right {
+	width: 20px;
+}
+
+.ms-WPBody .summaryHIETurqPod {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 100%;
+}
+
+.ms-WPBody .summaryHIETurqPod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHIETurqPod .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHIETurqPod .contentWrapper p {
+	margin-bottom: 5px;
+}
+
+.ms-WPBody .summaryHISE {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHISE .contentWrapper {
+	width: auto;
+}
+.ms-WPBody .summaryHISE .contentWrapper h4 {
+	width: auto;
+}
+.ms-WPBody .summaryHISE .contentWrapper img {
+	margin: 10px 0 7px 0;
+}
+
+/* ====== FOR THE NARROW AND WIDE MIDDLE COLUMNS ====== */
+#template5_z3 .ms-WPBody .summaryHISE {
+	display: inline;
+	float: left;
+	margin: 0 0 5px 0;
+	width: auto;
+}
+
+#template5_z3 .ms-WPBody .summaryHISE .contentWrapper {
+	width: auto;
+	margin: 0;
+}
+
+.ms-WPBody .summaryHISEBluePod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHISEBluePod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHISEBluePod .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHISEBluePod h4 {
+	margin-top: 10px;
+}
+
+.ms-WPBody .summaryHISETurqPod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHISETurqPod .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .summaryHISETurqPod .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .summaryHISETurqPod .contentRow {
+	width: 190px;
+}
+
+.ms-WPBody .summaryHISESSTurqPod {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+.ms-WPBody .summaryHISESSTurqPod .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryHISESSTurqPod .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryHISESSTurqPod .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .summaryHISESSTurqPod .column2 {
+	width: 280px;
+}
+
+.ms-WPBody .summaryHIBluePod {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.webPartWbPt .podWrapper {
+	width: 210px;
+}
+.webPartWbPt .contentWrapper {
+	width: 190px;
+}
+
+.ms-WPBody .summaryE {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryE .contentWrapper {
+	margin: 10px 10px 0 10px;
+}
+
+#template5_z4 .ms-WPBody .summaryE {
+	display: inline;
+	float: left;
+	margin: 0 0 5px 0;
+	width: auto;
+}
+
+#template5_z4 .ms-WPBody .summaryE .contentWrapper {
+	margin: 0;
+}
+
+.ms-WPBody .summaryIW {
+	width: 480px;
+}
+.ms-WPBody .summaryIW .contentWrapper {
+	width: 480px;
+	margin: 0 0 10px 0;
+}
+div.summaryIW div {
+	width: 480px;
+}
+
+div.summaryIW div span {
+	width: 480px;
+}
+/*sk_#1182_11/29 --fix for wrapping issues */
+
+.ms-WPBody .summaryIHEWSS {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .summaryIHEWSS .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryIHEWSS .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .summaryIHEWSS .column2 {
+	width: 280px;
+}
+
+.ms-WPBody .summaryIEW {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .summaryIEW .podWrapper {
+	width: 480px;
+}
+
+.ms-WPBody .summaryVW {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .summaryVW .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .summaryVW .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+.ms-WPBody .summaryVW .contentRow {
+	width: 360px;
+}
+.ms-WPBody .summaryVW .column1 {
+	width: 360px;
+	margin-right: 10px;
+}
+.ms-WPBody .summaryVW .column2 {
+	width: 110px;
+	margin: 0;
+}
+
+.ms-WPBody .summaryIHE {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+.ms-WPBody .summaryIHE .contentWrapper {
+	width: auto;
+	margin: 0;
+}
+.ms-WPBody .summaryIHE .contentWrapper .subtitle {
+	color: #007C92;
+	margin: 5px 0;
+}
+.ms-WPBody .summaryIHE .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .summaryIHE .column2 {
+	width: 110px;
+}
+
+.ms-WPBody .summaryIESS {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+
+.ms-WPBody .summaryI {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+
+.ms-WPBody .summaryHIEWOSS {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: 460px;
+}
+
+.ms-WPBody .summaryHIEWOSS .contentWrapper {
+	margin: 0;
+	width: 480px;
+}
+.ms-WPBody .summaryHIEWOSS .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .summaryHIEWOSS .column2 {
+	width: 280px;
+}
+
+.ms-WPBody .summaryHIEOSS {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .summaryHIEOSS .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .summaryHIEOSS .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .summaryHIEOSS .contentRow {
+	width: 460px;
+	margin-bottom: 10px;
+}
+.ms-WPBody .summaryHIEOSS .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .summaryHIEOSS .column2 {
+	width: 280px;
+}
+
+/* F. BLOG */
+.ms-WPBody .blogWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .blogWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .blogWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* G. PROVIDE FEEDBACK */
+.ms-WPBody .provideFeedbackWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .provideFeedbackWbPt .podWrapper {
+	float: left;
+	width: 210px;
+	clear: both;
+}
+.ms-WPBody .provideFeedbackWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* H. SEARCH & APPLY */
+.ms-WPBody .searchApplyWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .searchApplyWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .searchApplyWbPt .contentWrapper p {
+	margin-bottom: 10px;
+}
+
+/* I. RSS FEEDS */
+.ms-WPBody .rssFeedsWbPt {
+	display: inline;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .rssFeedsWbPt .podWrapper {
+	float: left;
+	width: 210px;
+	clear: both;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper {
+	width: auto;
+}
+.ms-WPBody .rssFeedsWbPt h3.podHeader {
+	color: #002664 !important;
+	width: 200px;
+	background-color: #E0EEFB;
+	border-bottom: 1px solid #cae2f9;
+	border-right: 1px solid #cae2f9;
+	background-image: url(../images/blu_pod_arrow.gif);
+	background-position: 195px 8px;
+	background-repeat: no-repeat;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul.rss {
+	margin: 10px 0px 10px 20px;
+	padding: 0;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul {
+	line-height: 18px;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul.rss li {
+	list-style: url(../images/caret_RSSfeed.gif);
+	margin: 3px 0px;
+}
+.ms-WPBody .rssFeedsWbPt .contentWrapper ul li img {
+	margin-right: 6px;
+}
+
+
+/* J. OUR SERVICES */
+.ms-WPBody .ourServicesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .ourServicesWbPt p {
+	line-height: 12pt;
+	margin: 3px 0px;
+}
+.ms-WPBody .ourServicesWbPt h5 {
+	line-height: 12pt;
+	/*font-size: 100%;*/
+	margin: 3px 0px;
+}
+.ms-WPBody .ourServicesWbPt h6 {
+	line-height: 12pt;
+	/*font-size: 100%;*/
+	margin: 3px 0px;
+}
+.ms-WPBody select {
+	width: 160px;
+	font-family: Arial;
+}
+
+/* K. BROWSE CONTACT DIRECTORY */
+.ms-WPBody .browseContactDirectoryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .browseContactDirectoryWbPt .podWrapper {
+	float: left;
+	width: 210px;
+	clear: both;
+}
+.ms-WPBody .browseContactDirectoryWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .browseContactDirectoryWbPt .contentWrapper p {
+	margin-bottom: 5px;
+}
+.ms-WPBody .browseContactDirectoryWbPt .partSeparator {
+	float: left;
+	width: 190px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #E7ECF8;
+	margin-bottom: 10px;
+}
+
+/* L. NEWSLETTER SIGNUP */
+.ms-WPBody .newsletterSignupWbPt {
+	display: inline;
+	float: left;
+/*	margin: 10px 10px 5px 10px;*/
+	width: auto;
+}
+
+.ms-WPBody .newsletterSignupWbPt .podWrapper {
+	width: 190px;
+}
+.ms-WPBody .newsletterSignupWbPt .contentWrapper {
+	/*float: left;
+	display: inline;*/
+	width: 190px;
+}
+.ms-WPBody .newsletterSignupWbPt .contentWrapper p {
+	margin-bottom: 10px;
+}
+.ms-WPBody .newsletterSignupWbPt .contentWrapper h4 {
+	color: #002664;
+}
+
+
+/* M. REGISTER/LOGIN */
+.ms-WPBody .registerLoginWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .registerLoginWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .registerLoginWbPt .contentWrapper {
+	margin-left: 10px;
+	width: 190px;
+}
+.ms-WPBody .registerLoginWbPt .contentWrapper p.right {
+	text-align: right;
+	margin-right: 40px;
+	margin-top: 5px;
+}
+
+/* N. RSS SUBSCRIBE */
+
+.ms-WPBody .rssSubscribe {
+	display: inline;
+	float: left;
+	margin: 9px 9px 5px 9px;
+	width: auto;
+}
+.ms-WPBody .rssSubscribe .podWrapper {
+	width: 189px;
+}
+
+/*  O. MOST RECENT RELATED RESEARCH & ARTICLES */
+.ms-WPBody .mostRecentRelatedResearchArticlesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .mostRecentRelatedResearchArticlesWbPt .podWrapper {
+	/* width: 190px; */
+	width: 210px;
+}
+
+/* P. QUICK SEARCH */
+.ms-WPBody .quickSearchWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .quickSearchWbPt .podWrapper {
+	width: 190px;
+}
+.ms-WPBody .quickSearchWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .quickSearchWbPt .textboxWrapper {
+	float: left;
+	margin: 12px 0 0 0;
+	width: 158px;
+}
+.ms-WPBody .quickSearchWbPt .btnWrapper {
+	margin: 13px 0px 0px 5px;
+	width: 26px;
+}
+.ms-WPBody .quickSearchWbPt input {
+	width: 145px;
+}
+
+#column3 .ms-WPBody .quickSearchWbPt input {
+	width: 155px;
+}
+
+
+.ms-WPBody .quickSearch2WbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+.ms-WPBody .quickSearch2WbPt .podWrapper {
+	width: 480px;
+	background-color: #f8f9fd;
+	padding: 10px 0;
+	border-bottom: 1px solid #e7ecf8;
+}
+.ms-WPBody .quickSearch2WbPt .podTable {
+	width: 470px;
+	padding: 0;
+	margin: 0;
+}
+.ms-WPBody .quickSearch2WbPt .podTable td.left {
+	font-weight: bold;
+	width: 234px;
+	padding-left: 10px;
+}
+.ms-WPBody .quickSearch2WbPt .podTable td.middle {
+	padding: 0;
+}
+.ms-WPBody .quickSearch2WbPt .podTable td.right {
+	width: 30px;
+	padding: 0;
+}
+.ms-WPBody .quickSearch2WbPt .frmSelector {
+	width: 200px;
+}
+.ms-WPBody .quickSearch2WbPt .frmTxtField {
+	width: 223px;
+}
+
+/* Q1. FACETED NAV – ARTICLES & PUBLICATION */
+.ms-WPBody .facetedNavArticlesPublicationWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavArticlesPublicationWbPt {
+	width: 210px;
+	background-color: #f8f9fd;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .contentWrapper {
+	margin: 0;
+	width: 210px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podTable {
+	width: 190px;
+	padding: 0;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podTable td.left {
+	width: 100px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .frmTxtField {
+	width: 155px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podTable td.middle {
+	width: 170px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt .podTable td.right {
+	width: 20px;
+}
+.ms-WPBody .facetedNavArticlesPublicationWbPt ul.filterLink {
+	margin-top: 0;
+	border-bottom: 1px solid #CAE2FF;
+}
+
+/* Q3. FACETED NAV – BLOG POSTING */
+.ms-WPBody .facetedNavBlogPostingWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavBlogPostingWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .facetedNavBlogPostingWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavBlogPostingWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q4. FACETED NAV – FEEDS */
+.ms-WPBody .facetedNavFeedsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavFeedsWbPt .podWrapper {
+	width: 210px;
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+}
+.ms-WPBody .facetedNavFeedsWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavFeedsWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q5. FACETED NAV – REGULAR PUBLICATIONS/EXTERNAL RESOURCES */
+.ms-WPBody .facetedNavRegularPublicationsWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavRegularPublicationsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .facetedNavRegularPublicationsWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavRegularPublicationsWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q6. FACETED NAV – PRESS RELEASES */
+.ms-WPBody .facetedNavPressReleasesWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavPressReleasesWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .facetedNavPressReleasesWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavPressReleasesWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q7. FACETED NAV – A/V LIBRARY */
+.ms-WPBody .facetedNavAVLibraryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavAVLibraryWbPt .podWrapper {
+	width: 210px;
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+}
+.ms-WPBody .facetedNavAVLibraryWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavAVLibraryWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q8. FACETED NAV – NEWS */
+.ms-WPBody .facetedNavNewsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavNewsWbPt .podWrapper {
+	width: 210px;
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+}
+.ms-WPBody .facetedNavNewsWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavNewsWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q9. FACETED NAV – EVENTS */
+.ms-WPBody .facetedNavEventsWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .facetedNavEventsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .facetedNavEventsWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .facetedNavEventsWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q10. JOB SEARCH */
+.ms-WPBody .jobSearchWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .jobSearchWbPt .podWrapper {
+}
+
+/* Q11. OFFICES FACETED NAVIGATION */
+.ms-WPBody .officesFacetedNavigationWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .officesFacetedNavigationWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .officesFacetedNavigationWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .officesFacetedNavigationWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* Q12. GLOSSARY FACETED NAVIGATION */
+.ms-WPBody .glossaryFacetedNavigationWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #CAE2FF;
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .glossaryFacetedNavigationWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .glossaryFacetedNavigationWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 200px;
+}
+.ms-WPBody .glossaryFacetedNavigationWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* R. FEATURED EMPLOYEES */
+
+/*.ms-WPBody .featuredEmployees {width:auto;}
+.ms-WPBody .featuredEmployees .podWrapper {width:480px;}
+.ms-WPBody .featuredEmployees .contentRow {width:460px;}
+.ms-WPBody .featuredEmployees .colWrapper {width:230px;}
+.ms-WPBody .featuredEmployees .column1 {width:190px; margin-right:20px;}
+.ms-WPBody .featuredEmployees .column2 {width:120px;}*/
+
+#template5_z3 .ms-WPBody .featuredEmployees {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+#template5_z3 .ms-WPBody .featuredEmployees .contentWrapper {
+	width: 160px;
+	margin: 0;
+}
+
+.ms-WPBody .featuredEmployees {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+.ms-WPBody .featuredEmployees .podWrapper {
+	width: 170px;
+}
+.ms-WPBody .featuredEmployees .contentWrapper {
+	width: 160px;
+	margin: 0;
+}
+.ms-WPBody .featuredEmployees .contentRow {
+	width: 160px;
+}
+.ms-WPBody .featuredEmployees .colWrapper {
+	width: 160px;
+}
+.ms-WPBody .featuredEmployees .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .featuredEmployees .functionBar {
+	width: 170px;
+	height: 20px; *height:25px;
+text-align:right;
+}
+.ms-WPBody .featuredEmployees a.orangeArrow:link, .ms-WPBody .featuredEmployees a.orangeArrow:visited, .ms-WPBody .featuredEmployees a.orangeArrow:hover {
+	background: url(../images/org_navBullet.gif) no-repeat 100% 50%;
+	padding-right: 10px;
+	margin-right: 10px; *margin-right:20px;
+}
+
+/* S. LEFT NAV */
+
+.ms-WPBody a.level1Nav span.collapsed {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_standardLink.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+.ms-WPBody a.level1Nav span.expanded {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_expandedNav.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt table.expandedNav {
+	background-image: url(../images/caret_expandedNav.gif);
+}
+
+.leftNavWbPt {
+	width: 229px;
+	background-color: #FFFFFF;
+}
+.leftNavWbPt table.level1Nav {
+	width: 229px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt table.level1Nav td {
+	width: 229px;
+	border-bottom: 1px solid #E7ECF8;
+	font-size: 11px;
+}
+.leftNavWbPt table.level1Nav a {
+	display: block;
+	padding: 6px 5px 7px 20px;
+	background-color: #FFFFFF;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;	
+}
+
+.leftNavWbPt table.level1Nav a span.collapsed {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_standardLink.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt table.level1Nav a span.expanded {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_expandedNav.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt table.level1Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt table.level1Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 20px;
+	background-color: #FFFFFF;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;	
+}
+.leftNavWbPt table.level1Nav a.selected:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt table.level2Nav {
+	width: 229px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt table.level2Nav td {
+	width: 229px;
+	border-bottom: 1px solid #E7ECF8;
+	font-size: 11px;
+}
+.leftNavWbPt table.level2Nav a {
+	display: block;
+	padding: 6px 25px 7px 30px;
+	background-color: #f8f9fd;
+	color: #007C92;
+	text-decoration: none;
+	width:auto;
+}
+.leftNavWbPt table.level2Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt table.level2Nav a.selected {
+	display: block;
+	padding: 6px 25px 7px 30px;
+	background-color: #F8F9FD;
+	color: #002664;
+	text-decoration: none;
+	font-weight: bold;
+	width: auto;
+}
+.leftNavWbPt table.level2Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+.leftNavWbPt table.level4Nav {
+	width: 229px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.leftNavWbPt table.level3Nav {
+	width: 229px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt table.level3Nav td {
+	width: 229px;
+	border-bottom: 1px solid #f8f9fd;
+	font-size: 11px;
+}
+.leftNavWbPt table.level3Nav a {
+	display: block;
+	padding: 6px 5px 7px 40px;
+	background-color: #eff2fa;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+.leftNavWbPt table.level3Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt table.level3Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 40px;
+	background-color: #eff2fa;
+	color: #002664;
+	text-decoration: none;
+	font-weight: bold;
+	width: auto;
+}
+.leftNavWbPt table.level3Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+
+.leftNavWbPt table.level4Nav td {
+	width: 229px;
+	border-bottom: 1px solid #f8f9fd;
+	font-size: 11px;
+}
+.leftNavWbPt table.level4Nav a {
+	display: block;
+	padding: 6px 5px 7px 50px;
+	background-color: #eff2fa;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+.leftNavWbPt table.level4Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt table.level4Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 50px;
+	background-color: #eff2fa;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;
+}
+.leftNavWbPt table.level4Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+/* LeftNav For Webpart */
+
+.ms-WPBody a.level1Nav span.collapsed {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_standardLink.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+.ms-WPBody a.level1Nav span.expanded {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_expandedNav.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt_WP table.expandedNav {
+	background-image: url(../images/caret_expandedNav.gif);
+}
+
+.leftNavWbPt_WP {
+	width: 209px;
+	background-color: #FFFFFF;
+}
+.leftNavWbPt_WP table.level1Nav {
+	width: 209px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt_WP table.level1Nav td {
+	width: 209px;
+	border-bottom: 1px solid #E7ECF8;
+	font-size: 11px;
+}
+.leftNavWbPt_WP table.level1Nav a {
+	display: block;
+	padding: 6px 5px 7px 20px;
+	background-color: #FFFFFF;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+
+.leftNavWbPt_WP table.level1Nav a span.collapsed {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_standardLink.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt_WP table.level1Nav a span.expanded {
+	width: 100%;
+	display: block;
+	height: 100%;
+	background: url(../images/caret_expandedNav.gif) no-repeat 100% 50%;
+	cursor: pointer;
+}
+
+.leftNavWbPt_WP table.level1Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt_WP table.level1Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 20px;
+	background-color: #FFFFFF;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;
+}
+.leftNavWbPt_WP table.level1Nav a.selected:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt_WP table.level2Nav {
+	width: 209px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt_WP table.level2Nav td {
+	width: 209px;
+	border-bottom: 1px solid #E7ECF8;
+	font-size: 11px;
+}
+.leftNavWbPt_WP table.level2Nav a {
+	display: block;
+	padding: 6px 25px 7px 30px;
+	background-color: #f8f9fd;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+.leftNavWbPt_WP table.level2Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt_WP table.level2Nav a.selected {
+	display: block;
+	padding: 6px 25px 7px 30px;
+	background-color: #F8F9FD;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;
+}
+.leftNavWbPt_WP table.level2Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+.leftNavWbPt_WP table.level4Nav {
+	width: 209px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.leftNavWbPt_WP table.level3Nav {
+	width: 209px;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.leftNavWbPt_WP table.level3Nav td {
+	width: 209px;
+	border-bottom: 1px solid #f8f9fd;
+	font-size: 11px;
+}
+.leftNavWbPt_WP table.level3Nav a {
+	display: block;
+	padding: 6px 5px 7px 40px;
+	background-color: #eff2fa;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+.leftNavWbPt_WP table.level3Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt_WP table.level3Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 40px;
+	background-color: #eff2fa;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;
+}
+.leftNavWbPt_WP table.level3Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+
+.leftNavWbPt_WP table.level4Nav td {
+	width: 209px;
+	border-bottom: 1px solid #f8f9fd;
+	font-size: 11px;
+}
+.leftNavWbPt_WP table.level4Nav a {
+	display: block;
+	padding: 6px 5px 7px 50px;
+	background-color: #eff2fa;
+	color: #007C92;
+	text-decoration: none;
+	width: auto;
+}
+.leftNavWbPt_WP table.level4Nav a:hover {
+	text-decoration: underline;
+}
+.leftNavWbPt_WP table.level4Nav a.selected {
+	display: block;
+	padding: 6px 5px 7px 50px;
+	background-color: #eff2fa;
+	color: #002664;
+	text-decoration: none;
+	width: auto;
+	font-weight: bold;
+}
+.leftNavWbPt_WP table.level4Nav a.selected:hover {
+	text-decoration: underline;
+}
+
+/* T. Tax Intro */
+.ms-WPBody .taxIntroWbPt {
+	display: inline;
+	float: left;
+/*	margin: 10px 10px 5px 10px;*/
+	width: 480px;
+}
+.ms-WPBody .taxIntroWbPt .podWrapper {
+	width: auto;
+}
+.ms-WPBody .taxIntroWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .taxIntroWbPt .podWrapper .contentWrapper {
+	width: 460px;
+}
+
+.ms-WPBody .taxIntroWbPt .radEditorWrapper {
+	margin-bottom: 10px;
+}
+
+.ms-WPBody .taxIntroWbPt td {
+	vertical-align: top;
+}
+
+.ms-WPBody .taxIntroWbPt .functionBarTable {
+	margin: 0 !important;
+	width: 460px;
+}
+.ms-WPBody .taxIntroWbPt .functionBarTable td.label {
+	color: #193b73;
+	width: 150px;
+	padding-left: 10px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.ms-WPBody .taxIntroWbPt .functionBarTable td.fieldHolder {
+	width: 180px;
+}
+.ms-WPBody .taxIntroWbPt .functionBarTable td.btnHolder {
+	padding-left: 10px;
+}
+.ms-WPBody .taxIntroWbPt a {
+	padding-right: 20px;
+}
+
+
+/* U. INDUSTRIES INTRO */
+.ms-WPBody .industriesIntroWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 100%;
+}
+
+.ms-WPBody .industriesIntroWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .industriesIntroWbPt .podWrapper .contentWrapper {
+	width: auto; *width:100%;margin:010px;}
+.ms-WPBody .industriesIntroWbPt .colWrapper {
+	float: left;
+	width: 140px;
+	margin-left: 5px;
+}
+.ms-WPBody .industriesIntroWbPt .radEditorWrapper {
+	margin-bottom: 0;
+}
+
+.ms-WPBody .industriesIntroWbPt td {
+	vertical-align: top;
+}
+.ms-WPBody .industriesIntroWbPt a {
+	padding-right: 20px;
+}
+
+
+/* U_II. ADVISORY INTRO */
+.ms-WPBody .advisoryIntroWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .advisoryIntroWbPt .podWrapper {
+	width: auto;
+}
+
+.ms-WPBody .advisoryIntroWbPt .podWrapper .contentWrapper {
+	width: auto;
+}
+
+.ms-WPBody .advisoryIntroWbPt .colWrapper {
+	float: left;
+	width: 140px;
+	margin-left: 5px;
+}
+
+.ms-WPBody .advisoryIntroWbPt .radEditorWrapper {
+	margin-bottom: 10px;
+}
+
+.ms-WPBody .advisoryIntroWbPt td {
+	vertical-align: top;
+}
+
+.ms-WPBody .advisoryIntroWbPt a {
+	padding-right: 20px;
+}
+
+
+/* UA. USER ADMINISTRATION */
+.ms-WPBody .userAdministrationWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .userAdministrationWbPt .podHeader {
+	color: #FFFFFF;
+	/*font-size: 100%;*/
+	background-color: #007C92;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: 470px;
+}
+/*.ms-WPBody .userAdministrationWbPt a,*/
+.ms-WPBody .userAdministrationWbPt a.podHeaderLink:link, .ms-WPBody .userAdministrationWbPt a.podHeaderLink:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #007C92;
+}
+.ms-WPBody .userAdministrationWbPt a.podHeaderLink:hover {
+	text-decoration: underline;
+}
+.ms-WPBody .userAdministrationWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .userAdministrationWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .userAdministrationWbPt .colWrapper {
+	width: 190px;
+}
+.ms-WPBody .userAdministrationWbPt .txtField140 {
+	margin-top: 5px;
+}
+.ms-WPBody .userAdministrationWbPt .column1 {
+	width: 460px;
+	margin-top: 10px;
+	margin-right: 10px;
+}
+.ms-WPBody .userAdministrationWbPt .podTable {
+	width: 460px;
+	padding: 0;
+}
+.ms-WPBody .userAdministrationWbPt label {
+	display: block;
+}
+
+/* V. LOCAL CAREERS */
+.ms-WPBody .localCareersWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .localCareersWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .localCareersWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .localCareersWbPt .contentWrapper p {
+	padding-bottom: 10px;
+}
+.ms-WPBody .localCareersWbPt .selectorWrapper {
+	float: left;
+}
+.ms-WPBody .localCareersWbPt .selectorWrapper select {
+	width: 150px;
+}
+
+.ms-WPBody .localCareersWbPt #btnWrapper a, .ms-WPBody .localCareersWbPt #btnWrapper a:link, .ms-WPBody .localCareersWbPt #btnWrapper a:visited, .ms-WPBody .localCareersWbPt #btnWrapper a:hover {
+	font-family: arial, verdana, sans-serif;
+	margin-left: 5px;
+}
+
+.ms-WPBody .localCareersWbPt .podTable {
+	width: 190px;
+}
+
+/* W1. WHAT’S HOT */
+.ms-WPBody .whatsHotWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: 210px;
+}
+
+.ms-WPBody .whatsHotWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .whatsHotWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .whatsHotWbPt .contentRow {
+	margin-top: 10px;
+	border-top: 1px solid #e7ecf8;
+	width: 190px;
+}
+
+/* W2. WHAT’S HOT */
+.ms-WPBody .listBver2 {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .listBver2 .thumbPic {
+	padding-left: 20px;
+	margin: 0px 10px 0px 0px;
+	width: 70px;
+	height: 70px;
+	float: left;
+	clear: right;
+}
+.ms-WPBody .listBver2 .desc {
+	width: 400px;
+	float: left;
+}
+.ms-WPBody .listBver2b {
+	margin: 0px;
+	padding: 5px 0px;
+	border-bottom: 1px solid #E7ECF8;
+	height: 100px;
+}
+.ms-WPBody .listBver2b .thumbPic {
+	padding-left: 20px;
+	margin: 0px 10px 0px 0px;
+	width: 100px;
+	height: 70px;
+	float: left;
+}
+.ms-WPBody .listBver2b .thumbPic h6 {
+	text-align: center !important;
+}
+.ms-WPBody .listBver2b .desc {
+	width: 310px;
+	float: right;
+	min-height: 70px;
+	_height: 70px;
+}
+.ms-WPBody .listBver2b .desc strong {
+	width: 310px;
+}
+.ms-WPBody .buffer {
+	margin: 10px;
+}
+
+/* W2. WHAT’S HOT WITH IMAGES */
+.ms-WPBody .whatsHotImagesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .whatsHotImagesWbPt .contentWrapper {
+	width: 480px;
+	margin: 0 0 10px 0;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentWrapper .column1 {
+	margin-right: 20px;
+	width: 160px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentWrapper .column2 {
+	width: 290px;
+	margin-right: 10px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentRow {
+	width: 480px;
+	margin-top: 10px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentRow .column1 {
+	margin-right: 20px;
+	width: 70px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentRow .column2 {
+	margin-right: 20px;
+	width: 390px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentRow .column3 {
+	margin-right: 20px;
+	width: 30px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentRow .column4 {
+	width: 430px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentWrapper .moreInfoWrapper {
+	float: left;
+	display: inline;
+	background-color: #F8F9FD;
+	border-bottom: 1px solid #CAE2FB;
+	width: 470px;
+	margin: 10px 0 0 0;
+	padding: 5px 0 0 10px;
+}
+.ms-WPBody .whatsHotImagesWbPt .contentWrapper .moreInfoWrapper p.right {
+	text-align: right;
+	margin-right: 10px;
+	margin-top: 5px;
+}
+
+/* X. LEADERSHIP QUERY */
+.ms-WPBody .leadershipQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .leadershipQueryWbPt .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+.ms-WPBody .leadershipQueryWbPt .contentRow {
+	margin-bottom: 20px;
+	width: 480px;
+}
+.ms-WPBody .leadershipQueryWbPt h4 {
+	width: auto;
+}
+.ms-WPBody .leadershipQueryWbPt .column1 {
+	width: 70px;
+	margin-right: 20px;
+}
+.ms-WPBody .leadershipQueryWbPt .column2 {
+	width: 140px;
+}
+.ms-WPBody .leadershipQueryWbPt .contentRow .column2 p {
+	/*font-size: 100%;*/
+}
+.ms-WPBody .leadershipQueryWbPt .contentRow .column2 {
+	/*font-size: 100%;*/
+}
+
+/* Y. OTHER BOARD MEMBERS QUERY */
+.ms-WPBody .otherBoardMembersQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .otherBoardMembersQueryWbPt .podWrapper {
+	width: auto;
+}
+.ms-WPBody .otherBoardMembersQueryWbPt .column1 {
+	width: 225px;
+	margin: 10px 0;
+	float: left;
+	display: inline;
+}
+.ms-WPBody .otherBoardMembersQueryWbPt .column2 {
+	width: 225px;
+	margin: 10px 0;
+	float: left;
+	display: inline;
+}
+.ms-WPBody .otherBoardMembersQueryWbPt a:link {
+	color: #666666;
+	font-weight: bold;
+}
+.ms-WPBody .otherBoardMembersQueryWbPt a:visited {
+	color: #666666;
+	font-weight: bold;
+}
+.ms-WPBody .otherBoardMembersQueryWbPt a:hover {
+	color: #666666;
+	font-weight: bold;
+}
+
+/* Z. OTHER LEADERS */
+.ms-WPBody .otherLeadersWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+.ms-WPBody .otherLeadersWbPt .podWrapper {
+	float: left;
+	width: 190px;
+}
+.ms-WPBody .otherLeadersWbPt .contentWrapper {
+	float: left;
+	width: 190px;
+}
+
+/* AA. SUCCESS */
+.ms-WPBody .successWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .successWbPt .podWrapper {
+	width: 370px;
+}
+.ms-WPBody .successWbPt .contentWrapper {
+	width: 370px;
+}
+.ms-WPBody .successWbPt .contentRow {
+	width: 370px;
+}
+.ms-WPBody .successWbPt .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .successWbPt .column2 {
+	width: 270px;
+}
+.ms-WPBody .successWbPt .column2 .subheader2 {
+	float: right;
+}
+
+/* BB. DOWNLOAD/RELATED REPORTS */
+.ms-WPBody .downloadRelatedReportsWbPt {
+	display: inline;
+	float: left;
+	width: 160px;
+	margin: 0;
+}
+#template5_z5 .ms-WPBody .downloadRelatedReportsWbPt {
+	display: inline;
+	float: left;
+	width: 190px;
+	margin: 0 10px 10px 10px;
+}
+
+#template4_z3 .ms-WPBody .downloadRelatedReportsWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+	margin: 10px;
+}
+
+.ms-WPBody .downloadRelatedReportsWbPt .podWrapper {
+	width: 160px;
+}
+#template5_z5 .ms-WPBody .downloadRelatedReportsWbPt .podWrapper {
+	width: 190px;
+	margin: 0 10px;
+}
+#template4_z3 .ms-WPBody .downloadRelatedReportsWbPt .podWrapper {
+	width: 210px;
+	/*margin: 0 10px; DF*/
+}
+.ms-WPBody .downloadRelatedReportsWbPt .contentWrapper {
+	/*width: 160px;*/
+	width: auto;
+	margin: 0pt 10px;
+}
+#template4_z3 .ms-WPBody .downloadRelatedReportsWbPt .contentWrapper {
+	width: 190px;
+	margin: 0pt 10px;
+}
+.ms-WPBody .downloadRelatedReportsWbPt .contentWrapper img {
+	margin-right: 10px;
+	float: left;
+	vertical-align: bottom;
+}
+
+/* BB. DOWNLOAD/PDF File */
+.ms-WPBody .downloadPDFFileWbPt {
+	display: inline;
+	float: left;
+	width: 160px;
+	margin: 0;
+}
+#template5_z5 .ms-WPBody .downloadPDFFileWbPt {
+	display: inline;
+	float: left;
+	width: 190px;
+	margin: 0 10px 10px 10px;
+}
+
+#template4_z3 .ms-WPBody .downloadPDFFileWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+	margin: 10px;
+}
+
+.ms-WPBody .downloadPDFFileWbPt .podWrapper {
+	width: 160px;
+}
+#template5_z5 .ms-WPBody .downloadPDFFileWbPt .podWrapper {
+	width: 190px;
+	margin: 0 10px;
+}
+#template4_z3 .ms-WPBody .downloadPDFFileWbPt .podWrapper {
+	width: 210px;
+	/*margin: 0 10px; DF*/
+}
+.ms-WPBody .downloadPDFFileWbPt .contentWrapper {
+	/*width: 160px;*/
+	width: auto;
+	margin: 0pt 10px;
+}
+#template4_z3 .ms-WPBody .downloadPDFFileWbPt .contentWrapper {
+	width: 190px;
+	margin: 0pt 10px;
+}
+.ms-WPBody .downloadPDFFileWbPt .contentWrapper img {
+	margin-right: 10px;
+	float: left;
+	vertical-align: bottom;
+}
+
+/* CC. MULTILINK LIST */
+.ms-WPBody .multilinkListWbPT {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .multilinkListWbPT .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .multilinkListWbPT .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .multilinkListWbPT .colWrapper {
+	width: 190px;
+}
+.ms-WPBody .multilinkListWbPT .column1 {
+	width: 220px;
+	margin-right: 20px;
+}
+.ms-WPBody .multilinkListWbPT .column2 {
+	width: 220px;
+}
+
+/* DD. COUNTRY OFFICE QUERY */
+.ms-WPBody .countryOfficeQueryWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .countryOfficeQueryWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .countryOfficeQueryWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .countryOfficeQueryWbPt .colWrapper {
+	width: 190px;
+}
+.ms-WPBody .countryOfficeQueryWbPt .column1 {
+	width: 220px;
+	margin-right: 20px;
+}
+.ms-WPBody .countryOfficeQueryWbPt .column2 {
+	width: 220px;
+}
+
+/* EE. LOCATION QUERY */
+.ms-WPBody .locationQueryWbPt {
+}
+.ms-WPBody .locationQueryWbPt td {
+	padding-left: 5px;
+}
+
+.ms-WPBody .locationQueryWbPt li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+
+/* GG. BLOG SUMMARIES */
+
+/* HH. BLOG COMMENT SUBMITTED */
+
+/* II. ARTICLES & PUBLICATIONS QUERY */
+.ms-WPBody .articlesPublicationsQueryWbPt {
+	display: inline;
+	float: left;
+	width: 100%;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentWrapper {
+	margin: 0;
+	width: 480px;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow {
+	border-bottom: solid 1px #E0EEFB;
+	margin-bottom: 13px;
+	padding-bottom: 13px;
+	width: 100%;
+}
+
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow .column1 {
+	margin: 0 10px;
+	width: 30px;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow .column2 {
+	width: 280px;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow .column3 h4.subheader2 {
+	text-align: right;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow .column3 {
+	display: inline;
+	float: left;
+	margin-left: 20px;
+	text-align: right;
+	width: 120px;
+}
+.ms-WPBody .articlesPublicationsQueryWbPt .contentRow .column2 .timeStamp {
+}
+
+/* JJ. CAST SUMMARY */
+.castSummaryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.castSummaryWbPt .contentWrapper p {
+	line-height: 12pt;
+}
+.castSummaryWbPt .podWrapper {
+	float: left;
+	width: 190px;
+}
+.castSummaryWbPt .contentWrapper {
+	float: left;
+	width: 190px;
+}
+
+/* KK. VIDEO SUMMARY */
+
+/* LL. MOST RECENT VIDEOS */
+.ms-WPBody .mostRecentVideosWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .mostRecentVideosWbPt .podWrapper {
+	/* width: 190px; */
+	width: 210px;
+}
+.ms-WPBody .mostRecentVideosWbPt .contentWrapper {
+	margin-top: 0;
+}
+.ms-WPBody .mostRecentVideosWbPt .contentWrapper h4 {
+	font-weight: normal;
+	line-height: 14px;
+	margin-bottom: 3px;
+}
+.ms-WPBody .mostRecentVideosWbPt .contentRow {
+	width: 190px;
+}
+.ms-WPBody .mostRecentVideosWbPt .column1 {
+	width: auto;
+	margin-right: 10px;
+}
+.ms-WPBody .mostRecentVideosWbPt .column2 {
+	width: 140px;
+}
+.ms-WPBody .mostRecentVideosWbPt .podFooterLink {
+	width: 190px;
+	margin-top: 10px;
+	padding-top: 5px;
+	border-top: 1px solid #ccc;
+}
+
+/* MM. FEED SUMMARY */
+/*
+.ms-WPBody .feedSummaryWbPt .paging { 
+	margin:20px 0px 0px 0px !important; 
+}
+*/
+.ms-WPBody .feedSummaryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+
+.ms-WPBody .feedSummaryWbPt .contentWrapper {
+	margin: 0;
+	width: 480px;
+}
+.ms-WPBody .feedSummaryWbPt .contentRow {
+	width: 480px;
+	margin-top: 10px;
+}
+.ms-WPBody .feedSummaryWbPt .column1 {
+	width: 10px;
+	float: left;
+	display: inline;
+	margin-right: 10px;
+	padding-top: 2px;
+}
+.ms-WPBody .feedSummaryWbPt .column2 {
+	width: 460px;
+	float: left;
+	display: inline;
+}
+.ms-WPBody .feedSummaryWbPt h4.subheader2 {
+	text-align: left;
+}
+
+/* CAREER PODCAST BUNDLE QUERY */
+.ms-WPBody .careerPodcastBundleQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: auto;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .contentRow {
+	margin: 0 0 13px 0;
+	width: 480px;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .column1 {
+	width: 160px;
+	margin-right: 10px;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .column2 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt h4.subheader2 {
+	text-align: right;
+}
+.ms-WPBody .careerPodcastBundleQueryWbPt .rowDivider {
+	width: 480px;
+	height: 12px;
+	margin: 0;
+}
+
+/* PP. EVENTS */
+.ms-WPBody .eventsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .eventsWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .eventsWbPt .ListAMod {
+	float: left;
+	width: 460px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.ms-WPBody .eventsWbPt .ListAModLast {
+	float: left;
+	width: 460px;
+}
+.ms-WPBody .eventsWbPt .column1 {
+	float: left;
+	display: inline;
+	width: 320px;
+	margin-right: 20px;
+}
+.ms-WPBody .eventsWbPt .column2 {
+	float: left;
+	display: inline;
+	width: 120px;
+}
+.ms-WPBody .eventsWbPt .column2 h4 {
+	text-align: right;
+}
+.ms-WPBody .eventsWbPt .column2 p {
+	text-align: right;
+}
+.ms-WPBody .eventsWbPt .functionBar {
+	background-color: #fff;
+}
+.ms-WPBody .eventsWbPt .functionBar p {
+	/*font-size: 91%;*/
+	line-height: 10px;
+}
+
+/* QQ. EVENT DETAILS */
+
+/* RR. EVENT PHOTOS INTRO */
+.ms-WPBody .eventPhotosIntro {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .eventPhotosIntro podWrapper {
+	float: left;
+	display: inline;
+	width: 480px;
+	background-color: #999999;
+}
+.ms-WPBody .eventPhotosIntro .contentWrapper {
+	float: left;
+	width: 460px;
+}
+.ms-WPBody .eventPhotosIntro .photoRow {
+	float: left;
+	width: 460px;
+	clear: both;
+}
+.ms-WPBody .eventPhotosIntro .eventPhotoWrapper {
+	float: left;
+	display: inline;
+	width: 108px;
+}
+.ms-WPBody .eventPhotosIntro .photoCell {
+	float: left;
+	width: 108px;
+	height: 108px;
+	display: inline;
+	border: 1px solid #e9edf8;
+	background-color: #FFFFFF;
+	margin-right: 5px;
+}
+.ms-WPBody .eventPhotosIntro .photoCell .eventsPhotoLndscp {
+	float: left;
+	display: inline;
+	width: 85px;
+	margin: 25px 10px;
+}
+.ms-WPBody .eventPhotosIntro .photoCell .eventsPhotoPort {
+	float: left;
+	display: inline;
+	width: 55px;
+	margin: 10px 25px;
+}
+.ms-WPBody .eventPhotosIntro .photoLabelWrapper {
+	float: left;
+	display: inline;
+	width: 108px;
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+/* SS. EVENT PHOTOS */
+.ms-WPBody .eventPhotos {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .eventPhotos podWrapper {
+	float: left;
+	display: inline;
+	width: 480px;
+	background-color: #999999;
+}
+.ms-WPBody .eventPhotos .contentWrapper {
+	float: left;
+	width: 460px;
+}
+.ms-WPBody .eventPhotos .photoRow {
+	float: left;
+	width: 460px;
+	margin-bottom: 20px;
+	clear: both;
+}
+.ms-WPBody .eventPhotos .eventPhotoWrapper {
+	float: left;
+	display: inline;
+	width: 108px;
+}
+.ms-WPBody .eventPhotos .photoCell {
+	float: left;
+	width: 108px;
+	height: 108px;
+	display: inline;
+	border: 1px solid #e9edf8;
+	background-color: #FFFFFF;
+	margin-right: 5px;
+}
+.ms-WPBody .eventPhotos .photoCell .eventsPhotoLndscp {
+	float: left;
+	display: inline;
+	width: 85px;
+	margin: 25px 10px;
+}
+.ms-WPBody .eventPhotos .photoCell .eventsPhotoPort {
+	float: left;
+	display: inline;
+	width: 55px;
+	margin: 10px 25px;
+}
+.ms-WPBody .eventPhotos .photoLabelWrapper {
+	float: left;
+	display: inline;
+	width: 108px;
+	margin: 5px 0 0 0;
+	text-align: center;
+}
+
+/* TT. INDUSTRIES SELECTOR */
+.ms-WPBody ul.orangeList {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody ul.orangeList li {
+	list-style: url(../images/bg-orangeArrow.gif);
+	line-height: 1em;
+}
+
+/* UU. BUSINESSES OPERATED IN */
+.ms-WPBody .businessesOperatedInWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: auto;
+}
+.ms-WPBody .businessesOperatedInWbPt .contentWrapper {
+	width: auto;
+}
+.ms-WPBody .businessesOperatedInWbPt .contentRow {
+	margin-bottom: 20px;
+	width: 460px;
+}
+.ms-WPBody .businessesOperatedInWbPt h4 {
+	margin-bottom: 5px;
+	width: auto;
+}
+.ms-WPBody .businessesOperatedInWbPt .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .businessesOperatedInWbPt .column2 {
+	width: 280px;
+}
+
+
+/* VV. CAREER LEVELS QUERY */
+.ms-WPBody .careerLevelsQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: auto;
+}
+.ms-WPBody .careerLevelsQueryWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .careerLevelsQueryWbPt .contentWrapper {
+	margin: 0;
+	width: 480px;
+}
+.ms-WPBody .careerLevelsQueryWbPt .contentRow {
+	width: 480px;
+	margin-bottom: 10px;
+}
+.ms-WPBody .careerLevelsQueryWbPt .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .careerLevelsQueryWbPt .column2 {
+	width: 290px;
+}
+
+/* WW. TRANSCRIPT */
+.ms-WPBody .transcriptWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .transcriptWbPt h4 {
+	color: #002664;
+	/*font-size: 109.5%;*/
+}
+
+/* YY. PROFILE DETAILS */
+.ms-WPBody .profileDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .profileDetailsWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .profileDetailsWbPt .left {
+	width: 153px;
+	margin-right: 10px;
+	float: left;
+}
+.ms-WPBody .profileDetailsWbPt .middle {
+	width: 153px;
+	margin-right: 10px;
+	float: left;
+}
+.ms-WPBody .profileDetailsWbPt .right {
+	width: 154px;
+	float: left;
+}
+
+/* ZZ. OTHER PROFILES */
+.ms-WPBody .otherProfilesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .otherProfilesWbPt .podWrapper {
+	width: 190px;
+}
+.ms-WPBody .otherProfilesWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .otherProfilesWbPt .colWrapper {
+	width: 190px;
+}
+.ms-WPBody .otherProfilesWbPt .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .otherProfilesWbPt .column2 {
+	width: 110px;
+}
+
+/* AB. CASE STUDIES QUERY */
+.ms-WPBody .caseStudiesQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .caseStudiesQueryWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .contentWrapper {
+	width: 440px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .column2 {
+	width: 260px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .contentWrapper {
+}
+.ms-WPBody .caseStudiesQueryWbPt .contentRow {
+	width: 440px;
+	margin: 10px 10px 20px 10px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .colWrapper {
+	width: 440px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .colWrapper .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .caseStudiesQueryWbPt .colWrapper .column2 {
+	width: 240px;
+}
+
+
+/* AC. CASE STUDY DETAIL */
+.ms-WPBody .caseStudyDetailWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .caseStudyDetailWbPt h3 {
+	color: #002664;
+	/*font-size: 109.5%;*/
+}
+
+/* AD. CAREER NEWSLETTER QUERY */
+.ms-WPBody .careerNewsletterQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: auto;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .contentRow {
+	width: 460px;
+	margin-bottom: 20px;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .column1 {
+	width: 160px;
+	margin-right: 20px;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .column2 {
+	width: 280px;
+}
+.ms-WPBody .careerNewsletterQueryWbPt .wideThumb {
+	margin-bottom: 0;
+}
+
+
+/* AE. LATEST PRESS RELEASES */
+.ms-WPBody .latestPressReleasesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+.ms-WPBody .latestPressReleasesWbPt .contentWrapper {
+	width: 460px;
+	margin: 10px 10px 0 10px;
+}
+.ms-WPBody .latestPressReleasesWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .latestPressReleasesWbPt .rowDivider {
+	width: 460px;
+	height: 13px;
+	margin-top: 12px;
+}
+.ms-WPBody .latestPressReleasesWbPt .column1 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .latestPressReleasesWbPt .column2 {
+	width: 160px;
+}
+.ms-WPBody .latestPressReleasesWbPt .column2 h4.subheader2, .ms-WPBody .latestPressReleasesWbPt .column2 p {
+	text-align: right;
+}
+
+/* AF. PRESS RELEASE RESULTS */
+.ms-WPBody .pressReleaseResultsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: 480px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .contentWrapper {
+	width: 480px;
+	margin: 0;
+}
+.ms-WPBody .pressReleaseResultsWbPt .contentRow {
+	width: 480px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .rowDivider {
+	width: 460px;
+	height: 13px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .column1 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .column2 {
+	width: 140px;
+	margin-right: 20px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .column3 {
+	width: 10px;
+}
+.ms-WPBody .pressReleaseResultsWbPt .column2 h4.subheader2, .ms-WPBody .pressReleaseResultsWbPt .column2 p {
+	text-align: right;
+}
+
+/* AG. AV SEARCH RESULTS */
+.ms-WPBody .avSearchResultsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .avSearchResultsWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .avSearchResultsWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .avSearchResultsWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .avSearchResultsWbPt .column1 {
+	width: 30px;
+	margin-right: 10px;
+}
+.ms-WPBody .avSearchResultsWbPt .column2 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .avSearchResultsWbPt .column3 {
+	width: 120px;
+}
+.ms-WPBody .avSearchResultsWbPt .subheader2 {
+	text-align: right;
+}
+.ms-WPBody .avSearchResultsWbPt .rowDivider {
+	width: 480px;
+}
+
+/* AH. KPMG IN THE NEWS */
+.ms-WPBody .kpmgInTheNewsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column1 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column2 {
+	width: 130px;
+	margin-right: 10px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column1 h4.podHeaderLink {
+	margin-bottom: 10px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column2 h4.subheader2 {
+	margin-bottom: 10px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column2 p {
+	text-align: right;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .column3 {
+	width: 20px;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .subheader2 {
+	text-align: right;
+}
+.ms-WPBody .kpmgInTheNewsWbPt .rowDivider {
+	width: 460px;
+	margin-bottom: 13px;
+}
+
+/* AI. ARTICLE INTRO */
+.ms-WPBody .articleIntroWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .articleIntroWbPt h3 {
+	color: #002664;
+	/*font-size: 109.5%;*/
+}
+
+/* AK. CONTACT */
+.ms-WPBody .contactWbPt {
+	display: inline;
+	float: left;
+	width: 160px;
+}
+.ms-WPBody .contactWbPt .podWrapper {
+	width: 160px;
+}
+.podHeaderLink {
+	margin-bottom: 5px;
+}
+.ms-WPBody .contactWbPt .contentWrapper {
+	width: 160px;
+	margin: 0;
+}
+.ms-WPBody .contactWbPt .contentRow {
+	width: auto;
+	border-top: 1px solid #B2B2B2;
+	padding-top: 5px;
+}
+.ms-WPBody .contactWbPt .podTable {
+	width: 160px;
+	padding: 0;
+}
+.ms-WPBody .contactWbPt .podTable td.left {
+	width: 140px;
+}
+.ms-WPBody .contactWbPt .podTable td.middle {
+	width: 130px;
+	padding-right: 8px;
+}
+.ms-WPBody .contactWbPt .podTable td.right {
+	width: 40px;
+}
+.ms-WPBody .contactWbPt select {
+	width: 120px;
+}
+
+/* AL. CONTACT SEARCH RESULTS */
+.ms-WPBody .contactSearchResultsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .contactSearchResultsWbPt .podWrapper {
+	width: 460px;
+	margin-bottom: 0;
+}
+.ms-WPBody .contactSearchResultsWbPt .contentRow {
+	width: 460px;
+	margin: 0 10px 13px 10px;
+}
+.ms-WPBody .contactSearchResultsWbPt .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .contactSearchResultsWbPt .column2 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .contactSearchResultsWbPt .column3 {
+	width: 70px;
+}
+.ms-WPBody .contactSearchResultsWbPt .podHeaderLink {
+	margin-bottom: 5px;
+}
+.ms-WPBody .contactSearchResultsWbPt .subheader2 {
+	text-align: right;
+	margin-top: 20px;
+}
+.ms-WPBody .contactSearchResultsWbPt .rowDivider {
+	width: 480px;
+	margin-bottom: 13px;
+}
+
+/* AM. CONTACT DETAILS */
+.ms-WPBody .contactDetailsWbPt {
+	background-color: #f8f9fd;
+	border-bottom: 1px solid #e7ecf8;
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .contactDetailsWbPt .functionBar {
+	width: 460px;
+	padding: 5px 0 0 0;
+}
+.ms-WPBody .contactDetailsWbPt .subheader1 {
+	/*font-size: 109.5%;*/
+	width: auto;
+}
+.ms-WPBody .contactDetailsWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .contactDetailsWbPt .colWrapper {
+	width: 460px;
+}
+.ms-WPBody .contactDetailsWbPt .column1 {
+	clear: both;
+	float: left;
+	margin-right: 10px;
+	width: 220px;
+}
+.ms-WPBody .contactDetailsWbPt .column2 {
+	width: 120px;
+}
+.ms-WPBody .contactDetailsWbPt .label {
+	color: #006666 !important;
+}
+
+/* AN. CONTACT FORM */
+.ms-WPBody .contactFormWbPt {
+	display: inline;
+	float: left;
+	/*margin: 10px 10px;*/
+	width: 480px;
+}
+.ms-WPBody .contactFormWbPt .contactForm h3 {
+	color: #fff !important;
+	/*font-size: 109.5%;*/
+	line-height: 12pt;
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #002664;
+	border-right: 1px solid #002664;
+}
+.ms-WPBody .contactFormWbPt .contactForm td {
+	vertical-align: top;
+}
+.ms-WPBody .contactFormWbPt .contactForm label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+}
+.ms-WPBody .contactFormWbPt .contactForm input {
+	margin-top: 0px;
+	border: 1px solid #666;
+	width: 210px;
+}
+.ms-WPBody .contactFormWbPt .contactForm .newsletters label {
+	color: #007C92;
+	vertical-align: top;
+	line-height: 14px;
+}
+.ms-WPBody .contactFormWbPt .contactForm .newsletters label .desc {
+	color: #666666;
+	line-height: 12pt;
+}
+.ms-WPBody .contactFormWbPt .contactForm p.textRight {
+	text-align: right;
+	margin-right: 10px;
+}
+.ms-WPBody .contactFormWbPt .contactForm .buffer {
+	margin: 0px 40px 0px 0px;
+}
+.ms-WPBody .contactFormWbPt .contactForm p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+	line-height: 12pt;
+}
+.ms-WPBody .contactFormWbPt .contactForm .instructionText {
+	margin: 10px 35px 0px 10px;
+	line-height: 12pt;
+}
+.ms-WPBody .contactFormWbPt .contactForm .left {
+	float: left;
+}
+.ms-WPBody .contactFormWbPt .contactForm td {
+	width: 50%;
+}
+.ms-WPBody .contactFormWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .contactFormWbPt .contactForm a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .contactFormWbPt .contactForm a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+.ms-WPBody .contactFormWbPt .contactForm .frmSelector {
+	width: 210px;
+}
+
+
+/* AO. MESSAGE SENT DETAILS */
+.ms-WPBody .messageSentDetailsWbPt {
+	display: inline;
+	float: left;
+	/*margin: 10px 10px;*/
+	width: 480px;
+}
+.ms-WPBody .messageSentDetailsWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .messageSentDetailsWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .messageSentDetailsWbPt .podTable {
+	width: 460px;
+}
+.ms-WPBody .messageSentDetailsWbPt .left {
+	width: 100px;
+	color: #002664;
+	padding: 5px 0;
+}
+.ms-WPBody .messageSentDetailsWbPt .right {
+	width: 360px;
+}
+
+/* AP. INTERNATIONAL HOTLINE NUMBERS */
+.ms-WPBody .internationalHotlineNumbersWbPT {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .podTable {
+	width: 460px;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .podTable td {
+	color: #666666;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .left {
+	width: 230px;
+	font-weight: bold;
+	padding: 2px 0;
+}
+.ms-WPBody .internationalHotlineNumbersWbPT .right {
+	width: 230px;
+}
+
+/* AQ. INTERNATIONAL PRESS OFFICES */
+.ms-WPBody .internationalPressOfficesWbPT {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+.ms-WPBody .internationalPressOfficesWbPT .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .internationalPressOfficesWbPT .podTable {
+	width: 460px;
+}
+.ms-WPBody .internationalPressOfficesWbPT .left {
+	width: 230px;
+	font-weight: bold;
+	padding: 2px 0;
+	color: #666666;
+}
+.ms-WPBody .internationalPressOfficesWbPT .right {
+	width: 230px;
+	color: #666666;
+}
+
+/* AR. SEARCH RESULTS */
+.ms-WPBody .searchResultsWbPt {
+	display: inline;
+	float: left;
+	margin-bottom: 20px;
+	width: 480px;
+}
+.ms-WPBody .searchResultsWbPt .searchTabsNav ul {
+	border-bottom: 1px solid #C9E1F9;
+	margin: 0;
+	padding-bottom: 30px;
+	padding-left: 0px;
+}
+/*.ms-WPBody .searchResultsWbPt .searchTabsNav ul,*/
+.ms-WPBody .searchResultsWbPt .searchTabsNav li {
+	display: inline;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.ms-WPBody .searchResultsWbPt .searchTabsNav a:link, .ms-WPBody .searchResultsWbPt .searchTabsNav a:visited {
+	background: #F8F8FD;
+	border: 1px solid #C9E1F9;
+	color: #007C92;
+	float: left;
+	font-weight: normal;
+	line-height: 14px;
+	margin-right: 2px;
+	padding: 2px 10px 2px 10px;
+	text-decoration: none;
+}
+.ms-WPBody .searchResultsWbPt .searchTabsNav a:hover {
+	text-decoration: underline;
+}
+.ms-WPBody .searchResultsWbPt .searchTabsNav a:link.selected, .ms-WPBody .searchResultsWbPt .searchTabsNav a:visited.selected {
+	background: #E0EEFB;
+	border-bottom: 1px solid #E0EEFB;
+	color: #002664;
+	font-weight: bold;
+}
+.ms-WPBody .searchResultsWbPt .searchTabsNav ul a:hover {
+	color: #f00 !important;
+}
+
+.ms-WPBody .searchResultsWbPt .resultsWrapper {
+	border-bottom: 1px solid #C9E1F9;
+	background: #E0EEFB;
+	padding: 12px 11px 25px;
+	color: #002664;
+	margin: 5px 0 20px;
+}
+
+.ms-WPBody .searchResultsWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .searchResultsWbPt .contentWrapper {
+	width: 460px;
+	margin: 0;
+}
+.ms-WPBody .searchResultsWbPt .featuredLinksWrapper {
+	float: left;
+	width: 480px;
+	padding-top: 10px;
+	margin-bottom: 10px;
+	background-color: #fbfcfe;
+	border-bottom: 1px solid #e7ecf8;
+}
+.ms-WPBody .searchResultsWbPt .featureHeader {
+	margin-bottom: 5px;
+	color: #002664;
+}
+.ms-WPBody .searchResultsWbPt .featureRow {
+	float: left;
+	width: 460px;
+	margin-bottom: 10px;
+}
+.ms-WPBody .searchResultsWbPt .contentRow {
+	width: 480px;
+}
+.ms-WPBody .searchResultsWbPt .column1 {
+	width: 330px;
+	margin-right: 20px;
+}
+.ms-WPBody .searchResultsWbPt .column2 {
+	width: 90px;
+	margin-right: 10px;
+	min-height: 20px;
+}
+.ms-WPBody .searchResultsWbPt h4.subheader1 {
+	margin: 10px 0 5px 0;
+}
+.ms-WPBody .searchResultsWbPt .column2 p {
+	text-align: right;
+}
+.ms-WPBody .searchResultsWbPt .column3 {
+	width: 20px;
+	text-align: right;
+}
+.ms-WPBody .searchResultsWbPt .subheader2 {
+	text-align: right;
+}
+.ms-WPBody .searchResultsWbPt .rowDivider {
+	width: 480px;
+	margin: 10px 0;
+	/*font-size: 0;*/
+}
+
+/* AS. SITE REQUIREMENTS */
+.ms-WPBody .siteRequirementsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .siteRequirementsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .siteRequirementsWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .siteRequirementsWbPt .contentWrapper p {
+	margin-bottom: 10px;
+}
+
+/* AT. GLOSSARY SUMMARY */
+.ms-WPBody .glossarySummaryWbPt {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: auto;
+}
+.ms-WPBody .glossarySummaryWbPt .contentWrapper {
+	width: 480px;
+	margin: 0 0 10px 0;
+}
+.ms-WPBody .glossarySummaryWbPt .colWrapper {
+	width: 230px;
+	margin-bottom: 20px;
+}
+.ms-WPBody .glossarySummaryWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .glossarySummaryWbPt .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .glossarySummaryWbPt .column2 {
+	width: 110px;
+}
+.ms-WPBody .glossarySummaryWbPt .rowDivider {
+	width: 460px;
+	margin-top: 13px;
+	margin-bottom: 13px;
+}
+.ms-WPBody .glossarySummaryWbPt .anchorTag {
+	margin-top: 5px;
+}
+
+/* AU. GLOSSARY DETAILS */
+.ms-WPBody .glossaryDetailsWbPt {
+}
+
+/* AV. SITE MAP */
+/*
+BUG 1089 -The 'Site Map' Web Part is not appearing as desired
+10/05/2009
+Vishal Goel
+
+*/
+.ms-WPBody .siteMapWbPt {
+	display: inline;
+	float: left;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 480px;
+}
+.ms-WPBody .siteMapWbPt .podHeader {
+	color: #FFFFFF;
+	background-color: #007C92;
+	border-right: 1px solid #146E7E;
+	border-bottom: 1px solid #146E7E;
+	width: 460px;
+	padding-left: 10px;
+}
+.ms-WPBody .siteMapWbPt .podHeader a {
+	color: #ffffff;
+}
+.ms-WPBody .siteMapWbPt .podHeader a:hover {
+	color: #ffffff;
+	text-decoration: underline;
+}
+.ms-WPBody .siteMapWbPt a {
+	color: #007C92;
+}
+.ms-WPBody .siteMapWbPt a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+.ms-WPBody .siteMapWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .siteMapWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .siteMapWbPt .contentRow {
+	width: 480px;
+}
+.ms-WPBody .siteMapWbPt p {
+	margin-bottom: 0px;
+}
+.ms-WPBody .siteMapWbPt .subItem {
+	margin-bottom: 0px;
+}
+.ms-WPBody .siteMapWbPt .secondaryLevel {
+	width: 450px;
+	margin-top: 5px;
+	margin-left: 10px;
+}
+
+/* AW. REGISTER */
+.ms-WPBody .registerWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: auto;
+}
+.ms-WPBody .registerWbPt .registerForm h3 {
+	color: #ffffff;
+	font-size: 12px;
+	line-height: 13px;
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #002664;
+	border-right: 1px solid #002664;
+}
+/*.ms-WPBody .registerWbPt .registerForm td {vertical-align:top;}*/
+.ms-WPBody .registerWbPt .registerForm label {
+	color: #002664;
+	line-height: 14px;
+}
+.ms-WPBody .registerWbPt .registerForm label.title {
+	font-weight: bold;
+	/*font-size: 109.5%;*/
+}
+.ms-WPBody .registerWbPt .registerForm input {
+	margin-top: 0px;
+	border: 0px solid #666;
+	vertical-align: middle;
+}
+.ms-WPBody .registerWbPt .registerForm .ieNoBorder input {
+	border: 0;
+}
+.ms-WPBody .registerWbPt .registerForm label input {
+	border: 0;
+}
+.ms-WPBody .registerWbPt .registerForm .newsletters label {
+	color: #007C92;
+	line-height: 14px;
+}
+.ms-WPBody .registerWbPt .registerForm .newsletters label .desc {
+	color: #666666;
+	line-height: 12pt;
+}
+.ms-WPBody .registerWbPt .registerForm div.textRight {
+	text-align: right;
+	margin-right: 10px;
+}
+.ms-WPBody .registerWbPt .registerForm p.textRight {
+	text-align: right;
+	margin-right: 10px;
+}
+.ms-WPBody .registerWbPt .registerForm .buffer {
+	margin: 0px 40px 0px 0px;
+}
+.ms-WPBody .registerWbPt .registerForm p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+}
+.ms-WPBody .registerWbPt .registerForm .instructionText {
+	margin: 10px 35px 0px 10px;
+	line-height: 12pt;
+}
+.ms-WPBody .registerWbPt .registerForm .left {
+	float: left;
+}
+.ms-WPBody .registerWbPt .registerForm td {
+	width: 50%;
+}
+.ms-WPBody .registerWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .registerWbPt .registerForm a {
+	color: #007C92;
+	text-decoration: underline;
+}
+.ms-WPBody .registerWbPt .registerForm a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+
+/* AX. REGISTERED */
+.ms-WPBody .registeredWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+	line-height: 14px;
+}
+.ms-WPBody .registeredWbPt .registeredForm h3 {
+	color: #fff !important;
+	/*font-size: 109.5%;*/
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #002664;
+}
+.ms-WPBody .registeredWbPt .registeredForm label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+}
+.registeredForm .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .registeredWbPt .registeredForm td {
+	width: 50%;
+}
+.ms-WPBody .registeredWbPt .registeredForm p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+}
+.ms-WPBody .registeredWbPt .registeredForm p.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .registeredWbPt .registeredForm a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .registeredWbPt .registeredForm a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+.ms-WPBody .registerWbPt .registerForm input {
+	border-width: 0px;
+}
+.ms-WPBody .registerWbPt .registerForm input.textBox {
+	border-width: 1px;
+	width: 210px;
+}
+
+/* AY. LOGIN */
+.ms-WPBody .loginWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: auto;
+	line-height: 14px;
+}
+.ms-WPBody .loginWbPt h3 {
+	color: #fff !important;
+	/*font-size: 109.5%;*/
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: normal;
+	border-bottom: 1px solid #002664;
+}
+.ms-WPBody .loginWbPt label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+}
+.ms-WPBody .loginWbPt .title {
+	font-weight:bold;
+}
+.ms-WPBody .loginWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .loginWbPt td {
+	width: 50%;
+}
+.ms-WPBody .loginWbPt p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+}
+.ms-WPBody .loginWbPt p.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .loginWbPt div.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .loginWbPt a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .loginWbPt a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+
+/* AZ. FORGOT PASSWORD */
+.ms-WPBody .forgotPasswordWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .forgotPasswordWbPt h3 {
+	color: #fff !important;
+	/*font-size: 109.5%;*/
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #002664;
+}
+.ms-WPBody .forgotPasswordWbPt label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+}
+.ms-WPBody .forgotPasswordWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .forgotPasswordWbPt td {
+	width: 25%;
+}
+.ms-WPBody .forgotPasswordWbPt p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+	line-height: 12pt;
+}
+.ms-WPBody .forgotPasswordWbPt p.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .forgotPasswordWbPt div.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .forgotPasswordWbPt a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .forgotPasswordWbPt a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+
+/* BA. CHANGE PASSWORD */
+.ms-WPBody .changePasswordWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .changePasswordWbPt h3 {
+	color: #fff !important;
+	/*font-size: 109.5%;*/
+	background-color: #007C92;
+	padding: 3px 10px;
+	font-weight: bold;
+	border-bottom: 1px solid #002664;
+}
+.ms-WPBody .changePasswordWbPt label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+}
+.ms-WPBody .changePasswordWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.ms-WPBody .changePasswordWbPt td {
+	width: 30%;
+}
+.ms-WPBody .changePasswordWbPt p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+	line-height: 12pt;
+}
+.ms-WPBody .changePasswordWbPt p.textRight {
+	text-align: right;
+	margin-right: 10px;
+}
+.ms-WPBody .changePasswordWbPt div.textRight {
+	text-align: right;
+	margin-right: 10px;
+}
+.ms-WPBody .changePasswordWbPt a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .changePasswordWbPt a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+
+/* BB. ADDITIONAL DETAILS */
+.ms-WPBody .additionalDetailsWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .additionalDetailsWbPt h3 {
+	padding: 3px 10px 3px 0;
+	font-weight: bold;
+}
+.ms-WPBody .additionalDetailsWbPt h3.blueHeading {
+	color: #fff !important;
+	padding-left: 10px;
+	/*font-size: 109.5%;*/
+	background-color: #007C92;
+	border-bottom: 1px solid #002664;
+}
+.ms-WPBody .additionalDetailsWbPt label {
+	color: #002664;
+	line-height: 12pt;
+	/*font-size: 100%;*/
+	line-height: 150%;
+}
+.additionalDetailsWbPt .submitRow {
+	background-image: url(../images/bg-form-submit.gif);
+	height: 30px;
+	background-repeat: repeat-x;
+	padding-top: 0px;
+	padding-right: 8px;
+}
+.formPadding,
+.wizardStepDescription,
+.unregisterStepItem,
+.unregisterAllCheck
+{
+	padding: 4px 5px 4px 5px;
+}
+.unregisterAllCheck
+{
+	border-top:dotted 1px #999999;
+	font-weight:bold;
+}
+
+.ms-WPBody .additionalDetailsWbPt .submitRow a 
+{
+	*padding-right:10px !important;
+}
+
+.ms-WPBody .additionalDetailsWbPt p {
+	padding-left: 10px;
+	margin-bottom: 3px;
+	line-height: 12pt;
+}
+.ms-WPBody .additionalDetailsWbPt p.textRight {
+	text-align: right;
+	line-height: 12pt;
+	margin-right: 10px;
+}
+.ms-WPBody .additionalDetailsWbPt a {
+	color: #007C92;
+	text-decoration: none;
+}
+.ms-WPBody .additionalDetailsWbPt a:hover {
+	color: #007C92;
+	text-decoration: underline;
+}
+.ms-WPBody .additionalDetailsWbPt td.small {
+	width: 30px !important;
+}
+.ms-WPBody .additionalDetailsWbPt input {
+	border: 1px solid #B2B2B2;
+}
+
+/* BC. CSR QUERY */
+.ms-WPBody .CSRQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0;
+	width: 480px;
+}
+.ms-WPBody .CSRQueryWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .CSRQueryWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .CSRQueryWbPt .contentWrapper p {
+	margin-bottom: 10px;
+}
+.ms-WPBody .CSRQueryWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .CSRQueryWbPt .colWrapper {
+	width: 230px;
+}
+.ms-WPBody .CSRQueryWbPt .column1 {
+	width: 70px;
+	margin-right: 10px;
+}
+.ms-WPBody .CSRQueryWbPt .column2 {
+	width: 120px;
+}
+
+/* BD. LATEST ARTICLES & PUBLICATIONS */
+.ms-WPBody .latestArticlesPublicationsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .latestArticlesPublicationsWbPt .podHeader {
+	color: #002664;
+	background-color: #E0EEFB;
+	border-right: 1px solid #CAE2FF;
+	border-bottom: 1px solid #CAE2FF;
+	width: auto;
+	/*font-size: 109.5%;*/
+}
+.ms-WPBody .latestArticlesPublicationsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .latestArticlesPublicationsWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .latestArticlesPublicationsWbPt .contentRow {
+	width: 190px;
+	border-top: 1px solid #E7ECF8;
+}
+
+/* BE. CONTACT US */
+.ms-WPBody .contactUsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .contactUsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .contactUsWbPt .contentWrapper {
+	width: 190px;
+}
+.ms-WPBody .contactUsWbPt .contentRow {
+	width: 190px;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-top: 1px solid #ccc;
+}
+.ms-WPBody .contactUsWbPt .podTable {
+	width: 190px;
+	padding: 0;
+}
+.ms-WPBody .contactUsWbPt .podTable td.middle {
+	width: 170px;
+}
+.ms-WPBody .contactUsWbPt .podTable td.right {
+	width: 20px;
+}
+
+/* BG. JOB OPPORTUNITY DETAILS */
+.ms-WPBody .jobOppWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .jobOppWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .jobOppWbPt .left {
+	width: 153px;
+	margin-right: 10px;
+	float: left;
+}
+.ms-WPBody .jobOppWbPt .middle {
+	width: 153px;
+	margin-right: 10px;
+	float: left;
+}
+.ms-WPBody .jobOppWbPt .right {
+	width: 154px;
+	float: left;
+}
+.ms-WPBody .jobOppWbPt .closeDate {
+	/*font-size: 91%;*/
+}
+
+/* BH. BLOG COMMENTS */
+.ms-WPBody .blogCommentsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .blogCommentsWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .blogCommentsWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .blogCommentsWbPt .contentRow {
+	width: 460px;
+	margin-top: 10px;
+}
+
+/* BI. OTHER EPISODES */
+.ms-WPBody .otherEpisodesWbPt {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: auto;
+}
+.ms-WPBody .otherEpisodesWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .otherEpisodesWbPt .contentWrapper {
+	width: 460px;
+	margin: 0;
+}
+.ms-WPBody .otherEpisodesWbPt .contentRow {
+	width: 460px;
+	margin-bottom: 10px;
+}
+.ms-WPBody .otherEpisodesWbPt .rowDivider {
+	width: 460px;
+}
+.ms-WPBody .otherEpisodesWbPt .contentRow p {
+	margin-bottom: 10px;
+}
+.ms-WPBody .otherEpisodesWbPt .contentRow ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+}
+.ms-WPBody .otherEpisodesWbPt .contentRow ul li {
+	margin-left: 0;
+	padding: 0 5px 0 7px;
+	border-left: 1px solid #ccc;
+	display: inline;
+}
+.ms-WPBody .otherEpisodesWbPt .contentRow ul li.first {
+	margin-left: 0;
+	padding: 0 5px 0 0;
+	border-left: none;
+	display: inline;
+}
+
+/* BJ. FEED DETAILS */
+.feedDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.feedDetailsWbPt .contentWrapper p {
+	line-height: 12pt;
+}
+.feedDetailsWbPt .podWrapper {
+	float: left;
+	width: 190px;
+}
+.feedDetailsWbPt .contentWrapper {
+	float: left;
+	width: 190px;
+}
+
+/* BK. FEED CONTENTS */
+.ms-WPBody .feedContentsWbPt {
+	display: inline;
+	float: left;
+	margin: 0px;
+	width: auto;
+}
+.ms-WPBody .feedContentsWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .feedContentsWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .feedContentsWbPt .contentRow {
+	width: 460px;
+	margin-bottom: 10px;
+}
+.ms-WPBody .feedContentsWbPt .rowDivider {
+	width: 460px;
+}
+
+/* BL. PUBLICATION DETAILS */
+.ms-WPBody .pubDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .pubDetailsWbPt .contentWrapper p {
+	line-height: 12pt;
+}
+.ms-WPBody .pubDetailsWbPt .podWrapper {
+	float: left;
+	width: 190px;
+}
+.ms-WPBody .pubDetailsWbPt .contentWrapper {
+	float: left;
+	width: 189px;
+}
+
+/* BM. PUBLICATION ISSUES */
+.ms-WPBody .publicationIssuesWbPt {
+	display: inline;
+	float: left;
+	width: auto;
+}
+.ms-WPBody .publicationIssuesWbPt .podWrapper {
+	width: 460px;
+}
+.ms-WPBody .publicationIssuesWbPt .contentWrapper {
+	width: 460px;
+}
+.ms-WPBody .publicationIssuesWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .publicationIssuesWbPt .rowDivider {
+	width: 460px;
+	margin: 13px 0;
+}
+.ms-WPBody .publicationIssuesWbPt .column1 {
+	width: 30px;
+	margin-right: 10px;
+}
+.ms-WPBody .publicationIssuesWbPt .column2 {
+	width: 280px;
+	margin-right: 20px;
+}
+.ms-WPBody .publicationIssuesWbPt .column3 {
+	width: 120px;
+}
+.ms-WPBody .publicationIssuesWbPt .column3 .subheader2, .ms-WPBody .publicationIssuesWbPt .column3 p {
+	text-align: right;
+}
+
+/* BN. EPISODES */
+.ms-WPBody .episodesWbPt {
+	display: inline;
+	float: left;
+	margin: 0;
+	width: auto;
+}
+.ms-WPBody .episodesWbPt .podWrapper {
+	width: 480px;
+}
+.ms-WPBody .episodesWbPt .contentWrapper {
+	width: 460px;
+	margin: 0;
+}
+.ms-WPBody .episodesWbPt .contentRow {
+	width: 460px;
+}
+.ms-WPBody .episodesWbPt .rowDivider {
+	width: 460px;
+	margin-top: 13px;
+}
+.ms-WPBody .episodesWbPt .contentRow p {
+	margin-bottom: 10px;
+}
+.ms-WPBody .episodesWbPt .contentRow ul {
+	margin-left: 0;
+	padding-left: 0;
+	display: inline;
+}
+.ms-WPBody .episodesWbPt .contentRow ul li {
+	margin-left: 0;
+	padding: 0 5px 0 7px;
+	border-left: 1px solid #ccc;
+	display: inline;
+}
+.ms-WPBody .episodesWbPt .contentRow ul li.first {
+	margin-left: 0;
+	padding: 0 5px 0 0;
+	border-left: none;
+	display: inline;
+}
+
+/* BO. PRESS RELEASE DETAILS */
+.ms-WPBody .pressReleaseDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+
+/* BP. KPMG IN THE NEWS DETAILS */
+.ms-WPBody .KPMGInTheNewsDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .KPMGInTheNewsDetailsWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .KPMGInTheNewsDetailsWbPt .contentWrapper {
+	width: 190px;
+}
+
+/* BQ. LOCATION OFFICE DETAILS */
+.locationOfficeDetailsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.locationOfficeDetailsWbPt .podWrapper {
+	width: 210px;
+}
+.locationOfficeDetailsWbPt .contentWrapper {
+	width: 190px;
+}
+.locationOfficeDetailsWbPt .contentWrapper p {
+	margin-bottom: 10px;
+}
+
+/* BR. REGION SELECTOR WIDE */
+.ms-WPBody .regionSelectorWideWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: auto;
+}
+
+/* BR. REGION SELECTOR*/
+.ms-WPBody .regionSelectorWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 5px 10px;
+	width: auto;
+}
+
+/* 1. WELCOME TILE */
+.ms-WPBody .welcomeTileWbPt {
+	background-color: #193b73;
+	display: inline;
+	float: left;
+	margin: 0;
+	width: 230px;
+	height: 210px;
+}
+.ms-WPBody .welcomeTileWbPt .contentWrapper {
+	width: 190px;
+	margin: 20px;
+}
+.ms-WPBody .welcomeTileWbPt .subheader2 {
+	/*font-size: 164%;*/
+	line-height: 20px;
+	font-weight: bold;
+	color: #98c6f3;
+	margin-bottom: 5px;
+}
+.ms-WPBody .welcomeTileWbPt p {
+	/*font-size: 109.5%;*/
+	line-height: 20px;
+	font-weight: bold;
+	color: #e7ecf8;
+}
+
+/* 1b. WHAT WE DO WELCOME TILE */
+.ms-WPBody .whatWeDoWelcomeTileWbPt {
+	background-color: #E8ECF8;
+	display: inline;
+	float: left;
+	margin: 0;
+	width: 230px;
+	height: 150px;
+}
+.ms-WPBody .whatWeDoWelcomeTileWbPt .contentWrapper {
+	width: 190px;
+	margin: 20px;
+}
+.ms-WPBody .whatWeDoWelcomeTileWbPt .subheader2 {
+	/*font-size: 164%;*/
+	line-height: 20px;
+	font-weight: bold;
+	color: #98c6f3;
+	margin-bottom: 5px;
+}
+.ms-WPBody .whatWeDoWelcomeTileWbPt p {
+	/*font-size: 109.5%;*/
+	line-height: 20px;
+	font-weight: bold;
+	color: #022662;
+}
+
+/*2. WORLD MAP */
+.ms-WPBody .worldmapSelectWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: auto;
+}
+.ms-WPBody .worldmapSelectWbPt .podWrapper {
+	width: 210px;
+}
+.ms-WPBody .worldmapSelectWbPt .contentWrapper {
+	width: 190px;
+	margin: 0 10px 0 10px;
+}
+.ms-WPBody .worldmapSelectWbPt .contentWrapper p {
+	margin-top: 5px;
+	/*font-size: 91%;*/
+	line-height: normal;
+}
+.ms-WPBody .worldmapSelectWbPtp {
+	line-height: 1.125em;
+}
+.ms-WPBody .worldmapSelectWbPt .podTable {
+	width: 190px;
+	padding: 0;
+}
+.ms-WPBody .worldmapSelectWbPt .podTable td.left {
+	width: 100px;
+}
+.ms-WPBody .worldmapSelectWbPt .podTable td.middle {
+	width: 170px;
+}
+.ms-WPBody .worldmapSelectWbPt .podTable td.right {
+	width: 20px;
+}
+
+.ms-WPBody .facetedFeedsWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px;
+	width: 210px;
+}
+.ms-WPBody .facetedFeedsWbPt .podWrapper {
+	display: inline;
+	width: 190px;
+	margin-left: 10px;
+}
+
+.ms-WPBody .helpTopicsQueryWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 0 5px 0;
+	width: 480px;
+}
+.ms-WPBody .helpTopicsQueryWbPt .contentWrapper {
+	margin: 0;
+	width: 480px;
+}
+.ms-WPBody .helpTopicsQueryWbPt .contentRow {
+	margin-top: 10px;
+	width: auto;
+}
+.ms-WPBody .helpTopicsQueryWbPt .column1 {
+	margin-right: 20px;
+	width: 160px;
+}
+.ms-WPBody .helpTopicsQueryWbPt .column2 {
+	width: 280px;
+}
+
+/* 3. ADVISORY INTRO SERVICES */
+.ms-WPBody .advisoryIntroServicesWbPt {
+	display: inline;
+	float: left;
+	margin: 10px 10px 0 10px;
+	width: 210px;
+}
+.ms-WPBody .advisoryIntroServicesWbPt .contentWrapper {
+	margin: 0 10px;
+	width: 190px;
+}
+.ms-WPBody .advisoryIntroServicesWbPt td {
+	font-family: Arial;
+	padding: 0;
+	width: 190px;
+	white-space: nowrap;
+}
+
+/* 4. HOMEPAGE HERO IMAGE */
+.ms-WPBody .heroImageWbPt {
+	margin: 0;
+	width: 520px;
+}
+.ms-WPBody .heroImageWbPt .contentWrapper {
+	margin: 0;
+	position: relative;
+	width: 520px;
+}
+.ms-WPBody .heroImageWbPt .bandWrapper {
+	position: absolute;
+	top: 100px;
+	left: 290px;
+	width: 230px;
+	background-color: #FFFFFF; /* for IE*/
+	filter: alpha(opacity=95); /* CSS3 Standard*/
+	opacity: 0.95; /* for Mozilla*/
+	-moz-opacity: .95; /*background-image:url(../images/whiteBand.png);*/
+	z-index: 10;
+}
+.ms-WPBody .heroImageWbPt .column1 {
+	width: 190px;
+	margin-top: 17px;
+	margin-left: 20px;
+	padding-bottom: 10px;
+}
+.ms-WPBody .heroImageWbPt .column1 ul.relatedLink {
+	margin-top: -2px !important;
+}
+
+#template4_z2 #roleWrap {
+	width: 480px;
+	float: left;
+	margin: 0;
+}
+#template4_z2 dl.service_role {
+	width: 240px;
+	float: left;
+	font-size: .689em;
+	line-height: 1.250em;
+}
+#template4_z2 .service_role dt {
+	font-weight: bold;
+	display: inline;
+	float: left;
+	margin-right: 5px;
+}
+#template4_z2 .service_role dd {
+	margin: 0;
+	padding-bottom: 5px;
+}
+
+/* Quick Navigation web part */
+.ms-WPBody .quickNavigationWbPt {
+	display: inline;
+	float: left;
+/*	margin: 10px 10px 5px 10px;*/
+}
+.ms-WPBody .quickNavigationWbPt .podWrapper {
+	width: auto;
+}
+
+.ms-WPBody .quickNavigationWbPt td {
+	vertical-align: top;
+}
+
+.ms-WPBody .quickNavigationWbPt a {
+	padding-right: 20px;
+}
+
+.Alerts-SubHeader-Admin
+{
+	color: #4c4c4c;
+	font-family : Arial, Verdana, Sans-Serif;
+	font-size:100%;
+	font-weight:bold;
+	line-height:30px;
+	text-align :left		
+}
+
+.Alerts-SubHeader-Register
+{
+	color: #002664;
+	font-family : Arial, Verdana, Sans-Serif;
+	font-size:1.37em;
+	font-weight:bold;
+	line-height:30px;
+	text-align :left
+}
+
+.ms-rteCustom-SubHeaders2
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #444444;	
+}
+
+.ms-rteCustom-SubHeaders1
+{
+	font-size: 11px;
+	font-weight: bold;
+	line-height: 14px;
+	color: #002664;	
+}
+
+/*Added for Media Dates Task*/
+.ms-rteCustom-ArticleDate
+{
+	font-family:arial,verdana,sans-serif;
+	font-size: 11px;
+	color: #444444;	
+	width: auto;	
+	white-space:nowrap;
+	float:right;
+	padding-left:10px;
+	text-align:right;
+	line-height:14px;
+}
+
+/* Added for Media Date Changes for 48.1*/
+.orangeArrowLeftArticleDate
+{
+	display: inline-block;
+	width: 75px;
+}
+
+/*CSS For KPMG Filtered Content webpart */
+.kpmgdoc_latestAP {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 18px; 
+}
+
+.kpmgdoc_latestAP {
+	padding: 0 0 0 5px;
+}
+.kpmgdoc_latestAP a, .kpmgdoc_latestAP a:link, .kpmgdoc_latestAP a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+.kpmgpdf_latestAP {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 18px; 
+}
+
+.kpmgpdf_latestAP{
+	padding: 0 0 0 5px;
+}
+.kpmgpdf_latestAP a, .kpmgpdf_latestAP a:link, .kpmgpdf_latestAP a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+
+.kpmgaudio_latestAP {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 18px; 
+}
+
+.kpmgaudio_latestAP {
+	padding: 0 0 0 5px;
+}
+.kpmgaudio_latestAP a, .kpmgaudio_latestAP a:link, .kpmgaudio_latestAP a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+
+
+.kpmgvideo_latestAP {
+	list-style-type: none;
+	margin: 5px 0 0 0;
+	line-height: 18px; 
+}
+
+.kpmgvideo_latestAP {
+	padding: 0 0 0 5px;
+}
+.kpmgvideo_latestAP a, .kpmgvideo_latestAP a:link, .kpmgvideo_latestAP a:visited {
+	color: #007C92;
+	text-decoration: none;
+	margin-bottom: 10px;
+}
+.kpmgdoc_latestAP_back
+{
+	padding:0px 0px 0px 18px;
+	background-image:url("/style%20library/images/caret_document.gif");
+	background-position: right top;
+	background-repeat: no-repeat;
+	
+}
+.kpmgpdf_latestAP_back
+{
+	padding:0px 0px 0px 18px;
+	background-image:url("/style%20library/images/caret_pdf.gif");
+	background-position: right top;
+	background-repeat: no-repeat;
+	
+}
+.kpmgaudio_latestAP_back
+{
+	padding:0px 0px 0px 18px;	
+	background-image:url("/style%20library/images/caret_podcast.gif");
+	background-position: right top;
+	background-repeat: no-repeat;
+
+}
+.kpmgvideo_latestAP_back
+{
+	padding:0px 0px 0px 18px;
+    background-image:url("/style%20library/images/caret_movie.gif");
+	background-position: right top;
+	background-repeat: no-repeat;
+	
+}
+
+.kpmg_latestAP_rowgap
+{
+	height:5px;
+}
+
+.kpmg_latestAP_readmorelink_back
+{
+	width:18px;
+    background: url(../images/org_navBullet.gif) no-repeat right 2px;
+	
+}
+.kpmg_latestAP_readmorelink
+{
+	padding-left:5px;
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="40"
+   height="40"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="setting.svg"
+   inkscape:export-filename="/opt/lampp/htdocs/pomodoros.com.br/pomodoros/wp-content/themes/darwin-buddypress-buddypack/images/settings-icon.png"
+   inkscape:export-xdpi="72"
+   inkscape:export-ydpi="72">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.2"
+     inkscape:cx="28.532513"
+     inkscape:cy="20.273927"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-1012.3622)">
+    <path
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:none"
+       d="m 39.65724,1030.4998 c -12.239212,3.0646 -0.824577,7.6914 -0.824577,7.6914 l -3.705208,6.7907 c -11.31345,-6.7733 -6.021797,4.8558 -6.021797,4.8558 l -7.421672,2.1817 c 0,0 -2.652031,-12.5361 -7.691642,-0.8246 l -6.7904863,-3.7049 c 0,0 7.2136833,-10.6884 -4.8558291,-6.0219 l -2.1817585,-7.4218 c 0,0 12.2410229,-2.9602 0.8245352,-7.6916 l 3.7051643,-6.7907 c 10.9618684,6.6135 6.0217994,-4.8558 6.0217994,-4.8558 l 7.421672,-2.1817 c 3.344374,12.6895 7.691642,0.8246 7.691642,0.8246 l 6.790613,3.7052 c -7.064966,10.1044 4.855785,6.0218 4.855785,6.0218 z"
+       id="path2993"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccccccccccccccc" />
+    <path
+       sodipodi:type="star"
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:none"
+       id="path3014"
+       sodipodi:sides="16"
+       sodipodi:cx="-4.5535712"
+       sodipodi:cy="-7.8571429"
+       sodipodi:r1="11.743702"
+       sodipodi:r2="11.51805"
+       sodipodi:arg1="0.49085178"
+       sodipodi:arg2="0.68720132"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 5.8035714,-2.3214288 2.8967548,1.220697 -1.1443065,3.3808039 -5.7043973,3.8300353 -10.089285,2.4999997 l -3.542126,-2.90681662 -2.160107,-4.04106128 -0.449231,-4.5600908 1.330035,-4.384888 2.906817,-3.542126 4.041061,-2.160107 4.5600909,-0.449231 4.38488804,1.330035 3.54212576,2.906817 2.1601069,4.041061 0.4492314,4.5600912 z"
+       transform="matrix(1.1709376,-0.78881345,0.78881345,1.1709376,31.440512,1037.8813)" />
+    <path
+       transform="matrix(1.0415563,-0.70165445,0.70165445,1.0415563,30.166507,1037.2615)"
+       d="M 5.8035714,-2.3214288 2.8967548,1.220697 -1.1443065,3.3808039 -5.7043973,3.8300353 -10.089285,2.4999997 l -3.542126,-2.90681662 -2.160107,-4.04106128 -0.449231,-4.5600908 1.330035,-4.384888 2.906817,-3.542126 4.041061,-2.160107 4.5600909,-0.449231 4.38488804,1.330035 3.54212576,2.906817 2.1601069,4.041061 0.4492314,4.5600912 z"
+       inkscape:randomized="0"
+       inkscape:rounded="0"
+       inkscape:flatsided="true"
+       sodipodi:arg2="0.68720132"
+       sodipodi:arg1="0.49085178"
+       sodipodi:r2="11.51805"
+       sodipodi:r1="11.743702"
+       sodipodi:cy="-7.8571429"
+       sodipodi:cx="-4.5535712"
+       sodipodi:sides="16"
+       id="path3786"
+       style="fill:#cccccc;fill-rule:evenodd;stroke:none"
+       sodipodi:type="star" />
+    <path
+       sodipodi:type="star"
+       style="fill:#b3b3b3;fill-rule:evenodd;stroke:none"
+       id="path3788"
+       sodipodi:sides="16"
+       sodipodi:cx="-4.5535712"
+       sodipodi:cy="-7.8571429"
+       sodipodi:r1="11.743702"
+       sodipodi:r2="11.51805"
+       sodipodi:arg1="0.49085178"
+       sodipodi:arg2="0.68720132"
+       inkscape:flatsided="true"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M 5.8035714,-2.3214288 2.8967548,1.220697 -1.1443065,3.3808039 -5.7043973,3.8300353 -10.089285,2.4999997 l -3.542126,-2.90681662 -2.160107,-4.04106128 -0.449231,-4.5600908 1.330035,-4.384888 2.906817,-3.542126 4.041061,-2.160107 4.5600909,-0.449231 4.38488804,1.330035 3.54212576,2.906817 2.1601069,4.041061 0.4492314,4.5600912 z"
+       transform="matrix(0.89601257,-0.60360751,0.60360751,0.89601257,28.733421,1036.5645)" />
+    <path
+       sodipodi:type="arc"
+       style="fill:#ffffff;stroke:none"
+       id="path3784"
+       sodipodi:cx="23.328211"
+       sodipodi:cy="23.49032"
+       sodipodi:rx="7.4183078"
+       sodipodi:ry="7.4183078"
+       d="m 30.746519,23.49032 a 7.4183078,7.4183078 0 1 1 -14.836616,0 7.4183078,7.4183078 0 1 1 14.836616,0 z"
+       transform="matrix(1.2359812,-0.57011445,0.57011445,1.2359812,-22.314719,1016.539)" />
+    <text
+       xml:space="preserve"
+       style="font-size:0.7171132px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="-1.3735149"
+       y="1011.5593"
+       id="text3817"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3819"
+         x="-1.3735149"
+         y="1011.5593">/opt/lampp/htdocs/pomodoros.com.br/pomodoros/wp-content/themes/darwin-buddypress-buddypack/images/settings-icon.png</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="512"
+   height="512"
+   viewBox="0 0 512.00001 512.00001"
+   id="svg4365"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="f5sites-favicon.svg"
+   inkscape:export-filename="/home/francisco/pessoal/conteudo-arte-digital/favicon/f5sites-favicon.svg.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4367" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="154.52567"
+     inkscape:cy="277.33447"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     units="px"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="1345"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata4370">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-540.36216)">
+    <g
+       id="g4923"
+       transform="translate(-2.1664467,31.305119)">
+      <path
+         inkscape:connector-curvature="0"
+         id="path7871-57-0-4-7-8-8"
+         d="m 358.61181,882.16826 c -25.19722,-0.99327 -46.4886,-3.37144 -58.13157,-6.49308 -4.95578,-1.32851 -5.79201,-1.80248 -7.36061,-4.17302 -4.58045,-6.92138 -6.60918,-16.98862 -7.20341,-35.74338 -0.37811,-11.95413 -0.27469,-13.80851 1.10093,-19.30105 8.14394,-32.56257 43.60492,-57.81594 93.39748,-66.51315 11.03438,-1.92704 35.20308,-2.67639 46.88822,-1.4541 24.80753,2.59578 48.24227,11.02037 65.02728,23.37686 l 4.38223,3.22612 -5.25032,3.21886 c -2.88764,1.76996 -6.79306,4.72346 -8.67847,6.56365 -6.53116,6.37267 -8.52087,11.56803 -10.17864,26.57807 -0.58627,5.30745 -1.23747,10.69897 -1.44758,11.98077 -0.33836,2.05226 0.0477,2.78571 3.22595,6.14503 1.98452,2.09827 3.60807,4.00177 3.60807,4.22942 0,0.22834 -5.62961,4.95595 -12.50983,10.50731 -12.4394,10.0361 -14.30651,12.24266 -11.32575,13.38677 1.02292,0.39405 16.70701,-2.19931 19.45016,-3.21368 0.71286,-0.26293 0.84699,0.0484 0.49674,1.14895 -0.33836,1.07007 0.27054,2.68297 2.08962,5.5268 1.9901,3.11092 2.28067,3.93604 1.29038,3.6617 -0.70331,-0.19375 -2.78616,-0.55874 -4.62898,-0.80922 -2.97803,-0.40374 -3.44571,-0.28023 -4.20353,1.13926 -0.55207,1.03167 -0.70927,3.3057 -0.44579,6.44914 l 0.40718,4.85527 -2.63729,0.74624 c -15.67333,4.437 -63.99402,6.66917 -107.36247,4.96046 z"
+         style="fill:#808080;fill-opacity:1;stroke:none;stroke-width:2.08899999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <ellipse
+         ry="130.0677"
+         rx="93.280884"
+         cy="762.73425"
+         cx="248.19579"
+         id="path8189-1-5-0-6"
+         style="fill:#b3b3b3;fill-opacity:1;stroke:none;stroke-width:2.08899999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+      <ellipse
+         transform="matrix(0.81231496,0.58321901,-0.58321901,0.81231496,0,0)"
+         ry="85.397995"
+         rx="124.81245"
+         cy="570.00543"
+         cx="572.46075"
+         id="path8191-7-4-5-8"
+         style="fill:#999999;fill-opacity:1;stroke:none;stroke-width:2.08899999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

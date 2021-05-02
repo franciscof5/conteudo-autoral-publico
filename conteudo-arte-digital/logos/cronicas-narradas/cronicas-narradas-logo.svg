@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="297mm"
+   viewBox="0 0 1052.3622 1052.3622"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="cronicas-narradas-logo.svg">
+  <defs
+     id="defs4">
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4267"
+       x="-0.108"
+       width="1.216"
+       y="-0.108"
+       height="1.216">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="28.018444"
+         id="feGaussianBlur4269" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="679.58906"
+     inkscape:cy="478.06042"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     showguides="false"
+     inkscape:window-width="1301"
+     inkscape:window-height="744"
+     inkscape:window-x="65"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <circle
+       style="opacity:0.86000001;fill:#005500;fill-opacity:1;stroke:#dbdbdb;stroke-width:29.878;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4216-4"
+       cx="526.18109"
+       cy="526.18109"
+       r="378.45901" />
+    <circle
+       style="opacity:0.86000001;fill:#00d400;fill-opacity:1;stroke:none;stroke-width:21.033;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4216"
+       cx="526.18109"
+       cy="526.18109"
+       r="339.60577" />
+    <circle
+       style="opacity:0.86000001;fill:#00ff00;fill-opacity:1;stroke:#b3b3b3;stroke-width:11.95500001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+       id="path4153"
+       cx="-621.35114"
+       cy="-409.45804"
+       r="224.63286"
+       transform="matrix(-0.97951937,-0.20134995,0.20134995,-0.97951937,0,0)" />
+    <circle
+       style="opacity:0.89999999;fill:#008000;fill-opacity:1;stroke:none;stroke-width:19.98300011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter4267)"
+       id="path4153-0"
+       cx="-176.79379"
+       cy="722.82581"
+       r="311.31604"
+       transform="matrix(-0.85485731,0.51886315,0.51886315,0.85485731,0,0)" />
+    <path
+       style="fill:#ffffff;fill-opacity:1;stroke:none"
+       d="m 477.73274,646.26406 c -0.36667,-0.36666 -0.66667,-5.76666 -0.66667,-12 l 0,-11.33333 18.5,0 18.5,0 0,-12.80289 0,-12.80289 -8.53918,-1.64618 c -26.50933,-5.11046 -47.4406,-26.36613 -52.37005,-53.1817 -0.59992,-3.26351 -1.09077,-13.95101 -1.09077,-23.75 l 0,-17.81634 11.91112,0 11.91111,0 0.38993,20.25 c 0.35089,18.22267 0.61978,20.83237 2.68581,26.06703 3.22587,8.17331 12.35484,17.72307 20.97283,21.93954 6.55053,3.20494 6.82747,3.24739 23.33575,3.57702 18.76685,0.37473 24.67825,-0.69577 32.9669,-5.97002 5.74872,-3.65803 11.99831,-10.31976 14.76027,-15.73366 4.03433,-7.90793 5.06628,-14.59712 5.06628,-32.84001 l 0,-17.2899 12.11503,0 12.11503,0 -0.48957,20.25 c -0.52767,21.82582 -1.46722,27.24295 -6.63407,38.25 -8.62944,18.3835 -26.24501,31.98802 -46.96735,36.27294 l -8.13907,1.68298 0,12.77204 0,12.77204 18,0 18,0 0,12 0,12 -47.83333,0 c -26.30834,0 -48.13334,-0.3 -48.5,-0.66667 z m 38.61937,-87.71913 c -10.02496,-3.28757 -18.16663,-10.2402 -22.96859,-19.6142 l -2.81745,-5.5 0,-51 0,-51 2.67018,-5.6965 c 3.40624,-7.26678 10.36654,-14.22708 17.63332,-17.63332 4.92107,-2.3067 6.98969,-2.67008 15.1965,-2.66943 7.66743,6e-4 10.41643,0.42385 14.25076,2.19411 7.08665,3.2718 14.99882,11.2734 18.37507,18.58277 l 2.87417,6.22237 0,50 0,50 -2.6891,5.73671 c -3.41601,7.28748 -11.26621,15.16676 -18.33507,18.40299 -6.78374,3.1057 -17.95885,4.01787 -24.18979,1.9745 z"
+       id="path4147"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       id="text4149"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path4153"
+         id="textPath4191"
+         style="font-size:102.5px;fill:#ffffff;">CRÔNICAS</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:13.75px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black, ';letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+       id="text4149-4"
+       sodipodi:linespacing="125%"><textPath
+         xlink:href="#path4153-0"
+         id="textPath4194"
+         style="font-size:102.5px;letter-spacing:15.25998055px;fill:#ffffff;">NARRADAS</textPath></text>
+  </g>
+</svg>

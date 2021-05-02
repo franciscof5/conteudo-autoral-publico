@@ -1,0 +1,227 @@
+body #motopress-main.main-holder .content-holder ul.products li.product {
+    padding-bottom: 0px;
+}
+body #motopress-main.main-holder .content-holder .products ul li.product, body #motopress-main.main-holder .content-holder ul.products li.product {
+    float: left;
+    width: 220px;
+    margin: 0 12px 34px 12px !important;
+}
+body h5{
+  	font-weight: 400;
+}
+#billing_neighborhood_field{margin: 0 0 0 22px;}
+@media (min-width: 1200px){
+    body #motopress-main.main-holder header.header .header-wrapper2 {
+        padding: 22px 43px 10px;
+        border-radius: 80px;
+        text-align: left;
+    }
+}
+#content > ul{
+width: auto;
+}
+#content > ul > li {
+    width: 270px;
+    margin-left: 15px !important;
+  	padding: 26px;
+  }
+.span9 {
+    width: 105% !important;
+}
+body #motopress-main.main-holder .content-holder ul.products {
+    text-align: center;
+    width: 100%;
+}
+.motopress-wrapper{
+    padding-top: 25px;
+}
+.span12 h1{
+		padding-bottom: 10px;
+    font-size: 29px;
+}
+.span9{
+	  width:100%;
+}
+.banners-wrapper1{
+		margin-top: 27px;
+}
+.coupon{
+		display:none;
+}
+.button{
+		padding: 13px 22px !important;
+    background-color: #da251c !important;
+    opacity: 1 !important;
+    font-size: 16px !important;
+    text-transform: capitalize !important;
+  	margin-bottom: 15px !important;
+}
+.widget_shopping_cart_content .buttons .button{
+		width: 100%;
+}
+img{
+ 	  border-radius: 26px;
+}
+body #motopress-main.main-holder header.header .header-wrapper1 {
+  	padding: 20px 0px 25px;
+}
+body #motopress-main.main-holder header.header .logo-wrapper .logo {
+    float: none;
+    margin-bottom: 20px;
+}
+body #motopress-main.main-holder .content-holder .categories-wrapper1 h2, body #motopress-main.main-holder .content-holder .featured-products-wrapper1 h2{
+		background: #fff0;
+}
+body .content-holder .woocommerce-error:before, body .content-holder div.jigoshop_error:before {
+    left: 12px;
+    top: 31px;
+}
+body #motopress-main.main-holder .content-holder h2 {
+    padding-bottom: 12px;
+    margin-bottom: 30px;
+  	border-bottom: 1px solid #dcdcdc !important;
+}
+body #motopress-main.main-holder .content-holder ul.products li.product{
+    background: #ffffff94;
+    border-radius: 30px;
+    width: 33% !important;
+    margin: 0px !important;
+    padding: 9px;
+}
+body #motopress-main.main-holder .content-holder ul.products li.product .add_to_cart_button:after, body #motopress-main.main-holder .content-holder ul.products li.product .btn:after {
+    line-height: 21px;
+    left: -1px;
+}
+body #motopress-main.main-holder .content-holder .title-section {
+    margin-top: 25px;
+}
+
+/*LUAN*/
+
+body #motopress-main.main-holder .content-holder div.product div.images {
+    width: 32%;
+}
+
+.span9 {
+  	max-width: 70%;
+}
+
+#woocommerce_widget_cart-4 {
+    border-style: solid;    
+    border-width: 3px;
+    background-color: #e2eaff;
+    padding: 8px;  
+} 
+
+.woocommerce-mini-cart__buttons {
+  	max-width: 83% !important;
+}
+
+.logo_tagline{
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#back-top a{
+  	left: 20px;
+    position: fixed;
+    bottom: 20px;
+    z-index: 90;
+} 
+
+#btnWhatsAppFixed {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 99;
+    cursor: pointer;
+    padding: 15px;
+    height: 67px;
+}
+
+body #motopress-main.main-holder .content-holder #slider-wrapper .camera_pag .camera_pag_ul li {
+  border: 3px solid #000000;
+}
+
+body #motopress-main.main-holder .content-holder ul.products {
+    text-align: center;
+    width: 97% !important;
+}
+
+.woocommerce-Price-currencySymbol{
+	text-transform: uppercase;
+}
+
+body #motopress-main.main-holder #sidebar .widget ul li.menu-item,
+body #motopress-main.main-holder #sidebar .widget ul li.cat-item{
+	  text-align: center;;
+    background: #a9bcff;
+    padding: 3px;
+    border-radius: 9px;
+    max-width: 280px;
+    margin: 8px auto;
+}
+
+.information-menu{
+	width: 100% !important;
+	float: left;
+}
+#woocommerce_widget_cart-4 {
+    max-width: 270px;
+    margin: 0 auto;
+}
+
+
+body #motopress-main.main-holder .content-holder ul.products {
+    text-align: center;
+    width: 100% !important;
+  	margin: 0px !important;
+}
+
+.woocommerce-Price-currencySymbol{
+	text-transform: uppercase;
+}
+
+/*PC*/
+@media (min-width: 1200px){
+	.logo_seguro{
+		display: block;
+	}	
+	.logo .logo_h{
+	    padding-left: 104px;	
+	}
+}
+/*CELULAR*/
+@media (max-width: 460px){
+	.subtitulo{
+		font-size: 21px !important;		
+	}	
+	.span9 {
+		width: 97% !important;
+		max-width: 97% !important;
+	}
+	body #motopress-main.main-holder .content-holder ul.products li.product {
+	    width: 97% !important;
+	    margin: 0px !important;
+	    padding: 5px !important;
+	}	
+	.information-menu{
+		text-align: center;
+		width: 100% !important;
+	}
+	#billing_neighborhood_field	{
+		margin: 0px !important;
+	}	
+}
+
+body #motopress-main.main-holder .content-holder .banner-wrap h5 {
+	font: 400 30px/42px 'Roboto',sans-serif;
+}
+body #motopress-main.main-holder header.header .search-wrapper .search-form__h #search-header{
+  border-bottom: 7px solid #fff;
+}
+
+::placeholder{
+  color: white !important;
+}
