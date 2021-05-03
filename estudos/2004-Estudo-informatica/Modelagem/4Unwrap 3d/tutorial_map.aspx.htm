@@ -1,0 +1,207 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=iso-8859-1">
+<meta http-equiv="Window-target" content="_top">
+<meta name="description" content="Ultimate Unwrap3D - UV mapping software">
+<meta name="keywords" content="Ultimate Unwrap3D, UV mapping, unwrapping, software"><title>Ultimate Unwrap3D</title>
+
+
+<link href="tutorial_map.aspx_files/style.css" type="text/css" rel="stylesheet">
+
+<script language="JavaScript">
+<!--
+if (self.location.href != top.location.href) {
+   top.location.href = self.location.href;
+}
+// -->
+</script></head>
+
+
+
+<body leftmargin="0" topmargin="0" alink="#d0d0d0" background="tutorial_map.aspx_files/bkgrd.gif" bgcolor="#800000" link="#d0d0d0" marginheight="0" marginwidth="0" text="#c0c0c0" vlink="#ff0000"> 
+<br>
+
+<!-- main table -->
+<table border="0" cellpadding="8" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+
+<font face="arial">
+
+</font><h2><font face="arial">Spherical and Cylindrical UV Mapping</font></h2>
+
+<font face="arial">For this tutorial, we will take a closer look at spherical and cylindrical UV mapping in Ultimate Unwrap3D.<br>
+<br>
+<br>
+
+</font><h2><font face="arial">Seams</font></h2>
+
+<font face="arial">When you unwrap a three-dimensional object to two dimensions, you will undoubtedly have seams.  
+Basically, seams are cuts in the object, which are necessary to flatten it.<br>
+<br> Now, with this is mind, how would you flatten a sphere or
+cylinder, using the least amount of seams? For a sphere, you could cut
+the model from the top to the bottom pole. And likewise for a cylinder,
+you could cut along one side, ignoring the cap faces for the moment.
+<br>
+<br>
+
+Below, the yellow line indicates where the seam is located for spherical and cylindrical UV mapping,
+respectively, when aligned to the y-axis:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map1.png" alt="tut_map1.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map2.png" alt="tut_map2.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+And below, are their corresponding UV mappings, which cover the UV mapping space from 0 to 1.  The yellow
+line indicates where the seam wraps around:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map3.png" alt="tut_map3.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map4.png" alt="tut_map4.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+Now, let's assign a checker texture to each primitive. This will help us locate areas of distortion:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map5.png" alt="tut_map5.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map6.png" alt="tut_map6.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+Already, you should notice that there's a problem.  Recall that a checker pattern has a property such that each checker cell 
+is a square:<br>
+<br>
+<img src="tutorial_map.aspx_files/tut_map7.png" alt="tut_map7.png" border="0"><br>
+<br>
+
+When there is distortion on the model, the checker cells no longer look square.  Therefore, to reduce distortion,
+we should adjust the UV mapping so our checker texture looks square again.<br>
+<br>
+Now, you may be wondering, why do we have distortion in the first place?  After all, we are using spherical mapping on a sphere,
+and cylindrical mapping on a cylinder.  The problem is not exactly the type of mapping, but how we are scaling it.  
+By default, Unwrap3D will typically stretch the mapping from 0 to 1.  But, in some cases,
+this is not what we want.  To reduce distortion, we should scale our spherical mapping 2x horizontally, so it has a ratio of <b>2:1</b>:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map10.png" alt="tut_map10.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map8.png" alt="tut_map8.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+That looks much better!  As you can see, our checker cells look like squares again.<br>
+<br>
+ 
+Now, you may be wondering where does this <b>2:1</b> ratio come from?  If we take a slice of the sphere, 
+we have a circle.  Using a little math, 
+we know that the circumference of a circle is <b>2*pi*r</b>. This represents our longitude.  
+And our latitude is the circumference from the top pole to the bottom pole, or the circumference of half a circle, <b>pi*r</b>.
+The <b>pi*r</b> term cancels out, so, this longitude/latitude ratio is always <b>2:1</b>.
+In other words, you can UV map any sphere using the same <b>2:1</b> scaling ratio, regardless of its radius.<br>
+
+<br>
+However, for a cylinder, this is somewhat different.  The circumference of a cylinder is also
+<b>2*pi*r</b>, but it varies in height.  Therefore, our scaling ratio should be <b>2*pi*r:h</b> or <b>2*pi*r / h:1</b>.  
+It's not a constant ratio like spherical mapping, so you can't use the same scaling value for every cylinder.  In this example,
+our cylinder has radius of <b>4</b> and a height of <b>8</b>, therefore, it has a <b>pi:1</b>
+or <b>3.14159:1</b> scaling ratio:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map8a.png" alt="tut_map8a.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map8b.png" alt="tut_map8b.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+Looking much better!  The checker texture map is now square again.  Note that you can use <b>Edit | Scale | Arbitrary</b> to numerically scale 
+the UV mapping for the cylinder to <b>3.14159:1</b>, after scaling it to <b>1:1</b>.
+<br>
+<br>
+
+<br>
+</font><h2><font face="arial">A Better Way</font></h2>
+
+<font face="arial">There's another solution to our distortion problem
+that doesn't involve scaling our UV mapping. As you may have noticed, a
+lot of mapping space is wasted after scaling it. But, despite that
+fact, if we were trying to fit several objects onto a single texture
+map, then scaling the UV mapping is a perfectly logical solution:<br>
+<br>
+
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map9a.png" alt="tut_map9a.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map9b.png" alt="tut_map9b.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+However, if we are only texture mapping a single object, there is something better.  We can scale the texture
+map instead.  For example, many planetary texture maps freely available on the web, such as the Earth, commonly use this method:<br>
+<br>
+
+<img src="tutorial_map.aspx_files/tut_map12.jpg" alt="tut_map12.jpg" border="0"><br>
+<br>
+The trick here, is that the texture map has a ratio of <b>2:1</b>, not the UV mapping. 
+To use this texture on a sphere, you should use the default spherical UV mapping in Unwrap3D that is stretched from 0 to 1:<br>
+<br>
+<table border="0" cellpadding="0" cellspacing="0" width="725">
+<tbody><tr>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map11a.png" alt="tut_map11a.png" border="0"><br></td>
+<td align="left"><img src="tutorial_map.aspx_files/tut_map12a.png" alt="tut_map12a.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+Ok then, let's try out this method.  Using your favorite paint program, such as Photoshop or Paint Shop Pro, 
+create a checker pattern that has a ratio of <b>2:1</b>, and use it on a 
+default spherical UV mapping:<br>
+<br>
+<img src="tutorial_map.aspx_files/tut_map13.png" alt="tut_map13.png" border="0"><br>
+<br>
+
+As shown below, our checker pattern looks relatively square, without having to scale the UV mapping!<br>
+<br>
+<img src="tutorial_map.aspx_files/tut_map8.png" alt="tut_map8.png" border="0"><br>
+<br>
+
+Now that you understand how spherical and cylindrical UV mapping works, 
+I leave this final exercise up to you.
+Try to UV map a cylinder with radius <b>4</b> and height <b>8</b> with a 512x256 checker texture map.<br>
+
+
+<br>
+<br>
+</font><h2><font face="arial">Summary</font></h2>
+
+<font face="arial">To recap, in this tutorial we learned about seams, how to use a checker pattern to look for distortion, 
+and how to properly UV map a sphere and a cylinder using spherical and cylindrical UV mapping.<br>
+<br>
+That's it! If you have any other questions, please let me know.<br>
+<br>
+<br>
+
+</font>
+
+</td>
+</tr>
+</tbody></table> 
+<!-- main table -->
+
+</body></html>

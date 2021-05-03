@@ -1,0 +1,989 @@
+
+/* - moderna_new.css - */
+/* Estrutura das paginas */
+body {
+   font-family: Verdana, Arial, Helvetica, sans-serif;
+   margin: 0;
+   padding: 0;
+   position: relative;
+   top: 0;
+   left: 0px;
+   text-align: center;
+   background-color: white;
+}
+#body_center {
+   font-size: 10px;
+   width: 768px;
+   margin:0 auto;
+   height:auto;
+   position: relative;
+   left: 1px;
+   top: 0px;
+   text-align:left;
+   z-index:1;
+}
+#topo{
+   position: relative;
+   left: 0px;
+   top: 8px;
+   width: 764px;
+   height: 76px;
+   z-index: 500;
+}
+#login_topo {
+	position:absolute;
+	top: 0px;
+	left:250px;	
+}
+#login_topo label {
+	display: block;
+	float:left;
+	position:absolute;
+	color: grey;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+#login_topo .context {
+	position:absolute;
+	top: 15px;
+	left:245px;
+	background:none;
+	border:none;
+	color: grey;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+#box_usuario {
+	left:0px;
+	top:0px;
+}
+#box_senha {
+	left:130px;
+	top:0px;
+}
+
+#busca {
+   font-family: Verdana-bold, Arial-bold, Helvetica, sans-serif;
+   color: gray;
+   font-size: 1.1em;
+   position:absolute;
+   left:585px;
+   top:0px;
+   width:145px;
+   z-index:400;
+}
+#menuSup {
+   position: relative;
+   left: 0px;
+   top: 0px;
+   width: 764px;
+   height: 21px;
+   z-index: 2;
+}
+#Container {
+   position: relative;
+   height:auto;
+   top:8px;
+   left:0;
+   float: left;
+   clear:both;
+   width: 764px; 
+   margin: 5px 0 0 0;
+   z-index: 4;
+}
+/* LATERAL ESQUERDA */
+#menuEsq{
+        position: relative;
+        left: 0px;
+        top: 0px;
+        width: 180px;
+        height: auto;
+        z-index: 21;
+        float: left;
+        clear: none;
+}
+.caixaLateral{
+        position:relative;
+        width: 170px;
+        padding: 4px;
+        margin-bottom: 10px;
+        color: #666666;
+        border: 1px solid #999999;
+        z-index: 25;
+        display: block;
+}
+.caixaLateralSelos{
+        position:relative;
+        width: 170px;
+        padding: 4px;
+        margin-bottom: 10px;
+        color: #666666;
+        border: none;
+        z-index: 25;
+        display: block;
+}
+.caixaLateral {
+}
+#news {
+        padding: 0 5px 0 5px ;
+        position:relative;
+        height: 80px;
+}
+/* Menu colorido */
+.menuColorido {
+   margin: 0 0 8px 0;
+}
+#didaticos{
+        position:absolute;
+        text-align:left;
+        top:0px;
+        left:180px;
+        visibility:hidden;
+        z-index:50;
+}
+#literatura{
+        position:absolute;
+        text-align:left;
+        left:180px;
+        top:27px;
+        visibility:hidden;
+        z-index:50;
+}
+#formacao{
+        position:absolute;
+        text-align:left;
+        left:180px;
+        top:53px;
+        visibility:hidden;
+        z-index:50;
+}
+#idiomas{
+        position:absolute;
+        text-align:left;
+        left:180px;
+        top:78px;
+        visibility:hidden;
+        z-index:50;
+}
+#uno{
+        position:absolute;
+        text-align:left;
+        left:180px;
+        top:105px;
+        visibility:hidden;
+        z-index:50;
+}
+#avalia{
+        position:absolute;
+        text-align:left;
+        left:180px;
+        top:131px;
+        visibility:hidden;
+        z-index:50;
+}
+/* FIM LATERAL ESQUERDA */
+/* LATERAL DIREITA */
+div.path {
+      height: 30px;
+      width: 560px;
+      background-image: url(/img/back_titulo.gif);
+}
+img.top {
+      position: relative;
+      left: 5px;
+      top: 5px;
+      clear: none;
+      margin: 0px;
+      padding: 0px;
+
+}
+.cxMeio {
+        position: relative;
+        width: 574px;
+        top: 0;
+        left:0;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #cccccc;
+        background-color:white;
+        height: auto;
+        z-index: 20;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 1.1em;
+        color: #000000;
+        text-decoration: none;
+        line-height: 1.8em;
+        float: right;
+        clear: none;
+        min-height: 400px;
+}
+.cxMeio img {
+      border: none;
+}
+#spaceBox {
+        margin: 3px;
+}
+img.topMiolo {
+        position: relative;
+        width: 578px;
+        top: 0;
+        left:0;
+        margin: 0 0 2px 0;
+        padding: 0;
+        z-index: 20;
+        float: right;
+        clear: none;
+}
+#menuSite {
+       display: inline;
+       float: right;
+       clear: right;
+       top: 10px;
+       position: relative;
+       right: 0px;
+       width: 190px;
+       height: auto;
+       z-index: 300;
+       font-size: 9px;
+       margin: 10px 0 10px 15px;
+}
+#menuBiblioteca {
+       display: inline;
+       float: right;
+       clear: right;
+       top: 10px;
+       position: relative;
+       right: 0px;
+       width: 190px;
+       height: auto;
+       z-index: 300;
+       font-size: 9px;
+       margin: 10px 0 10px 15px;
+}
+#menuServicos {
+       display: inline;
+       float: right;
+       clear: right;
+       top: 10px;
+       position: relative;
+       right: 0px;
+       width: 190px;
+       height: auto;
+       z-index: 300;
+       font-size: 9px;
+       margin: 10px 0 10px 15px;
+}
+
+.topoDetalhes {
+       position: absolute;
+       top: 0px;
+       left: 0px;
+       width: 182px;
+       z-index: 200;
+}
+.boxDetalhes {
+       width: 190px;
+       display:block;
+       padding-left: 10px;
+       padding-top: 5px;
+       background-image: url(/img/meio_caixa.gif);
+       background-repeat: repeat-y;
+       z-index: 25;
+}
+.boxCurto {
+       z-index: 305;
+       width: 160px;
+}
+.fimDetalhes {
+       width: 182px;
+       margin:0px;
+       position: relative;
+       top: 0px;
+       left: 0px;
+       z-index: 200;
+}
+#boxArea {
+       width:560px;
+       border-top: 1px solid gray;
+       height: auto;
+}
+#boxBiblio {
+       width: 200px;
+       margin-left: 15px;
+       float: left;
+       clear: none;
+}
+.destaque img {
+       margin-left: 25px;
+}
+#boxImagens {
+       position:relative;
+       top: 0px;
+       /* left: 250; */
+       clear:none;
+}
+#boxImagens img {
+       margin:10px 15px 10px 5px;
+}
+#rodape{
+        position:relative;
+        top: 11px;
+        margin:0px auto 0px auto;
+        text-align:center;
+        z-index:500;
+        clear: both;
+        width: 761px;
+        height: 22px;
+        background-image: url(/img/rodape.jpg);
+}
+#r_empresa {
+   position: relative;
+   top: 0px;
+   float: left;
+   left: 148px;
+}
+#r_fale {
+   position: relative;
+   top: 0px;
+   float: left;
+   left: 161px;
+}
+#r_enderecos {
+   position: relative;
+   top: 0px;
+   float: left;
+   left: 170px;
+}
+#r_trabalhe {
+   position: relative;
+   top: 0px;
+   float: left;
+   left: 180px;
+}
+#r_mapa {
+   position: relative;
+   top: 0px;
+   float: left;
+   left: 182px;
+}
+
+
+/* Navegacao - anterior e proximo */
+.listingBar {
+    position: absolute;
+    bottom: 25px;
+    left: 0px;
+    padding: 0em 1em;
+    text-align: center;
+    font-size: 94%;
+    width: 75%;
+}
+.listingBar *.centerC {
+    position: absolute;
+    left: 180px;
+    display: inline;
+    padding: 0em 1em;
+    text-align: center;
+    font-size: 94%;
+    float: left;
+    clear: none;
+    width: 150px;
+}
+.listingBar *.previous,
+.listingBar *.previousC,
+.listingPrevious {
+    position: absolute;
+    left: 30px;
+    display: inline;
+    text-align: left;
+    float: left;
+    clear:none;
+    width: 150px;
+}
+.listingBar *.next,
+.listingBar *.nextC,
+.listingNext {
+    position: absolute;
+    left: 360px;
+    display: inline;
+    text-align: right;
+    float: left;
+    clear: none;
+    width: 150px;
+}
+.listingBar a,
+.listingBar img {
+    display: inline;
+    text-align: center;
+    clear: none;
+    margin: auto;
+}
+dd.link {
+    line-height: 14px;
+}
+.areaTitle {
+        font-size: 10px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: inline;
+}
+
+/* FIM LATERAL DIREITA */
+/* FORMATA��O TEXTO */
+a:link {
+        color: #CC0000;
+        text-decoration: none;
+}
+a:visited {
+        color: #CC0000;
+        font-weight:bold;
+        text-decoration: none;
+}
+a:hover {
+        color:#FF0000;
+        text-decoration: underline;
+}
+a:active {
+        color: #440000;
+        text-decoration: none;
+}
+#documentActions {
+        position: absolute;
+        top: 5px;
+        right: 25px;
+}
+.esquerda {
+        float: left;
+        clear: none;
+}
+.direita {
+        float: right;
+        clear: none;
+}
+.limpaLados {
+        clear: both;
+}
+.center {
+        text-align: center;
+}
+.margemEsquerda {
+        margin-left: 25px;
+}
+.fonteGrandeBold {
+        font-size: 12px;
+        font-weight: bold;
+}
+.fonteGrande {
+        font-size: 12px;
+        font-weight: normal;
+}
+.fonteMediaBold {
+        font-size: 10px;
+        font-weight: bold;
+}
+.fonteMedia {
+        font-size: 10px;
+        font-weight: normal;
+}
+.fonteNovaPesquisa {
+        font-size: 10px;
+        font-weight: normal;
+}
+.fontePequenaBold {
+        font-size: 9px;
+        font-weight: bold;
+}
+.fontePequena {
+        font-size: 9px;
+        font-weight: normal;
+}
+.espacoMeio {
+        line-height: .9em;
+}
+.espacoDuplo {
+        line-height: 16px;
+}
+.espacoTriplo {
+        line-height: 24px;
+}
+.destaque {
+        color: #333333;
+}
+.destaqueForte {
+        color: #666666;
+}
+.documentTitle {
+        font-size: 12px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+        text-align: left;
+        padding-top: 6px;
+        padding-bottom: 2px;
+}
+.citacao {
+    display: block;
+    margin-left: 50px;
+}
+/* FORMATA��O CATALOGO */
+.cxForm {
+        width: 200px;
+}
+.textBlock {
+        display: block;
+}
+.textLine {
+        display: inline;
+}
+div.textBlock {
+        display: block;
+        /* text-align:middle; */
+        margin: 0 7px 10px 7px;
+        padding: 0 7px 10px 7px;
+}
+* html div.textBlock {
+        display: block;
+        /* text-align:middle; */
+        margin: 0 8px 10px 8px;
+        padding: 0 6px 10px 6px;
+}
+.spaceCatalogo {
+        left: 50px;
+        top: 150px;
+        right: 50px;
+        bottom: 50px;
+}
+img.imagemBorda {
+    border: 1px solid black;
+}
+img.lancamentoCatalogo {
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+img.siteCatalogo {
+    position: relative;
+    left: 15px;
+    top: 5px;
+}
+/* FIM FORMATA��O CATALOGO */
+/* FIM FORMATA��O TEXTO */
+/* Estrutural para listas de itens */
+
+.lista {
+        display: list-item;
+        list-style-type: disc;
+        list-style-position: outside;
+        left: -5px;
+        position: relative;
+}
+.listaTopicos {
+        display: list-item;
+        list-style-image: url(/img/document_icon.gif);
+        list-style-position: outside;
+        margin-left: 10px;
+}
+.listaTema {
+        display: block;
+        width: 150px;
+        margin-left: 7px;
+        line-height: 1.5em;
+        vertical-align: top;
+        position: relative;
+        top: -2px;
+}
+.listaTemaDireita {
+        display: block;
+        width: 150px;
+        margin-left: 7px;
+        line-height: 1.5em;
+        text-align: right;
+        vertical-align: top;
+        position: relative;
+        top: -2px;
+}
+.bulletCaixa {
+        float: left;
+        clear:none;
+}
+.listaDestaque {
+        display: list-item;
+        list-style-image: url(/img/bullet1.gif);
+        list-style-position: outside;
+        left: 0px;
+        margin: 3px 1px 2px 1px;
+}
+.txtDestaque {
+        position: relative;
+        left: -8px;
+}
+.tituloSecao {
+        display: list-item;
+        list-style-image: url(/img/seta3.gif);
+        list-style-position: outside;
+        position: relative;
+        left: 0px;
+        margin: 3px 1px 2px 1px;
+}
+.semquebra {
+   white-space: nowrap;
+}
+
+#overDiv {
+  text-align: left;
+}
+
+.capa_segmento {
+  text-align: justify;
+  margin:0 15px 0 0;
+}
+#formNews {
+  width: 150px;
+  height: 24px;
+  margin: 2px auto;
+}
+
+
+/* LiveSearch styles */
+.LSRes {
+    font-family:  Arial,Helvetica, Sans-serif;
+    visibility: visible;
+    /* color: light-blue; */
+    background-color: white;
+    vertical-align: middle;
+    display:block;
+    list-style-image: none;
+    list-style-type: none;
+    text-align: left;
+    min-width: 16.5em;
+    text-transform: none;
+    margin-left: 0;
+    line-height: 1.1em;
+    z-index: 400;
+  }
+
+#LSHighlight {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    z-index: 400;
+}
+.LSRow {
+    border: none;
+    white-space: normal;
+    padding:0;
+    margin: 0;
+    list-style-image: none;
+    list-style-type: none;
+    z-index: 400;
+}
+
+.LSRow a {
+    text-decoration: none;
+    font-weight:bold;
+    white-space:nowrap;
+    z-index: 400;
+}
+
+.LSDescr {
+    color: red;
+    /* text-transform: bold; */
+    padding-left:2.1em;
+    margin-top:-0.1em;
+    z-index: 400;
+}
+
+.LSResult {
+    position:relative;
+    display: block;
+    background-color: white;
+    text-align:right;
+    margin: 0;
+    top: 3px;
+    left: -150px;
+    width: 300px;
+    z-index: 400;
+}
+
+.LSShadow {
+    position:relative;
+    text-align:right;
+    z-index: 400;
+}
+.livesearchContainer {
+    margin-top: 0;
+    padding: 0 !important;
+    position: relative;
+    right: 0px;
+    /* Currently exposes a rendering bug in Mozilla */
+    top: 0px;
+    white-space: normal;
+    font-family:  Arial,Helvetica,Sans-serif;
+    font-size: 10px;
+    visibility: visible;
+    text-align:left;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    width:300px;
+    text-transform: none;
+    z-index: 400;
+}
+/* Workaround for Internet Explorer's broken z-index implementation */
+.LSIEFix {
+    background-color: white;
+    padding: 0.5em !important;
+    z-index: 20;
+}
+
+.LSBox {
+    position: absolute;
+    margin:0px;
+    padding:0px;
+    left: 0px;
+    top: 15px;
+    width: 145px;
+    clear: none;
+    float: left;
+    text-align: left;
+    display:block;
+    z-index: 400;
+}
+#LSNothingFound {
+    text-align: center;
+    padding: 2px;
+    z-index: 400;
+}
+#open-searchbox {
+    z-index: 400;
+}
+#searchGadget {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        color: #000000;
+        text-decoration: none;
+        vertical-align: middle;
+        position: relative;
+        top: 0px;
+        z-index: 400;
+}
+#searchButton {
+    vertical-align: middle;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding: 1px 0 0 0;
+    border: 1px solid gray;
+}
+/* Fim LiveSearch */
+
+/*LAYOUT HOMEPAGE*/
+#Home {
+   position: relative;
+   top: 0;
+   right:0;
+   clear: both;
+}
+#spaceBoxHome {
+        margin: 2px;
+}
+#MioloHome {
+   height: auto;
+   margin:0;
+}
+#bannerHome {
+   border: 1px solid transparent;
+   margin: 3px;
+   width: 563px;
+   clear: both;
+   float: left;
+   height: 288px;
+   z-index: 2;
+}
+#boxHome {
+   border: 1px solid #e2e2e2;
+   margin: 3px;
+   width: 406px;
+   clear: none;
+   float: left;
+}
+#DestaquesHome {
+   width: 198px;
+   float: left;
+   clear: none;
+   margin: 0 1px 1px 1px;
+   border-right: 1px solid #e2e2e2;
+   height: auto;
+}
+.logoDestaqueHome{
+   text-align: center;
+}
+.divisaoDestaque {
+   background-image: url(/img/2px_destaque.gif);
+   background-repeat: repeat-x;
+   background-position: 50% 50%;
+   height: 1px;
+   margin: 0 15px;
+}
+#LancamentosHome{
+   width: 194px;
+   text-align: center;
+   float: left; 
+   clear:none;
+   margin: 0 1px 1px 1px;
+   border: none;
+   height: auto;
+}
+#colunaDireitaHome {
+   border: 1px solid #aaaaaa;
+   margin: 2px;
+   float: left;
+   clear: right;
+   width: 150px;
+   height: auto;
+}
+#NoticiasHome {
+   border: 1px solid #e2e2e2;
+   margin: 1px;
+   float: left;
+   clear: both;
+   width: 146px;
+   height: auto;
+   background-image: url(/img/stit_degrade.gif);
+   background-repeat: repeat-x;
+}
+#EventosHome {
+   border: 1px solid #e2e2e2;
+   margin: 1px;
+   float: left;
+   clear: both;
+   width: 146px;
+   height: auto;
+   background-image: url(/img/stit_degrade.gif);
+   background-repeat: repeat-x;
+}
+.vejaMais {
+   float: right;
+   margin-top: 1px;
+   right: 0px;
+}
+#selosHome{
+   border-style: none;
+   margin: 4px;
+   width: 406px;
+   text-align:center;
+   position:relative;
+}
+#seloEsquerdo{
+   border-style:none;
+   margin: 5px 0 5px 0;
+   width: 202px;
+   height: 94px;
+   float: left;
+}
+#seloDireito{
+   border-style:none;
+   margin: 5px 0 5px 0;
+   width: 204px;
+   height: 94px;
+   float: left;
+}
+#Home #selosHome img {
+   margin:0;
+}
+#Home img {
+   margin: 5px 3px 5px 5px;
+}
+#Home #colunaDireitaHome img{
+   margin: 0 3px 5px 5px;
+}
+ul {
+    margin:0px;
+    padding:0px;
+    margin-left: 4px;
+}
+.listaTopicosHome {
+        display: list-item;
+        list-style-image: url(/img/setinha_vermelha.gif);
+        list-style-position: outside;
+        margin: 0 3px 4px 10px;
+        line-height: 1.3em;
+        font-size: .9em;
+}
+#Home .box_lancamento { 
+    text-align:center;
+    font-size: .9em;
+    line-height: 1em;
+}
+
+/*TÉRMINO DO LAYOUT HOMEPAGE*/
+/* LAYOUT SUBHOMES */
+
+#menuServicos {
+   float: left;
+   clear: both;
+   width: 95%;
+   min-height: 35px;
+   background-image: url(/img/fundo_servicos.gif);
+   background-repeat: repeat-x;
+
+}
+
+.photoAlbumEntry {
+    float: left;
+    height: 185px;
+    width: 143px;
+    margin: 0em;
+    padding: 0px 6px 0px 9px;
+    text-align: center;
+    background-image: url('&dtml-portal_url;/polaroid-single.png');
+    background-repeat: no-repeat;
+}
+
+.photoAlbumEntry img {
+    border: 1px solid #ccc;
+    display: block;
+    margin: 0 auto;
+}
+
+.photoAlbumEntryWrapper {
+    /*display: block;*/
+    height: 130px;
+    width: 128px;
+    margin-bottom: 7px;
+}
+
+.photoAlbumEntry a {
+    display: block;
+    text-decoration: none;
+    font-size: &dtml-fontSmallSize;;
+    height: 169px;
+    width: 130px;
+    margin: 16px auto 0px;
+}
+
+.photoAlbumFolder {
+    background-image: url('&dtml-portal_url;/polaroid-multi.png');
+    background-repeat: no-repeat;
+}
+
+.photoAlbumEntryTitle {
+    color: &dtml-discreetColor;;
+    display: block;
+    overflow: hidden;
+    width: 128px;
+    height: 3.6em;
+}
+
+#acerto {
+	margin-left:25%;
+}
+
+/* TÉRMINO DO LAYOUT DAS SUBHOMES */
+
+

@@ -1,0 +1,28 @@
+function jc_loadUserInfo(){
+
+	if(jax.$("jc_name")){
+		if(jc_username && !(jc_username.match(/^s+$/) || jc_username == "")){
+			
+			if(jax.$("jc_name")) {jax.$("jc_name").value = jc_username;} 
+		}else {
+			jax.$("jc_name").value = jc_readCookie('jc_name');}
+	}
+	
+	if(jax.$("jc_email")){
+		if(jc_email && !(jc_email.match(/^s+$/) || jc_email == "")){
+			jc_email = jc_email.replace(/\+/, "@");
+			if(jax.$("jc_email")) {jax.$("jc_email").value = jc_email;} 
+		}else {jax.$("jc_email").value = jc_readCookie('jc_email');}
+	}
+	
+	var sid = jcRandomString();
+	if(jax.$("jc_website")) {jax.$("jc_website").value = jc_readCookie('jc_website');}
+	if(jax.$("jc_sid")){jax.$("jc_sid").value = sid;
+		 if(jax.$("jc_captchaImg")){
+		 	jax.$("jc_captchaImg").src = jax_live_site + "?option=com_jomcomment&no_html=1&task=img&jc_sid=" +  sid.toString();	 
+		}
+	}
+}
+
+	jc_username     = "";
+	jc_email        = "";

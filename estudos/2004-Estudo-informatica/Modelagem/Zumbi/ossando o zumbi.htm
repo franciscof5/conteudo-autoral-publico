@@ -1,0 +1,207 @@
+<html><head><title>Psionic Digital Artwork and Tunes, Futuristic, Dark, Erotic</title>
+
+<meta name="Description" content="A site full of Warhammer 40,000 inspired artwork, Sci-Fi Art, Weird and surreal stuff, Digital Graffiti and Funky tunes, check it out, you'll love it.">
+<meta name="Keywords" content="psionic, forum, games, graffiti, Artwork, Art, fantasy, digital, tunes, mp3, hip hop, sci-fi, music, 3d, 3dsmax, 3ds, meshes, photoshop, pictures, electro, techno, artist, cg artwork, cg art, weird, SCI Fi, Sci-Fi, Space, spaceships, B5, babylon 5, 40k, warhammer, warhammer 40k, space marine, star wars, science fiction, marines, monsters, abstract, computer, digital, graffiti, 3d, links, nudity, naked, sexy, girls, women, horror, warhammer 40000, surreal,  erotic, truespace, tanks, bikes, cars, motorbikes, manga, futuristic, web design, robots, guns, planes, dark, orks, creatures, freelance, work, available, cool, good, ace, strange, big">
+<meta name="revisit" content="7 days"></head>
+
+<body bgcolor="#ffffff" link="#000000" text="#000000" vlink="#000000">
+<div align="center"><img src="ossando%20o%20zumbi_files/whitetitle.jpg" height="90" width="600"></div><br>
+<center><h2>ZOMBIE CHARACTER FX BONES SETUP</h2></center>
+
+
+<center>
+ <table valign="top" border="0" cellpadding="4" cellspacing="0" width="700">
+                    <tbody>
+                  <tr>
+                      <td bgcolor="#19077f" valign="top" width="2"></td>
+                       <td 2="" bgcolor="#19077f" height="" valign="top" width="700"></td>
+                      <td bgcolor="#19077f" valign="top" width="2"></td></tr>
+                    <tr>
+                        
+            <td bgcolor="#19077f" valign="topWIDTH=&quot;2&quot;"></td>
+                    
+<td halign="center" bgcolor="#ffffff" valign="top" width="700">
+<font face="Arial, Helvetica, sans-serif" size="2">
+<center>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones01.jpg" border="0"><br>
+<center>LOAD THE MODEL</center>
+I exported the zombie from milkshape as a MILKSHAPE ASCII.TXT file,
+ready to be imported into CFX. Then click Windows and choose Material
+editor, you should see a window popup like in the pic below......
+<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones02.gif" border="0"><br>
+<center>ASSIGNING THE SKIN</center>1. click the Select tool and select
+the Zombie Mesh, 2. Click Open New Texture and find the zombie.jpg
+skin, and it'll show up in the Material editor window as shown, you can
+open several for multi texturing, anyway 3. Click the Assign Texture to
+assign mesh as shown, and your texture will show up on the model.<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones03.gif" border="0"><br>
+<center>CREATING THE CENTRAL BONES</center>
+OK, Now this method is just my method at the moment, its not the best
+and I will change it to suit various models but for something simple
+like this, it'll do :) Click the BONES button on the top bar as shown
+marked in red and click in the front view to create BONE 1 at the base,
+then bone 2,bone 3 etc... THE bone 1 is so I can rotate the whole
+zombie and also its good reference for where the floor is.<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones04.gif" border="0"><br>
+<center>ADDING THE LEG BONES</center>
+Now to create the leg bones, I select the SELECT tool and click the
+bone marked in red, this is where the leg bones will start as you can
+see in the next pic.<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones05.gif" border="0"><br>
+<center>LEG BONES</center>
+Now click the BONES button again as marked in red, and click 1,2 and 3
+to create the leg bones. Now remember to CLICK select again to select
+the centre bone again, click the Bones button and create the leg bones
+on the other side. You must select a bone that NEW bones will be joined
+to(well you dont have to but in this case you do :)) <br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones06.gif" border="0"><br>
+<center>SKELETON</center>
+I created bones for the arms etc and in the side view I (clicked of
+Meshes as marked in red so only joints can be selected) moved the bones
+to match the mesh. make sure you tick meshes again after moving all the
+bones in the front/side views into the correct positions. Also worth a
+mention is (as marked in the top left) I change the coords to Local
+from World so things rotate about themselves etc.<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones07.gif" border="0"><br>
+<center>BIND THE SKIN</center>
+Now this is the time consuming part and its difficult to explain but
+I'll do my best with a few examples. First the easy bit click
+Skeleton&gt;Bind Skin in the menu and your mesh will be attached to the
+bones. Now click the button marked red, to edit vertex assignments, and
+also right click it to bring up the options window as shown. Now when I
+clicked the head bone it showed me which verts were assigned but the
+ones marked red were assigned to a lower bone for some reason, anyway I
+selected that bone selected the verts I wanted UNASSIGNED and
+unassigned them, I then clicked the head bone again and clicked SELECT
+UNASSIGNED, this gave me the ones on the top of the head, I then
+ASSIGNED them and all the verts in the head are assigned to the head
+bone. Now if you go into Animation mode, you can rotate the head bone
+and the head will move (DONT FORGET TO UNDO AFTER TESTING IT)<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones08.gif" border="0"><br>
+<center>THE STUMP</center>
+As you can see in this pic the Elbow Bone has all the verts in the
+lower arm ASSIGNED to it, so this is OK, When we rotate the joint the
+whole forearm will move.<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones09.gif" border="0"><br>
+<center>THE SHOULDER</center>
+When I selected the Shoulder bone I could see that several verts in the
+body were also assigned to it, this means when the shoulder moves so
+will these verts creating weird stuff to happen in the body :) Check
+the next stage to see how to fix it<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones10.gif" border="0"><br>
+<center>UNASSIGNING</center>
+I selected the bone and also seleted the verts that I wanted
+UNASSIGNED, using CTRL to add to the selection and ALT to remove from
+the selection, now I have them selected click UNASSIGN.<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones11.gif" border="0"><br>
+<center>ASSIGNING</center>
+1. I selected the spine bone which I want to assign those verts to
+instead of the shoulder, 2. click SELECT UNASSIGNED to select those
+LOOSE verts and 3. I ASSIGNED em to the spine bone instead. Basically
+the idea is to check each bone and make sure the correct verts are
+assigned to it, so it moves correctly, I constantly check in animation
+mode how things look by rotating something then UNDO-ing after seeing
+how its affected.<br><br><br>
+
+
+
+<img src="ossando%20o%20zumbi_files/zbones12.gif" border="0"><br>
+<center>LEG</center>
+I selected the leg and as you can see ALL the lower leg verts are
+assigned to it, but I want the foot verts assigned to the ankle bone so
+I can rotate the foot seperately.<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones13.gif" border="0"><br>
+<center>UNASSIGNING</center>
+I selected the knee bone and the verts in the foot (I unchecked joints
+so only verts can be selected for the moment) and UNASSIGN by dragging
+a selection box around the feet verts..<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones14.gif" border="0"><br>
+<center>FOOT ASSIGN</center>
+Now I select the ankle/Foot bone and 1. SELECT UNASSIGNED then 2. click
+ASSIGN to assign the foot verts to the foot bone, test it in Animation
+Mode by rotating and UNDO-ing :)<br><br><br>
+
+
+<img src="ossando%20o%20zumbi_files/zbones15.gif" border="0"><br>
+<center>ZOMBIE DANCING</center>
+I keep going through each joint and testing things in animation mode
+then Switching back to OBJECT mode and Unassigning/assigning verts
+until it all works right, and as you can see above the Zombie is trying
+open a door with his Stumpy hand or having a bit of a dance :) OK, I
+seperated this tutorial from the actual animation one cus I thought
+there was too much for one tutorial, the Walk cycle tutorial is next so
+look out for it very soon. Hope you found this useful!<br><br><br>
+
+
+
+
+
+
+
+
+<b>Copyright 2001  PSIONIC</b><br>
+
+<b><a href="http://www.psionic3d.co.uk/">PSIONIC 3D DESIGN</a></b><br>
+
+</center>
+<center>
+<!-- Begin PayPal Logo -->
+<table align="center" border="0" cellpadding="5" cellspacing="0"><tbody><tr><td align="center"><a href="https://www.paypal.com/affil/pal=psionic%40blueyonder.co.uk" target="_blank"><img src="ossando%20o%20zumbi_files/logo3.gif" alt="Pay me securely with your Visa, MasterCard, Discover, or American Express card through PayPal!" border="0"></a></td><td><img src="ossando%20o%20zumbi_files/logo_cards_150x26.gif" alt="Visa ,MasterCard, Discover, and American Express" border="0"></td></tr></tbody></table>
+<!-- End PayPal Logo --></center>
+</font></td>
+                        
+            <td bgcolor="#19077f" valign="top" width="2"></td>
+                   
+ </tr><tr>
+<td bgcolor="#19077f" valign="bottom"></td>
+                     
+<td bgcolor="#19077f" valign="bottom"></td>                    
+ <td bgcolor="#19077f" valign="bottom"></td></tr>
+
+
+</tbody></table>
+</center>
+
+
+
+
+
+
+
+
+</body></html>

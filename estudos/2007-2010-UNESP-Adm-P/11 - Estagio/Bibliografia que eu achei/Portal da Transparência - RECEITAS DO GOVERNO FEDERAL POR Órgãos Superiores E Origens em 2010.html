@@ -1,0 +1,710 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0178)http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt" lang="pt"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    
+    <title> Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010 </title>
+    
+		<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/reset.css">
+	<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/geral.css">
+	<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/cabecalho.css">
+	<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/consultas.css">
+
+	<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/cabecalhoPrint.css" media="print">
+	<link rel="stylesheet" type="text/css" href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/consultasPrint.css" media="print">
+</head>	
+
+<body>
+<div id="site">
+
+    <script type="text/javascript" language="JavaScript">
+    function navega(pagina)
+    {
+    
+        var paginaInicial = 1;
+        var paginaFinal = 2;
+        var paginaAtual = 1;
+        var strUrl = "/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010" 
+        
+
+        if (pagina == paginaAtual || pagina =='')
+        {
+            document.paginacao.numeroPagina.value = '';
+        }
+        else
+        {
+            if (isNaN(pagina) || (pagina < paginaInicial) || (pagina > paginaFinal))
+            {
+                alert('Pagina inválida');
+                document.paginacao.numeroPagina.value = '';
+            }
+            else
+            {
+                strUrl += '&Pagina=' + pagina;
+                window.location = strUrl;
+            }
+        }
+        return false
+    }
+	
+    function pesquisa(texto, tipoPesquisa)
+    {
+
+		var strUrl = "/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010"		
+		
+		if(!isNaN(texto) && texto.length < 11 && texto.length >=1 && tipoPesquisa=='NomeOuCpf') {
+		
+		    alert('Pesquisa parcial por CPF não permitida');
+		    document.paginacao.numeroPagina.value = '';
+		
+		} else {
+		
+		    strUrl = strUrl + '&Pagina=1&TextoPesquisa=' + escape(texto)
+		    window.location = strUrl;
+		    
+		}
+    }    
+</script>
+
+    <noscript></noscript>
+    <script type="text/javascript" language="JavaScript">
+if (window != top) top.location.href = location.href;
+
+function comboChange(comoBox,usado){
+  window.open( comoBox.options[comoBox.selectedIndex].value);
+  if (usado) comoBox.selectedIndex=0;
+
+}
+</script>
+
+<noscript></noscript>
+
+<div id="presidencia">
+
+	<a href="http://www.cgu.gov.br/" target="_blank" style="float:left; width:64%">
+		<!-- style margin-bottom:-4px == HACK IE6 -->
+		<img src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/cgu_logo.gif" style="border-style: none; margin-bottom:-4px;" alt="Presid&ecirc;ncia da Republica - Controladoria Geral da Uni&atilde;o">
+	</a>
+
+	
+	<div style="float:left; width:23.5%;">
+		<select name="sltVoce" id="sltVoce" title="Paginas do Governo Federal" class="pr" tabindex="1" onchange="comboChange(this,1)" size="1">
+			<option value="" selected="selected">Destaques do Governo</option>
+			<option value="http://www.brasil.gov.br">Portal do Governo Federal</option>
+			<option value="http://www.e.gov.br">Portal de Serviços do Governo</option>
+			<option value="http://www.agenciabrasil.gov.br">Portal da Agência de Notícias</option>
+			<option value="http://www.brasil.gov.br/emquestao">Em Questão</option>
+			<option value="http://www.fomezero.gov.br">Programa Fome Zero</option>
+		  </select>
+	</div>
+
+	<!-- <a href="http://www.brasil.gov.br" target="_blank" style="float:left; width:12.5%;"> -->
+		<!-- style margin-bottom:-4px == HACK IE6 -->
+		<!-- <img src="/images/brasil.gif" style="margin-top:2px; margin-bottom:-4px;" alt="Brasil - Um pais de todos"/> -->
+	<!-- </a> -->
+	
+</div>
+
+
+<!-- Testeira do Portal da Transparência -->
+<div id="logo">
+	<a href="http://www.transparencia.gov.br/" title="Portal da Transpar&ecirc;ncia">
+		<h1>
+            <img src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/bandeira.png" alt="Portal da Transpar&ecirc;ncia do Governo Federal">
+        </h1>
+	</a>
+</div>
+
+<script type="text/javascript" language="JavaScript">
+
+    function redirAcessoRapido() {
+
+        var sel = document.getElementById('linksAcessoRapido');
+        var opt = sel.options[sel.selectedIndex];
+		
+		// Apenas redireciona se não for um link "fake" (#)
+		if (opt.value != "#")
+		{
+			// Se possui um "+" indicando para abrir em nova janela...
+			if (opt.value.indexOf ("+") == 0)
+			{
+				window.open (opt.value.substring(1)); // ... abre em nova janela (desconsiderando o "+")
+			}
+			else // Se não possui...
+			{
+				window.location = opt.value; // ... abre na mesma janela
+			}
+		}
+		
+    }
+	
+</script>
+
+<!-- Combo de acesso rápido -->
+<div id="acesso-rapido">
+
+    <div class="conteudo">
+        <h2>
+            <label for="linksAcessoRapido">Acesso rápido</label>
+        </h2>
+        <select id="linksAcessoRapido">
+                <option value="#">Selecione...</option>
+            <optgroup label="CONSULTAS">
+                <option value="/Despesas.asp">Despesas</option>
+				<option value="/receitas">Receitas</option>
+                <option value="/convenios">Convênios</option>
+                <option value="/ceis">Empresas Sancionadas</option>
+				<option value="/servidores">Servidores</option>
+            </optgroup>
+            <optgroup label="INFORMA&Ccedil;&Otilde;ES">
+                <option value="/sobre">Sobre o Portal</option>
+                <option value="/sobre/Origem.asp">Dados do Portal</option>
+                <option value="/aprendaMais">Aprenda Mais</option>
+                <option value="/noticias">Notícias</option>
+                <option value="/controleSocial">Controle Social</option>
+                <option value="/licitacoesecontratos/">Licitações e Contratos</option>
+            </optgroup>
+            <optgroup label="SERVI&Ccedil;OS">
+				<option value="/convenios/ConveniosFormulario.asp">Informações sobre convênios</option>
+				<option value="/rede/">Rede de Transparência</option>
+				<option value="http://www1.transparencia.gov.br/">Páginas de Transparência</option>
+				<option value="http://br.transparencia.gov.br/">Estados e Municípios</option>
+				<option value="+http://www.cgu.gov.br/olhovivo/">Programa Olho Vivo</option>
+				<option value="+http://www.portalzinho.cgu.gov.br/">Portal Criança Cidadã</option>
+            </optgroup>
+        </select>
+        <a href="javascript: redirAcessoRapido();">OK</a>
+    </div>
+    <div class="borda"></div>
+</div>
+
+<!-- Links de navegação -->
+<div id="navegacao">
+	<ul>
+		<li><a href="http://www.transparencia.gov.br/faleConosco/">Fale conosco</a> |</li>
+		<li><a href="http://www.transparencia.gov.br/glossario/">Glossário</a> |</li>
+		<li><a href="http://www.transparencia.gov.br/faleConosco/Perguntas.asp">Perguntas Freqüentes</a> |</li>
+		<li><a href="http://www.transparencia.gov.br/links/">Links</a> |</li>
+		<li><a href="http://www.transparencia.gov.br/manual/">Manual de Navegação</a></li>
+	</ul>
+</div>
+
+
+	<p class="caminho">
+
+		<span class="rotulo">Você está em:</span>
+		<br>
+		<span class="passos">
+		
+			<span class="anterior"><a href="http://www.transparencia.gov.br/">Início</a></span>»
+
+
+				<span class="anterior"><a href="http://www.transparencia.gov.br/receitas/index.asp">Receitas</a></span>»
+
+				<span class="anterior"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?Exercicio=2010">Receitas do Governo Federal (Órgão Superior)</a></span>»
+
+			<span class="atual"><a href="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010.html">Origens</a></span>
+			
+		</span>
+	</p>
+
+		
+	
+
+    <!--Conteúdo geral -->
+    <div id="pagina">
+	
+	<div id="conteudo">
+	
+	<div id="titulo"><h1>RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010</h1></div>
+			
+	<div id="acoes">
+	
+	<!-- Sublinhado simulado via javascript para IE6; para outros navegadores, o css resolve isso. -->
+	<span onclick="javascript: print();" onkeypress="javascript: if (checkKey(event,13)) print ();" onmouseover="javascript: this.style.textDecoration=&#39;underline&#39;; this.style.cursor=&#39;pointer&#39;;" onmouseout="javascript: this.style.textDecoration=&#39;none&#39;;">
+				imprimir&nbsp;<img src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/icone-imprimir.png" alt="imprimir">
+	</span>
+	
+</div>
+	
+	<div id="resumo">
+
+			
+	
+
+	<table summary="Resumo da Consulta" width="80%">
+		<caption style="display:none;">Resumo da Consulta</caption>
+		<thead>
+			<tr>
+				<th>Descrição</th>
+				<th colspan="2">Valor</th>
+			</tr>
+		</thead>
+		<tbody>
+
+
+			<tr>
+				<td class="firstChild"> Total da receita realizada dos órgãos do Poder Executivo do Governo Federal em <b>2010</b>: </td>
+				<td>R$</td>
+				<td class="colunaValor" style="text-align: right;">
+					1.073.188.711.942,31
+				</td>
+			</tr>
+
+		</tbody>
+	</table>
+	
+
+
+	</div>	
+	
+	<div id="banner-destaque">
+	
+		<a href="https://www.portalsof.planejamento.gov.br/bib/receita/ement_rec" target="_blank" title="Manual da receita do Governo Federal">
+			<!-- Texto comentado porque não aparece no IE6 (usada figura com texto) -->
+			<!-- p>
+				Manual da<br />receita do<br />Governo<br />Federal
+			</p -->
+			<img src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/destaque-manual-receita-texto.gif" alt="Manual da receita do Governo Federal">
+			
+		</a>
+	</div>
+	
+	
+	<table width="100%">
+	    <tbody><tr>
+	        <td>	            
+			    
+            </td>			    
+			<td style="text-align: right;">
+			    
+			    DICA: clique no detalhamento para ver as Rubricas de cada Origem de Receita
+			    			    
+		    </td>
+    
+        </tr>
+    <tr><td colspan="2">
+		
+	<div id="listagem">
+	
+	
+	<table>
+              
+                
+            
+            
+            <tbody><tr class="firstChild">
+                                                                        
+                        <th scope="col" style=" ">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=1&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por Categoria">Categoria
+							</a></th>                                                            
+                        <th scope="col" style=" ">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=5&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por Origem">Origem
+							</a></th>                                                            
+                        <th scope="col" style="  text-align: right; width:18%;">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=2&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por Previs&atilde;o Atualizada (R$)">Previsão Atualizada (R$)
+							</a></th>                                                            
+                        <th scope="col" style="  text-align: right; width:15%;">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=7&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por Receita Lan&ccedil;ada (R$)">Receita Lançada (R$)
+							</a></th>                                                            
+                        <th scope="col" style="  text-align: right; width:16%;">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=3&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por Receita Realizada (R$)">Receita Realizada (R$)
+							</a></th>                                                            
+                        <th scope="col" style="  text-align: center;width:9%;">
+						<a href="http://www.transparencia.gov.br/receitas/consulta.asp?Ordem=4&idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010&TipoHierarquia=0" title="Ordena por % Realizado">% Realizado
+							</a></th>					
+                        <th scope="col" style="text-align: center;" width="13%">Detalhamento</th>
+						
+            </tr>
+
+        
+          	    <tr class="linhaPar" style="background-color: rgb(245,245,204);">                 	        
+                    <td>TOTAL DE RECEITAS</td>	
+                    <td>     
+                    <td style="text-align: right;">1.770.153.234.772,02</td>
+					
+						<td style="text-align: right;">895.118.824.706,29</td>
+					
+                    <td style="text-align: right;">1.073.188.711.942,31</td>
+
+                    
+                    <td style="text-align: center;">60,62</td>                    
+                    
+                        <td>
+                    
+                </tr>          	          	    
+	        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA DE CONTRIBUICOES </td>	
+			    			                    
+			    <td style="text-align: right;">479.505.946.013,00</td>
+					
+						<td style="text-align: right;">400.695.472.213,03</td>
+										
+
+			    <td style="text-align: right;">317.793.305.428,91</td>
+			    
+			    <td style="text-align: center;">66,27</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2044&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA TRIBUTARIA </td>	
+			    			                    
+			    <td style="text-align: right;">293.540.984.761,00</td>
+					
+						<td style="text-align: right;">370.356.867.359,09</td>
+										
+
+			    <td style="text-align: right;">183.619.107.614,33</td>
+			    
+			    <td style="text-align: center;">62,55</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2043&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA PATRIMONIAL </td>	
+			    			                    
+			    <td style="text-align: right;">54.901.187.343,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">41.827.196.039,01</td>
+			    
+			    <td style="text-align: center;">76,18</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2045&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA DE SERVICOS </td>	
+			    			                    
+			    <td style="text-align: right;">35.219.805.792,02</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">32.056.679.723,63</td>
+			    
+			    <td style="text-align: center;">91,01</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2048&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> OUTRAS RECEITAS CORRENTES </td>	
+			    			                    
+			    <td style="text-align: right;">44.778.343.371,00</td>
+					
+						<td style="text-align: right;">124.065.143.912,46</td>
+										
+
+			    <td style="text-align: right;">17.745.519.170,29</td>
+			    
+			    <td style="text-align: center;">39,62</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2051&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA INDUSTRIAL </td>	
+			    			                    
+			    <td style="text-align: right;">2.560.155.670,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">1.824.757.711,73</td>
+			    
+			    <td style="text-align: center;">71,27</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2047&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITAS CORRENTES A CLASSIFICAR </td>	
+			    			                    
+			    <td style="text-align: right;">0,00</td>
+					
+						<td style="text-align: right;">1.341.221,71</td>
+										
+
+			    <td style="text-align: right;">334.812.945,86</td>
+			    
+			    <td style="text-align: center;">-</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2050&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> TRANSFERENCIAS CORRENTES </td>	
+			    			                    
+			    <td style="text-align: right;">447.497.110,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">129.619.769,86</td>
+			    
+			    <td style="text-align: center;">28,96</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2049&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES </td>	                
+                
+			       <td> RECEITA AGROPECUARIA </td>	
+			    			                    
+			    <td style="text-align: right;">24.376.320,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">13.746.320,03</td>
+			    
+			    <td style="text-align: center;">56,39</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2046&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> RECEITA DE CONTRIBUICOES </td>	
+			    			                    
+			    <td style="text-align: right;">13.085.664.283,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">7.327.590.603,50</td>
+			    
+			    <td style="text-align: center;">55,99</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2058&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> RECEITA INDUSTRIAL </td>	
+			    			                    
+			    <td style="text-align: right;">138.450.960,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">81.031.919,93</td>
+			    
+			    <td style="text-align: center;">58,52</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2060&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> RECEITA DE SERVICOS </td>	
+			    			                    
+			    <td style="text-align: right;">150.605.536,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">36.179.237,16</td>
+			    
+			    <td style="text-align: center;">24,02</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2061&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> OUTRAS RECEITAS CORRENTES </td>	
+			    			                    
+			    <td style="text-align: right;">299.261,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">8.709.159,85</td>
+			    
+			    <td style="text-align: center;">2.910,22</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2062&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr class="linhaPar">	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> RECEITA PATRIMONIAL </td>	
+			    			                    
+			    <td style="text-align: right;">2.161.300,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">3.829.888,15</td>
+			    
+			    <td style="text-align: center;">177,20</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2059&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+		<tr>	
+		
+		    
+			
+                <td> RECEITAS CORRENTES INTRA-ORCAMENTARIAS </td>	                
+                
+			       <td> RECEITA TRIBUTARIA </td>	
+			    			                    
+			    <td style="text-align: right;">124.234,00</td>
+					
+						<td style="text-align: right;">0,00</td>
+										
+
+			    <td style="text-align: right;">171.501,79</td>
+			    
+			    <td style="text-align: center;">138,04</td>
+			    
+					<td style="text-align: center; width: 15%;"><a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=2057&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010">Por Espécie/Rubrica</a> </td>		
+				
+		</tr>
+        
+
+	</tbody></table>
+	
+
+	</div>
+	</td></tr>
+	
+	<tr><td>&nbsp;</td></tr>
+	<tr><td style="text-align: center;" colspan="2">Dados acumulados até 25 de Setembro de 2010.</td></tr>
+    
+	</tbody></table>	
+		<script type="text/javascript" language="javascript" src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/helper.js"></script>
+<noscript></noscript>
+
+<form action="" name="paginacao" onsubmit="return false">
+
+	<div id="paginacao">
+
+		<p class="paginaAtual">Página 1/2</p>
+		<p>
+			
+				« Primeira |
+				‹ Anterior |
+			
+				<a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010#" onclick="return navega(2);">Próxima ›</a> |
+				<a href="http://www.transparencia.gov.br/receitas/consulta.asp?idHierarquiaOrganizacao=1&idHierarquiaDetalhe=0&idDirecao=1&idHierarquiaOrganizacao0=1&idHierarquiaDetalhe0=0&Exercicio=2010#" onclick="return navega(2);">Última »</a> |
+			
+
+			<label for="numeroPagina">Página:</label>
+			
+				<input id="numeroPagina" type="text" style="width:7em;" value="n&ordm; p&aacute;gina" onfocus="this.select();" onkeypress="if (checkKey(event,13)) navega(document.paginacao.numeroPagina.value);">
+				<input type="submit" value="Ir" style="width:3.5em;" onclick="navega(document.paginacao.numeroPagina.value);" onkeypress="if (checkKey(event,13)) navega(document.paginacao.numeroPagina.value);">
+			
+		</p>
+	</div>
+</form><div id="avisos">
+	<p>
+		Recomenda-se visualizar em resolução 1024x768
+	</p>
+</div>
+
+		
+		
+	</div> <!-- /conteudo -->
+    </div> <!-- /pagina -->
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="./Portal da Transparência - RECEITAS DO GOVERNO FEDERAL POR Órgãos Superiores E Origens em 2010_files/ga.js" type="text/javascript"></script>
+<noscript></noscript>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-1665737-12");
+pageTracker._trackPageview();
+</script>
+<noscript></noscript>
+
+
+
+</body></html>

@@ -1,0 +1,229 @@
+Bom dia a todos, antigos e novos membros do MIB. Seguinte: devido a grande
+desorganizacão que está a seção de Edição, eu resolvi fazer esse FAQ com
+as principais dúvidas postadas no Edição, já que muitas vezes membros do fórum
+postam dúvidas já respondidas dezenas de vezes e causam somente mais
+trabalho para os moderadores e evitam que o Edição esteja organizado, postando
+sempre as mesmas perguntas já feitas dezenas de milhares de vezes. Sem
+mais delongas:
+
+ATENÇÃO: Esse tópico é altamente recomendado pra newbies!
+ATENÇÃO2: Algumas perguntas não colocadas aqui podem ser respondidas
+pelos tutoriais do Mataleone aqui
+
+Link pros tutoriais do Mataleone:
+http://mataleone.counter-strike.com.br/tut...t/mapbasico.php
+http://mataleone.counter-strike.com.br/tut/faq-map.php
+-------------------------Assuntos apresentados no FAQ----------------------------
+
+-Erros de Compilação
+-O que é um prefab e onde achá-los
+-Como colocar uma arma no chão
+-Como descompilar um mapa (transformar de .bsp para .map)
+-Como fazer uma árvore
+-Como fazer um elevador
+-Como fazer um objeto que se move pelo mapa (controlado pelo jogador ou não)
+-Como fazer uma entidade ativar outra
+-Como compilar um mapa com as texturas incluidas
+-Como aplicar um decal
+-Como fazer uma porta com um vidro quebrável
+-Como restringir armas
+-Como fazer um vidro transparente de um lado e que reflete do outro
+-Como fazer um objeto ´´empurrável`` como a bola da rio
+-Como fazer uma escada vertical
+
+------------------------------------RESPOSTAS---------------------------------------
+
+-ERROS DE COMPILAÇÃO
+
+R. Existem dezenas, talvez centenas de erros de compilação, os mais estranhos
+e loucos possíveis. Eu não posso responder a todos aqui, mas existe um
+tutorial de erros de compilação feito pelo NineLives,link aqui
+Se o erro que estiver acontecendo no seu mapa, de um search em edição.
+
+-------------------------------------------------------------------------------------------
+
+-O QUE É UM PREFAB?
+
+R. Essa é uma pergunta muito comum entre os newbies, e a resposta é extremamente
+simples. Prefabs são objetos, como cadeiras, mesas, carros e outros já
+montados, tudo que você tem a fazer é colocá-los no mapa que você vai
+ter um objeto já pronto. Mas cuidado: apesar de parecem uma ótima solução
+para fazer mesas e outras coisas, lembrem-se que os prefabs aumentam
+muito o r_speed do mapa e tiram originalidade dele. 
+Sites com Prefabs:
+
+PrefabLand
+
+PrefabLab
+
+-----------------------------------------------------------------------------------------
+
+-COMO COLOCAR UMA ARMA NO CHÃO
+
+R. Colocar uma arma ou item no chão é utilizado principalmente em mapas
+como AWP_map, ou mapas temáticos de armas. Para colocar uma armas no chão
+voce deve criar uma entidade armoury_entity aonde você deseja colocar
+a arma. Depois, entre nas propriedades da entidade e selecione a arma ou
+item que você deseja colocar no box ITEM
+
+-----------------------------------------------------------------------------------------
+
+-COMO DESCOMPILAR UM MAPA (TRANSFORMAR DE .BSP PARA .MAP)
+
+R. Esse é um artifício que pode ser utilizado para se entender como fazer
+algo específico encontrado num mapa ou para copiar coisas do mapa (não
+recomendável, SEJAM CRIATIVOS). Para descompilar um mapa utilizem o 
+BSPcgui, link aqui.
+ATENÇÃO: A descompilação de um mapa em geral causa vários erros, use
+por sua própria conta e risco.
+
+-----------------------------------------------------------------------------------------
+
+-COMO FAZER UMA ÁRVORE
+
+R. Uma das dúvidas mais comuns no fórum. Existem vários métodos para
+se criar uma árvore. A seguir, os principais.
+
+Árvore com texturas vazadas: A mais tradicional e simples de fazer. Simplesmente
+escolha ou crie uma textura vazada de árvore, e crie dois brushes em forma
+de cruz com a textura, depois transforme em func_wall e coloque o render mode
+como solid e o Fx amount em 225 
+Árvore Com Vertex:O outro seria construir uma árvore com vários brushes, utilizando vertex tool,
+mas essa técnica, apesar de criar boas árvores (só precisa de um pouco de imaginação)
+causa um sem-fim de problemas de compilação e dá muito problema com os
+r_speeds. Se você for utilizá-lo é uma boa idéia iniciar com um círculo e usar
+o vertex nele
+
+------------------------------------------------------------------------------------------
+
+-COMO FAZER UM ELEVADOR
+
+R. Essa técnica é muito útil para se fazer um elevador, seja ele horizontal
+ou vertical, além de muitas outras coisas (use a sua IMAGINAÇÃO).
+É uma técnica bem simples que não exige muito conhecimento de mapping.
+Tutorial -----
+
+-------------------------------------------------------------------------------------------
+
+-COMO FAZER UM OBJETO QUE SE MOVE PELO MAPA (CONTROLADO PELO
+JOGADOR OU NÃO)
+
+R. Muitas pessoas querem fazer carros que podem ser dirigidos pelo jogador
+ou objetos como, por exemplo um helicóptero, que se move pelo mapa automaticamente.
+Para fazer um carro: Fazer um carro é algo simples, explicado nesse tutorial.
+Para fazer um objeto que se move pelo mapa: de uma olhada nessetutorial.
+
+------------------------------------------------------------------------------------------
+
+-COMO FAZER UMA ENTIDADE ATIVAR OUTRA
+
+R. Essa é uma pergunta muito genérica, pois dependendo do que você
+deseja fazer existe uma resposta diferente. Mas aqui eu vou tentar explicar
+a situação mais comum.
+Duas entidades funcionando juntas.
+Sabe aqueles rádios que quando você quebra para de tocar a música?!?
+Isso é extremamente simples de fazer! Primeiro crie o rádio e transforme em
+func_breakable, coloque em target o nome do ambient_generic que toca a música. Assim quando alguém quebrar o rádio ele vai desativar o ambient_generic.
+Esse é somente um exemplo, você pode utilizar essa técnica de muitas maneiras,
+como um botão (trigger_push) que faz uma porta abrir, ou ativa ou desativa
+um som, etc.
+
+-----------------------------------------------------------------------------------------
+
+-COMO FAZER UM MAPA COM TEXTURAS INCLUÍDAS?
+
+R. Esse é fácil! Se você quer inserir as texturas que utilizou no mapa
+dentro do arquivo dele, como a rio, por exemplo, você deve colocar um dos
+seguintes comandos no CSG na hora de compilar: -wadinclude ou o -nowdatextures
+
+o -wadinclude inclui um unico WAD no seu mapa, e ele nao inclui o WAD inteiro, ele inclui somente as texturas utilizadas.
+
+o -nowadtextures inclui todas as texturas usadas no mapa. Isso nao eh bom, pois se vc utilizou bastante texturas do halflife.wad (eh soh exemplo), nao ha necessidade de incluí-las.
+
+Em resumo: O -wadinclude é o mais recomendável.
+------------------------------------------------------------------------------------------
+
+-COMO APLICAR UM DECAL?
+
+R. Muitas pessoas acreditam que para aplicar um decal é só selecionar a
+textura e clicar na ferramenta de decal. Mas não é assim não!!! Essa técnica
+só serve para aplicar decals da wad decals.wad. Para aplicar decals de outras
+fontes, é necessário outra técnica. Crie um brush de 1 grid de profundidade
+aonde você deseja colocar o decal e transforme-o em func_illusinary, pois assim 
+ficará como o decal e o illusionary serve para o jogador não trancar nele.
+
+----------------------------------------------------------------------------------------
+
+-COMO FAZER UMA PORTA COM VIDRO QUEBRÁVEL
+
+R. Muitas pessoas acham que isso é impossível de ser feito, mas existe um método, utilizando a entidade change _target. Tutorial a seguir:
+
+The problem is this: for the glass to move (as a door) it must be a func_door. But to break it must be a func_breakable. It cannot be both at the same time. 
+
+The only way you will get the effect is to use triggers and trigger_change_targets. 
+
+Make the glass as a func_breakable to start with and give it a name (eg Glass1). Make it target a trigger_change_target called TCT1. Then make an identical piece of glass for the func_door, but make it not visible. Make sure it will open properly with the rest of the door when it is visible. Call this Glass2. Put both bits of glass in exactly the same position in your door frame. 
+Make the door so that it can only be opened by Using a switch or button, or put a trigger_multiple right in front of it so the door appears to open automatically. Call the door Door1 and the trigger/switch/button Trigger1 
+Trigger1 should target a multi_manager called MM1. 
+The multi_manager should do five things: 
+remove the breakable Glass1; 
+make the func_door Glass2 visible; 
+trigger Glass2 and Door1 so the whole door opens; 
+remove Glass2 once the door has closed again; 
+replace Glass1 once the door has closed. 
+If you were to play the level now, you would be able to shoot the glass and it would break, or you could open the door and the glass would move with the door. In order to do both (ie. break the glass and then open the door without the new glass magically reappearing), you need to use the trigger_change_target. 
+When the Glass1 breaks, it triggers the TCT1. The TCT1 changes the target of your button/switch from the multi_manager MM1 to just the door by itself (Door1). 
+Now, when you open the door, the glass is not replaced. 
+
+Estou providenciando uma tradução!
+
+----------------------------------------------------------------------------------------
+
+-COMO RESTRINGIR ARMAS
+
+R. Dúvida muito comum aqui no fórum. Pode ser respondida por essetutorial
+
+-----------------------------------------------------------------------------------------
+
+-COMO FAZER UM VIDRO TRANSPARENTE DE UM LADO E QUE REFLETE DO OUTRO?
+
+R. Essa aqui é difícil! Fazer um vidro transparente somente de um lado é algo
+que pouquissimas pessoas sabem fazer! Mas agora todos que quiserem podem
+ver como fazê-lo aqui. Turorial do ShadowMan em português:
+
+http://www.shadowmanmapper.kit.net/princip...al/tutfume.html
+------------------------------------------------------------------------------------------
+
+-COMO FAZER UM OBJETO ´´EMPURRÁVEL`` COMO A BOLA DA CS_RIO
+
+R. Essa pergunta é bem simples. Para criar um objeto que pode ser 
+empurrado, selecione o objeto que você deseja transformar em ´´empurrável``
+e transforme-o em func_pushable. Altere as características do jeito que
+preferir.
+
+-------------------------------------------------------------------------------------------
+
+-COMO FAZER UMA ESCADA VERTICAL?
+
+-Uma das perguntas mais comuns no fórum tem uma resposta extremamente
+simples. O que você deve fazer esta explicado nesse tutorial!
+(não coloquei e explicação diretamente aqui por que to sem tempo, mas
+é super-simples, não se intimidem por ter um turorial só para isso! 
+
+--------------------------------------------------------------------------------------------
+EM BREVE
+
+- Texturas iluminadas
+-Como colocar um model no mapa.
+
+Espero sugestões e correções caso sejam necessárias.
+FUI!!!
+
+--------------------------------------------------------------------------------------------
+
+NEWS
+
+-coloquei como fazer uma escada vertical!
+-Links diretos para os tutoriais do Mataleone colocados por sugestão do FAndré! 
+
+

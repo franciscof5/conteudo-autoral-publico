@@ -1,0 +1,72 @@
+	*
+	{
+		font:12px Verdana,Arial,Helvetica,sans-serif;
+	} 
+ 
+	.action{
+		width:16px; 
+		height:16px
+	}
+	.comRodape tr:last-child:hover
+	{
+		background-color:transparent;
+	}
+	
+	.error
+	{
+		color: red;
+		text-align: center;
+	}
+	 
+	.msg
+	{
+		color: #990000;
+		text-align: center;
+	}
+	.info
+	{
+		color: black;
+		text-align: center;
+	}
+	.justify
+	{
+		text-align: justify!important;
+	}
+	.center
+	{
+		text-align: center!important;
+	}
+	
+	.left
+	{
+		text-align: left!important;
+	}
+	.linkArea:hover
+	{
+	}
+	
+	th
+	{
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	td
+	{
+		text-align: center;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	table
+	{
+		text-align: center;
+	} 
+	
+	.alerta
+	{ 
+	   color:red;
+	   font-weight: bold;   
+	}
+	a, a:link, a:visited
+	{
+		font-weight: normal;
+	}	

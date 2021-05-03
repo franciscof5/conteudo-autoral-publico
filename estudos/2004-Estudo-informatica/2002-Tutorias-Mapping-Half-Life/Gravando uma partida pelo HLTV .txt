@@ -1,0 +1,13 @@
+Gravando uma partida pelo HLTV 
+P: Como faço para gravar uma partida pelo HLTV?
+R: Para gravar uma partida pelo HLTV siga as seuintes instruções:
+
+Primeiro crie um jogo, servidor dedicado ou normal. Depois de criado o jogo abra o HLTV e digite o seginte para conectar ao seu servidor: connect "localhost" se o sevidor for local, uma lan por exemplo. Caso seja algum servidor na internet é só você trocar o "localhost" pelo IP do servidor. Para desconectar do servidor digite: disconnect. E para sair do HLTV digite: quit. 
+
+Para começar a gravar um demo pelo HLTV basta digitar: record <Nome_do_demo>
+Para finalizar a gravação de um demo no HLTV digite: stoprecord
+
+Para assistir ao demo gravado basta copia-lo para o diretório do cstrike, abrir o jogo e no console digitar: playdemo <nome_do_demo>
+Ou, você também pode digitar: viewdemo <nome_do_demo> (este comando possibilita você a adiantar o demo, voltar, colocar em câmera lenta. Basta pressionar F2 que irá abrir um menu com as opções.
+ 
+ 

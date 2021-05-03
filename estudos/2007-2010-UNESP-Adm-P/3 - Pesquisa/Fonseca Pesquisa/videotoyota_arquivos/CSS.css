@@ -1,0 +1,72 @@
+.TITULO_LATERAL {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FFCC00;
+	color: #333333;
+	margin-right: 2px;
+}
+.TEXTO_LATERAL {
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: normal;
+	margin-left: 10px;
+	line-height: 20px;
+}
+.TITULO_CORPO_TEXTO {
+	font-family: "Trebuchet MS";
+	font-size: 16px;
+	font-weight: bold;
+	color: #000066;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #000066;
+}
+.TEXTO_CORPO_PRINCIPAL {
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	line-height: 24px;
+}
+.TEXTO_LATERAL_NM {
+	font-family: "Trebuchet MS";
+	font-size: 11px;
+	font-weight: normal;
+	line-height: 20px;
+}
+.TEXTO_CORPO_PRINCIPAL_DESTAQUE {
+	font-family: "Trebuchet MS";
+	font-size: 14px;
+	line-height: 24px;
+	background-color: #FFFF99;
+	border: 2px solid #0033CC;
+	font-weight: normal;
+}
+.TITULO_BARRA_LINK {
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+	color: #666666;
+	background-color: #D8E7FE;
+	font-weight: bold;
+}
+.NEGRITO_VERMELHO {
+	color: #CC0000;
+	font-weight: bold;
+}.TEXTO_CORPO_PRINCIPAL_PQ {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #666666;
+	line-height: 15px;
+}
+.TITULO_BARRA {
+	font-family: "Trebuchet MS";
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FFCC00;
+	color: #333333;
+	margin-right: 3px;
+}
+.TITULO_PAGINA {
+	font-size: 60px;
+	font-family: "Trebuchet MS";
+	color: #333333;
+}

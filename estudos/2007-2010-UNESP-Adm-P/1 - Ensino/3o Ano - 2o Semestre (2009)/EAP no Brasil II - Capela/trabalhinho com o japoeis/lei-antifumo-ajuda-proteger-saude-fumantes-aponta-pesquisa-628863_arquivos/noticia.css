@@ -1,0 +1,124 @@
+.opNoticia,.opComente{font:normal 10px verdana;padding:0 0 4px 0;clear:both;margin:0 0 10px 0}
+.opComente{width:306px}
+.opComente a{padding:0 20px 0 24px;margin:0 5px 0 0;height:20px;line-height:20px}
+.opNoticia a{padding:0 47px 0 23px;margin:0 5px 0 0}
+.opNoticia a,.opComente a{border-right:solid 1px #000;text-transform:uppercase;color:#000;float:left}
+.opNoticia a.icGostei{float:right}
+a.lkCelular{font:normal 10px verdana;padding:0 0 0 20px;text-transform:uppercase;color:#000;margin:0 0 10px 0;display:block;width:200px;float:left}
+.opNoticia .quComentarios,.opComente .quComentarios{font-weight:bold;float:right;height:24px;line-height:20px}
+.dataNoticia{font:normal 10px verdana;padding:0;float:left}
+.assNoticia{float:right}
+h1.titNoticia,h2.titNoticia{font:bold 28px arial!important;color:#000!important;border:none!important}
+#titNoticia.v2{margin:20px 0 0 0}
+.esqNoticia{float:left;width:316px}
+.esqNoticia2{float:left;width:436px;overflow:hidden}
+.dirNoticia{float:right;width:316px}
+.dirNoticia2{float:right;width:186px;padding-top:10px}
+.dirNoticia2 h4 {margin-top:20px;float:left;width:166px}
+.barra_texto h4.tit{float:left;width:210px}
+.barra_texto .cont_relacionados {margin-bottom:15px;}
+.dirNoticia2 .mais-pop{float:left}
+h2.stitNoticia,h3.stitNoticia{font:normal 14px verdana;color:#000;border:none}
+.v2 h2.stitNoticia{font:normal 12px verdana;line-height:20px;margin:20px 0 0 0}
+.v2 .linha-noticia{height:auto}
+.v2 .autorNoticia{height:30px;float:left;padding:0;color:#000;width:250px}
+.v2 .tamFonte{height:30px;float:right}
+.v2 .tamFonte .label{font:normal 10px verdana;color:#000;float:left}
+.v2 .tamFonte a{color:#000;float:left;width:30px;height:20px;background:none;border:solid 1px #ccc;margin:0 0 0 6px;text-align:center}
+.v2 .tamFonte a:hover{text-decoration:none}
+.v2 .tamFonte .maior{font:bold 15px verdana}
+.v2 .tamFonte .menor{font:bold 12px verdana;padding-top:3px;height:17px}
+.autorNoticia{font:bold 10px verdana;padding:10px 0 15px 0}
+.txtNoticia a{color:#0909EE}
+.txtNoticia{font:normal 12px verdana}
+.v2 .txtNoticia{margin-top:10px}
+.txtNoticia p{padding:0 10px 20px 0}
+.txtNoticia img{width:306px}
+.v2 .txtNoticia img{width:auto}
+.v2 .txtNoticia table{margin:10px}
+.txtNoticia .barra_texto {float:left;width:230px;margin:0px 10px 5px 0px;overflow:hidden;}
+.noticia .barraPaginacao{width:298px;height:20px;margin:10px 0;padding:0 5px}
+.noticia .barraPaginacao div{color:#fff;font:normal 10px verdana;line-height:20px;height:20px;float:left}
+.noticia .barraPaginacao div a{color:#fff}
+.noticia .barraPaginacao div a.ativo{color:#fff;font-weight:bold}
+.noticia .barraPaginacao .anterior{width:60px;font-weight:bold}
+.noticia .barraPaginacao .meio{width:178px;text-align:center}
+.noticia .barraPaginacao .meio a{font-size:11px}
+.noticia .barraPaginacao .proxima{width:60px;font-weight:bold;text-align:right}
+.v2 .barraPaginacao .meio{width:306px}
+.v2 .barraPaginacao{width:434px}
+.fotoNoticia{width:316px;position:relative}
+.fotoNoticia .credito{width:316px;float:right;font:normal 9px verdana;text-align:right;height:13px;line-height:13px}
+.fotoNoticia .legenda{width:316px;filter:alpha(opacity = 85);-moz-opacity:.95;opacity:.95;background:url(img/bg-lege.png);color:#fff;font:normal 12px verdana;position:absolute;bottom:0;left:0}
+.fotoNoticia .legenda div{padding:10px;line-height:17px}
+.v2 .fotoNoticia,.v2 .fotoNoticia .credito,.v2 .fotoNoticia .legenda,.v2 .fotoNoticia img{width:436px}
+.v2 .fotoNoticia{margin-top:10px}
+.lkRelNoticia{width:296px;font:normal 12px verdana;border-bottom:solid 1px #000;padding:4px 0 6px 0;clear:both;color:#000;display:block;line-height:14px;margin-bottom:2px}
+.dirNoticia2 .lkRelNoticia {width:156px;font:normal 9px verdana;border-bottom:solid 1px #d2d2d2}
+.barra_texto .lkRelNoticia{width:200px;font:normal 9px verdana;border-bottom:solid 1px #d2d2d2}
+.lkRelNoticia a, .barra_texto a.lkRelNoticia{color:#000000;}
+.tamTexto{width:320px}
+.lkUltimas .esq{width:148px;float:left;margin:0}
+.lkUltimas .dir{width:158px;float:right;margin:0}
+.lkUltimas ul li{font:700 10px verdana;line-height:14px;padding:5px 0 5px 10px}
+.lkUltimas ul li a{font:400 10px verdana}
+.contAba li{font:normal 10px verdana;padding:0 0 6px 0}
+.contAba li a{font:normal 12px verdana}
+.formComente{width:306px}
+.v2 .formComente{width:422px;clear:both}
+.formComente .campo{padding:5px 0;clear:both}
+.formComente .campo label{font:bold 11px arial}
+.formComente .campo textarea,.formComente .campo input{border:solid 1px #000;width:306px}
+.v2 .formComente .campo textarea,.v2 .formComente .campo input{border:solid 1px #000;width:422px}
+.v2 .formComente .campo textarea{height:100px}
+.esqNoticia .formComente .botoes{width:306px}
+.esqNoticia2 .formComente .botoes{width:426px}
+.formComente .botoes input{padding:2px 4px;font:bold 11px arial;color:#fff;background:#000}
+.obs-form{display:block;text-align:left;font:normal 11px arial;padding:0 0 5px 0}
+.titComentarios{font:bold 11px arial;padding:0 0 0 16px;background:url(img/bt.png) no-repeat 0 -1037px;margin:10px 0;color:#000;clear:both;display:block}
+#boxComentarios{margin-bottom:10px}
+#boxComentarios div,#boxComentarios p{font:normal 11px arial;margin:0 0 5px 0;width:300px;overflow:hidden}
+#materia_paginacao .pag_box td{font:normal 11px arial;margin:5px 0}
+.seletorAbas{width:316px;height:22px;margin-top:10px}
+.seletorAbas td{padding:0 0 0 5px;font:bold 14px arial;border-right:solid 1px #fff;cursor:pointer}
+.seletorAbas td.ativo{padding:0 0 0 5px;font:bold 14px arial;border-right:solid 1px #fff;cursor:pointer}
+a.icLRGostei{padding:0 0 0 24px;height:24px;line-height:24px;display:block;text-align:left;margin:0}
+.noticia .opNoticia{border-bottom:solid 1px}
+.noticia .opNoticia,.noticia .opNoticia a{height:20px;line-height:20px}
+.noticia .esqNoticia .espalhe-linha,.noticia .esqNoticia2 .espalhe-linha{border-bottom:solid 1px;margin:20px 0 0 0}
+.box{border:1px solid}
+h4.tit{border-left:solid 10px;border-bottom:1px solid}
+h4.sem-pe{border-bottom:0}
+a.noRBrd{border:0;padding-right:0}
+#copyright{font:normal 11px verdana;font-style:italic}
+.not-agencia a.icGostei{float:left}
+.mais-pop{padding:10px 15px}
+.mais-pop p{font:normal 11px verdana;margin:0 0 15px 0;line-height:15px}
+.espalhe{margin:0 0 20px}
+.v2 .espalhe .com-label span a{padding:6px 0 6px 26px;height:auto;width:67px}
+.v2 a.icNoticia{background-position:0 -137px}
+.v2 a.icFotos{background-position:0 -237px}
+.dirNoticia2 .selosNoticia{float:left;margin:20px 0 0;text-align:center}
+.dirNoticia2 .selosNoticia a.seloAcordo{margin:20px 0 0;display:block}
+.dirNoticia2 .selosNoticia a.selo{margin:20px 0 0;display:block}
+.dirNoticia2 a.icGostei,.dirNoticia2 a.bmBlogBlogs{display:block;float:left;height:22px;margin:10px 2px 0 0;font-size:10px;line-height:20px}
+a.maisEspalhe{display:block;float:left;width:14px;height:14px;line-height:14px;font:normal 11px verdana;border:solid 1px #ccc;margin:12px 0 0 0;text-align:center}
+a.maisEspalhe:hover{text-decoration:none}
+.v2 .lkUltimas{margin:0}
+.v2 .lkUltimas ul{margin:0;clear:both}
+.not-agencia h1.titNoticia,h2.titNoticia{}
+.widget-gostei{margin:0 0 10px 3px}
+#afc_links p{padding:0!important}
+.noticia .square{float:left}
+.saude .barraPaginacao div a{color:#000}
+.saude .barraPaginacao div a.ativo{color:#000}
+.latNoticia{float:right}
+.notv3 .dirNoticia2{padding:0;margin-top:280px}
+.notv3 .latNoticia{margin-top:304px}
+.notv3 .opNoticia{position:absolute;top:0;left:10px;width:802px}
+.notv3 .opNoticia a{padding:0 90px 0 23px}
+.notv3 .opNoticia a.noRBrd{padding:0 0 0 23px}
+.notv3 .esqNoticia2{margin-top:34px}
+.notv3 .square{position:absolute;top:26px;right:-130px;text-align:center}
+.notv3 #cont-menu{position:relative}
+.notv3 #assine{margin-bottom:20px}

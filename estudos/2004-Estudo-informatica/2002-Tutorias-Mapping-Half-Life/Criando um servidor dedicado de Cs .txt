@@ -1,0 +1,14 @@
+Criando um servidor dedicado de Cs 
+
+
+Hoje em dia muitas pessoas querem ter o seu proprio server de cs 
+mais muitas delas naum sabem como fazer, e nesse tutorial vou ensinar 
+a como colocar um server de cs DEDICADO no ar. 
+
+1. Va na pasta do seu Half-life e la vai ter um programa chamado "HLDS". 
+2. Crie um atalho na sua area de trabalho pro "HLDS" 
+3. Clique com o botao direito do mouse em cima do atalho que voce fez pro:"HLDS" 
+4. no campo target(DESTINO) "adicione" esta linha:-game cstrike -port 27015 +maxplayers 10 +map de_aztec 
+e clique em Ok. 
+5. Agora com esta linha adicionada de um duplo clique no hlds e ele carregara todos os arquivos. 
+6. agora e so você dar o seu ip para a negada jogar online. 

@@ -1,0 +1,453 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+<!--  xml header for scripts & plugin manager --> 
+<script>
+	<name>Join Objects</name>
+	<author>Julian MacDonald</author>
+	<version>1.8</version>
+    <beta>1</beta>
+	<date>04/20/2004</date>
+	<description>
+This script joins a set of selected objects into a single triangle mesh
+non-triangle meshes are converted to triangle meshes using the user-entered Max Error.
+Smoothness values for vertices and edges are retained.  There is also the ability to 'weld' vertices
+within a certain distance of each other.  
+Textures are also partly retained.
+Still to do:  	support for layered textures
+Problems:	texture scaling/orientation/position not retained correctly (need access to methods - Peter to allow in next version)
+		if a texture is used more than once with different mappings, only the last mapping is transferred.
+    </description>
+    <comments>
+    </comments>
+</script>
+*/
+
+
+scene=window.getScene();
+sel=scene.getSelection();
+//
+// make sure at least 2 objects have been selected
+if (sel.length<2) 
+{
+	new MessageDialog(window,"Select at least 2 objects");
+	return;
+}
+//
+ObjInfo=new ObjectInfo[sel.length];   // array for holding ObjInfos for each selected object
+//
+//
+//  get a name for the new object and tolerance for
+// triangle mesh conversion if required
+//
+nameField=new BTextField("JoinedMesh",20);
+tolField=new ValueField(0.02,ValueField.POSITIVE);
+yesWeld = new BCheckBox();
+weldTolField=new ValueField(0.01,ValueField.POSITIVE);
+yesTex=new BCheckBox();
+sp1=new Spacer(nameField,nameField);
+sp2=new Spacer(nameField,nameField);
+sp3=new Spacer(nameField,nameField);
+//
+widgets=new Widget[]{nameField,sp1,tolField,sp2,yesWeld,weldTolField,sp3,yesTex};
+labels=new String[]{"Name:",null,"Surface Accuracy:",null,"Weld Close Points:","Weld Distance:",null,"Retain Textures:"};
+dlg = new ComponentsDialog(window, "Options for Resulting Mesh:",widgets,labels);
+if (!dlg.clickedOk()) return;
+//
+objname = nameField.getText();
+tol=tolField.getValue();
+wantsWeld=yesWeld.getState();
+weldTol=weldTolField.getValue();
+wantsTex=yesTex.getState();
+//
+// go through selected objects and get ObjInfos
+// convert any non-triangle meshes to triangle meshes
+//
+count=0;
+for(int i=0;i<sel.length;i++)
+{
+	selObjInfo=scene.getObject(sel[i]);  // get the ith ObjInfo
+	if (selObjInfo.object instanceof TriangleMesh)   // if it's a triangle mesh get it
+	{
+		ObjInfo[i]=scene.getObject(sel[i]);
+	}  
+	else  // otherwise convert to a triangle mesh
+	{
+		Obj=selObjInfo.object.convertToTriangleMesh(tol);
+		ObjInfo[i]=new ObjectInfo(Obj,selObjInfo.coords,"");
+	}
+}
+//
+//
+// get number of vertices/faces in joined mesh
+vtot=0;
+ftot=0;
+etot=0;
+numV=new int[sel.length];
+for (i=0;i<sel.length;i++)
+{
+	v=ObjInfo[i].object.getVertices();
+	f=ObjInfo[i].object.getFaces();
+	e=ObjInfo[i].object.getEdges();
+	numV[i]=v.length;  // number of vertices in each object
+	vtot=vtot+v.length;   // total number of vertices in resulting mesh
+	ftot=ftot+f.length;  // total number of faces in resulting mesh
+	etot=etot+e.length;
+}
+//
+va=new Vec3[vtot];   // create an array to hold the new mesh vertex coordinates
+vs=new float[vtot];  // create an array to hold the new mesh vertex Smoothness values
+es=new float[etot];  // create an array to hold the new mesh edge Smoothness values
+fc=new int[ftot][3];  // create an array to hold the new mesh face data
+count=0;
+ecount=0;
+fcount=0;
+disp=0;
+// cycle through the selected objects
+for (i=0;i<sel.length;i++)
+{
+	// get vertex information and put into array for new mesh 
+	v=ObjInfo[i].object.getVertices();
+	mv=ObjInfo[i].coords.fromLocal();
+	for (j=0;j<v.length;j++)
+	{
+		newV=new Vec3(v[j].r);
+		mv.transform(newV);
+		va[count]=newV;
+		vs[count]=v[j].smoothness;
+		count++;
+	}
+	// get edge smoothness values and put into array for new mesh
+	e=ObjInfo[i].object.getEdges();
+	for (k=0;k<e.length;k++)
+	{
+		es[ecount]=e[k].smoothness;
+		ecount++;
+	}
+	 // get face information and put into array for new mesh 
+	f=ObjInfo[i].object.getFaces();
+	for (j=0;j<f.length;j++)
+	{
+		fc[fcount][0]=f[j].v1+disp;
+		fc[fcount][1]=f[j].v2+disp;
+		fc[fcount][2]=f[j].v3+disp;
+		fcount++;
+	}
+	disp=disp+numV[i];
+}
+//
+//
+// add the new object to the scene
+newMesh=new TriangleMesh(va,fc);
+// put original smoothness values back
+newVerts=newMesh.getVertices();
+for (i=0;i<newVerts.length;i++)
+{
+	newVerts[i].smoothness=vs[i];
+}
+//
+newEdges=newMesh.getEdges();
+for (i=0;i<newEdges.length;i++)
+{
+	newEdges[i].smoothness=es[i];
+}
+//
+//
+//
+//   TEXTURES
+if (wantsTex)
+{
+// ** Transfer the texture information from the original objects to the new mesh **
+//
+layTex=new LayeredTexture();  // create a new LayeredTexture
+layMap=new LayeredMapping(layTex); // get the associated LayeredMapping
+//
+tex=new Texture[sel.length];  // array for textures of each object
+texMap=new TextureMapping[sel.length];  // array for texture mappings for each object texture
+//
+// loop through selected objects (and hence individual textures) and get the texture details
+fc=0;  // face count
+vc=0; // vertex count
+for (i=0;i<sel.length;i++)
+{
+	tex[i]=ObjInfo[i].object.getTexture();    // get the texture for the ith object
+	texMap[i]=ObjInfo[i].object.getTextureMapping().duplicate();  // get the mapping (i.e. type and scaling, orientation etc.)
+	layMap.addLayer(tex[i]);  // add the ith object's texture to the layered texture
+	layMap.setLayerMode(i,0);
+}
+newMesh.setTexture(layTex,layMap);   // apply the layered texture to the new mesh
+//
+//  The basic method here is to assign each layer of the new mesh's layered texture per-face
+//  and then map the appropriate texture layer to the part of the mesh corresponding to the original object
+//
+faceParVal=new FaceParameterValue[sel.length];
+for (h=0;h<sel.length;h++)
+{
+	// h is the texture number (i.e. h=0 is the texture of the first object, h=1 for second object etc.)
+	// i is the layer number
+	// texture numbers are ordered opposite to the layers they are in
+	//
+	texVal=new double[ftot];  // array to hold texture parameter values for each face
+	i=sel.length-1-h;   // layer number
+	texParams=new TextureParameter[texMap[h].getParameters().length];  // set up array for any texture parameters
+//	print(texMap[h].getParameters());
+	texParams=texMap[h].getParameters();  //get the texture parameters (if any) within the hth texture
+	//
+	tempParam=layMap.getLayerParameters(i);
+	faceParVal[i]=new FaceParameterValue(newMesh,tempParam[0]);
+	//  set the parameter values to 0 for the other parts of the mesh
+	for (f=0;f<fc;f++)
+	{
+		texVal[f]=0.0;
+	}
+	//  set the parameter values to 1 for the relevant faces
+	for (f=fc;f<fc+ObjInfo[h].object.getFaces().length;f++)
+	{
+		texVal[f]=1.0;
+	}
+	// set the parameter values to 0 for the other parts of the mesh
+	for (f=fc+ObjInfo[h].object.getFaces().length;f<ftot;f++)
+	{
+		texVal[f]=0.0;
+	}
+	newMesh.setParameterValue(tempParam[0],faceParVal[i]); 
+	faceParVal[i].setValue(texVal);
+	//
+	// correct the texture mapping centre
+	//
+	// for linear 3D mapping
+	if (texMap[i] instanceof LinearMapping3D)
+	{
+		texScale=texMap[i].getScale();
+		texCent=texMap[i].getCenter();
+		scaleCorr=new Vec3(1/texScale.x,1/texScale.y,1/texScale.z);
+		scaleCorr.multiply(ObjInfo[i].coords.getOrigin());
+		texMap[i].setCenter(scaleCorr);
+	}
+	// for 2D projection mapping
+	if (texMap[i] instanceof ProjectionMapping)
+	{
+		texScale=texMap[i].getScale();
+		texCent=texMap[i].getCenter();
+		scaleCorr1=new Vec2(1/texScale.x,1/texScale.y);
+		scaleCorr=new Vec2(scaleCorr1.x*ObjInfo[i].coords.getOrigin().x+texCent.x,scaleCorr1.y*ObjInfo[i].coords.getOrigin().y+texCent.y);
+		texMap[i].setCenter(scaleCorr);
+	}
+	// for cylindrical or spherical mapping
+	if ((texMap[i] instanceof CylindricalMapping)||(texMap[i] instanceof SphericalMapping))
+	{
+	//	paramVal=ObjInfo[i].object.getParameterValues();  //get texture coordinates
+	//	texCoordsX=paramVal[0].getValue();
+	//	texCoordsY=paramVal[1].getValue();
+	//	texCoordsZ=paramVal[2].getValue();
+	//	for (q=0;q<texCoordsX.length;q++)
+	//	{
+	//		texCoordsX[q]=texCoordsX[q]+ObjInfo[i].coords.getOrigin().x;
+	//		texCoordsY[q]=texCoordsY[q]+ObjInfo[i].coords.getOrigin().y;
+	//		texCoordsZ[q]=texCoordsZ[q]+ObjInfo[i].coords.getOrigin().z;
+	//	}
+	//	paramVal[0].setValue(texCoordsX);
+	//	paramVal[1].setValue(texCoordsY);
+	//	paramVal[2].setValue(texCoordsZ);
+		texMap[i].setBoundToSurface(true);
+	}
+	layMap.setLayerMapping(h,texMap[i]);  // set the mapping correctly
+	// cycle through the texture parameters, determine the mapping type and set the values for the
+	// relevant part of the new mesh
+	//
+	for (j=0;j<texParams.length;j++)
+	{
+		paramVal=ObjInfo[h].object.getParameterValue(texParams[j]);  // determine mapping type
+		//
+		//  *** per-object texture parameters ***
+		if (paramVal instanceof ConstantParameterValue)
+		{
+			tpVal=new double[ftot]; // array to hold texture parameter values for each face of new mesh
+			val=paramVal.getValue(); // single value containing value of the parameter for the original object
+			//  set the parameter values to 0 for the other parts of the mesh
+			for (f=0;f<fc;f++)
+			{
+				tpVal[f]=0.0;
+			}
+			//  set the parameter values as per the original object for the relevant faces
+			for (f=fc;f<fc+ObjInfo[h].object.getFaces().length;f++)
+			{
+				tpVal[f]=val;
+			}
+			// set the parameter values to 0 for the other parts of the mesh
+			for (f=fc+ObjInfo[h].object.getFaces().length;f<ftot;f++)
+			{
+				tpVal[f]=0.0;
+			}
+			paramVal2=new FaceParameterValue(tpVal);  // make a new FaceParameterValue to apply to new mesh
+			newMesh.setParameterValue(texParams[j],paramVal2);  // apply it
+		}
+		//
+		//
+		// *** per-face texture parameters  ***
+		if (paramVal instanceof FaceParameterValue)
+		{
+			tpVal=new double[ftot];  // array to hold texture parameter values for each face of new mesh
+			valPerFace=paramVal.getValue();  // array containing values of the parameter for each face of original object
+			//  set the parameter values to 0 for the other parts of the mesh
+			for (f=0;f<fc;f++)
+			{
+				tpVal[f]=0.0;
+			}
+			//  set the parameter values as per the original object for the relevant faces
+			for (f=fc;f<fc+ObjInfo[h].object.getFaces().length;f++)
+			{
+				tpVal[f]=valPerFace[f-fc];
+			}
+			// set the parameter values to 0 for the other parts of the mesh
+			for (f=fc+ObjInfo[h].object.getFaces().length;f<ftot;f++)
+			{
+				tpVal[f]=0.0;
+			}
+			paramVal2=new FaceParameterValue(tpVal);  // make a new FaceParameterValue to apply to new mesh
+			newMesh.setParameterValue(texParams[j],paramVal2);  // apply it
+		}
+		//
+		//
+		// *** per-vertex parameters ***
+		if (paramVal instanceof VertexParameterValue)
+		{
+			tpVal=new double[vtot]; // array to hold texture parameter values for each vertex of new mesh
+			valPerVert=paramVal.getValue(); // array containing values of the parameter for each vertex of original object
+			//  set the parameter values to 0 for the other parts of the mesh
+			for (v=0;v<vc;v++)
+			{
+				tpVal[v]=0.0;
+			}
+			//  set the parameter values as per the original object for the relevant vertices
+			for (v=vc;v<vc+ObjInfo[h].object.getVertices().length;v++)
+			{
+				tpVal[v]=valPerVert[v-vc];
+			}
+			//  set the parameter values to 0 for the other parts of the mesh
+			for (v=vc+ObjInfo[h].object.getVertices().length;v<vtot;v++)
+			{
+				tpVal[v]=0.0;
+			}
+			paramVal2=new VertexParameterValue(tpVal); // make a new VertexParameterValue to apply to new mesh
+			newMesh.setParameterValue(texParams[j],paramVal2);  // apply it
+			print(paramVal2.getValue());
+		}
+		//
+		//
+		// *** per face-vertex texture parameters ***
+		if (paramVal instanceof FaceVertexParameterValue)
+		{
+			tpVal=new double[3][ftot]; // array to hold texture parameter values for each face-vertex of new mesh
+			valPerFace=paramVal.getValue(); //array containing values of the parameter for each face-vertex of original object
+			//  set the parameter values to 0 for the other parts of the mesh
+			for (f=0;f<fc;f++)
+			{
+				tpVal[0][f]=0.0;
+				tpVal[1][f]=0.0;
+				tpVal[2][f]=0.0;
+			}
+			//  set the parameter values as per the original object for the relevant face-vertices
+			for (f=fc;f<fc+ObjInfo[h].object.getFaces().length;f++)
+			{
+				tpVal[0][f]=valPerFace[0][f-fc];
+				tpVal[1][f]=valPerFace[1][f-fc];
+				tpVal[2][f]=valPerFace[2][f-fc];
+			}
+			// set the parameter values to 0 for the other parts of the mesh
+			for (f=fc+ObjInfo[h].object.getFaces().length;f<ftot;f++)
+			{
+				tpVal[0][f]=0.0;
+				tpVal[1][f]=0.0;
+				tpVal[2][f]=0.0;
+			}
+			paramVal2=new FaceVertexParameterValue(tpVal);  // make a new FaceVertexParameterValue to apply to new mesh
+			newMesh.setParameterValue(texParams[j],paramVal2);  // apply it
+		}
+	}
+
+	//
+	fc=fc+ObjInfo[h].object.getFaces().length;
+	vc=vc+ObjInfo[h].object.getVertices().length;
+}
+//
+//  add the new mesh to the scene.
+//
+newMesh.setTexture(layTex,layMap);   // apply the layered texture to the new mesh
+}
+//
+//
+//
+//  WELD
+//
+if (wantsWeld)
+{
+	vert=newVerts;
+	face=newMesh.getFaces();
+	edge=newEdges;
+	//
+	reassignV=new int[vert.length];
+	reposV=new int[vert.length];
+	numCoVert=0;
+	newVertIndex=new int [vert.length];
+	vToBeDel=new int[vert.length];
+	for (i=0;i<vert.length;i++)
+	{
+		reassignV[i]=-1;
+		reposV[i]=i;
+	}
+	//
+	for (v1=0;v1<vert.length;v1++)
+	{
+		for (v2=v1+1;v2<vert.length;v2++)
+		{
+			Dist=vert[v1].r.distance(vert[v2].r);
+			if ((Dist<weldTol)&&(reassignV[v2]==-1))
+			{
+				reassignV[v2]=v1;
+				for (k=v2+1;k<vert.length;k++)
+				{
+					reposV[k]--;
+				}
+				numCoVert++;
+			}
+		}
+	}
+	if (numCoVert==0)
+	{
+		new MessageDialog(window, "There are no vertices within the required tolerance");
+		return;
+	}
+	// build new index
+	for (i=0;i<vert.length;i++)
+	{
+		if (reassignV[i]!=-1) newVertIndex[i]=reposV[reassignV[i]]; else newVertIndex[i]=reposV[i];
+	}
+	//
+	// create new vertices skipping 'duplicates'
+	//
+	vCount=0;
+	newVert=new TriangleMesh.Vertex[vert.length-numCoVert];
+	for (i=0;i<vert.length;i++)   // cycle through the vertices
+	{
+		skip=0;
+		if (reassignV[i]==-1)
+		{
+			newVert[vCount]=vert[i];
+			vCount++;
+		}
+	} 
+	//
+	// reassign the face vertices
+	faceInfo=new int [face.length][3];
+	for (f=0;f<face.length;f++)
+	{
+		faceInfo[f][0]=newVertIndex[face[f].v1];
+		faceInfo[f][1]=newVertIndex[face[f].v2];
+		faceInfo[f][2]=newVertIndex[face[f].v3];
+	}
+	//
+	newMesh.setShape(newVert,faceInfo);
+	}
+//
+//
+window.addObject(newMesh,new CoordinateSystem(),objname,null);

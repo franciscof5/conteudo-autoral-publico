@@ -1,0 +1,26 @@
+HLTV
+
+Pra quem não sabe hltv é aquele servidor verde que fica na sua lista de servidores que possibilita você ver um Cf. 
+Vou postar aqui um Tutorial sobre como criar um , ele fopi feito pelo ReV | Fusion. 
+
+1ª coisa, hltv aonde que se acha ela... 
+> C:\SIERRA\Half-Life\hltv ( um ícone que nem o do Half-life so com uma camera nele) 
+
+AO CRIAR O SERVE É PRECISO QUE VC DEIXE UM SLOT PRA HLTV 
+
+2ª Como conectar a hltv ao servidor... 
+> click na hltv espere ele carregar e escreva connect ip e aperte enter espere uns seg. e pronto ela vai esta no serve... 
+
+ex. connect 127.0.0.1 
+
+
+a hltv vai esta no serve, 
+
+Para Grava. 
+
+escreva . record nome.dem 
+
+pronto... 
+
+com isso rola hltv pra pessoas assitirem a partida, pra isso va em modo view e la escreva o ip aonde esta a hltv ligada
+

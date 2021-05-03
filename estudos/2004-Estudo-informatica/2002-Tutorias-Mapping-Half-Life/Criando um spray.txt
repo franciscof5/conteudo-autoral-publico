@@ -1,0 +1,12 @@
+Criando um spray para Counter-Strike  
+P: Como faço um spray para usar no Counter-Strike?
+R: Existe um programa próprio para fazer sprays para counter, ele chama Half-Life Logo Creator.
+
+Primeiro você precisa ter uma figura para você transformar em spray. Tendo ela você precisa alterar as propriedades dela para 256 cores com 8 bits de cores e uma resolução de no máximo 180 x 180.
+
+Abra o programa, clique no botão Open e abra a figura do seu spray.
+Logo em seguida irá aparecer a foto de seu spray, e caso a barra de "Total Pixels" estiver vermelha, clique em autosize, que a sua foto será redimensionada automaticamente. No quadro de opções "Make a color logo for Mod" marque "Counter-Strike" e "Save it to" e escolha um diretório qualquer para salvar. Depois clique em "Make Wad".
+Vá ao diretório que você selecionou para gravar o WAD e copie o arquivo "pldecal.wad", copie ele para o diretório cstrike substituindo o existente.
+
+ 
+ 

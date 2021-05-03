@@ -1,0 +1,24 @@
+Instalando Bots 
+Farei um pequeno comentário de como se instalar os bots no Coutner-Strike. O bot que estou usando é o "PodBot 2.5". Você deve baixar o PodBot2.5 e instalar no seu diretório do Half-Life, depois disso é só entrar no jogo e pressionar "=" aparecerá um menu do PodBot para adicionar ou remover os Bots. 
+
+
+Bom, já para usar os bots junto com o AdminMod e o statsme é so fazer o seguinte:
+
+Abra o metamod.ini e adicione a seguinte linha de comando ao final do arquivo:
+
+win32 PODBot\podbot.dll
+
+(Caso você esteja usando a versão 2.50.50 do AdminMod ou superiror, basta apenas Alterar o atalho)
+
+
+Depois de feito isso basta alterar o atalho do CS adicionando o seguinte:
+
++localinfo mm_gamedll PODBot/podbot.dll
+
+
+Seu atalho ficara mais ou menos assim:
+
+E:\Half-Life\hl.exe -console -game cstrike +localinfo mm_gamedll PODBot/podbot.dll
+
+ 
+ 

@@ -1,0 +1,960 @@
+<html class=" gecko ff2 linux js"><head><style>
+.info
+{
+   text-align: center;
+   width: 60%;
+   margin-left: 20%;
+}
+</style>
+ 
+
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link href="ListaMatriculasCancelaveis_data/legado.css" type="text/css" rel="stylesheet">
+ 
+
+
+
+	<link rel="shortcut icon" type="image/x-icon" href="https://uspdigital.usp.br/janus/imagens/iconeJanus.ico">
+	<script type="text/javascript" src="interesssantes_files/jquery-1.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_002.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_004.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_009.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_007.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_005.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery-jsf-form.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_003.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_006.js"></script>	
+	
+	<script type="text/javascript" src="interesssantes_files/jquery-ui-1.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_008.js"></script>
+	
+	
+	<script type="text/javascript" src="interesssantes_files/funcoes.js"></script>
+	<script type="text/javascript" src="interesssantes_files/menu.js"></script>
+	<script type="text/javascript" src="interesssantes_files/buscarAluno.js"></script>
+	<script type="text/javascript" src="interesssantes_files/css_browser_selector.js"></script>
+	<script type="text/javascript" src="interesssantes_files/browser.js"></script>
+	<script type="text/javascript" src="interesssantes_files/json2.js"></script>
+	
+	<script type="text/javascript" src="interesssantes_files/jquery_cleditor.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_cleditor_min.js"></script>
+	
+
+		
+	<!-- INICIO DWR -->
+	<script type="text/javascript" src="interesssantes_files/engine.js"></script>	
+	<script type="text/javascript" src="interesssantes_files/Aluno.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Bolsista.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Excecao.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Questionario.js"></script>
+	<script type="text/javascript" src="interesssantes_files/PAE.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Egressos.js"></script>	
+	<script type="text/javascript" src="interesssantes_files/Permissao.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Perfil.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Recadastro.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Usuario.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Util.js"></script>
+	<script type="text/javascript" src="interesssantes_files/TabelasAuxiliares.js"></script>
+	<script type="text/javascript" src="interesssantes_files/AtributoPos.js"></script>
+
+	
+	<!-- FIM DWR -->
+	<link href="interesssantes_files/principal.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/menu.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/ui.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery_003.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery-ui-1.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/jquery_002.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/jquery_cleditor.css" rel="stylesheet" type="text/css">
+
+	
+ 	
+	  <style>
+	  	#simplemodal-container a.modalCloseImg {
+	  		background:url(/janus/imagens/x.png) no-repeat; /* adjust url as required */
+	  	}
+	  </style>
+      <script language="JavaScript">
+      $(document).ready(
+	      	function()
+	      	{  		
+	  			contextPath  = "/janus";
+	  			
+	  			 
+	      	}
+       );    
+      
+      </script>
+      
+      <!-- HTML 5 Tags para IE8 -->
+      <!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   </script>
+	<![endif]-->
+
+  	
+
+</head>
+<body>
+<a name="Top"></a> 
+
+
+
+<p class="info" align="center">Para solicitar o cancelamento de matrícula em disciplinas,
+ative a caixa de seleção na primeira coluna da linha correspondente à(s) disciplina(s).
+As matrículas nas disciplinas não marcadas não serão canceladas; o cancelamento só 
+será efetivado se seu orientador der o aval para a mesma até a data de cancelamento da
+disciplina.</p>
+
+
+	<form name="form1" method="POST" action="CancelarMatriculas">
+		<table class="dataTable selecionavel" align="center">
+			<thead>
+				<tr>
+					<th class="tabelaCabecalho">Selecionar</th>
+					<th class="tabelaCabecalho">Sigla</th>
+					<th class="tabelaCabecalho">Turma</th>
+					<th class="tabelaCabecalho">Situação</th>
+					<th class="tabelaCabecalho">Nome</th>
+				</tr>
+			</thead>
+			
+				<tbody><tr>
+					<td>
+						
+							<input checked="checked" name="chk_1" value="1" type="checkbox">
+							<input name="codare_1" value="12139" type="hidden">
+							<input name="codpes_1" value="8882322" type="hidden">
+							<input name="numseqpgm_1" value="1" type="hidden">
+							<input name="sgldis_1" value="EAD5934" type="hidden">
+							<input name="numseqdis_1" value="4" type="hidden">
+							<input name="numofe_1" value="3" type="hidden">
+							<input name="statuscanc_1" value="S" type="hidden">
+							<input name="nomdis_1" value="Estratégia em Operações" type="hidden">
+							<input name="dtalimcan_1" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5934</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Estratégia em Operações</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_2" value="2" type="checkbox">
+							<input name="codare_2" value="12139" type="hidden">
+							<input name="codpes_2" value="8882322" type="hidden">
+							<input name="numseqpgm_2" value="1" type="hidden">
+							<input name="sgldis_2" value="DCO5904" type="hidden">
+							<input name="numseqdis_2" value="1" type="hidden">
+							<input name="numofe_2" value="3" type="hidden">
+							<input name="statuscanc_2" value="S" type="hidden">
+							<input name="nomdis_2" value="Direito Societário e Desenvolvimento do Mercado de Valores Mobiliários Brasileiro" type="hidden">
+							<input name="dtalimcan_2" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DCO5904</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Direito Societário e Desenvolvimento do Mercado de Valores Mobiliários Brasileiro</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_3" value="3" type="checkbox">
+							<input name="codare_3" value="12139" type="hidden">
+							<input name="codpes_3" value="8882322" type="hidden">
+							<input name="numseqpgm_3" value="1" type="hidden">
+							<input name="sgldis_3" value="DCO5903" type="hidden">
+							<input name="numseqdis_3" value="2" type="hidden">
+							<input name="numofe_3" value="1" type="hidden">
+							<input name="statuscanc_3" value="S" type="hidden">
+							<input name="nomdis_3" value="Direito Societário Comparado - Common Law e Direitos da Família Romano-Germânico-Canônica" type="hidden">
+							<input name="dtalimcan_3" value="08/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DCO5903</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Direito Societário Comparado - Common Law e Direitos da Família Romano-Germânico-Canônica</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_4" value="4" type="checkbox">
+							<input name="codare_4" value="12139" type="hidden">
+							<input name="codpes_4" value="8882322" type="hidden">
+							<input name="numseqpgm_4" value="1" type="hidden">
+							<input name="sgldis_4" value="DEF5853" type="hidden">
+							<input name="numseqdis_4" value="1" type="hidden">
+							<input name="numofe_4" value="2" type="hidden">
+							<input name="statuscanc_4" value="S" type="hidden">
+							<input name="nomdis_4" value="Aspectos Avançados da Tributação sobre a Renda" type="hidden">
+							<input name="dtalimcan_4" value="06/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DEF5853</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Aspectos Avançados da Tributação sobre a Renda</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_5" value="5" type="checkbox">
+							<input name="codare_5" value="12139" type="hidden">
+							<input name="codpes_5" value="8882322" type="hidden">
+							<input name="numseqpgm_5" value="1" type="hidden">
+							<input name="sgldis_5" value="MNE5751" type="hidden">
+							<input name="numseqdis_5" value="2" type="hidden">
+							<input name="numofe_5" value="2" type="hidden">
+							<input name="statuscanc_5" value="S" type="hidden">
+							<input name="nomdis_5" value="Alterações da Linguagem: Análise Crítica dos Modelos Teóricos e dos mais Recentes Métodos de Investigação a partir de Perspectiva Neurobiológica" type="hidden">
+							<input name="dtalimcan_5" value="14/08/2014" type="hidden">
+		                
+					</td>
+		            <td>MNE5751</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Alterações da Linguagem: Análise Crítica dos Modelos Teóricos e
+ dos mais Recentes Métodos de Investigação a partir de Perspectiva 
+Neurobiológica</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_6" value="6" type="checkbox">
+							<input name="codare_6" value="12139" type="hidden">
+							<input name="codpes_6" value="8882322" type="hidden">
+							<input name="numseqpgm_6" value="1" type="hidden">
+							<input name="sgldis_6" value="PRO5801" type="hidden">
+							<input name="numseqdis_6" value="6" type="hidden">
+							<input name="numofe_6" value="6" type="hidden">
+							<input name="statuscanc_6" value="S" type="hidden">
+							<input name="nomdis_6" value="Concepção Ergonômica do Trabalho" type="hidden">
+							<input name="dtalimcan_6" value="05/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PRO5801</td>
+		            <td align="center">6</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Concepção Ergonômica do Trabalho</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_7" value="7" type="checkbox">
+							<input name="codare_7" value="12139" type="hidden">
+							<input name="codpes_7" value="8882322" type="hidden">
+							<input name="numseqpgm_7" value="1" type="hidden">
+							<input name="sgldis_7" value="PSI5761" type="hidden">
+							<input name="numseqdis_7" value="3" type="hidden">
+							<input name="numofe_7" value="1" type="hidden">
+							<input name="statuscanc_7" value="S" type="hidden">
+							<input name="nomdis_7" value="Introdução aos Processos de Fabricação em Microeletrônica" type="hidden">
+							<input name="dtalimcan_7" value="07/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PSI5761</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Introdução aos Processos de Fabricação em Microeletrônica</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_8" value="8" type="checkbox">
+							<input name="codare_8" value="12139" type="hidden">
+							<input name="codpes_8" value="8882322" type="hidden">
+							<input name="numseqpgm_8" value="1" type="hidden">
+							<input name="sgldis_8" value="PSI5120" type="hidden">
+							<input name="numseqdis_8" value="1" type="hidden">
+							<input name="numofe_8" value="2" type="hidden">
+							<input name="statuscanc_8" value="S" type="hidden">
+							<input name="nomdis_8" value="Tópicos em Computação em Nuvem" type="hidden">
+							<input name="dtalimcan_8" value="07/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PSI5120</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Tópicos em Computação em Nuvem</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_9" value="9" type="checkbox">
+							<input name="codare_9" value="12139" type="hidden">
+							<input name="codpes_9" value="8882322" type="hidden">
+							<input name="numseqpgm_9" value="1" type="hidden">
+							<input name="sgldis_9" value="IBI5044" type="hidden">
+							<input name="numseqdis_9" value="1" type="hidden">
+							<input name="numofe_9" value="1" type="hidden">
+							<input name="statuscanc_9" value="S" type="hidden">
+							<input name="nomdis_9" value="Modelos Dinâmicos em Biologia" type="hidden">
+							<input name="dtalimcan_9" value="25/08/2014" type="hidden">
+		                
+					</td>
+		            <td>IBI5044</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Modelos Dinâmicos em Biologia</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_10" value="10" type="checkbox">
+							<input name="codare_10" value="12139" type="hidden">
+							<input name="codpes_10" value="8882322" type="hidden">
+							<input name="numseqpgm_10" value="1" type="hidden">
+							<input name="sgldis_10" value="CMU5114" type="hidden">
+							<input name="numseqdis_10" value="1" type="hidden">
+							<input name="numofe_10" value="2" type="hidden">
+							<input name="statuscanc_10" value="S" type="hidden">
+							<input name="nomdis_10" value="Performance e Corpo: Movimento, Respiração e Voz nos Processos de Criação" type="hidden">
+							<input name="dtalimcan_10" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>CMU5114</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Performance e Corpo: Movimento, Respiração e Voz nos Processos de Criação</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_11" value="11" type="checkbox">
+							<input name="codare_11" value="12139" type="hidden">
+							<input name="codpes_11" value="8882322" type="hidden">
+							<input name="numseqpgm_11" value="1" type="hidden">
+							<input name="sgldis_11" value="DCO5906" type="hidden">
+							<input name="numseqdis_11" value="1" type="hidden">
+							<input name="numofe_11" value="4" type="hidden">
+							<input name="statuscanc_11" value="S" type="hidden">
+							<input name="nomdis_11" value="Governança Corporativa" type="hidden">
+							<input name="dtalimcan_11" value="06/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DCO5906</td>
+		            <td align="center">4</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Governança Corporativa</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_12" value="12" type="checkbox">
+							<input name="codare_12" value="12139" type="hidden">
+							<input name="codpes_12" value="8882322" type="hidden">
+							<input name="numseqpgm_12" value="1" type="hidden">
+							<input name="sgldis_12" value="DEF5862" type="hidden">
+							<input name="numseqdis_12" value="2" type="hidden">
+							<input name="numofe_12" value="1" type="hidden">
+							<input name="statuscanc_12" value="S" type="hidden">
+							<input name="nomdis_12" value="Fundamentos da Teoria Geral do Direito Tributário" type="hidden">
+							<input name="dtalimcan_12" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DEF5862</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Fundamentos da Teoria Geral do Direito Tributário</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_13" value="13" type="checkbox">
+							<input name="codare_13" value="12139" type="hidden">
+							<input name="codpes_13" value="8882322" type="hidden">
+							<input name="numseqpgm_13" value="1" type="hidden">
+							<input name="sgldis_13" value="DEF5860" type="hidden">
+							<input name="numseqdis_13" value="1" type="hidden">
+							<input name="numofe_13" value="1" type="hidden">
+							<input name="statuscanc_13" value="S" type="hidden">
+							<input name="nomdis_13" value="Planejamento Governamental" type="hidden">
+							<input name="dtalimcan_13" value="10/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DEF5860</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Planejamento Governamental</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_14" value="14" type="checkbox">
+							<input name="codare_14" value="12139" type="hidden">
+							<input name="codpes_14" value="8882322" type="hidden">
+							<input name="numseqpgm_14" value="1" type="hidden">
+							<input name="sgldis_14" value="MNE5768" type="hidden">
+							<input name="numseqdis_14" value="2" type="hidden">
+							<input name="numofe_14" value="1" type="hidden">
+							<input name="statuscanc_14" value="S" type="hidden">
+							<input name="nomdis_14" value="Envelhecimento e Cognição" type="hidden">
+							<input name="dtalimcan_14" value="11/09/2014" type="hidden">
+		                
+					</td>
+		            <td>MNE5768</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Envelhecimento e Cognição</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_15" value="15" type="checkbox">
+							<input name="codare_15" value="12139" type="hidden">
+							<input name="codpes_15" value="8882322" type="hidden">
+							<input name="numseqpgm_15" value="1" type="hidden">
+							<input name="sgldis_15" value="MFT5710" type="hidden">
+							<input name="numseqdis_15" value="4" type="hidden">
+							<input name="numofe_15" value="3" type="hidden">
+							<input name="statuscanc_15" value="S" type="hidden">
+							<input name="nomdis_15" value="Abordagem Ergonômica-Fisioterapêutica na Prevenção de Disfunções Posturais" type="hidden">
+							<input name="dtalimcan_15" value="02/09/2014" type="hidden">
+		                
+					</td>
+		            <td>MFT5710</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Abordagem Ergonômica-Fisioterapêutica na Prevenção de Disfunções Posturais</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_16" value="16" type="checkbox">
+							<input name="codare_16" value="12139" type="hidden">
+							<input name="codpes_16" value="8882322" type="hidden">
+							<input name="numseqpgm_16" value="1" type="hidden">
+							<input name="sgldis_16" value="PCS5735" type="hidden">
+							<input name="numseqdis_16" value="4" type="hidden">
+							<input name="numofe_16" value="2" type="hidden">
+							<input name="statuscanc_16" value="S" type="hidden">
+							<input name="nomdis_16" value="Fundamentos de Aprendizagem de Máquina" type="hidden">
+							<input name="dtalimcan_16" value="07/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PCS5735</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Fundamentos de Aprendizagem de Máquina</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_17" value="17" type="checkbox">
+							<input name="codare_17" value="12139" type="hidden">
+							<input name="codpes_17" value="8882322" type="hidden">
+							<input name="numseqpgm_17" value="1" type="hidden">
+							<input name="sgldis_17" value="PTC5894" type="hidden">
+							<input name="numseqdis_17" value="2" type="hidden">
+							<input name="numofe_17" value="4" type="hidden">
+							<input name="statuscanc_17" value="S" type="hidden">
+							<input name="nomdis_17" value="Instrumentação Biomédica" type="hidden">
+							<input name="dtalimcan_17" value="07/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PTC5894</td>
+		            <td align="center">4</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Instrumentação Biomédica</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_18" value="18" type="checkbox">
+							<input name="codare_18" value="12139" type="hidden">
+							<input name="codpes_18" value="8882322" type="hidden">
+							<input name="numseqpgm_18" value="1" type="hidden">
+							<input name="sgldis_18" value="SFI5818" type="hidden">
+							<input name="numseqdis_18" value="5" type="hidden">
+							<input name="numofe_18" value="4" type="hidden">
+							<input name="statuscanc_18" value="S" type="hidden">
+							<input name="nomdis_18" value="Visão Natural e Artificial" type="hidden">
+							<input name="dtalimcan_18" value="02/09/2014" type="hidden">
+		                
+					</td>
+		            <td>SFI5818</td>
+		            <td align="center">4</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Visão Natural e Artificial</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_19" value="19" type="checkbox">
+							<input name="codare_19" value="12139" type="hidden">
+							<input name="codpes_19" value="8882322" type="hidden">
+							<input name="numseqpgm_19" value="1" type="hidden">
+							<input name="sgldis_19" value="EAD5940" type="hidden">
+							<input name="numseqdis_19" value="4" type="hidden">
+							<input name="numofe_19" value="3" type="hidden">
+							<input name="statuscanc_19" value="S" type="hidden">
+							<input name="nomdis_19" value="Simulação Aplicada em Administração" type="hidden">
+							<input name="dtalimcan_19" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5940</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Simulação Aplicada em Administração</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_20" value="20" type="checkbox">
+							<input name="codare_20" value="12139" type="hidden">
+							<input name="codpes_20" value="8882322" type="hidden">
+							<input name="numseqpgm_20" value="1" type="hidden">
+							<input name="sgldis_20" value="EAD5835" type="hidden">
+							<input name="numseqdis_20" value="9" type="hidden">
+							<input name="numofe_20" value="2" type="hidden">
+							<input name="statuscanc_20" value="S" type="hidden">
+							<input name="nomdis_20" value="Gestão por Competência" type="hidden">
+							<input name="dtalimcan_20" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5835</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Gestão por Competência</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_21" value="21" type="checkbox">
+							<input name="codare_21" value="12139" type="hidden">
+							<input name="codpes_21" value="8882322" type="hidden">
+							<input name="numseqpgm_21" value="1" type="hidden">
+							<input name="sgldis_21" value="EAD5956" type="hidden">
+							<input name="numseqdis_21" value="1" type="hidden">
+							<input name="numofe_21" value="6" type="hidden">
+							<input name="statuscanc_21" value="S" type="hidden">
+							<input name="nomdis_21" value="Finanças Empíricas" type="hidden">
+							<input name="dtalimcan_21" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5956</td>
+		            <td align="center">6</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Finanças Empíricas</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_22" value="22" type="checkbox">
+							<input name="codare_22" value="12139" type="hidden">
+							<input name="codpes_22" value="8882322" type="hidden">
+							<input name="numseqpgm_22" value="1" type="hidden">
+							<input name="sgldis_22" value="CMU5240" type="hidden">
+							<input name="numseqdis_22" value="1" type="hidden">
+							<input name="numofe_22" value="1" type="hidden">
+							<input name="statuscanc_22" value="S" type="hidden">
+							<input name="nomdis_22" value="Fundamentos Psicoacústicos da Harmonia" type="hidden">
+							<input name="dtalimcan_22" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>CMU5240</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Fundamentos Psicoacústicos da Harmonia</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_23" value="23" type="checkbox">
+							<input name="codare_23" value="12139" type="hidden">
+							<input name="codpes_23" value="8882322" type="hidden">
+							<input name="numseqpgm_23" value="1" type="hidden">
+							<input name="sgldis_23" value="AUP5899" type="hidden">
+							<input name="numseqdis_23" value="1" type="hidden">
+							<input name="numofe_23" value="3" type="hidden">
+							<input name="statuscanc_23" value="S" type="hidden">
+							<input name="nomdis_23" value="Design Centrado no Usuário: Princípios, Métodos e Aplicações" type="hidden">
+							<input name="dtalimcan_23" value="29/08/2014" type="hidden">
+		                
+					</td>
+		            <td>AUP5899</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Design Centrado no Usuário: Princípios, Métodos e Aplicações</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_24" value="24" type="checkbox">
+							<input name="codare_24" value="12139" type="hidden">
+							<input name="codpes_24" value="8882322" type="hidden">
+							<input name="numseqpgm_24" value="1" type="hidden">
+							<input name="sgldis_24" value="DCO5873" type="hidden">
+							<input name="numseqdis_24" value="3" type="hidden">
+							<input name="numofe_24" value="5" type="hidden">
+							<input name="statuscanc_24" value="S" type="hidden">
+							<input name="nomdis_24" value="Propriedade Intelectual" type="hidden">
+							<input name="dtalimcan_24" value="06/09/2014" type="hidden">
+		                
+					</td>
+		            <td>DCO5873</td>
+		            <td align="center">5</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Propriedade Intelectual</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_25" value="25" type="checkbox">
+							<input name="codare_25" value="12139" type="hidden">
+							<input name="codpes_25" value="8882322" type="hidden">
+							<input name="numseqpgm_25" value="1" type="hidden">
+							<input name="sgldis_25" value="MNE5760" type="hidden">
+							<input name="numseqdis_25" value="1" type="hidden">
+							<input name="numofe_25" value="3" type="hidden">
+							<input name="statuscanc_25" value="S" type="hidden">
+							<input name="nomdis_25" value="Neuropsicologia: Métodos de Investigação e Reabilitação" type="hidden">
+							<input name="dtalimcan_25" value="06/11/2014" type="hidden">
+		                
+					</td>
+		            <td>MNE5760</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Neuropsicologia: Métodos de Investigação e Reabilitação</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_26" value="26" type="checkbox">
+							<input name="codare_26" value="12139" type="hidden">
+							<input name="codpes_26" value="8882322" type="hidden">
+							<input name="numseqpgm_26" value="1" type="hidden">
+							<input name="sgldis_26" value="MNE5770" type="hidden">
+							<input name="numseqdis_26" value="1" type="hidden">
+							<input name="numofe_26" value="1" type="hidden">
+							<input name="statuscanc_26" value="S" type="hidden">
+							<input name="nomdis_26" value="Conceitos Básicos em Reabilitação Cognitiva após Trauma Cranioencefálico (TCE)" type="hidden">
+							<input name="dtalimcan_26" value="04/09/2014" type="hidden">
+		                
+					</td>
+		            <td>MNE5770</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Conceitos Básicos em Reabilitação Cognitiva após Trauma Cranioencefálico (TCE)</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_27" value="27" type="checkbox">
+							<input name="codare_27" value="12139" type="hidden">
+							<input name="codpes_27" value="8882322" type="hidden">
+							<input name="numseqpgm_27" value="1" type="hidden">
+							<input name="sgldis_27" value="PSI5787" type="hidden">
+							<input name="numseqdis_27" value="2" type="hidden">
+							<input name="numofe_27" value="3" type="hidden">
+							<input name="statuscanc_27" value="S" type="hidden">
+							<input name="nomdis_27" value="Realidade Virtual" type="hidden">
+							<input name="dtalimcan_27" value="07/10/2014" type="hidden">
+		                
+					</td>
+		            <td>PSI5787</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Realidade Virtual</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_28" value="28" type="checkbox">
+							<input name="codare_28" value="12139" type="hidden">
+							<input name="codpes_28" value="8882322" type="hidden">
+							<input name="numseqpgm_28" value="1" type="hidden">
+							<input name="sgldis_28" value="IBI5031" type="hidden">
+							<input name="numseqdis_28" value="3" type="hidden">
+							<input name="numofe_28" value="4" type="hidden">
+							<input name="statuscanc_28" value="S" type="hidden">
+							<input name="nomdis_28" value="Reconhecimento de Padrões I" type="hidden">
+							<input name="dtalimcan_28" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>IBI5031</td>
+		            <td align="center">4</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Reconhecimento de Padrões I</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_29" value="29" type="checkbox">
+							<input name="codare_29" value="12139" type="hidden">
+							<input name="codpes_29" value="8882322" type="hidden">
+							<input name="numseqpgm_29" value="1" type="hidden">
+							<input name="sgldis_29" value="IBI5026" type="hidden">
+							<input name="numseqdis_29" value="1" type="hidden">
+							<input name="numofe_29" value="3" type="hidden">
+							<input name="statuscanc_29" value="S" type="hidden">
+							<input name="nomdis_29" value="Biofísico-Química Computacional" type="hidden">
+							<input name="dtalimcan_29" value="27/08/2014" type="hidden">
+		                
+					</td>
+		            <td>IBI5026</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Biofísico-Química Computacional</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input name="chk_30" value="30" type="checkbox">
+							<input name="codare_30" value="12139" type="hidden">
+							<input name="codpes_30" value="8882322" type="hidden">
+							<input name="numseqpgm_30" value="1" type="hidden">
+							<input name="sgldis_30" value="EAD5923" type="hidden">
+							<input name="numseqdis_30" value="6" type="hidden">
+							<input name="numofe_30" value="6" type="hidden">
+							<input name="statuscanc_30" value="S" type="hidden">
+							<input name="nomdis_30" value="Monitoria Didática I" type="hidden">
+							<input name="dtalimcan_30" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5923</td>
+		            <td align="center">6</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Monitoria Didática I</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							-
+						
+					</td>
+		            <td>GPP5807</td>
+		            <td align="center">2</td>
+		            <td>
+					
+					Aguardando aval para cancelamento
+					</td>
+					<td>Tendências Contemporâneas da Gestão Pública</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_31" value="31" type="checkbox">
+							<input name="codare_31" value="12139" type="hidden">
+							<input name="codpes_31" value="8882322" type="hidden">
+							<input name="numseqpgm_31" value="1" type="hidden">
+							<input name="sgldis_31" value="CMU5618" type="hidden">
+							<input name="numseqdis_31" value="1" type="hidden">
+							<input name="numofe_31" value="1" type="hidden">
+							<input name="statuscanc_31" value="S" type="hidden">
+							<input name="nomdis_31" value="Improvisação, Novas Tecnologias e a Estética da Sonoridade" type="hidden">
+							<input name="dtalimcan_31" value="07/09/2014" type="hidden">
+		                
+					</td>
+		            <td>CMU5618</td>
+		            <td align="center">1</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Improvisação, Novas Tecnologias e a Estética da Sonoridade</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input name="chk_32" value="32" type="checkbox">
+							<input name="codare_32" value="12139" type="hidden">
+							<input name="codpes_32" value="8882322" type="hidden">
+							<input name="numseqpgm_32" value="1" type="hidden">
+							<input name="sgldis_32" value="EAD5919" type="hidden">
+							<input name="numseqdis_32" value="5" type="hidden">
+							<input name="numofe_32" value="5" type="hidden">
+							<input name="statuscanc_32" value="S" type="hidden">
+							<input name="nomdis_32" value="Administração da Inovação em Produtos e Processos" type="hidden">
+							<input name="dtalimcan_32" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5919</td>
+		            <td align="center">5</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Administração da Inovação em Produtos e Processos</td>
+				</tr>
+			
+				<tr>
+					<td>
+						
+							<input checked="checked" name="chk_33" value="33" type="checkbox">
+							<input name="codare_33" value="12139" type="hidden">
+							<input name="codpes_33" value="8882322" type="hidden">
+							<input name="numseqpgm_33" value="1" type="hidden">
+							<input name="sgldis_33" value="EAD5935" type="hidden">
+							<input name="numseqdis_33" value="4" type="hidden">
+							<input name="numofe_33" value="3" type="hidden">
+							<input name="statuscanc_33" value="S" type="hidden">
+							<input name="nomdis_33" value="Avaliação de Empresas" type="hidden">
+							<input name="dtalimcan_33" value="05/09/2014" type="hidden">
+		                
+					</td>
+		            <td>EAD5935</td>
+		            <td align="center">3</td>
+		            <td>
+					
+					Matriculado
+					</td>
+					<td>Avaliação de Empresas</td>
+				</tr>
+			 
+		</tbody></table>
+		
+		
+		<div style="margin-top:5px" align="center">
+		  <input name="Submit" value="Cancelar matrícula" type="submit">
+		</div>
+		
+	</form>
+
+
+<script>
+
+	
+		$("#title").val("Matrículas em disciplinas em andamento");
+			
+</script>
+
+	
+ </body></html>

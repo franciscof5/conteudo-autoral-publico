@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>TrackingFrame</title>
+<style type="text/css"> body {margin: 0; padding: 0;} </style>
+<script type="text/javascript">
+/* <![CDATA[ */
+/*global document*/
+var djTracking = {
+doPixelConfig: function(params){this.pixelConfig={
+//===================================================================
+//  PIXEL CONFIGURATION LIVES HERE
+//
+//  Note to editor: any and all parameters, which are passed to
+//  this iframe are accessible via the "params" object.
+//-------------------------------------------------------------------
+
+
+
+
+"interactive.wsj.com": {
+  // Place WSJ Site wide pixels HERE:
+  site: [
+    "http://p.opt.fimserve.com/bht/?r=p&px=363&v=1"
+  ],
+
+  zones: {
+    //  Place homepage pixels HERE:
+    "front_sub front_nonsub": [
+    "http://www.bizographics.com/collect/?fmt=gif&url=wsj.com&pid=317"
+    ],
+
+	//  Place WSJ Buisness section wide pixels HERE:
+    "smb_financing_front smb_running_front smb_tech_front smb_franchise_front smb_smallbizlink_front smb_howto_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=396&v=1"
+    ],
+
+    //  Place WSJ Technology Category pixels HERE:
+    "tech_front blog_ digits tech_personaltechfront": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=397&v=1"
+    ],
+
+
+    //  Place WSJ AUTO section wide pixels HERE:
+    "lifestyle_auto_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=398&v=1"
+    ],
+
+
+    //  Place WSJ Investing Category Pixels HERE:
+    "pf_investing_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=399&v=1"
+    ],
+
+
+    //  Place WSJ LifeStyle Category Pixels HERE:
+    "lifestyle_front lifestyle_arts_front lifestyle_books_front lifestyle_fashion_front lifestyle_food_front lifestyle_sports_front lifestyle_travel_front magazine_wsjtoday lifestyle_colblogs_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=1026&v=1"
+    ]
+  }
+},
+
+"marketwatch.com": {
+  // Place marketwatch Site wide pixels HERE:
+  site: [
+    "http://p.opt.fimserve.com/bht/?r=p&px=400&v=1"
+  ],
+
+  zones: {
+//  Place marketwatch homepage pixels HERE:
+    "frontpage": [
+      "http://www.bizographics.com/collect/?fmt=gif&url=marketwatch.com&pid=317"
+    ],   
+
+ //  Place marketwatch Buisness section wide pixels HERE:
+    "smallbiz_frontpage": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=401&v=1"
+    ],
+
+    //  Place marketwatch Technology Category pixels HERE:
+    "technology_frontpage": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=402&v=1"
+    ],
+
+
+    //  Place marketwatch AUTO section wide pixels HERE:
+    "auto_frontpage": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=403&v=1"
+    ],
+
+
+    //  Place marketwatch Investing Category Pixels HERE:
+    "markets_tradingstrategies commentary_newsletters": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=404&v=1"
+    ]
+
+  }
+},
+
+"allthingsd.com": {
+  // Place allthingsd Site wide pixels HERE:
+  site: [
+    "http://p.opt.fimserve.com/bht/?r=p&px=408&v=1"
+  ],
+
+  zones: {
+
+ //  Place allthingsd Investing Category Pixels HERE:
+    "pf_investing_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=408&v=1"
+    ]
+
+  }
+},
+
+"fins.com": {
+  // Place allthingsd Site wide pixels HERE:
+  site: [
+    "http://p.opt.fimserve.com/bht/?r=p&px=408&v=1"
+  ],
+
+  zones: {
+
+ //  Place allthingsd Investing Category Pixels HERE:
+    "candidate_front": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=408&v=1"
+    ]
+
+  }
+},
+
+"barrons.com": {
+  // Place Barrons Site wide pixels HERE:
+  site: [
+    "http://p.opt.fimserve.com/bht/?r=p&px=405&v=1"
+  ],
+
+  zones: {
+    //  Place Barrons Tech pixels HERE:
+    "tech_front blog_techtraderdaily": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=406&v=1"
+    ],
+
+    //  Place Barron's Investing Category Pixels HERE:
+    "markets_front marketsdata_front mlab_front fundsqa_front fundsqa_screener stockgrader": [
+      "http://p.opt.fimserve.com/bht/?r=p&px=407&v=1"
+    ]
+  }
+}
+
+
+//===================================================================
+};},
+init: function() {
+  this.oD=document;
+  var params = this.oD.location.search.replace(/^\?/,"");
+  if (""===params){return;}
+  this.oB=this.oD.getElementsByTagName("body")[0];
+  this.params=this.paramStrToObj(params);
+  this.doPixelConfig(this.params);
+  this.firePixelConfig(this.params.site, this.params.zone);
+},
+firePixelConfig: function(site, zone) {
+  var st = this.pixelConfig[site], zs=[];
+if (typeof st === "undefined") { return; }
+this.firePixel(st.site);
+  for (var z in st.zones) { if (st.zones.hasOwnProperty(z)) {
+    if (z == zone) { this.firePixel(st.zones[z]); return; }
+    else if (z.indexOf(" ") == -1) { continue; }
+    zs = z.split(" ");
+    for (var i=0; i < zs.length; i++) { if (zs[i] == zone) {
+      this.firePixel(st.zones[z]);
+    }}
+  }}
+},
+firePixel: function(src) {
+  var srcs = [];
+  if (typeof src === "string") { srcs.push(src); }
+  else if ((typeof src === "object") && src.length) { srcs = src; }
+  for (var i=0, len=srcs.length; i < len; i++) {
+    var e=this.oD.createElement('img');
+    e.width=1; e.height=1; e.border=0; e.alt="";
+    e.src=srcs[i]+"&rnd="+(Math.random()*10e16);
+    this.oB.appendChild(e);
+  }
+},
+paramStrToObj: function(str) {
+  if (typeof str !== "string") { return; }
+  var obj = {}, aStr = str.split("&");
+  for (var i=0, len=aStr.length; i<len; i++) {
+    var spl=aStr[i].split("=");
+    var name=spl.shift();
+    obj[name]=spl.join("=");
+  }
+  return (obj!=={}) ? obj : null;
+}
+};
+/* ]]> */
+</script>
+</head><body onload="djTracking.init();"><img src="PixelTracking_data/a.gif" alt="" height="1" width="1" border="0"></body></html>

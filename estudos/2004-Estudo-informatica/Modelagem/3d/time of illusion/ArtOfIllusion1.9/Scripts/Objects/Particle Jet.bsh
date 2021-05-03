@@ -1,0 +1,102 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+<!-- xml header for scripts & plugin manager --> 
+<script>
+	<name>Particle Jet</name>
+	<author>Peter Eastman (peastman@users.sourceforge.net)</author>
+	<version>1.8</version>
+	<date>09/07/2004</date>
+	<description>
+This script generates a jet of particles, coming from a circular region in the XZ plane, rising upward, and
+then falling back down again. This script is intended to be highly configurable.  You can easily modify it
+to change the time during which particles are emitted, their lifespan, the type of object used for each
+particle, their starting locations and velocities, and more.
+    </description>
+</script>
+*/
+
+START_TIME = 0;          // The time at which particles start being emitted
+END_TIME = 5;            // The time at which particles stop being emitted
+EMISSION_RATE = 10;      // The number of particles emitted per second
+LIFETIME = 10;           // The lifetime of each particle
+SOURCE_RADIUS = 0.2;     // The radius of the region from which particles are emitted
+SOURCE_ANGLE = 15.0;     // The angle formed by the jet
+INITIAL_SPEED = 1.0;     // The initial speed of each particle.
+JITTER = 0.05;           // Randomizes the initial speed and direction of each particle
+GRAVITY = new Vec3(0,-0.2,0);  // The strength and direction of gravity
+
+// Comment out the following line if you want the gravity direction to be defined in local coordinates
+// rather than scene coordinates.
+
+script.getCoordinates().toLocal().transformDirection(GRAVITY);
+
+// This function is called to create each particle.  The default implementation simply creates a sphere,
+// but you can generate any object you want.  Objects may vary based on their creation time, age, the
+// current time (timeCreated+age), location, or velocity.  rand is a random number generator which you can
+// use to randomly modify the properties of each particle.  It has already been initialized with a seed
+// value that is different for each particle, but constant across all invocations for a given particle.
+
+// If this function returns null, the particle will not be shown.  For example, you can cause some
+// particles to be omitted altogether (thus making the emission rate non-uniform), or cause them to
+// disappear when they reach a certain height.
+
+ObjectInfo createParticle(double timeCreated, double age, Vec3 location, Vec3 velocity, Random rand)
+{
+  sphere = new Sphere(0.05, 0.05, 0.05);
+  return new ObjectInfo(sphere, new CoordinateSystem(location, Vec3.vz(), Vec3.vy()), "");
+}
+
+// Initialize various values that will be used later in the script.
+
+time = script.getTime();
+gap = 1.0/EMISSION_RATE;
+earliest = Math.max(START_TIME, time-LIFETIME);
+latest = Math.min(END_TIME, time);
+id = (int) Math.ceil(earliest/gap);
+emitTime = id*gap;
+rand = new Random();
+velocityScale = Math.asin(Math.PI*SOURCE_ANGLE/180.0);
+
+// Main loop to generate particles.
+
+while (emitTime <= latest)
+{
+  rand.setSeed(id);
+  rand.nextInt();
+  
+  // Select the starting position.
+  
+  do
+  {
+    x = 2.0*rand.nextDouble()-1.0;
+    z = 2.0*rand.nextDouble()-1.0;
+  } while (x*x + z*z > 1.0);
+  pos = new Vec3(x*SOURCE_RADIUS, 0.0, z*SOURCE_RADIUS);
+  
+  // Select the initial velocity.
+  
+  vel = new Vec3(x*velocityScale, 0.0, z*velocityScale);
+  vel.scale(rand.nextDouble());
+  vel.y = Math.sqrt(1.0-vel.x*vel.x-vel.z*vel.z);
+  vel.x += JITTER*rand.nextDouble();
+  vel.y += JITTER*rand.nextDouble();
+  vel.z += JITTER*rand.nextDouble();
+  vel.normalize();
+  vel.scale(INITIAL_SPEED);
+  
+  // Find the current position and velocity.
+  
+  age = time-emitTime;
+  pos.x += age*(vel.x+0.5*age*GRAVITY.x);
+  pos.y += age*(vel.y+0.5*age*GRAVITY.y);
+  pos.z += age*(vel.z+0.5*age*GRAVITY.z);
+  vel.add(GRAVITY.times(age));
+  
+  // Create the particle and add it to the object.
+  
+  obj = createParticle(emitTime, age, pos, vel, rand);
+  if (obj != null)
+    script.addObject(obj);
+  id++;
+  emitTime += gap;
+}

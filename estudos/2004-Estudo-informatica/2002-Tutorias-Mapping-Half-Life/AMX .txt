@@ -1,0 +1,238 @@
+AMX 
+O AMX, bem como outros mods para METAMOD, só funcioanm baseado no próprio. logo... se você não o possui, pode fazer o download na seção de utilitários. 
+
+Instalação do AMX: 
+
+
+Copie de modo a ter a seguinte estrutura: 
+
+$HD$\Half-Life\cstrike\addons\amx 
+
+Configuração do METAMOD: 
+
+Para ele funcionar corretamente, você deverá primeiramente instalar o metamod, e depois adicionar o AMX no plugins.ini do metamod. O plugins.ini deverá conter a seguinte linha adicional. 
+
+
+win32 addons\amx\dlls\amx_mm.dll 
+
+
+Após isto seu AMX já estaria funcionando. Mas que tutorial chinelão eu teria feito se parasse aki neh?? então vamos ao que interessa.. 
+
+
+No diretório do AMX há o arquivo admin.cfg, e obviamente é ali que você vai configurar seu direito de admin. 
+
+Na seguinte linha coloque: 
+
+
+// Example of admin account configuration 
+amx_admin "Seu Nick" "Uma senha idiota" "abcdefghijklmnopqrstu" "e" 
+
+
+Obs.: Deixe as aspas e akele monte de letras do lado, são as permissões que vc terá, e deste modo acima vc terá todas.. 
+
+Como no Admin Mod e outros, este arquivo configura várias opções do server.. vá lendo e mexendo 
+
+
+
+Ps.: Como resolvi fazer um tutorial completo aki vai a configuração da instalação do AMX Mod Menu (Entrem no link e vcs vão querer instalá-lo) 
+
+AMX Modmenu
+
+
+Instalação do AMX Mod Menu: 
+
+O AMX Mod Menu, é só um menuzinho r0x bagaraio feito pela equipe da AMX que como sempre está surpreendendo. 
+
+No link (amxmodmenu) 
+
+Vocês podem ver fotos dele. Basta fazer o DOWNLOAD e seguir os passos abaixo: 
+
+Download AMX Mod Menu: 
+amxmodmenu
+
+Na pasta 
+
+
+$HD$\Half-Life\cstrike\addons\amx\examples\ 
+
+
+exclua todos os arquivos com extensão .SMA (plugins não compilados) 
+
+descompacte o arquivo amxmodmenu.zip e copie todos os .SMA 
+
+
+cmdmenu.sma 
+mapsmenu.sma 
+menufront.sma 
+plmenu.sma 
+ppause.sma 
+restmenu.sma 
+statsset.sma 
+tele.sma 
+
+
+para a pasta 
+
+
+$HD$\Half-Life\cstrike\addons\amx\examples\ 
+
+
+e todos os .INI 
+
+
+clcmds.ini 
+
+cmds.ini 
+
+configs.ini 
+
+cvars.ini 
+
+maps.ini 
+
+speech.ini 
+
+
+para 
+
+
+$HD$\Half-Life\cstrike\addons\amx\ 
+
+
+Após isso é necessário que compiles os arquivos .SMA: 
+
+
+Em 
+
+
+$HD$\Half-Life\cstrike\addons\amx\examples\ 
+
+
+execute o arqui 
+
+
+SC.BAT 
+
+
+Ele compilará todos os plugins para 
+
+
+$HD$\Half-Life\cstrike\addons\amx\examples\complied\ 
+
+
+Agora você deve copiar todos os arquivos da pasta acima 
+
+
+cmdmenu.amx 
+mapsmenu.amx 
+menufront.amx 
+plmenu.amx 
+ppause.amx 
+restmenu.amx 
+statsset.amx 
+tele.amx 
+
+
+para a pasta $HD$\Half-Life\cstrike\addons\amx\plugins\ e dentro dela no arquivo plugins.ini adicione as linhas acima. 
+
+
+Para chamar este menu de dentro do jogo basta digitar no console amxmodmenu, mas é lógico que você não fará isso toda vez que for chamá-lo, portanto, vá até 
+
+
+$HD$\Half-Life\cstrike\ 
+
+
+edite o arquivo CONFIG.CFG e adicione a linha: 
+
+
+BIND "X" "AMXMODMENU" 
+
+
+(Agora sim.. para chamar o menu basta digitar o "X" durante o jogo ou qualquer outra tecla que voce quiser, caso já use o "X"!) 
+
+Pronto até a parte de instalar o AMX, o MENU Mágico (heheh) e o metamod... mas enfim da onde diabos os valores do menu vem?? Como mudá-los?? 
+
+Os valores vem dos arquivos .INI e eis o que cada um deles é: 
+
+clcmds.ini 
+
+
+Traz as opções que o menu oferece para jogadores presentes no SERVER como slap/kick/ban 
+
+
+"Kick player" "amx_kick #%userid%" "bd" "u" 
+"Slay player" "amx_slay #%userid%" "bd" "u" 
+"Slap with 1 dmg." "amx_slap #%userid% 1" "b" "u" 
+"Ban on 5 minutes" "amx_ban 5 #%userid%" "bd" "u" 
+
+
+cvars.ini 
+
+
+Traz as opções de configurações do server durante o jogo, que só afetaram o mapa jogado no momento. 
+
+
+"mp_timelimit" "0" "30" "45" "u" 
+"mp_friendlyfire" "0" "1" "u" 
+"mp_autoteambalance" "0" "1" "2" "u" 
+"sv_password" "" roxor "clanwar" "u" 
+"mp_limitteams" "0" "1" "2" "u" 
+"mp_freezetime" 0 "6" "u" 
+"mp_buytime" "1" "0.5" "u" 
+"mp_startmoney" "800" "1800" "3600" "u" 
+"mp_c4timer" "35" "45" "15" "u" 
+"mp_forcechasecam" "0" "1" "2" "u" 
+"pausable" 0 1 "u" 
+"sv_minrate" "2000" "3000" "u" 
+"sv_maxrate" "7000" "6500" "u" 
+"allow_spectators" "0" "1" "u" 
+"sv_voiceenable" "0" "1" "u" 
+"mp_logmessages" "0" "1" "u" 
+
+
+Reapre que cada coisa tem 3 opções, você pode definir até 5 se quiser basta colocar o valor entre aspas ex: 
+
+
+"mp_freezetime" "0" "2" "4" "6" "8" "u" 
+
+
+Então durante o jogo terei todas as opções de FREEZETIME que eu adicionei acima.. 
+
+
+maps.ini 
+
+
+Muito importante e muito prático. Basta listar todo os mapas que seu server terá como a lista padrão abaixo: 
+
+
+as_oilrig "OilRig - Assassination" 
+as_tundra "Tundra - Assassination" 
+de_aztec "Aztec - Bomb/Defuse" 
+de_cbble "Cobble - Bomb/Defuse" 
+de_chateau "Chateau - Bomb/Defuse" 
+de_dust "Dust - Bomb/Defuse" 
+de_dust2 "Dust II - Bomb/Defuse" 
+
+
+Assim você já editou todas as opções do AMXMODMENU. 
+
+Instalação de PLUGINS para o AMX: 
+
+Há atualmente cerca de 300 plugins extras para AMX que fazem de tudo desde forçar vc a jogar com a faca numa arena, limitar AWP's por time, tirar suas armas em um TK intencinal.. e etc: 
+
+
+Para instalá-los precisa-se primeiro baixá-los, vá em plugins
+
+Leia o que o plugin faz, se te agradar ter isso no seu SERVER, baixe-o. e descompacte o arquivo .AMX que vem nele para a pasta 
+
+
+$HD$\Half-Life\cstrike\addons\amx\plugins\ 
+
+
+e não esqueça de que ele não sabe que vc quer o plugin rodando então adiciona a linha com o nome do plugin no plugins.ini. Ex: 
+
+
+awplimit.amx 
+
+ 
+ 

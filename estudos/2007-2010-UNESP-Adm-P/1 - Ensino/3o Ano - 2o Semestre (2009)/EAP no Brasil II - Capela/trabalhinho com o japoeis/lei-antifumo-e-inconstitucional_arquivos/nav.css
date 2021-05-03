@@ -1,0 +1,119 @@
+#header {
+  z-index: 99;
+  position: relative;
+}
+
+/** Main navigation bar **/
+#nav {
+  position: absolute;
+  top: 89px;
+  left: 280px;
+  width: 690px;
+  height: 36px ;
+  z-index: 100;
+}
+
+#nav > ul { /* all lists */
+}
+
+
+#nav>ul>li { 
+	float: left ;
+  background: transparent url(../images/nav-sep.png) right no-repeat;
+}
+
+#nav>ul>li>a {
+  padding: 6px 15px 7px 15px;
+	display: block ;
+  font: normal 14px/23px arial, sans-serif;
+  text-decoration: none;
+  color: #527226;
+}
+
+#nav .nav-panel {
+  position: absolute;
+  left: -999em;
+  background-color: white;
+  width: 300px;
+
+  border: 1px solid #527226;
+
+	-moz-border-radius-topright: 8px ;
+	-khtml-border-top-right-radius: 8px ;
+	-webkit-border-top-right-radius: 8px ;
+	border-top-right-radius: 8px ;
+	-moz-border-radius-bottomleft: 8px ;
+	-khtml-border-bottom-left-radius: 8px ;
+	-webkit-border-bottom-left-radius: 8px ;
+	border-bottom-left-radius: 8px ;
+	-moz-border-radius-bottomright: 8px ;
+	-khtml-border-bottom-right-radius: 8px ;
+	-webkit-border-bottom-right-radius: 8px ;
+	border-bottom-right-radius: 8px ;
+}
+
+
+#nav li.sfhover .nav-panel {
+  left: auto;
+}
+
+#nav .nav-panel a {
+  font: normal 12px/1.2 arial;
+  color: #6a8eb1;
+  text-decoration: underline;
+}
+
+#nav .nav-panel a:active, #nav .nav-panel a:hover {
+  color: #4a6177;
+}
+
+#nav .nav-panel ul {
+  list-style-image: url(/images/li-bullet.png);
+  margin: 6px 20px;
+}
+
+
+#nav .nav-panel h2 {
+  display: block;
+  background-color: #a9d073;
+  color: white;
+  padding: 3px;
+  margin-bottom: 6px;
+   
+}
+
+/***** Search Box ****/
+#nav .navsearch {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 5px;
+  margin: 0;
+  height: 26px;
+}
+
+.navsearch #nav-search-text {
+  width: 168px;
+  float: left;
+  border: 1px solid #95b767;
+  border-right: none;
+  color: #54683a;
+  background: #deedca;
+
+  margin: 0;
+  padding: 2px;
+  height:20px;
+  padding-left:6px;
+
+  font-size: 1.2em; 
+  line-height: 24px; 
+}
+
+.navsearch #nav-search-submit {
+  margin: 0;
+  padding: 0;
+  border:none;
+  width: 32px;
+  height: 26px;
+  float: left;
+}

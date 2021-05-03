@@ -1,0 +1,16 @@
+Fazendo binds 
+P: Já vi muita gente usando bind mas não sei como fazer, como devo proceder?
+R: Criar um bind é muito simples, seiga os passos abaixo:
+
+Baixe o console e digite o seguinte: 
+bind <uma tecla qualquer> <"o que você que fazer">
+
+Ex: bind v "say Que HeadShot lindo! Deu até um bicicleta! aehaeuh!" 
+
+Então toda vez que você apertar a tecla "V" irá aparecer na tela a mensagem: Que HeadShot lindo! Deu até um bicicleta! aehaeuh!
+
+Você pode fazer binds para mudar o nome também, ou para qualquer outra coisas.
+
+Ex: bind v "name" 
+ 
+ 

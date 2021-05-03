@@ -1,0 +1,52 @@
+Fazendo Spray 
+
+Leia isso primeiro 
+
+Primeiro de tudo: é muito importante q você saiba um pouco sobre as texturas do Half-Life. Se você tiver uma idéia sobre esse assunto, fica bem mais fácil fazer os sprays coloridos.
+
+As texturas do Half-Life são imagens de 256-color (8-bit), e podem conter qualquer cor. Elas são salvas em um arquivo Wad. Então os arquivos Wad são arquivos q contêm algumas imagens que podem ser abertas com o Half-Life.
+
+Os logos dos sprays são salvos em um arquivo Wad. O que o HL faz para criar a imagem do logo é pegar uma imagem BMP em escala de cinza do catálogo de Logos, dar a ele UMA cor e coloca-lo num arquivo PLDECAL.WAD. Esse arquivo mais tarde é enviado ao servidor e baixado por todos os jogadores para q eles possam todos ver o logo.
+
+A imagem no arquivo WAD pode ser qualquer cor. Os sprays normais têm apenas uma cor, pois o HL assim as fez...
+
+O que veremos a seguir é como fazer um PLDECAL.WAD com qualquer figura. Você pode mudar o tamanho da sua imagem também (normalmente as imagens dos sprays são de 64x64 pixels, mas você pode fazer, por exemplo, uma de 80x112 pixels).
+
+Certifique-se de que você tenha entendido o descrito acima... se não leia de novo... e de novo! É importante e o trabalho fica bem mais fácil!
+
+
+Para fazer o arquivo PLDECAL.WAD...
+
+Primeiro de tudo você deve ter um arquivo BMP de 8 bits (256 cores). As cores contidas não importam.
+- Certifique-se de que a imagem tenha pelo menos um pixel da cor azul pura (RBG: 0 0 255 ou #0000FF). Isso é porque o azul é transparente no HL. Em caso de não haver nenhuma transparência (azul puro) a imagem ficará meio esquisita.
+- Em caso de você não querer nenhuma transparência no seu logo, certifique-se de fazer ao menos uma moldura de azul puro ao redor da imagem.
+
+O BMP deve ter ao menos 16x16 pixels. A altura e a largura não necessariamente devem ser as mesmas, mas têm NECESSÁRIAMENTE que ser divisíveis por 16. A imagem tem também q ser menor do que 12288 pixels no total. Uma imagem com 112x112 (=12544) não pode ser usada, mas uma de 12x96 (=10752) pode.
+
+Chame o seu BMP {LOGO.BMP e deixe em algum lugar separada.
+- lembre-se { i {LOGO.BMP. Se a imagem contiver qualquer camada transparente, isso deve ser escrito na frente de: {. Isso diz do HL q a imagem contém pixels transparentes, o que é muito importante.
+
+Agora baixe o "Half-Life Texture SDK". Você pode baixá-lo aqui (arquivo local). Esse é um arquivo de 251Kb que contem tudo o que você precisa para fazer um arquivo WAD. Extraia os arquivos dentro de alguma pasta q você possa encontrar depois.
+
+Entre na pasta. Faça uma outra chamada "MyDecal" no diretório do "Texture SDK". Agora copie o seu {LOGO.BMP para a pasta MyDecal. Volte para a pasta do Texture SDK e abra o arquivo MAKEWAD.BAT com o Notepad. Se tudo estiver certo você verá o seguinte:
+makels samples samplewad samples.ls
+qlumpy samples.ls
+
+Mude para:
+makels mydecal pldecal pldecal.ls
+qlumpy pldecal.ls
+
+Salve o MAKEWAD.BAT.
+- Cetifique-se que haja apenas uma imagem BMP dentro da pasta MyDecal.
+Execute o MAKEWAD.BAT. Se tudo deu certo, agora devem existir dois arquivos:
+PLDECAL.LS and PLDECAL.WAD.
+- Se for criado apenas o arquivo PLDECAL.LS é porque há algo errado com a sua imagem BMP. Certifique-se de q ela é uma imagem BMP de 8-bit (256 cores) BMP e que tando o número da altura quanto o do comprimento são divisíveis por 16!
+
+Certo... se tudo correu bem, você deve ter um arquivo PLDECAL.WAD dentro da pasta. Copie o seu arquivo (pldecal.wad) para a pasta do Counter-Strike, por exemplo: C:\SIERRA\HALF-LIFE\CSTRIKE
+
+Agora você está pronto para usar o seu novo spray!!!
+
+
+Importante!!!
+
+Não clique em OK ou em Cancel no menu Customize. Saia do menu com a tecla <Esc> ou <Escape>... Se por acaso clicar em OK ou Cancel, terá q copiar de novo o seu arquivo PLDECAL.WAD dentro da pasta do CS...

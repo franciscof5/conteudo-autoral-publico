@@ -1,0 +1,199 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+<!-- xml header for scripts & plugin manager --> 
+<script>
+	<name>Fur</name>
+	<author>Peter Eastman (peastman@users.sourceforge.net)</author>
+	<version>1.7</version>
+	<date>04/03/2004</date>
+	<description>
+This script creates short fur over the surface of an object. It does this by creating a series
+of concentric "shells" around the object, each one mapped with a semi-transparent texture to
+simulate the appearance of fur. The fur texture (available in a separate file which accompanies
+this script) must have already been imported into the scene. 
+
+Before creating an object with this script, you must first apply the fur texture to the "base"
+object you want to create fur on. This is for three purposes: 
+
+1. So that you can set up how the fur is mapped to the object. After adjusting the scale of the
+texture (a value of 0.02 for the x, y, and z scales is a good starting point), enable the
+"Bind Texture Coordinates to Surface" option. Otherwise, this script will not work correctly. 
+
+2. So that you can set the value of the "length" texture parameter, which determines the length
+of the fur. It may be set per-object or per-vertex, allowing the length to vary over the surface
+of the object. 
+
+3. So that you can set the value of the "thickness" texture parameter, which determines the
+thickness of each hair. This, too, may be set per-object or per-vertex. 
+
+If you modify the fur texture and add other parameters to it, their values will also be preserved
+on the shells of fur. For example, you could use a parameter to vary the color of the fur over
+the surface of the object. 
+
+It is not necessary that the fur texture actually be visible on the "base" object, only that it
+be present so the mapping and texture parameters can be defined. For example, you can use a layered
+texture for the base object, with fur as the bottom layer and another opaque texture on top of
+it. The base object can even be hidden. For example, if you want fur over only part of an object,
+you could duplicate it, trim away the portions of the duplicate where you do not want fur, hide the
+trimmed object, and use it as the fur generator.
+    </description>
+    <comments>
+    Uses the texture file Fur.aoi, located in AoIFolder/Scripts/Objects next to the script.
+    </comments>
+    <fileset>
+        <file>Fur.aoi</file>
+    </fileset>
+</script>
+*/
+
+if (script.isPreview())
+  return;
+scene = script.getScene();
+
+// The following line gets the object (which must be a triangle mesh or spine mesh) to add fur to.
+
+info = scene.getObject("furry");
+
+// The following line gets the fur texture.
+
+fur = scene.getTexture("fur");
+
+// This sets the number of shells to use.  More shells will give better looking fur, but also take
+// more time and memory to render.  When rendering, be sure to set the maximum ray tree depth (in
+// the advanced raFur.bshytracer options window) to be greater than the number of shells.  Otherwise, the
+// raytracer will not get through all of the shells.
+
+shells = 10;
+
+// This is a force which pulls on the hair, usually downward.  It can also be animated to simulate
+// wind or similar effects.
+
+gravity = new Vec3(0.0, -0.4, 0.0);
+script.getCoordinates().toLocal().transformDirection(gravity);
+
+// Everything from here on you should not need to modify, unless you are making significant changes
+// to the way the script works.
+
+// Check various inputs to make sure they're ok.
+
+if (info == null)
+{
+  print("Could not find object to apply fur to");
+  return;
+}
+if (fur == null)
+{
+  print("Could not find fur texture");
+  return;
+}
+
+// Find the mapping used for the fur texture.
+
+map = null;
+obj = info.getDistortedObject(0.1);
+if (obj instanceof artofillusion.animation.Actor)
+  obj = obj.getObject();
+if (!(obj instanceof Mesh))
+{
+  print("Fur can only be applied to a mesh");
+  return;
+}
+if (obj.getTexture() == fur)
+  map = obj.getTextureMapping();
+else if (obj.getTextureMapping() instanceof LayeredMapping)
+{
+  layered = obj.getTextureMapping();
+  for (i = 0; i < layered.getNumLayers(); i++)
+    if (layered.getLayer(i) == fur)
+    {
+      map = layered.getLayerMapping(i);
+      break;
+    }
+}
+if (map == null)
+{
+  print("The fur texture has not been assigned to the object.");
+  return;
+}
+
+// This function finds the texture parameter with a given name.
+
+findParam(String name)
+{
+  params = obj.getParameters();
+  for (i = 0; i < params.length; i++)
+    if (params[i].owner == fur && params[i].name.equals(name))
+      return params[i];
+  return null;
+}
+
+// This function finds the value of a texture parameter at each vertex.
+
+findParamValues(String name)
+{
+  param = findParam(name);
+  if (param == null)
+    return param;
+  value = obj.getParameterValue(param);
+  if (value instanceof VertexParameterValue)
+    return value.getValue();
+  avg = value.getAverageValue();
+  vertValue = new double [obj.getVertices().length];
+  for (int j = 0; j < vertValue.length; j++)
+    vertValue[j] = avg;
+  return vertValue;
+}
+
+// Look up the values of the thickness and length parameters.
+
+thicknessParam = findParam("thickness");
+if (thicknessParam == null)
+{
+  print("Could not find texture parameter 'thickness'");
+  return;
+}
+furThickness = obj.getParameterValue(thicknessParam);
+furLength = findParamValues("length");
+if (furLength == null)
+{
+  print("Could not find texture parameter 'length'");
+  return;
+}
+
+// This is the main loop that generates the shells.
+
+heightScale = 1.0/shells;
+for (i = 0; i < shells; i++)
+{
+  newobj = obj.duplicate();
+  norm = newobj.getNormals();
+  vert = newobj.getVertices();
+  for (j = 0; j < vert.length; j++)
+  {
+    disp = norm[j].plus(gravity);
+    disp.normalize();
+    disp.scale(furLength[j]*heightScale);
+    vert[j].r.add(disp);
+  }
+  newobj.setTexture(fur, map.duplicate());
+  
+  // Taper the ends of the hairs.
+  
+  if (i > shells*0.75)
+  {
+    thicknessScale = 4.0*(shells-i)/shells;
+    if (furThickness instanceof VertexParameterValue || furThickens instanceof FaceParameterValue)
+    {
+      newThickness = furThickness.duplicate();
+      val = newThickness.getValue();
+      for (j = 0; j < val.length; j++)
+        val[j] *= thicknessScale;
+      newThickness.setValue(val);
+      newobj.setParameterValue(thicknessParam, newThickness);
+    }
+    else
+      newobj.setParameterValue(thicknessParam, new ConstantParameterValue(thicknessScale*furThickness.getAverageValue()));
+  }
+  script.addObject(newobj, info.coords.duplicate());
+  obj = newobj;
+}

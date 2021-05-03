@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+
+<title>
+
+</title>
+    <script type="text/javascript" src="showwidget_data/widgetvotescript.js"></script>
+    <script type="text/javascript">
+        AppVariables = {"ApplicationPath":"/","IsLoggedIn":false,"LoginUrl":"https://aut.abril.com.br/Login/gostei?&surl=http%253a%252f%252fgostei.abril.com.br%252fpost%252fshowwidget%253furl%253dhttp%25253a%25252f%25252fwww.abril.com.br%25252fnoticias%25252fciencia-saude%25252flei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863.shtml%2526titulo%253dlei%252520antifumo%252520ajuda%252520a%252520proteger%252520at%2525c3%2525a9%252520sa%2525c3%2525bade%252520de%252520fumantes%25252c%252520aponta%252520pesquisa%252520-%252520abril.com%2526descricao%253dlei%252520antifumo%252520ajuda%252520a%252520proteger%252520at%2525c3%2525a9%252520sa%2525c3%2525bade%252520de%252520fumantes%25252c%252520aponta%252520pesquisa%2526categoria%253dnw%2526tipo%253dlk%2526skin%253d%2526view%253dabril","UserName":"","AbrilBannerCode":null};
+        PageVariables = {"Url":"http://www.abril.com.br/noticias/ciencia-saude/lei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863.shtml","Titulo":"Lei antifumo ajuda a proteger até saúde de fumantes, aponta pesquisa - Abril.com","Description":"Lei antifumo ajuda a proteger até saúde de fumantes, aponta pesquisa","Tags":null,"Category":"NW","Type":"LK"};                
+        
+        function vote(postId, voteValue){
+            
+                  PageVariables.Vote = voteValue;
+                
+                  ajax(AppVariables.ApplicationPath + "Vote/InsertWidgetPost", PageVariables.serialize(), function(result){
+            
+                    
+                    if (result == 'LOGIN') {
+                        var iframe = document.createElement("iframe");
+                        iframe.src = "http://www.abril.com.br/gostei_blank.htm?#" + result;
+                        iframe.style.width = "0px";
+                        iframe.style.height = "0px";
+                        iframe.style.display = "none";
+                        iframe.onload = function(){
+                            setTimeout(function(){ document.body.removeChild(iframe) }, 200);
+                        }
+                        document.body.appendChild(iframe);
+                    }
+                    else if ( typeof(result) == 'string') {
+                        alert(result);
+                    }
+                    else
+                    {                                     
+                        document.getElementById(postId).style.display="none";   
+                        var boxResult = document.getElementById("boxResult");
+                        var line; 
+                        if (voteValue==-1) {
+                            line = document.getElementById("lineNegative");
+                            line.style.display="block";                            
+                            document.getElementById("linePositive").style.display="none";
+                        }
+                        else {
+                            line = document.getElementById("linePositive");
+                        }
+                        
+                        line.getElementsByTagName("label")[0].innerHTML=result.TotalVoteCount;
+                        
+                        line.getElementsByTagName("p")[0].className = (result.TotalVoteCount<0) ? "vtsNegativo" : "vtsPositivo";
+                        
+                        
+                        boxResult.style.display="block";
+                    }
+                  });           
+        }
+    </script>
+    <style type="text/css">                                                    
+        .box, .boxResult {width:180px; height:130px; background:url(/Content/images/widgetbg3.jpg) bottom center no-repeat; float:left; margin:0; padding:0; font-family: arial;}
+        .box .line1{height:70px; width:178px;border-bottom:1px solid #9FD603; margin-left:1px;}
+        .box .line2{line-height:25px; margin-left:12px; width:160px;}
+        .box .line3{line-height:30px;}
+        .box .line1, .box .line2, .box .line3 {float:left; text-align:center; padding:0px;}
+        .resposta { width:60px; height:73px; float:left; margin-left:20px; }
+        .positive { background:url(/Content/images/positive_vote_big.gif) center no-repeat;}
+        .negative { background:url(/Content/images/negative_vote_big.gif) center no-repeat;}
+
+        .vtrPositivo, .vtrNegativo {display:block; float:left;}
+        .vtrPositivo p, .vtrNegativo p{margin:0px; line-height:45px; font-size:20px; }
+        .box .line1 .vtrPositivo{ margin:12px 0 0 6px;  float:left;}
+        .box .line1 .vtrNegativo{ margin:12px 5px 0 0; float:right;}        
+        .box .line1 .vtsTotal{margin:14px 0 0 14px; _margin-left:10px; font-size:36px; color:#000; width:50px; height:50px; overflow:hidden; float:left; }
+        
+        .box .vtsPositivo,.box .vtsNegativo{font-size:11px;  width:40px;}
+        .box .vtsPositivo{color:#9FD603; float:left; margin-left: 0;}
+        .box .vtsNegativo{color:#D91C5C; float:right; margin-right:0; _margin-right:13px;}
+        
+        .linkSite{float:left; clear:both;}
+        .linkSite a{text-decoration:none;}
+        .linkSite img{width:175px; height:30px;}
+        
+        .boxResult {background:url(/Content/images/widgetbg4.gif) bottom center no-repeat; }
+        .boxResult .vtrPositivo, .boxResult .vtrNegativo { width:76px; height:87px; float:left;}
+
+        .linePositive, .lineNegative {float:left; width:180px; height:90px;}
+        .linePositive {display:block;}
+        .lineNegative {display:none;}
+                    
+        .boxResult .vtsPositivo, .boxResult .vtsNegativo {color:#000; font-size:35px; width:93px; height:89px; margin:0px; float:right;}
+        .boxResult .vtsPositivo{background:url(/Content/images/box_vote_positivo.gif) top left no-repeat;}
+        .boxResult .vtsNegativo{background:url(/Content/images/box_vote_negativo.gif) top left no-repeat;}
+        .boxResult label {text-align:center; margin-top:20px; float:left; width:93px;} 
+        
+        .votoComputadoPositive, .votoComputadoNegativo {float:left; width:178px; height:68px;}
+        .votoComputadoNegativo .vtrPositivo img, .votoComputadoNegativo label.vtsTotal {margin:0; padding:0; float:left; }       
+        .votoComputadoPositive  .vtrPositivo img, .votoComputadoNegativo .vtrNegativo img {margin-top:-10px; float:left; _margin:0 0 0 4px;}
+        
+        .votoComputadoNegativo .vtrPositivo img, .votoComputadoPositive .vtrNegativo img {_padding-top:10px; width:39px; height:47px;}    
+        .votoComputadoPositive label.vtsTotal, .votoComputadoNegativo label.vtsTotal {*padding-top:8px;}    
+    </style> 
+<script charset="utf-8" id="injection_graph_func" src="lei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863_arquivos/injection_graph_func.js"></script><script id="_nameHighlight_injection"></script><link class="skype_name_highlight_style" href="lei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863_arquivos/injection_nh_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="_injection_graph_nh_css"><link href="lei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863_arquivos/skypeplugin_dropdownmenu.css" type="text/css" rel="stylesheet" charset="utf-8" id="_skypeplugin_dropdownmenu_css"></head><body>
+    <div class="box" id="00000000-0000-0000-0000-000000000000">
+	    <div id="line1" class="line1">
+            
+                <div class="vtrPositivo"><a href="javascript:void(0)" id="votePositive"><img src="showwidget_data/img_vote_positivo.gif" border="0"></a></div>
+                <label class="vtsTotal">0</label>
+                <div class="vtrNegativo"><a href="javascript:void(0)" id="voteNegative"><img src="showwidget_data/img_vote_negativo.gif" border="0"></a></div>        
+    	    
+        </div>
+	    <div id="line2" class="line2">
+    	    <label class="vtsPositivo">0</label>
+            <label class="vtsNegativo">0</label>
+        </div>
+	    <div class="line3">
+            <div class="linkSite"><a href="http://www.gostei.com/" target="_parent"><img src="showwidget_data/img_transp.gif" border="0"></a></div>
+	    </div>
+    </div>
+     
+    <div id="boxResult" class="boxResult" style="display: none;">
+	    <div id="linePositive" class="linePositive">
+            <div class="vtrPositivo"><a href="javascript:void(0)" id="A1"><img src="showwidget_data/img_widget_vote_positivo.gif" border="0"></a></div>
+    	    <p class="vtsPositivo"><label>0</label></p>
+        </div>
+	    <div id="lineNegative" class="lineNegative">
+            <div class="vtrNegativo"><a href="javascript:void(0)" id="A2"><img src="showwidget_data/img_widget_vote_negativo.gif" border="0"></a></div>        
+            <p class="vtsNegativo"><label>0</label></p>
+        </div>
+	    <div class="line3">
+            <div class="linkSite"><a href="http://www.gostei.com/" target="_parent"><img src="showwidget_data/img_transp.gif" border="0"></a></div>
+	    </div>
+    </div>   
+</body></html>

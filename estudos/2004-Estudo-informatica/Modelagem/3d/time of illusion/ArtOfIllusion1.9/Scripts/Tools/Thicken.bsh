@@ -1,0 +1,120 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+
+<script>
+	<name>Thicken</name>
+	<author>Peter Eastman (peastman@users.sourceforge.net)</author>
+	<version>1.8</version>
+	<date>06/24/2004</date>
+	<description>
+This script gives "thickness" to meshes by extruding the surface outward into a solid object.
+    </description>
+</script>
+*/
+
+// Find the object to modify.
+
+scene = window.getScene();
+sel = scene.getSelection();
+if (sel.length != 1 || !(scene.getObject(sel[0]).object instanceof TriangleMesh))
+{
+  new MessageDialog(window, "Please select a single triangle mesh to solidify.");
+  return;
+}
+info = scene.getObject(sel[0]);
+mesh = info.object;
+
+// Ask the user to select a thickness.
+
+thicknessField = new ValueField(0.1, ValueField.POSITIVE);
+dlg = new ComponentsDialog(window, "Select the thickness for "+info.name,
+    new Widget [] {thicknessField}, new String [] {"Thickness"});
+if (!dlg.clickedOk())
+  return;
+thickness = thicknessField.getValue();
+
+// Duplicate and outset the vertices.
+
+vert = mesh.getVertices();
+norm = mesh.getNormals();
+newVert = new TriangleMesh.Vertex [vert.length*2];
+for (i = 0; i < vert.length; i++)
+{
+  newVert[i] = new TriangleMesh.Vertex(mesh, vert[i]);
+  newVert[i+vert.length] = new TriangleMesh.Vertex(mesh, vert[i]);
+  newVert[i].r.add(norm[i].times(thickness));
+}
+
+// Count the boundary edges.
+
+edge = mesh.getEdges();
+numBoundary = 0;
+for (i = 0; i < edge.length; i++)
+  if (edge[i].f2 == -1)
+    numBoundary++;
+
+// Duplicate the faces.
+
+face = mesh.getFaces();
+newFace = new int [face.length*2+numBoundary*2][3];
+for (i = 0; i < face.length; i++)
+{
+  newFace[i][0] = face[i].v1;
+  newFace[i][1] = face[i].v2;
+  newFace[i][2] = face[i].v3;
+  newFace[face.length+i][0] = face[i].v1+vert.length;
+  newFace[face.length+i][1] = face[i].v3+vert.length;
+  newFace[face.length+i][2] = face[i].v2+vert.length;
+}
+
+// Add edges around the boundary.
+
+for (i = 0, j = face.length*2; i < edge.length; i++)
+{
+  if (edge[i].f2 == -1)
+  {
+    e = edge[i];
+    f = face[e.f1];
+    newFace[j][0] = e.v2;
+    newFace[j][1] = e.v1;
+    newFace[j++][2] = e.v1+vert.length;
+    newFace[j][0] = e.v2;
+    newFace[j][1] = e.v1+vert.length;
+    newFace[j++][2] = e.v2+vert.length;
+  }
+}
+
+// Set the new list of vertices and faces for the mesh.
+
+mesh.setShape(newVert, newFace);
+info.clearCachedMeshes();
+
+// Calling setShape() rebuilds the list of edges from scratch, which means that all edge smoothness
+// values are lost.  We therefore need to copy them back over.
+
+newf = mesh.getFaces();
+newe = mesh.getEdges();
+for (i = 0; i < face.length; i++)
+{
+  newe[newf[i].e1].smoothness = edge[face[i].e1].smoothness;
+  newe[newf[i].e2].smoothness = edge[face[i].e2].smoothness;
+  newe[newf[i].e3].smoothness = edge[face[i].e3].smoothness;
+  newe[newf[i+face.length].e1].smoothness = edge[face[i].e3].smoothness;
+  newe[newf[i+face.length].e2].smoothness = edge[face[i].e2].smoothness;
+  newe[newf[i+face.length].e3].smoothness = edge[face[i].e1].smoothness;
+}
+
+// Set the edges around the boundary of the original mesh to have a smoothness of 0, so that
+// we get a sharp corner.
+
+firstNewFace = face.length*2;
+for (i = 0; i < newe.length; i++)
+{
+  j = 0;
+  if (newe[i].f1 >= firstNewFace)
+    j++;
+  if (newe[i].f2 >= firstNewFace)
+    j++;
+  if (j == 1)
+    newe[i].smoothness = 0.0f;
+}

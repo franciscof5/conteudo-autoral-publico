@@ -1,0 +1,13 @@
+Gravando um demo 
+P: Como faço para gravar um demo de um jogo meu?
+R: Para você gravar um demo seu siga os seguintes passos:
+
+Durante um jogo abaixe o console e digite: record <nome_do_demo>.dem
+Para parar a gravação basta baixar o console e digitar: stop
+
+P: Como faço para assistir um demo?
+R: Durante o jogo baixe o console e digite: playdemo <nome_do_demo>
+
+OBS: Todos os demos gravados ficam dentro do seu diretório do cstrike
+ 
+ 

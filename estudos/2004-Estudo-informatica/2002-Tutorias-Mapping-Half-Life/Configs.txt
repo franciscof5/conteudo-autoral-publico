@@ -1,0 +1,13 @@
+Configs
+
+Bom.... vejamos como fazer algumas configs funcionarem:
+
+Faça cópia do arquivo config.cfg que está dentro do diretório "..../half-life/cstrike"
+feito isso, renomeie para "config2.cfg" o arquivo "config2.cfg" poderá ser trocado por outro,
+abra com o Bloco de notas ou Notepad ou até mesmo com o WordPad.
+Vá até a última linha do arquivo e adicione os comando que lhe agradarem.
+Quando terminada a edição dos comandos que você quer, você deve salvar o arquivo (dê só salvar e pronto).
+Feche tudo que você tem aberto de preferência, e abra seu jogo (counter-strike), assim que você tenha
+entrado num jogo, abre o console e digite o comando: exec config2.cfg.
+Pronto agora você já esta com seu comando adicionado e pode se divertir à vontade, caso queira voltar
+à configuração de antes é só digitar no console: exec config.cfg.

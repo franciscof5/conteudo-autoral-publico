@@ -1,0 +1,14 @@
+Instalando o hlguard: 
+
+1. dezenzipe o aquivo na pasta do counter strike. 
+2. Va no seu diretorio do counter-strike e abra a nova pasta 
+chamada addons la vai ter a pasta do hlguard 
+3. Na pasta do hlguard abra a pasta dlls e copie todos os arquivos para a pasta dlls que esta no seu counter strike. 
+4. pegue todos os arquivos que estao fora da pasta dlls do hlguard e copie tudo pro seu counter-strike. 
+5. Ponto agora e so jogar e se divertir sem medo de xiter.. 
+
+para fazer isto voce tem que ter o metamod instalado no seu counter-strike pois ele e quem libera o hlguard
+
+
+ 
+

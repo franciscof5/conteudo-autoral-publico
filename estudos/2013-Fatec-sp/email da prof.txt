@@ -1,0 +1,9 @@
+ltp.atividades@yahoo.com.br
+
+Cabeçalho:
+
+Atividade 00 - Nome completo do aluno
+
+Pede-se:
+- Entregar individualmente.
+- Copiar o código fonte no próprio e-mail (sem anexar o arquivo).

@@ -1,0 +1,92 @@
+Adicionando Administrador no AdminMod / Comandos 
+P: Como faço para incluir administradores no AdminMod?
+R: Você tem que editar o "users.ini" que fica dentro do diretório cstrike/addons/adminmod/config. Abra ele pelo bloco de notas e adicione o seguinte:
+
+seu nick aqui:sua senha aqui:65535 
+
+Esses números no final são o nível de acesso, no caso 65535 é o nível máximo de acesso para o administrador.
+Depois você tem que abrir o "adminpass.cfg" que fica no diretório do cstrike. Adicione o seguinte no "adminpass.cfg"
+
+setinfo "_pw-home" "sua senha aqui"
+
+Exemplo do "USERS.INI"
+TiaoPedreiro:123456:65535
+
+Exemplo do "ADMINPASS.CFG"
+setinfo "_pw-home" "123456"
+
+Agora basta adicionar no atalho do cs o seguinte: +exec adminpass.cfg
+
+
+Alguns comandos do Adminmod.
+
+Admin_ban <nick, wonid ou ip>[<minutos>] = Bane o jogador alvo, se for definido 0 como minuto de banimento ele será permanente. 
+Admin_unban <wonid ou ip> = è Retira a exclusão do jogador alvo. 
+
+Admin_cfg <config file> = Executa o aquivo config.cfg do servidor. 
+
+Admin_chat <mensagem> = Manda mensagens que aparecerão somente para outros admins que estiverem no servidor. 
+
+Admin_csay <mensagem> = Manda mensagem no centro da tela para os outros jogadores. 
+
+Admin_denymap <mapa> = Remove todos os votos para o mapa escolhido. 
+
+Admin_friendlyfire <”on”/”off”> Liga/desliga o ff (friendly fire) 
+
+Admin_gag <alvo> [<minutos>] = Deixará o jogador alvo impossibilitado de mandar mensagens, seja para todos ou só para o time. Se definido o minuto como 0, o “mute” será permanente. 
+
+Admin_ungag <alvo> = “Desmuta” (permite mensagens) o jogador alvo. 
+
+Admin_glow <cor / “off”> = Fará com que você tenha uma aura da cor escolhida em sua volta. 
+
+Admin_godmode <alvo> <“on” / “off”> = O alvo se tornará invencível (god mode). 
+
+Admin_gravity <novo valor da gravidade> = Alterará o valor da gravidade para o novo valor definido. O padrão é 800. 
+
+Admin_hostname <nome> = Muda o nome do servidor 
+
+Admin_kick <alvo> [<razão do kick>] = Kika do servidor o jogador alvo, mostrando também o motivo pelo qual ele foi kickado. 
+
+Admin_map <nome do mapa> = Muda para o mapa escolhido 
+
+Admin_pass <password> = Põe um password no servidor 
+
+Admin_nopass = Tira o password do servidor, não havendo mais a necessidade de digitar o mesmo. 
+
+Admin_psay <alvo> <mensagem> = Manda uma mensagem particular à algum jogador alvo. 
+
+Admin_reload = Recarrega os arquivos do admin_mod.o. 
+
+Admin_restrictallwepon = Nenhum jogador será capaz de comprar armas. 
+
+Admin_restrictequipment = Nenhum jogador será capaz de comprar equipamentos 
+
+Admin_enableallweapons = Retira qualquer restrição existente na compra de armas 
+
+Admin_enableequipment = Retira qualquer restrição existente na compra de equipamentos 
+
+Admin_say <mensagem> = Mostra uma mensagem sua como administrador. 
+
+Admin_ssay <mensagem> = Mostra uma mensagem sua, entretanto sem identificação. 
+
+Admin_slap <alvo> = Dá um “tapa” no alvo, lhe retirando uma pequena quantia de vida. 
+
+Admin_slay <alvo> = Mata o jogador alvo. 
+
+Admin_slayteam <time> = Mata todos os jogadores do time escolhido. 
+
+Admin_timelimit <novo timelimit> = Altera o timelimit do servidor para o novo valor definido 
+
+Admin_tsay [cor] <mensagem> = Faz com que uma mensagem colorida apareça no canto da tela. 
+
+Admin_vote_kick <alvo> = Inicia uma votação para kickar (retirar) o jogador alvo. 
+
+Admin_vote_map <mapa> = Inicia uma votação para mudar de mapa 
+
+Admin_fun <“on” / “off”> = Liga ou desliga o fun mode (nele o jogador pode ter “auras” de várias cores, o admin pode por um som de discoteca de fundo, etc.) 
+
+Admin_disco = Você poderá ouvir músicas de discoteca como som ambiente do CS. (só possivel no fun mode) 
+Say glow <cor / “off” > = Você terá uma aura a sua volta da cor escolhida (só possível no fun mode) 
+
+ 
+ 

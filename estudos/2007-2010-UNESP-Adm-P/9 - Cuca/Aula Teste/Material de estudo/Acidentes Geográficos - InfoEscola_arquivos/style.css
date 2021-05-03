@@ -1,0 +1,293 @@
+/*
+Theme Name: InfoEscola 5.0
+Theme URI: http://www.infoescola.com/
+Description: Tema InfoEscola 5.0.
+Version: 5.0
+Author: Lucas Martins Silva
+Author URI: http://www.lucasms.com/
+*/
+
+body { margin: 0; padding: 0; font-size: 62.5%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; background: #fff; color: #000;}
+#page { background-color: #fff; position: relative; margin: 0; padding: 0; width: 1002px; background-color: #fff; text-align: left; border-left:1px solid #1E483C; border-right:1px solid #1E483C; }
+#header {margin: 0; width: 1002px; height:100px; padding:0px; }
+
+#headerimg {position: relative; float:left; height:60px; top:20px; left:20px; }
+#headerbar {position:relative; top: 0px; margin:0px; padding:0px; height:22px; line-height:22px; background-color:#1E483C; }
+#headerbar ul {margin-left:18px; padding:0; margin:0;}
+#headerbar li {padding:0 10px 0 10px; display: inline; margin:0;}
+#headerbar li a {color:#fff; font-family:Verdana, Arial; font-size:12px; text-decoration:none; }
+
+#searchform {height: 50px; padding-top:20px; padding-left:20px; }
+
+#banner728x90 {width:728px; height:90px; float:right; position:relative; right:5px; top:5px; }
+#banner300x250 {width: 300px; height: 250px; border-top:10px solid #F8C301; }
+#banner234x60 {position:relative; float:left; top:8px; width:234px; height:60px; }
+
+#footer {width:1002px; height:77px; background:#0F3D30 url('/wp-content/themes/infoescola5.0/images/footer.jpg') bottom right no-repeat; color:#fff; clear:both; vertical-align: middle; }
+#footerlogo {border:0px; margin-top:0px; margin-right:5px; float:left; }
+#footertext {vertical-align: middle; width:600px; float:left; margin-top:0px; margin-left:15px; padding-top:15px; }
+
+#footertext, #footertext a {font-family:Verdana; color:#fff; text-decoration:none; font-size:12px; }
+
+#sidebar {margin-top:10px; padding: 0px 0 10px 0; margin-left: 0px; width: 220px; float:left;}
+#sidebar .sidebartitle {position:relative; margin:0 0 2px 0; padding:0px 0 0 0; font-size:18px; font-style:bold; font-family:Verdana; width:220px; height:20px; text-align:right; border-top:10px solid #F8C301; }
+#sidebar .sidebartitle div{margin-left:10px; top:-16px; position:relative; right:0; margin-bottom:2px;}
+#sidebar .sidebartitle div img {border:0px; margin:0px; padding:0px;}
+#sidebar ul, #sidebar ul ol {margin: 0; padding: 0;}
+#sidebar ul li {list-style-type: none; list-style-image: none; margin-bottom: 1px; *margin-bottom: -1px;}
+
+#suggestions {width:250px; top: 5px; left: 1008px; display: none;}
+
+.categories_menu {padding:30px 0 10px 10px; margin-top:100px; position:relative; width:220px; overflow: hidden; background: #FFFFFF url('/wp-content/themes/infoescola5.0/images/sidebar-icons.gif') top left no-repeat;}
+.categories_menu li {padding:0px; height:30px; margin:0px; width:220px; overflow:hidden;}
+.categories_menu li img {float:left;left:3px;position:relative;margin:0px;padding:0;}
+.categories_menu li a {position:absolute; left:0px; margin:0px; padding:0 0 0 10px; width:220px; display:block; font-family:Verdana; font-size:14px; line-height:30px; font-weight: bold; color: #fff; background:#1E483C; height:30px; float:right; text-decoration:none; }
+
+.categories_menu ul a {}
+.categories_menu li:hover>a{text-decoration:none}
+
+.categories_menu a:hover{text-decoration:none;}
+
+.form-label {float:left; width: 40%; border:0px; text-align: right;}
+.form-input {float:right;  width: 50%; border:0px; text-align: left;}
+
+#content {font-size: 1.2em; }
+
+.widecolumn .entry p {font-size: 1.05em; }
+
+.narrowcolumn a, .widecolumn a {text-decoration: none; color: #398671; text-decoration: underline;}
+.narrowcolumn a:hover, .widecolumn a:hover {text-decoration: underline; color: #1E483C;}
+.narrowcolumn .entry, .widecolumn .entry {line-height: 1.4em;}
+
+.widecolumn {line-height: 1.6em; }
+
+.narrowcolumn .postmetadata {padding:5px; border-top: 1px solid #333; border-bottom: 1px solid #333; font-size:10px; color: #333; margin-top:10px; width: 722px;}
+.narrowcolumn .postmetadata a {color: #000; text-decoration: none;}
+.narrowcolumn .postmetadata a:hover {color: #000; text-decoration: underline;}
+
+.narrowcolumn .postmetadata_options {text-align: right;}
+.narrowcolumn .postmetadata_options img {vertical-align: bottom; border:0;}
+.narrowcolumn .postmetadata_options a {text-decoration: none; color: #000;}
+
+.thread-alt {background-color: #f8f8f8;}
+.thread-even {background-color: white; }
+.depth-1 {border: 1px solid #ddd;}
+.even, .alt {border-left: 1px solid #ddd;}
+
+small {font-family: Arial, Helvetica, Sans-Serif; font-size: 0.9em; line-height: 1.5em; }
+h1, h2, h3, h4, h5, h6 {font-family: 'Trebuchet MS', 'Lucida Grande', Verdana, Arial, Sans-Serif; font-weight: bold; }
+h1 {font-size: 2em; text-align: left; }
+#headerimg .description {font-size: 1.2em; text-align: center; }
+h2 {font-size: 1.6em;}
+h2.pagetitle {font-size: 1.6em; }
+h3 {font-size: 1.3em;}
+h1, h1 a, h1 a:hover, h1 a:visited, #headerimg .description {text-decoration: none !important; color: #333 !important; }
+h2, h2 a, h2 a:visited, h3, h3 a, h3 a:visited, h4, h4 a, h4 a:visited, h5, h5 a, h5 a:visited, h6, h6 a, h6 a:visited {color: #333 !important; text-decoration: none !important;}
+h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, h4, h4 a, h4 a:hover, h4 a:visited, h5, h5 a, h5 a:hover, h5 a:visited, h6, h6 a, h6 a:hover, h6 a:visited, #sidebar h2, #wp-calendar caption, cite {text-decoration: none !important;}
+.commentlist li, #commentform input, #commentform textarea {font: 0.9em 'Lucida Grande', Verdana, Arial, Sans-Serif;}
+.commentlist li ul li {font-size: 1em;}
+.commentlist li .avatar {float: right; border: 1px solid #eee; padding: 2px; background: #fff;}
+.commentlist cite, .commentlist cite a {font-weight: bold; font-style: normal; font-size: 1.1em; text-decoration: none; color: #000;}
+.commentlist p {font-weight: normal; line-height: 1.5em; text-transform: none;}
+#commentform p {font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;}
+.commentmetadata {font-weight: normal;}
+small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, blockquote, strike {color: #777;}
+code {font: 1.1em 'Courier New', Courier, Fixed;}
+acronym, abbr, span.caps {font-size: 0.9em; letter-spacing: .07em;}
+
+/* Begin Category Listings */
+.categorypage ul {list-style: square;}
+.categorypage ul li {margin-bottom:3px;}
+.categorypage ul li a {text-decoration: none; color: #000;}
+.categorypage ul li a:hover {text-decoration: underline; color: #132F27;}
+.categorypage .breadcrumb {font-size:14px; margin-top:4px;}
+/* End Category Listings */
+
+/* Begin Pages */
+.page ul {list-style: square;}
+.page ul li {margin-bottom:3px;}
+/*.page ul li a {text-decoration: none; color: #000;}*/
+.page ul li a:hover {text-decoration: underline; color: #132F27;}
+/* End Pages */
+
+/* Begin Article Page */
+.articlepage .author-link {font-weight: bold; text-decoration: none; color: #1E483C;}
+.articlepage .author-link:hover {text-decoration: underline;}
+.articlepage .breadcrumb {font-size:14px; margin-top:4px;}
+.articlepage .posttags {background-color: #78C7B1; border-top:2px solid #1E483C; border-bottom:2px solid #1E483C; width:100%; padding:4px; text-align: left;}
+.articlepage .posttags div {padding:2px 2px 2px 8px; width:100%;}
+.articlepage .posttags a {color: #132F27;}
+/* End Article Page */
+
+/* Begin Structure */
+.narrowcolumn {float: right; padding: 0 25px 20px 25px; margin: 0px 0 0; width: 732px;}
+.widecolumn {float: left; padding: 0 25px 20px 25px; margin: 0px 0 0; width: 952px;}
+.post {margin: 0; }
+.post hr {display: block;}
+.widecolumn .post {margin: 0;}
+.widecolumn .smallattachment {text-align: center; float: left; width: 128px; margin: 5px 5px 5px 0px;}
+.widecolumn .attachment {text-align: center; margin: 5px 0px;}
+.postmetadata {clear: both;}
+.clear {clear: both;}
+/* End Structure */
+
+
+/*	Begin Headers */
+h1 {padding: 0; margin: 5px 0 0 0;}
+h2 {margin: 5px 0 5px 0;}
+h2.pagetitle {margin-top: 30px; text-align: center;}
+h3 {padding: 0; margin: 0px 0 0;}
+h3.comments {padding: 0; margin: 10px 0 10px 0;}
+h4 {margin: 0; padding: 0;}
+h5 {margin: 0; padding: 0;}
+h6 {margin: 0; padding: 0;}
+/* End Headers */
+
+
+/* Begin Images */
+p img {padding: 0; max-width: 100%;}
+img.centered {display: block; margin-left: auto; margin-right: auto; }
+img.alignright {padding: 4px; margin: 0 0 2px 7px;display: inline;}
+img.alignleft {padding: 4px; margin: 0 7px 2px 0; display: inline;}
+.alignright {float: right;}
+.alignleft {float: left;}
+/* End Images */
+
+
+/* Begin Form Elements */
+.entry form {text-align:center;}
+#commentform input {width: 170px; padding: 2px; margin: 5px 5px 1px 0;}
+#commentform {margin: 5px 10px 0 0;}
+#commentform textarea {width: 100%; padding: 2px;}
+#respond:after {content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+#commentform #submit {margin: 0 0 5px auto; float: right;}
+/* End Form Elements */
+
+
+/* Begin Comments*/
+.alt {margin: 0; padding: 10px;}
+.commentlist {padding: 0; }	
+.commentlist li {margin: 15px 0 10px; padding: 5px 5px 10px 10px; list-style: none;}
+.commentlist li ul li { margin-right: -5px; margin-left: 10px;}
+.commentlist p {margin: 10px 5px 10px 0;}
+.children { padding: 0; }
+#commentform p {margin: 5px 0;}
+.nocomments {text-align: center; margin: 0; padding: 0;}
+.commentmetadata {margin: 0; display: block;}
+/* End Comments */
+
+
+/* Begin Various Tags & Classes */
+acronym, abbr, span.caps {cursor: help;}
+acronym, abbr {border-bottom: 1px dashed #999;}
+blockquote {margin: 15px 30px 0 10px; padding-left: 20px; border-left: 5px solid #ddd;}
+blockquote cite {margin: 5px 0 0; display: block;}
+.center {text-align: center;}
+.hidden {display: none;}
+hr {display: none;}
+a img {border: none;}
+/* End Various Tags & Classes*/
+
+
+/* Captions */
+.aligncenter, div.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+.wp-caption {border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px;}
+.wp-caption img {margin: 0; padding: 0; border: 0 none;}
+.wp-caption p.wp-caption-text {font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0}
+/* End captions */
+
+/* Begin Index */
+#index_boxleft {margin-top:10px; float: left; width: 390px; margin-right: 3px;}
+#index_boxright {margin-top:10px; float: right; width: 336px; margin-left: 3px;}
+#index_boxleft h3, #index_boxright h3 {font-size:1.6em;}
+#index_boxleft h4 {font-size: 1.2em;}
+#index_cursos {margin-bottom:5px; width: 100%;}
+#index_cursos img {float: left; margin: 0 5px 3px 0px; border:1px solid #333;}
+#index_cursos ul {list-style: none; margin: 5px 0 0 0;}
+#index_cursos ul li a {text-decoration: none; color: #000;}
+
+.index_destaques {margin-bottom:8px;}
+.index_destaques p {margin:3px 0 6px 0;}
+.index_destaques ul {list-style: none; margin: 0 0 0 8px; padding: 0;}
+.index_destaque_imagem {margin:2px 0 2px 0; border:0px;}
+#index_banner300x250 {text-align:center; width: 100%; margin:10px 0 10px 0;}
+/* End Index */
+
+/* Begin Categories */
+#category_boxleft {margin-top:10px; float: left; width: 390px; margin-right: 3px;}
+#category_boxright {margin-top:10px; float: right; width: 336px; margin-left: 3px;}
+#category_boxleft h3, #index_boxright h3 {font-size:1.6em;}
+#category_boxleft h4 {font-size: 1.2em;}
+.category_destaques {margin-bottom:8px;}
+.category_destaques p {margin:3px 0 6px 0;}
+.category_destaques ul {list-style: none; margin: 0 0 0 8px; padding: 0;}
+.category_destaque_imagem {margin:2px 0 2px 0; border:0px;}
+#category_banner300x250 {text-align:center; width: 100%; margin:10px 0 10px 0;}
+#category_newsletters h3 {font-size:1.2em; margin:0; padding:0;}
+#category_newsletters {text-align:center;}
+/* End Categories */
+
+/* Begin Newsletters */
+#index_newsletters {text-align:center;}
+#index_newsletters h3 {font-size:1.2em; margin:0; padding:0;}
+.newsletter_signup {background: url("/wp-content/themes/infoescola5.0/images/signup.gif") top left no-repeat; width:82px; height:22px; margin: 0; padding: 0; border:0; text-indent:1000px; cursor: pointer; overflow: hidden;}
+.newsletter_remove {background: url("/wp-content/themes/infoescola5.0/images/remove.gif") top left no-repeat; width:82px; height:22px; margin: 0; padding: 0; border:0; text-indent:1000px; cursor: pointer; overflow: hidden;}
+/* End Newsletters */
+
+/* Begin Fichas-Livros */
+#related_product {width:100%; background-color: #C9E9E0; border:1px solid #1E483C; position:relative;}
+#related_product_img {border:1px solid #000; float: left;}
+#related_product_titulo {font-size:1.5em;color:#000;margin-bottom:15px; z-index:99; position: relative;}
+#related_product_icon_livro {position: absolute; top:-20px; right: 10px;}
+#related_product_icon_dvd {position: absolute; top:-20px; right: 10px;}
+#related_product_div_caracteristicas {cursor:pointer;}
+.product_button {border:0px;margin-right:15px;}
+/* End Fichas-Livros */
+
+/* Begin Search */
+#busca_results_info {width: 722px; background-color: #C9E9E0; padding: 5px; color: #000;}
+/* End Search */
+
+/* Begin Custom Ads */
+#ads250x650 {position: absolute; top: 5px; left: 1008px; display: none;}
+/* End Custom Ads */
+
+/* Begin Set Home Page */
+#div_sethomepage {width:100%; margin-top:50px;}
+#div_sethomepage a {font-size:24px; line-height:26px; text-decoration: none; color: #000; }
+/* End Set Home Page */
+
+/* partes especiais de artigos */
+
+/* box de classificação cientifica */
+.infobox_plantae {margin: 10px; width: 316px;}
+.infobox_plantae_title {width:100%; background: url('/wp-content/themes/infoescola5.0/images/infobox_plantae_top.gif') top right no-repeat; height:25px; line-height:25px; text-align: center; font-weight: bold; font-size:16px; font-family: Verdana; color: #FFF;}
+.infobox_plantae_img {border: 1px solid #003300; margin: 5px;}
+.infobox_plantae_classification {background: #003300; font-family: Verdana; font-size: 14px; text-align: center; color: #FFF; height: 25px; line-height: 25px;}
+.infobox_plantae_content {background: url('/wp-content/themes/infoescola5.0/images/infobox_plantae_bottom.jpg') bottom right no-repeat #85F56B; border-left: 2px solid #003300; border-right: 2px solid #003300; padding-bottom: 55px; text-align: center;}
+.infobox_plantae_text {font-size: 12px; padding: 0 10px 5px 10px; text-align: left;}
+
+.infobox_fungi {margin: 10px; width: 316px;}
+.infobox_fungi_title {width:100%; background: url('/wp-content/themes/infoescola5.0/images/infobox_fungi_top.gif') top right no-repeat; height:25px; line-height:25px; text-align: center; font-weight: bold; font-size:16px; font-family: Verdana; color: #FFF;}
+.infobox_fungi_img {border: 1px solid #003300; margin: 5px;}
+.infobox_fungi_classification {background: #990000; font-family: Verdana; font-size: 14px; text-align: center; color: #FFF; height: 25px; line-height: 25px;}
+.infobox_fungi_content {background: url('/wp-content/themes/infoescola5.0/images/infobox_fungi_bottom.jpg') bottom right no-repeat #D74600; border: 2px solid #990000; border-top:0px; padding-bottom: 55px; text-align: center;}
+.infobox_fungi_text {font-size: 12px; padding: 0 10px 5px 10px; text-align: left;}
+
+.infobox_fish {margin: 10px; width: 316px;}
+.infobox_fish_title {width:100%; background: url('/wp-content/themes/infoescola5.0/images/infobox_fish_top.gif') top right no-repeat; height:25px; line-height:25px; text-align: center; font-weight: bold; font-size:16px; font-family: Verdana; color: #FFF;}
+.infobox_fish_img {border: 1px solid #003300; margin: 5px;}
+.infobox_fish_classification {background: #000066; font-family: Verdana; font-size: 14px; text-align: center; color: #FFF; height: 25px; line-height: 25px;}
+.infobox_fish_content {background: url('/wp-content/themes/infoescola5.0/images/infobox_fish_bottom.jpg') bottom right no-repeat #0463C3; border: 2px solid #000066; border-top:0px; padding-bottom: 55px; text-align: center;}
+.infobox_fish_text {font-size: 12px; padding: 0 10px 5px 10px; text-align: left;}
+.infobox_fish_text a {color: #fff;}
+
+.infobox_animalia {background: #FFA953; padding: 5px; margin: 5px; border:2px solid #6C3600;}
+
+/* box de informações de doenças */
+.infobox_doencas {margin: 10px; width: 316px;}
+.infobox_doencas_title {width:100%; background: url('/wp-content/themes/infoescola5.0/images/infobox_doencas_top.gif') top right no-repeat; height:25px; line-height:25px; text-align: center; font-weight: bold; font-size:16px; font-family: Verdana; color: #FFF;}
+.infobox_doencas_img {border: 1px solid #333; margin: 5px;}
+.infobox_doencas_informationlabel {background: #333; font-family: Verdana; font-size: 14px; text-align: center; color: #FFF; height: 25px; line-height: 25px;}
+.infobox_doencas_content {background: url('/wp-content/themes/infoescola5.0/images/infobox_doencas_bottom.jpg') bottom right no-repeat #777; border: 2px solid #333; border-top:0px; padding-bottom: 55px; text-align: center;}
+.infobox_doencas_text {font-size: 12px; padding: 0 10px 5px 10px; text-align:left;}

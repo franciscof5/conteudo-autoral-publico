@@ -1,0 +1,162 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+
+<script>
+	<name>Sculpt</name>
+	<author>Peter Eastman (peastman@users.sourceforge.net)</author>
+	<version>1.7</version>
+	<date>04/03/2004</date>
+	<description>
+This script takes a closed curve and creates a 3D surface which has that curve as its profile.
+It was inspired by the Teddy modelling program by Takeo Igarashi.
+This is intended to be a prototype for a new modelling tool in Art of Illusion.
+    </description>
+</script>
+*/
+
+// Given a triangle mesh, this function determines which vertices are on the boundary.
+
+findBoundaryVerts(mesh)
+{
+  vert = mesh.getVertices();
+  edge = mesh.getEdges();
+  onBoundary = new boolean [vert.length];
+  for (i = 0; i < edge.length; i++)
+    if (edge[i].f2 == -1)
+      onBoundary[edge[i].v1] = onBoundary[edge[i].v2] = true;
+  return onBoundary;
+}
+
+// This function calculates the squared distance between a point and an edge.
+
+vertEdgeDistance2(point, end1, end2)
+{
+  v = end2.minus(end1);
+  len = v.length();
+  if (len < 1e-10)
+    return point.distance2(end1);
+  v.scale(1.0/len);
+  v1 = point.minus(end1);
+  dot = v.dot(v1);
+  if (dot > len)
+    return end2.distance2(point);
+  if (dot < 0.0)
+    return end1.distance2(point);
+  v1.subtract(v.times(v.dot(v1)));
+  return v1.length2();
+}
+
+// Given a distance at every vertex, find the maximum distance in the local neighborhood
+// of each vertex.
+
+findMaxLocalDistance(dist, edge)
+{
+  maxDist = new double [dist.length];
+  for (i = 0; i < maxDist.length; i++)
+    maxDist[i] = dist[i];
+  for (i = 0; i < edge.length; i++)
+  {
+    if (dist[edge[i].v1] > maxDist[edge[i].v2])
+      maxDist[edge[i].v2] = dist[edge[i].v1];
+    if (dist[edge[i].v2] > maxDist[edge[i].v1])
+      maxDist[edge[i].v1] = dist[edge[i].v2];
+  }
+  return maxDist;
+}
+
+// Get the curve to sculpt.
+
+scene = window.getScene();
+sel = scene.getSelection();
+if (sel.length != 1 || !(scene.getObject(sel[0]).object instanceof Curve) || !scene.getObject(sel[0]).object.isClosed())
+{
+  new MessageDialog(window, "Please select a single closed curve to sculpt.");
+  return;
+}
+info = scene.getObject(sel[0]);
+
+// Convert it to a triangle mesh and subdivide it twice.
+
+mesh = info.object.convertToTriangleMesh(0.1);
+tex = scene.getDefaultTexture();
+mesh.setTexture(tex, tex.getDefaultMapping());
+mesh = TriangleMesh.subdivideEdges(mesh, null, Double.MAX_VALUE);
+mesh = TriangleMesh.subdivideEdges(mesh, null, Double.MAX_VALUE);
+
+// There may still be some interior edges which connect two boundary vertices.
+// Subdivide them.
+
+onBoundary = findBoundaryVerts(mesh);
+edge = mesh.getEdges();
+split = new boolean [edge.length];
+for (i = 0; i < edge.length; i++)
+  split[i] = (edge[i].f2 != -1 && onBoundary[edge[i].v1] && onBoundary[edge[i].v2]);
+mesh = TriangleMesh.subdivideLinear(mesh, split);
+
+// Calculate the squared distance from every interior vertex to the boundary.
+
+onBoundary = findBoundaryVerts(mesh);
+vert = mesh.getVertices();
+edge = mesh.getEdges();
+dist2 = new double [vert.length];
+for (i = 0; i < vert.length; i++)
+{
+  if (onBoundary[i])
+    continue;
+  dist2[i] = Double.MAX_VALUE;
+  for (j = 0; j < edge.length; j++)
+    if (edge[j].f2 == -1)
+    {
+      d2 = vertEdgeDistance2(vert[i].r, vert[edge[j].v1].r, vert[edge[j].v2].r);
+      if (d2 < dist2[i])
+        dist2[i] = d2;
+    }
+}
+
+// For every vertex, find the vertex in its neighborhood which is farthest from
+// the boundary.  This gives the "local radius".
+
+maxDist2 = findMaxLocalDistance(dist2, edge);
+//maxDist2 = findMaxLocalDistance(maxDist2, edge);
+
+// Create a new mesh by "doubling" every face and interior vertex.
+
+pairIndex = new int [vert.length];
+numVert = vert.length;
+for (i = 0; i < onBoundary.length; i++)
+  if (!onBoundary[i])
+    pairIndex[i] = numVert++;
+face = mesh.getFaces();
+newFace = new int [face.length*2][3];
+for (i = 0; i < face.length; i++)
+{
+  j = face.length+i;
+  newFace[i][0] = face[i].v1;
+  newFace[i][1] = face[i].v2;
+  newFace[i][2] = face[i].v3;
+  newFace[j][0] = (onBoundary[face[i].v1] ? face[i].v1 : pairIndex[face[i].v1]);
+  newFace[j][1] = (onBoundary[face[i].v3] ? face[i].v3 : pairIndex[face[i].v3]);
+  newFace[j][2] = (onBoundary[face[i].v2] ? face[i].v2 : pairIndex[face[i].v2]);
+}
+
+// Construct the new vertices, offsetting every interior vertex along the normal.
+
+norm = mesh.getNormals();
+newVert = new TriangleMesh.Vertex [numVert];
+for (i = 0; i < vert.length; i++)
+{
+  newVert[i] = vert[i];
+  if (!onBoundary[i])
+  {
+    newVert[pairIndex[i]] = new TriangleMesh.Vertex(mesh, vert[i]);
+    displace = Math.sqrt(2.0*Math.sqrt(dist2[i]*maxDist2[i])-dist2[i]);
+    newVert[i].r.add(norm[i].times(displace));
+    newVert[pairIndex[i]].r.subtract(norm[i].times(displace));
+  }
+}
+
+// Add the mesh to the window.
+
+mesh = new TriangleMesh(newVert, newFace);
+window.addObject(mesh, info.coords.duplicate(), "Sculpted "+info.name, null);
+window.setSelection(scene.getNumObjects()-1);

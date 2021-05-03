@@ -1,0 +1,47 @@
+ClanMod 
+O que é o ClanMod?
+
+Clanmod é uma ferramenta para ajudar na administração do servidor, sem precisar usar quase nenhum comando no console.
+
+Como faço para instalar o ClanMod?
+
+Basta descompactar os arquivos do ClaMod para o diretório de addons e adicionar a seguintea linhas de comando no "plugins.ini" do diretório do metamod.
+
+win32 addons\clanmod\dlls\clanmod_mm.dll
+
+
+E como eu adiciono Admins no ClanMod?
+
+Você tem adicionar o seguinte no arquivo "cm_admins.cfg":
+
+cm_admin "seu_nick" "sua_senha" "ABCDEKMNOPQRSTUVWklors"
+
+Depois, se não existir, crie um arquivo chamado clanmodpass.cfg no diretório do cstrike e adicione o seguinte nele:
+
+setinfo "_cm_pw" "sua_senha"
+
+E não se esqueça de adicionar no atalho do cs a seguinte linha: +exec clanmodpass.cfg
+
+
+Entendendo um pouco sobre alguns arquivos do ClanMod.
+
+Os arquivos estão localizados no seguinte diretório: <mod>/addons/clanmod
+
+clanmod.cfg: este arquivo que contem as configurações básicas do ClanMod e será executado automaticamente. 
+titles.cfg: você poderá mudar a maiorias das mensagens que envolvem o comando cm_string. 
+cm_admins.cfg: tem a configuração de nível de acesso dos usuários. 
+cm_menus.cfg: tem a possibilidade de configurar as mensagens que envolvem o comando cm_cmd. 
+cm_maps.cfg: pode personalizar as mensagens que envolvem o comando cm_map, como na hora de votar. 
+cm_badwords.cfg: você escolhe as palavras que não podem ser ditas e também mostra outra no lugar. 
+cm_aliases.cfg: aqui você define todos os alais (atalhos) para os comandos. 
+cm_cvars.cfg: define os valores padrões de alguns comandos. 
+addons/: pasta para colocar os plugins do ClanMod. 
+clans/: pasta destinada a arquivos de configurações dos clans. 
+conmotd.txt: Displayed in the console when players connect. 
+rules.txt: quando você conecta aparece algumas mensagens no console. 
+adminhelp.txt: apos aparecer o texto do rules.txt aparece mensagens especificas de help pro admin. 
+playerhelp.txt: apos aparecer o texto do rules.txt aparece mensagens especificas de help pro jogador. 
+banlist.txt: contem o log dos banidos gerados pelo ClanMod. 
+
+ 
+ 

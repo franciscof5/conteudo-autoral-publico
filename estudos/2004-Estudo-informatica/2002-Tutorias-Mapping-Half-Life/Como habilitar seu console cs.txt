@@ -1,0 +1,9 @@
+Como habilitar seu console no cs
+
+Como habilitar o console no seu CS
+
+Bom.... o console no counter-strike é muito importante, com ele você pode
+fazer coisas muito úteis como: kickar alguém, fazer binds, votar em mapas,
+ver lista de jogadores, mapas, escolher funções do jogo... enfim é algo muito útil e necessário.
+Para saber se você realmente está com o seu console ativado, vá até a pasta do seu jogo:
+..../half-life/hl.exe -console -game cstrike.

@@ -1,0 +1,398 @@
+/*** STYLES FOR RECOMMENDATIONS WIDGETS ***/
+
+.loomia_recommendations {
+	margin: 0;
+	padding: 0;
+}
+
+.loomia_recommendations ul {
+	padding: 0;
+	margin: 0;
+	list-style: none outside;
+}
+
+.loomia_recommendations ul li {
+    position: relative; 
+    margin-bottom: .5em;
+    list-style: none outside;
+}
+
+/* auto clear li elements */
+.loomia_recommendations ul li:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+.loomia_heading {
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.loomia_recommendations h4 {
+	margin-bottom: .5em;
+}
+
+.loomia_recommendations h5 {
+	font-size: 1em;
+	margin-bottom: .5em;
+	background: inherit;
+        margin-top: 1em;
+}
+
+.loomia_itemimg {
+	display: block;
+	float: left;
+	margin-right: 8px;
+}
+
+.loomia_itemimg img {
+	max-width: 50px;
+	max-height: 80px;
+	vertical-align: top;
+}
+
+.loomia_itemimg a img {
+	border: 0;
+}
+
+span.loomia_itemid {
+    display: none;
+}
+
+/* Styles for social site widget */
+.loomia_socialsite {
+    position: relative;
+    border: 2px solid #ccc;
+    padding: 8px;
+    background: #fff;
+    margin: 10px 8px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+}
+* html .loomia_socialsite {
+    height: 1%; /* Fix for IE6 disappearing recs */
+}
+.loomia_socialuser {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.loomia_socialuser #photo_tip {
+    position: absolute;
+    top: -15px;
+    left: 25px;
+    z-index: 100;
+}
+
+.loomia_socialsite .seenthis_friends {}
+
+.loomia_userphoto,
+.loomia_socialsite .seenthis_friends img {
+    border: 1px solid #ccc;
+    padding: 1px;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    margin: 0 1px 1px 0;
+}
+.loomia_userphoto {
+    float: left;
+}
+.loomia_usermessage {
+    margin-left: 60px;
+    padding-right: 10px;
+    font-size: 11px !important;
+    height: 1%; /* IE Hack to fix disappearing text */
+}
+
+.loomia_socialitems {
+    font-size: 11px;
+    margin-top: 0;
+    border-top: 1px solid #ccc;
+    padding-top: 8px;
+}
+
+.loomia_socialitems ul li {
+    height: 1%; /* IE Hack to fix disappearing social annotations */	
+}
+
+.loomia_socialitems .loomia_itemtitle { font-weight: bold; }
+
+.loomia_socialann {
+    display: block;
+    margin-top: 3px;
+    font-weight: normal;
+    color: #666;
+    position: relative;
+    font-size: 93%;
+    background: url('http://static-cache.loomia.com/images/arrow-rt-sm.gif') 0 0 no-repeat;
+    padding-left: 8px;
+}
+    .loomia_socialann .socialann_label { 
+	float: left; 
+	margin-right: 6px;
+	vertical-align: middle;
+    }
+    .loomia_socialann em {
+        font-style: normal;
+    }
+.loomia_groupann {
+    display: inline;
+    position: relative;
+    white-space: nowrap;
+    margin-right: .5em; /* for IE which ignores whitespace on the right */
+}
+
+.loomia_recommendations .loomia_summary, 
+.loomia_recommendations .group_hover,
+.loomia_socialuser #photo_tip {
+    font-size: 11px;
+    position: absolute;
+    background: #fef49c;
+    border: 1px solid #bca902;
+    padding: .5em;
+    color: #444;
+    white-space: normal;
+    z-index: 100;
+    -webkit-box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.25)
+}
+.loomia_recommendations .loomia_summary {
+    bottom: 100%;
+    left: 10px;
+    overflow: hidden;
+    font-weight: normal;
+}
+.loomia_recommendations .group_hover {
+    display: none;
+    bottom: 100%;
+    left: -50px;
+    width: 150px;
+}
+.loomia_recommendations .group_hover_mask {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    z-index: 99;
+}
+.loomia_recommendations .group_hover ol,
+.loomia_recommendations .ann_hover ol {
+    margin: 0;
+    padding: 0 2em;
+}
+.loomia_recommendations .group_hover ol li,
+.loomia_recommendations .ann_hover ol li { 
+    border: 0;
+    margin: .5em 0;
+    padding: 0;
+    background: none;
+    list-style-background: none;
+    list-style: outside; 
+    list-style-type: disc;
+}
+.loomia_recommendations .group_hover ol li em { font-weight: normal } 
+
+
+.loomia_login {
+    font-family: Arial, Helvetica, sans;
+    color: #444;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+}
+	.loomia_login .loomia_socialuser {
+		background: url('http://static-cache.loomia.com/images/social/bg-socialsite-cta-yellow.gif') top left repeat-x;
+		padding: 8px 4px 4px 8px;
+	}
+        .loomia_login .login_header {
+		background: #fff;
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 8px;		
+	}
+	.loomia_login .login_new { 
+		color: #900; 
+		font-weight: bold;
+	}
+	.loomia_login .loomia_usermessage a {
+	    text-decoration: none;
+	    border-bottom: 1px dotted;
+	}
+	.loomia_login .loomia_usermessage a:hover {
+	    border-bottom: 1px solid;
+	}
+	.loomia_login a img {
+	    border: 0;
+	    margin-top: 3px;
+	}
+	.loomia_login .login_button {
+		background: url('http://static-cache.loomia.com/images/social/btn-connect-to-fb.gif') top left no-repeat;
+	}
+	.loomia_login .login_button a {
+	    display: block;
+	    height: 15px;
+	    margin: 5px 0;
+	    padding: 0;
+	    border: 0;
+	}
+        .teaser_recs { position: relative; }
+	.teaser_recs .teaser_recs_preview {
+	    z-index: 50;
+            position: absolute;
+            top: 0;
+	    right: 0;
+	    background: url('http://static-cache.loomia.com/images/social/icn-preview.gif') top right no-repeat;
+	    height: 59px;
+	    width: 67px;
+	}
+	* html 	.teaser_recs .teaser_recs_preview {
+	    right: 25px;
+	}
+.loomia_recommendations .controls {
+	color: #666;
+}
+
+
+
+.loomia_share {
+    width: 200px;
+    height: 26px;
+    background: url('http://static-cache.loomia.com/images/social/btn-sharethis-bg.gif') top left no-repeat;
+    padding: 3px 6px;
+    margin: 10px 0;
+    text-align: center;
+}
+.loomia_share a {
+    display: block;
+    font-family:"lucida grande", tahoma, verdana, arial, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    padding-top: 1px;
+}
+.loomia_share a:link, .loomia_share a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+.loomia_share a:hover, .loomia_share a:active {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.loomia_socfooter {
+    margin-top: 8px;
+    border-top: 1px solid #ccc;
+    height: 22px;
+    position: relative;
+}
+    .loomia_socfooter .controls { 
+	position: absolute; 
+	bottom: 2px;
+	left: 0;
+    }
+    .loomia_socfooter .loomia_seenthis_logo { 
+	position: absolute;
+	bottom: 0;
+	right: 0;
+    }
+
+#loomia_whatsthis {
+    border: 1px solid #DECEB6;
+    background: #FEF8EE;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    top: 70px;
+    margin-right: 5px;
+    -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5)
+}
+    #loomia_whatsthis .loomia_headerbar {
+	background: #FDE7C7;
+	padding: 3px; 
+	margin: -5px; 
+	margin-bottom: 5px;
+    }
+    #loomia_whatsthis p { margin-top: 16px; }
+
+.loomia_recommendations .clear { clear: both; }
+.loomia_recommendations .nowrap { white-space: nowrap }
+
+.loomia_ad_wrapper {
+    clear:both; 
+    padding-top: 4px; 
+    display: table;
+    vertical-align: middle;
+}
+.loomia_ad_caption {
+    display: table-cell;
+    font-size: 9px; 
+    font-weight: normal; 
+    padding-right: 5px; 
+    color: #999; 
+    vertical-align: middle
+}
+
+#loomia_ad {
+    display: table-cell;
+    vertical-align: middle;
+}
+/* IE6 specific settings */
+* html .loomia_ad_wrapper {
+    display: block;
+    height: 1%; 
+}
+* html .loomia_ad_caption,
+* html #loomia_ad {
+    display: block;
+    float: none;
+}
+
+/************* PUBLISHER SPECIFIC OVERRIDES **************/
+
+/*** Override share this button styling for WSJ ***/
+.loomia_pub_970 .loomia_socialsite { 
+    overflow: hidden;
+    margin-left: 0;
+}
+.loomia_pub_970 .loomia_share {
+    width: auto;
+    height: auto;
+    background: #4F6FAA;
+    border-top: 1px solid #ADCEEF;
+    border-left: 1px solid #ADCEEF;
+    border-right: 1px solid #122E70;
+    border-bottom: 1px solid #122E70;
+}
+.loomia_pub_970 .loomia_share a { 
+    font-family: Arial, Helvetica, sans;
+    font-size: 11px; 
+}
+.loomia_pub_970 .loomia_login .login_button {
+	background: url('http://static-cache.loomia.com/images/social/btn-connect-to-fb-narrow.gif') top left no-repeat;
+}
+.loomia_pub_970 .loomia_login .login_button a {
+	width: 110px;
+	height: 28px;
+}
+.loomia_pub_970 .loomia_groupann {
+	white-space: normal;
+}
+
+.loomia_pub_970 .loomia_ad_wrapper {
+    display: block;
+    vertical-align: middle;
+}
+
+.loomia_pub_970 .loomia_ad_caption {
+    display: block;
+    float: left;
+}
+
+.loomia_pub_970 #loomia_ad {
+    display: block;
+    float: left;
+}

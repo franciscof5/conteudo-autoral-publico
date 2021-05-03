@@ -1,0 +1,656 @@
+function FDCPClient()
+{
+	this.cpHost = "cache-01.cleanprint.net";
+	this.divid="2486";
+	this.refid="2361";
+	this.rt = "i";
+	this.cpstatus = false;
+	this.ptstatus = "y";
+	this.printSpecId = 0;
+	this.fdDebug = false;
+	this.cpc = null;
+	this.blkwidth=0;
+	this.xpathLib = "";
+	this.shost = "formatdynamics.com";
+	this.hosted = "customer";
+	this.blockThreshold = 500;
+	this.trackerHost = "cleanprint.net";
+
+	this.modes = {unset:0, printLink:1, filePrint:2, printerFriendlyViewer:3};
+	this.mode = 0;//modes.unset
+	this.resetMode = function(){this.mode = this.modes.unset;};
+	this.cookie_flags = "pv";
+	this.category = "UNKNOWN";
+	this.site = "UNKNOWN";
+
+	// moved from the printtracker FormatDynamicsPT object
+	this.pthosts = "formatdynamics.com,cleanprint.net,formatdyn.hs.llnwd.net";
+  	this.autoRefreshCSS = "true";
+  	this.autoRefreshTime = "30000";
+  
+	// quantcast tracking: n => turn off qc tracking, anything else leaves it on
+  	this.enableQC = "y";
+
+	// templatetest var to pull templates from a directory
+	this.templateTest = true;
+	
+	// 's' for standalone and 'c' for combined.  A standalone install turns off registration for
+	// PrintTracker events
+	this.insType = "c";
+
+	this.colre = new RegExp(":", "g");
+	this.comre = new RegExp(",", "g");
+
+  	this.isPtCss=function(content) {
+    var phosts = this.pthosts.split(',');
+    for(var i = 0; i < phosts.length; i++) {
+      if(content.indexOf(phosts[i]) != -1)
+        return true;
+    }
+    return false;
+  }
+	
+	// templatetest var to pull templates from a directory
+	this.templateTest = false;
+	
+	// 's' for standalone and 'c' for combined.  A standalone install turns off registration for
+	// PrintTracker events
+	this.insType = "c";
+
+	this.escCom = function(st) {
+		st = new st.constructor(st);
+		st = st.replace(this.colre, "::");
+		st = st.replace(this.comre, ":,");
+		return st;
+	}
+
+	this.getSegment=function () { 
+		var section = "Other";var subsection = "Other";var meta = document.getElementsByTagName("META");try{for(var i=0; i<meta.length; i++){  if(meta[i].getAttribute("name'") == "section"){    section = meta[i].getAttribute("content");  }  else if(meta[i].getAttribute("name") == "subsection"){    subsection = meta[i].getAttribute("content");  }}return this.escCom(section) + "," + this.escCom(subsection);}catch(e){}return section + "," + subsection;
+	}
+	this.getCPViewerId=function(){
+		
+	}
+	this.getPFF = function() { 
+		var u=window.location.href;if(u.indexOf("printMode") > 0){  return "1";}else{  return "0";}
+	}
+
+	this.getVR = function() { 
+		return {};
+	}
+
+	this.onPrint = function(cpdata) { 
+		
+	}
+	
+	this.getBlockThreshold = function() {
+		return this.getCfg('blockThreshold', this.blockThreshold);
+	}
+
+	this.getCfg=function(ckey, cdef) {
+		if(this.cpc != null && typeof this.cpc[ckey] != 'undefined')
+			return this.cpc[ckey];
+		return cdef;
+	}
+
+	this.getTHost=function() {
+		if(this.shost.length > 0 && document.location.protocol == "https:")
+			return this.shost;
+		else
+			return this.cpHost;
+	}
+	this.getTrackerHost=function() {
+		return this.trackerHost;
+	}
+	this.getcpStat=function() { return this.getCfg('cpStatus', this.cpstatus); }
+	this.getptStat=function() { return this.getCfg('ptStatus', this.ptstatus); }
+	this.getDiv=function() { return this.getCfg('divisionId', this.divid); }
+	this.getTmpl=function() { return this.getCfg('templateId', null); }
+	this.getRfmt = function() { return this.getCfg('templateId', this.refid); }  
+	this.getTPath = function() { return this.getCfg('tPath', null); }
+	this.getLPath = function() { return this.getCfg('lPath', null); }
+	this.getTO = function() { return this.getCfg('timeout', 10000); }
+	this.getTemplateTest = function() { return this.getCfg('templateTest', this.templateTest); }
+	this.getXpathLib = function() { return this.getCfg('xpathLib', this.xpathLib); }
+	
+	this.getAutoRefreshCSS = function() { return this.getCfg('autoRefreshCSS', this.autoRefreshCSS); }
+	this.getAutoRefreshTime = function() { return this.getCfg('autoRefreshTime', this.autoRefreshTime); }
+	this.getPtHosts = function() { return this.getCfg('pthosts', this.pthosts); }
+	this.getFDDebug = function() { return this.getCfg('fdDebug', this.fdDebug); }
+	
+	this.getRType= function() {
+		return this.rt;
+	}
+	
+	this.getIframeUrls=function(){
+		
+	}
+	
+	this.onCpLoad = function(){
+		
+	}
+	
+	this.cpServletPath=document.location.protocol + "//" + this.getTHost() + "/cp/psj";
+	
+	this.getCalculatedPrintSpecId = function(){
+			if(window.location.href.indexOf("/article/") < 0){return false;}if(window.location.href.indexOf("printMode") > 0){return false;}var meta=document.getElementsByTagName("META");try{for(var i=0; i<meta.length; i++){  if(meta[i].getAttribute("name") == "section"){    if(meta[i].getAttribute("content") == "Article"){      if(window.location.href.indexOf("printMode") < 0){        return "140";      }      else{        return "141";      }    }  }}}catch(e){}return "140";
+	}
+	this.onBeforeContentSerialization = function(){
+		
+	}
+	this.onAfterContentSerialization = function(){
+		
+	}
+	this.onPrintSpecLoad = function(){
+		
+	}
+	this.onBeforeCleanPrint = function(data){
+		return data;
+	}
+	this.calculateCacheKey = function(){
+		return cacheKey;		
+	}
+	
+	this.onAfterCleanPrint = function(){
+
+		// standard behavior
+		if(this.enableQC == 'y')
+			this.appendQC();
+
+		// customizations
+		
+	}
+
+	this.appendQC = function() {
+	}
+}
+
+function FormatDynamicsPT(client) {
+  this.clnt = client;
+  this.pcol = document.location.protocol + "//";
+  this.cstr = client.getTrackerHost() + "/pt/t/";
+  this.div = "d="+this.clnt.getDiv();
+  this.ua = "&a=" + escape(navigator.appName + " " + navigator.userAgent);
+  this.seg = "&s="+escape(this.clnt.getSegment());
+  this.ustr = "&u="+escape(window.location.href);
+  this.pf = "&p="+this.clnt.getPFF();
+  this.version = "&q=1.1";
+  this.rtype = "&rt="+this.clnt.getRType();
+  this.qstr = this.div+this.ua+this.seg+this.ustr+this.pf+this.version;
+  this.pthosts = this.clnt.getPtHosts();
+  this.autoRefreshCSS = this.clnt.getAutoRefreshCSS();
+  this.autoRefreshTime = this.clnt.getAutoRefreshTime();
+  this.cssRefreshInterval = null;
+  this.rcount = 0;
+  this.ptssfound = false;
+
+  this.getTURL = function() {
+    return this.pcol + this.cstr + (new Date()).getTime() + '?' + this.qstr;
+  }
+
+  this.isPtCss=function(content) {
+    var phosts = this.pthosts.split(',');
+    for(var i = 0; i < phosts.length; i++) {
+      if(content.indexOf(phosts[i]) != -1)
+        return true;
+    }
+    return false;
+  }
+  
+  this.changePrintStyleSheet=function() {
+
+	this.rcount++;
+
+	// Change fdprint stylesheet if found
+	for(i=0;i<document.styleSheets.length;i++) {
+		try {
+			var sheet = document.styleSheets[i];
+			var agent = navigator.userAgent.toLowerCase();
+
+			if((navigator.appName.indexOf("Netscape") !=-1 || agent.indexOf("firefox") !=-1 ||agent.indexOf("safari") !=-1) && this.isPtCss(sheet.cssRules[0].style.content)) {
+				sheet.cssRules[0].style.content = "url("+this.getTURL()+")";
+          		return;
+			}
+			else {
+				if(this.isPtCss(sheet.cssRules[0].style.getPropertyValue('content'))) {
+					if(navigator.appName.indexOf("Opera") !=-1) {
+						sheet.deleteRule(0);
+            		}
+					else if(navigator.appName.indexOf("Konqueror") ==-1) {
+						sheet.cssRules[0].style.setProperty('content', 'url('+this.getTURL()+')', null);
+					}
+					return;
+				}
+			}
+		}
+		catch(err) { }
+	}
+
+	// otherwise insert the stylesheet
+	if(this.rcount == 1) {
+		try {
+			var agent = navigator.userAgent.toLowerCase();
+			if((navigator.appName.indexOf("Netscape") !=-1 || agent.indexOf("firefox") !=-1 ||agent.indexOf("safari") !=-1)) {
+				var s = document.createElement("style");
+				s.type = "text/css";
+				s.rel = "stylesheet";
+				s.media = "print";
+				s.appendChild(document.createTextNode("body:after {content: url(" + this.getTURL() + ")};"));
+				document.getElementsByTagName("head")[0].appendChild(s);
+			}
+		}
+		catch(err) { }
+	}
+	else {
+		formatDynamicsPT.autoRefreshCSS = "false";
+	}
+  }
+
+	this.getFDImage = function() {
+
+		// rtype of 's' is a script-based load and 'i' is an image-based load
+		if(this.clnt.getRType()=='s') {
+			var hs = document.documentElement.getElementsByTagName("head");
+			var h = null;
+
+			if(hs && hs.length > 0) {
+				h = hs[0];
+				var script = document.createElement("script");
+				script.type = 'text/javascript';
+				script.src = this.getTURL() + '&rnd=' + Math.random();
+			}
+		}
+		else {
+			var fdloader = new Image();
+			fdloader.src = this.getTURL();
+		}
+	}
+
+	this.initIE = function()
+	{
+		try {
+			if (navigator.appName.indexOf("Microsoft")!=-1 && parseInt(navigator.appVersion)>=4 && navigator.userAgent.indexOf("Windows") != -1)
+			    window.attachEvent("onbeforeprint", function() { formatDynamicsPT.getFDImage(); } );
+		}
+		catch(e)
+		{}
+	}
+
+	this.initX = function()
+	{
+		try {
+			if(navigator.appName.indexOf("Konqueror") != -1) {
+				formatDynamicsPT.changePrintStyleSheet();
+			}
+			else if (navigator.appName.indexOf("Microsoft") == -1) {
+				formatDynamicsPT.changePrintStyleSheet();
+				formatDynamicsPT.cssRefreshInterval = setInterval("formatDynamicsPT.refreshCSS()", formatDynamicsPT.autoRefreshTime);
+			}
+		}
+		catch(e)
+		{}
+	}
+
+	this.initAll = function() { 
+		try {
+			this.initIE(); 
+			this.initX(); 
+		}
+		catch(e)
+		{}
+	}
+
+	this.refreshCSS = function()
+	{
+		if (formatDynamicsPT.autoRefreshCSS == "true")
+			formatDynamicsPT.changePrintStyleSheet();
+		else
+			clearInterval(formatDynamicsPT.cssRefreshInterval);
+	}
+}
+var FDCPLoader = {
+
+	count: 0,
+	tint: 500,
+	tmax: 10000,
+	tagg: 0,
+	incyc: false,
+	loaded: false,
+	divId: 0,
+	printSpecId: 0,
+	cpDef:{},
+	FDCPClient:new FDCPClient(),
+	printPreviewWindow: null,
+	printPreviewWindowOpen: false,
+	tester: false,
+	slre: new RegExp("[^/]*$"),
+		
+
+	getCfg: function(ckey, cdef) {
+		if(this.cpc != null && typeof this.cpc[ckey] != 'undefined')
+			return this.cpc[ckey];
+		return cdef;
+	},
+
+	loadcp: function() {
+
+		if(typeof FDCPLoader.FDCPClient.onPrintSpecLoad != "undefined"){
+			FDCPLoader.FDCPClient.onPrintSpecLoad();
+		}
+		this.cpc = FDCPLoader.FDCPClient.cpc;
+
+		if(this.cpc.cpStatus == 'n'){
+			FDCPLoader.tagg = FDCPLoader.tmax + 1;
+			return;
+		}
+		var jsloc = this.getCfg('codeBase', null);
+		
+		var e = document.createElement('script');
+		e.src = this.validatePath(jsloc , "cp.js");
+		e.type = 'text/javascript';
+		document.getElementsByTagName("head")[0].appendChild(e);
+		
+		this.loadXPathLib();
+	},
+	
+	loadFFjs: function() {
+
+		if(FDCPLoader.FDCPClient.cpc.cpStatus == 'n'){
+			FDCPLoader.tagg = FDCPLoader.tmax + 1;
+			return;
+		}
+		
+		var jsloc = this.getCfg('codeBase', null);
+		jsloc = this.removeFileFromPath(jsloc, "cp.js");	
+			
+		var e = document.createElement('script');
+		e.src = this.validatePath(jsloc , "FDFF.js");
+		e.type = 'text/javascript';
+		document.getElementsByTagName("head")[0].appendChild(e);
+		
+        setTimeout(function(thisObj) { thisObj.checkFFjs(false); },2000,this);
+    },
+
+    checkFFjs: function(expire) {
+
+        if (expire)
+        	return false;
+
+        if (typeof FDFF == 'undefined')
+        	setTimeout(function(thisObj) { thisObj.checkFFjs(true); },2000,this);
+		else
+            FDFF.load();
+    },
+    
+	loadXPathLib: function() {
+		
+		if (navigator.appName == "Microsoft Internet Explorer")
+		{
+			var xpathUrl = null;
+		
+			if (typeof this.FDCPClient.xpathLib == "undefined" || this.FDCPClient.xpathLib == null || this.FDCPClient.xpathLib == "")
+			{
+				xpathUrl = this.getCfg('xpathLib', null);
+			
+				if (xpathUrl == null){
+					xpathUrl = this.getCfg('codeBase', null);
+					xpathUrl = this.removeFileFromPath(xpathUrl, "cp.js");	
+				}
+			}
+			else
+				xpathUrl = this.FDCPClient.xpathLib;
+			
+			var e = document.createElement('script');
+			e.src = this.validatePath(xpathUrl , "xpath.js");
+			e.type = 'text/javascript';
+			document.getElementsByTagName("head")[0].appendChild(e);
+		}
+		else{ 
+			if (navigator.userAgent.indexOf("Firefox") != -1){
+				//FDCPLoader.loadFFjs();
+			}
+		}
+	},
+	
+	removeFileFromPath: function(path, file){
+	
+		if (path.indexOf(file) > 1)
+		{
+			var lastSlashIndex = path.search(this.slre);
+			return path.substr(0, lastSlashIndex);
+		}
+		else
+		{
+			return path;
+		}
+	},
+	
+	getPDScriptUrl: function(){
+		
+		var snodes = document.getElementsByName('cleanprintloader');
+		var url = "";
+
+		if(snodes.length > 0) {
+			url = snodes[0].src;
+		}
+		else {
+
+			snodes = document.getElementsByTagName('SCRIPT');
+
+			for(var i = 0; i < snodes.length; i++) {
+				if(snodes[i].name == 'cleanprintloader') {
+					url = snodes[i].src;
+					break;
+				}
+			}
+		}
+		
+		return url;
+	},
+	
+	
+	loadPrintSpec: function(){
+
+		try
+		{
+			formatDynamicsPT = new FormatDynamicsPT(new FDCPClient());
+			formatDynamicsPT.initX();
+
+			var psfailed = false;
+
+			if(!this.loaded) {
+				this.loaded = true;
+				var pdSrc = this.getPDScriptUrl();
+			
+				if (this.FDCPClient.hosted == "fd" && pdSrc.length > 0)
+					this.divId = this.getDivisionId(pdSrc);
+				else
+					this.divId = this.FDCPClient.divid;
+			
+				this.printSpecId = this.getPrintSpecId(pdSrc);
+			
+				var url = this.FDCPClient.cpServletPath;
+				url += "?useCache=false";
+				url += "&divId=" + this.divId;
+
+				var psid = null;
+
+				if(typeof this.FDCPClient.getCalculatedPrintSpecId != "undefined" && this.tester == false)
+				{
+					try
+					{
+						psid = this.FDCPClient.getCalculatedPrintSpecId();
+					
+						if(psid == false){
+							psfailed = true;
+						}
+					}
+					catch(err)
+					{
+						psfailed = true;
+					}
+				}
+
+				if(psfailed)
+				{
+					formatDynamicsPT.initIE();
+				}
+				else
+				{
+					url += "&printSpecId=" + ((typeof psid == 'undefined' || psid == null) ? this.printSpecId : psid);			
+			
+					var cpDefScript = document.createElement('script');
+					cpDefScript.src = url;
+					cpDefScript.type = 'text/javascript';
+					document.getElementsByTagName("head")[0].appendChild(cpDefScript);
+				}
+			}
+		}
+		catch(e)
+		{}
+	},
+
+	validatePath: function(path , jsFile){
+		if (path.indexOf(jsFile) > 1)
+			return path;
+		else
+		{
+			if (path.charAt(path.length -1) == "/")
+				return path + jsFile;
+			else
+				return path + "/" + jsFile;
+		}	
+	},
+	
+	getPrintSpecId: function(pdSrc)
+	{
+		var pdre = new RegExp("^[^?]+\\??");
+		var queryString = pdSrc.replace(pdre,'');
+	
+		var params = this.parseQuery( queryString );
+	
+		return params['ps'];
+	
+	},
+	
+	getDivisionId: function(pdSrc)
+	{
+		var tmpUrl = pdSrc.replace(this.slre, "");
+		var lastSlashIndex = tmpUrl.search(this.slre);
+		var divId = tmpUrl.substr(0, lastSlashIndex -1);
+		lastSlashIndex = divId.search(this.slre);
+		divId = divId.substr(lastSlashIndex, divId.length);
+	
+		return divId;
+	},
+	
+	
+	parseQuery: function( query ) {
+	   var Params = new Object ();
+	   if ( ! query ) return Params; // return empty object
+	   var pre = new RegExp("[;&]");
+	   var plusre = new RegExp("\\+", "g");
+	   var Pairs = query.split(pre);
+	   for ( var i = 0; i < Pairs.length; i++ ) {
+	      var KeyVal = Pairs[i].split('=');
+	      if ( ! KeyVal || KeyVal.length != 2 ) continue;
+	      var key = unescape( KeyVal[0] );
+	      var val = unescape( KeyVal[1] );
+	      val = val.replace(plusre, ' ');
+	      Params[key] = val;
+	   }
+	   return Params;
+	},
+	
+	cpJsLoaded:false,
+	xpathJsLoaded:navigator.appName != "Microsoft Internet Explorer",
+	registerModuleLoaded: function(moduleName){
+		if(moduleName == "cp.js"){
+			this.cpJsLoaded = true;
+		}
+		else if(moduleName == "xpath.js"){
+			this.xpathJsLoaded = true;
+		}
+		if(this.xpathJsLoaded && this.cpJsLoaded){
+			fdcp.replacePrintLinks();
+		}
+	},
+	
+	fdPrintWrapper: function(theContext){
+		theContext = typeof theContext == "undefined" ? window : theContext;
+		theContext.print();
+	},
+
+	ptFailover: function() {
+		formatDynamicsPT = new FormatDynamicsPT(new FDCPClient());
+		formatDynamicsPT.initAll();
+	}
+}
+
+function FDCPUrl(pfLink, isViewer) {
+
+	try
+	{
+		isViewer = typeof isViewer == "undefined" ? false : isViewer;
+
+		if(isViewer && (typeof pfLink == "undefined" || pfLink == null || pfLink == '')){
+			return false;
+		}
+
+		if(typeof fdcp == 'undefined') {
+
+			if(FDCPLoader.incyc == false)
+				FDCPLoader.incyc = true;
+
+			if(FDCPLoader.tagg > FDCPLoader.tmax) {
+
+				FDCPLoader.incyc = false;
+				FDCPLoader.fdPrintWrapper();
+				return false;
+			}
+
+			FDCPLoader.tagg += FDCPLoader.tint;
+
+			setTimeout("FDCPUrl(" + pfLink + ", " + isViewer + ")", FDCPLoader.tint);
+
+			return false;
+		}
+		else
+			FDCPLoader.incyc = false;
+		if(isViewer){
+			var continueCp =  fdcp.browserDetect.browser == "Firefox" || fdcp.browserDetect.browser == "Explorer" || (fdcp.browserDetect.browser == "Safari" && fdcp.browserDetect.OS == "Mac");
+			if(!continueCp){
+				window.open(pfLink, "pf", "");
+				return false;
+			}
+		}
+		fdcp.clt.mode = isViewer ? fdcp.clt.modes.printerFriendlyViewer : fdcp.clt.modes.printLink;
+		fdcp.linkPrintHandler(pfLink);
+
+	    if(navigator.appName != "Microsoft Internet Explorer") {
+	        fdcp.clt.resetMode();
+	    }
+
+		return false;
+	}
+	catch(e)
+	{}
+}
+
+// a simple ajax object getter
+function fdGetAjaxObj() {
+	if(window.XMLHttpRequest){
+		return new XMLHttpRequest(); //Not IE
+	}else if(window.ActiveXObject){
+		return new ActiveXObject("Microsoft.XMLHTTP"); //IE
+	}else{
+		return null;
+	}
+}
+
+if (window.addEventListener) {
+	window.addEventListener("load", function() { FDCPLoader.loadPrintSpec(); }, true);
+}
+else if (window.attachEvent) {
+	window.attachEvent("onload", function() { FDCPLoader.loadPrintSpec(); });
+}
+

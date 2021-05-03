@@ -1,0 +1,331 @@
+/*
+<? xml version='1.0' standalone='yes' ?>
+
+<script>
+	<name>Text</name>
+	<author>Yokiyoki (Julio Sangrador-Patón) (yokiyoki@users.sourceforge.net)</author>
+	<version>1.8</version>
+	<date>06/24/2004</date>
+	<description>
+Build the model of a string of text, in the form of simple approximating curves, tubes
+which follow these, flat triangle meshes or extruded solid triangle meshes. 
+
+Help: 
+
+Build the model of a string of text, in the form of simple approximating curves, tubes which follow these,
+flat triangle meshes or extruded solid triangle meshes. 
+1. Choose one of the above at the top of the dialog.
+2. Choose a font face from the list. Be aware that (on linux at least) a great deal of them
+make the script crash. It seems to have to do with the font being Adobe type, but I'm not
+sure yet. 
+3. Mark if you want it bold or italic. 
+4. Write the text you want to be modelled. 
+5. Enter the tolerance value, which grosso modo tells how accurate the outlines will be (the smaller,
+the more accurate). 
+6. Enter the thickness of the mesh (for 3D meshes) or of the tube (for tubes). 
+7. Enter the degree of subdivision you want for the meshes, which can be 0 or a positive integer. A value
+of at least 1 is recomended to avoid artifacts. You will seldom need more than 2, and might do well
+with 0.
+    </description>
+    <comments>
+This is an alpha version, but quite usable especially on windows. 
+Written with great aid from Peter Eastman and others
+    </comments>
+</script>
+*/
+
+import java.awt.font.*;
+import java.awt.geom.*;
+
+showInfoWindow() {
+	warning = new BTextArea("This is an experimental tool. In particular, it doesn't work\n"+
+		"well with some fonts."+
+		"However, it works often and can be useful, and that is my intention. \n"+
+		"But be aware that I can't be held responsible for any damage it does to \n"+
+		"your work.\n"+
+		"In case of crash, I suggest saving your work if it wasn't and closing Art of "+
+		"Illusion and opening it again.\n\n"+
+		"Enjoy!", 10, 80);
+	warning.setEditable(false);
+	wrnDlg = new PanelDialog(window, "Important Information", new BScrollPane(warning));
+}
+
+showHelpWindow() {
+	helpText = new BTextArea("Text tool script.\n\n"+
+		"By Yokiyoki (Julio Sangrador-Patón), with great aid from Peter Eastman and others.\n"+
+		"This is a beta version, but quite usable especially on windows.\n\n"+
+		"Help:\n\n"+				
+		"Tool to build the model of a string of text, in the form of simple approximating curves, tubes which follow these,\n\n"+
+		"flat triangle meshes or extruded solid triangle meshes. Steps:\n\n"+
+		"1. Choose one of the above at the top of the dialog.\n"+
+		"2. Choose a font face from the list. Be aware that (on linux at least) a great deal of them\n"+
+		"make the script crash. It seems to have to do with the font being Adobe type, but I'm not\n"+
+		"sure yet.\n"+
+		"3. Mark if you want it bold and/or italic.\n"+
+		"4. Write the text you want to be modelled.\n"+
+		"5. Enter the tolerance value, which grosso modo tells how accurate the outlines will be (the smaller\n"+
+		"the value, the more accurate).\n"+
+		"6. Enter the thickness of the mesh (for 3D meshes) or of the tube (for tubes). Useless for curves and flat surfaces.\n"+
+		"7. Enter the degree of subdivision you want for the meshes, which can be 0 or a positive integer. A value\n"+
+		"of at least 1 is recomended to avoid artifacts. You will seldom need more than 2, and might do well\n"+
+		"with 0.", 10, 80);
+	helpText.setEditable(false);
+	hlpDlg = new PanelDialog(window, "Help", new BScrollPane(helpText));
+}
+
+/* Modes */
+
+M_TUBE = -1;
+M_SPLINE = 0;
+M_2D = 1;
+M_3D = 2;
+
+/* Prepare to remember the user selections */
+
+if(global.textToolwantsBold == void) {
+	global.textToolwantsBold = false;
+	global.textToolwantsItalic = false;
+	global.textToolfont = "SurelyThisIsntAFontName";
+	global.textTooltheString = "Write some text";
+	global.textTooltolerance = 0.1;
+	global.textToolmesh = M_2D;
+	global.textToolthickness = 0.1;
+	global.textToolsubdivideTimes = 1;
+}
+
+/* error message function */
+
+errorMessage(s) {
+		return (new MessageDialog(window, s)).getChoice();
+}
+
+/* Rewrite of the solidify function, using the static methods of the Extrude Dialog Plugin */
+/* Copied from a message to the forum by Peter Eastman */
+
+solidify2(info, thickness) {
+	extrudeDialog = ModellingApp.getClass("artofillusion.tools.ExtrudeDialog");
+	extrudeMesh = extrudeDialog.getMethod("extrudeMesh",
+		new Class [] {TriangleMesh.class, CoordinateSystem.class, Vec3.class, Integer.TYPE,
+		Double.TYPE, Boolean.TYPE});
+	extruded = extrudeMesh.invoke(null, new Object[] {info.object, info.coords,
+		new Vec3(0,0,thickness), 1, 0.0, true});
+	return extruded;
+}
+
+/* Create the components of the options dialog */
+
+meshType = new RadioButtonGroup();
+meshSpline = new BRadioButton("Silhouette", global.textToolmesh==M_SPLINE,meshType);
+mesh2D = new BRadioButton("2D surface", global.textToolmesh==M_2D,meshType);
+mesh3D = new BRadioButton("3D solid", global.textToolmesh==M_3D,meshType);
+meshTube = new BRadioButton("Tube", global.textToolmesh==M_TUBE,meshType);
+
+kindOfMesh = new GridContainer(2, 2);
+kindOfMesh.setDefaultLayout(new LayoutInfo(LayoutInfo.WEST, LayoutInfo.NONE, new Insets(2, 2, 2, 2), null));
+kindOfMesh.add(meshSpline, 0, 0);
+kindOfMesh.add(mesh2D, 0, 1);
+kindOfMesh.add(mesh3D, 1, 0);
+kindOfMesh.add(meshTube, 1, 1);
+
+fonts = GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames();
+fontsList = new BList(fonts);
+fontsList.setPreferredVisibleRows(10);
+theSelectedIndex = 0;
+for(y=0;y<fonts.length;y++) {
+	if(fonts[y] == global.textToolfont) {
+		theSelectedIndex = y;
+	}
+}
+fontsList.setSelected(theSelectedIndex, true);
+
+wantsBoldCheck = new BCheckBox("Bold", global.textToolwantsBold);
+wantsItalicCheck = new BCheckBox("Italic", global.textToolwantsItalic);
+fontStyle = new RowContainer();
+fontStyle.add(wantsBoldCheck);
+fontStyle.add(wantsItalicCheck);
+
+textToShow = new BTextField(global.textTooltheString);
+toleranceValue = new ValueField(global.textTooltolerance, ValueField.POSITIVE);
+thicknessValue = new ValueField(global.textToolthickness, ValueField.POSITIVE);
+degreeOfSubdivision = new ValueField(global.textToolsubdivideTimes, ValueField.INTEGER);
+
+infoButton = new BButton("Important Info");
+infoButton.addEventLink(CommandEvent.class, new Runnable() {
+	void run()
+	{
+		showInfoWindow();
+	}
+}, "run");
+
+helpButton = new BButton("Help");
+helpButton.addEventLink(CommandEvent.class, new Runnable() {
+	void run()
+	{
+		showHelpWindow();
+	}
+}, "run");
+
+/* Create and show the dialog */
+
+dlg = new ComponentsDialog(window, "Select Parameters for Text Tool",
+	new Widget [] {kindOfMesh, UIUtilities.createScrollingList(fontsList), fontStyle, textToShow, toleranceValue, thicknessValue, degreeOfSubdivision, infoButton, helpButton},
+	new String [] {"Type of Object", "Font", "Style", "Text to Render","Tolerance", "Thickness", "Degree of subdivision", null, null});
+if (!dlg.clickedOk()) {
+	return;
+}
+
+/* Obtain the user values */
+
+global.textToolwantsBold = wantsBold = wantsBoldCheck.getState();
+global.textToolwantsItalic = wantsItalic = wantsItalicCheck.getState();
+font = new Font(fontsList.getSelectedValue(), Font.PLAIN | (wantsBold?Font.BOLD:0) | (wantsItalic?Font.ITALIC:0), 1);
+global.textToolfont =  fontsList.getSelectedValue();
+global.textTooltheString = theString = textToShow.getText();
+global.textTooltolerance = tolerance = toleranceValue.getValue();
+global.textToolmesh = mesh = (meshSpline.getState()?M_SPLINE:mesh2D.getState()?M_2D:mesh3D.getState()?M_3D:M_TUBE);
+global.textToolthickness = thickness = thicknessValue.getValue();
+global.textToolsubdivideTimes = subdivideTimes = (int)Math.abs(degreeOfSubdivision.getValue());
+
+if(font.canDisplayUpTo(theString) != -1) {
+	errorMessage("Sorry, you cannot represent that text with that font.");
+	return;
+}
+
+/* Create the text. Here begins everything */
+
+sceneDefaultTex = window.getScene().getDefaultTexture(); // so as to make getBounds() work
+glyphVector = font.createGlyphVector(new FontRenderContext(null, false, true),theString);
+parent = new NullObject();
+parentObjectInfo = new ObjectInfo(parent, new CoordinateSystem(), theString);
+window.addObject(parentObjectInfo,null);
+numGlyphs = glyphVector.getNumGlyphs();
+
+for(glyphIndex = 0 ; glyphIndex < numGlyphs ; glyphIndex++) {
+	currentOutline = glyphVector.getGlyphOutline(glyphIndex);
+	pathIterator = currentOutline.getPathIterator(null);
+	segmentCoords = new float[6];
+	pointsRuntimeTypeArray = new Vec3[1];
+	points = new Vector();
+	smoothnesses = new Vector();
+	firstCurveOfGlyph = true;
+	while(!pathIterator.isDone()){
+		switch(pathIterator.currentSegment(segmentCoords)) {
+			case PathIterator.SEG_MOVETO:
+			case PathIterator.SEG_LINETO:
+				points.add(new Vec3((double)segmentCoords[0],-(double)segmentCoords[1],0));
+				smoothnesses.add(new Float(0.0f));
+				break;
+			case PathIterator.SEG_QUADTO:
+				points.add(new Vec3((double)segmentCoords[0],-(double)segmentCoords[1],0));
+				smoothnesses.add(new Float(1.0f));
+				points.add(new Vec3((double)segmentCoords[2],-(double)segmentCoords[3],0));
+				smoothnesses.add(new Float(1.0f));
+				break;
+			case PathIterator.SEG_CUBICTO:
+				points.add(new Vec3((double)segmentCoords[0],-(double)segmentCoords[1],0));
+				smoothnesses.add(new Float(1.0f));
+				points.add(new Vec3((double)segmentCoords[2],-(double)segmentCoords[3],0));
+				smoothnesses.add(new Float(1.0f));
+				points.add(new Vec3((double)segmentCoords[4],-(double)segmentCoords[5],0));
+				smoothnesses.add(new Float(1.0f));
+				break;
+			case PathIterator.SEG_CLOSE:
+				// Sometimes the initial point is duplicated at the end,
+				// so try to remove the duplicate
+				if(((Vec3)points.elementAt(0)).distance((Vec3)points.elementAt(points.size()-1))<0.0001) {
+					points.removeElementAt(points.size()-1);
+					smoothnesses.removeElementAt(smoothnesses.size()-1);
+				}
+				// Convert the vectors into arrays
+				smoothnessesArray = new float[smoothnesses.size()];
+				for(i=0;i<smoothnesses.size();i++) {
+					smoothnessesArray[i] = smoothnesses.elementAt(i).floatValue();
+				}
+				theCurve = new Curve(points.toArray(pointsRuntimeTypeArray),smoothnessesArray,Mesh.APPROXIMATING,true);
+				currentGlyphOI = new ObjectInfo(theCurve, new CoordinateSystem(), "Curve");
+				currentGlyphOI.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());
+				if(mesh>M_SPLINE) { // i.e, Surface or Solid
+					// try to triangulate the curve
+					theMesh = theCurve.subdivideCurve(subdivideTimes).convertToTriangleMesh(tolerance);
+					currentGlyphOI = new ObjectInfo(theMesh, new CoordinateSystem(), "Glyph");
+					currentGlyphOI.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());
+					if(firstCurveOfGlyph) {
+						fullLetterOI = currentGlyphOI;
+					}
+					else { // More curves, see if they intersect or unite what we already have
+						meshToTestForIntersection = new ObjectInfo(solidify2(currentGlyphOI,0.2), currentGlyphOI.coords.duplicate(), "Glyph");
+						meshToTestForIntersection.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping()); // for getBounds() to work
+						coordsDiff = currentGlyphOI.getBounds().getCenter().minus(meshToTestForIntersection.getBounds().getCenter());
+						meshToTestForIntersection.coords.setOrigin(meshToTestForIntersection.coords.getOrigin().plus(coordsDiff));
+						testCSG = new CSGObject(fullLetterOI,meshToTestForIntersection,CSGObject.INTERSECTION);
+						testCSGMesh = testCSG.convertToTriangleMesh(tolerance);
+						if(testCSGMesh.getEdges().length > 0) { // Intersects
+							meshToCut = new ObjectInfo(solidify2(currentGlyphOI,0.2), currentGlyphOI.coords.duplicate(), "Glyph");
+							meshToCut.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());  // for getBounds() to work
+							coordsDiff = currentGlyphOI.getBounds().getCenter().minus(meshToCut.getBounds().getCenter());
+							meshToCut.coords.setOrigin(meshToCut.coords.getOrigin().plus(coordsDiff));
+							aCSG = new CSGObject(fullLetterOI, meshToCut, CSGObject.DIFFERENCE12);
+							aCSGMesh = aCSG.convertToTriangleMesh(tolerance);
+							fullLetterOI = new ObjectInfo(aCSGMesh,fullLetterOI.coords.duplicate(), "Glyph");
+							fullLetterOI.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());
+						}
+						else { // Unites
+							aCSG = new CSGObject(fullLetterOI, currentGlyphOI, CSGObject.UNION);
+							aCSGMesh = aCSG.convertToTriangleMesh(tolerance);
+							fullLetterOI = new ObjectInfo(aCSGMesh,fullLetterOI.coords.duplicate(), "Glyph");
+							fullLetterOI.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());
+						}
+						try { // Optimize the mesh while we are building it
+							fullLetterOI.object = TriangleMesh.optimizeMesh(fullLetterOI.object);
+							fullLetterOI.clearCachedMeshes();
+						} catch (Exception e) {} // Should we act? Not sure...
+					}
+					firstCurveOfGlyph = false;
+				}
+				else if(mesh==M_TUBE) { // User wants tubes
+					nVerts = theCurve.getVertices().length;
+					tubeThickness = new double[nVerts];
+					for(t=0;t<nVerts;t++) {
+						tubeThickness[t]=thickness;
+					}
+					theTube = new Tube(theCurve, tubeThickness, Tube.CLOSED_ENDS);
+					currentTube = new ObjectInfo(theTube, new CoordinateSystem(), "Tube");
+					parentObjectInfo.addChild(currentTube,parentObjectInfo.children.length);
+					window.addObject(currentTube,null);
+				}
+				else { // User wants only the curves
+					parentObjectInfo.addChild(currentGlyphOI,parentObjectInfo.children.length);
+					window.addObject(currentGlyphOI,null);
+				}
+				segmentCoords = new float[6];
+				pointsRuntimeTypeArray = new Vec3[1];
+				points = new Vector();
+				smoothnesses = new Vector();
+		} /* Segments loop */
+		pathIterator.next();
+	} /* Curves loop */
+	if((mesh == M_3D) || mesh == (M_2D)) {
+		try { // Final optimization of the mesh, maybe it is redundant.
+			fullLetterOI.object = TriangleMesh.optimizeMesh(fullLetterOI.object);
+			fullLetterOI.clearCachedMeshes();
+		}
+		catch (Exception e) {} // Again, should we act?
+	}
+	if(mesh==M_3D) { // Extrude the shape.
+		extrudedMeshOI = new ObjectInfo(solidify2(fullLetterOI, thickness), fullLetterOI.coords.duplicate(), "Glyph");
+		extrudedMeshOI.setTexture(sceneDefaultTex, sceneDefaultTex.getDefaultMapping());  // for getBounds() to work
+		coordsDiff = fullLetterOI.getBounds().getCenter().minus(extrudedMeshOI.getBounds().getCenter());
+		extrudedMeshOI.coords.setOrigin(extrudedMeshOI.coords.getOrigin().plus(coordsDiff));
+		fullLetterOI = extrudedMeshOI;
+	}
+	if(!(mesh==M_SPLINE)&& !(mesh==M_TUBE) && !firstCurveOfGlyph){ // We had already added them for these
+		parentObjectInfo.addChild(fullLetterOI,parentObjectInfo.children.length);
+		window.addObject(fullLetterOI,null);
+	}
+
+} /* Glyphs loop */
+
+window.rebuildItemList();
+
+
+

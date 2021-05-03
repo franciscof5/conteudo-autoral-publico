@@ -1,0 +1,18 @@
+Configurando servidor dedicado 
+Farei um comentário bem rápido sobre como configurar um servidor dedicado.
+
+Bom, para rodar um servidor dedicado de Counter-Strike basta você estar no diretório do Half-Life e executar o arquivo "hlds.exe". Bom, mas feito isso ele irá criar o servidor como se fosse de Half-Life e não Counter-Strike, então são necessárias algumas configurações a mais.
+
+Criando um servidor dedicado de Counter-Strike para uma Lan.
+
+Entre no diretório do Half-Life, crie um atalho para o arquivo "hlds.exe". Clique com o botão direito do mouse sobre atalho do "hlds.exe" que você criou e vá em propriedades. No campo destino do atalho adicione ao final da linha o seguinte: "-game cstrike +sv_lan 1 -nomaster +maxplayers 32 +map de_dust".
+O atalho ficará da seguinte maneira:
+"E:\Half-Life\hlds.exe -game cstrike +sv_lan 1 -nomaster +maxplayers 32 +map de_dust"
+
+Criando um servidor dedicado de Counter-Strike para Internet.
+
+Basta você seguir o mesmo procedimento de como criar servidor dedicado para Lan, mas trocar o "+sv_lan" de 1 para 0. Deixando o atalho da seginte maneira:
+"E:\Half-Life\hlds.exe -game cstrike +sv_lan 0 -nomaster +maxplayers 32 +map de_dust"
+
+ 
+ 

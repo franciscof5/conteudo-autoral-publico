@@ -1,0 +1,196 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; CHARSET=iso-8859-1">
+<meta http-equiv="Window-target" content="_top">
+<meta name="description" content="Ultimate Unwrap3D - UV mapping software">
+<meta name="keywords" content="Ultimate Unwrap3D, UV mapping, unwrapping, software"><title>Ultimate Unwrap3D</title>
+
+
+<link href="tutorial_begin.aspx_files/style.css" type="text/css" rel="stylesheet">
+
+<script language="JavaScript">
+<!--
+if (self.location.href != top.location.href) {
+   top.location.href = self.location.href;
+}
+// -->
+</script></head>
+
+
+
+<body leftmargin="0" topmargin="0" alink="#d0d0d0" background="tutorial_begin.aspx_files/bkgrd.gif" bgcolor="#800000" link="#d0d0d0" marginheight="0" marginwidth="0" text="#c0c0c0" vlink="#ff0000"> 
+<br>
+
+<!-- main table -->
+<table border="0" cellpadding="8" cellspacing="0" width="100%">
+<tbody><tr>
+<td>
+
+<font face="arial">
+
+</font><h2><font face="arial">Beginner's Tutorial</font></h2>
+
+<font face="arial">Ultimate Unwrap3D offers several UV mapping and editing tools, which makes it very flexible across a wide range of applications.
+For this tutorial, we will go through some basic steps to create, map, and texture a Rubik's Cube.
+In a very short period of time, you should be able to develop your own workflow to create a UV map.<br>
+<br>
+<br>
+
+</font><h2><font face="arial">Creating A Box</font></h2>
+
+<font face="arial">To speed up UV mapping, especially for short projects, you can create a variety of basic primitives within Ultimate Unwrap3D.
+To start, let's use Ultimate Unwrap3D to create a segmented box primitive.  Click <b>File | New | Box</b>,
+set the width, height, and length dimensions to <b>6</b> and
+set the width, height, and length divisions to <b>3</b>. Click <b>OK</b>.<br>
+<br>
+<img src="tutorial_begin.aspx_files/tut_begin1.png" alt="tut_begin1.png" border="0"><br>
+<br>
+<br>
+
+This what you should get below. Note that whenever you create a new primitive, Unwrap3D will automatically generate 
+UV coordinates for it. In this case, box mapping was used:<br>
+<br>
+
+<table border="0" cellpadding="4" cellspacing="0" width="550">
+<tbody><tr>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin2.png" alt="tut_begin2.png" border="0"><br></td>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin3.png" alt="tut_begin3.png" border="0"><br></td>
+</tr>
+</tbody></table>
+
+<br>
+If you want to apply box mapping yourself:<br>
+<br>
+1. Select everything.  You can use <b>Select | All</b> from the main menu, use the hotkey <b>Ctrl+A</b>, or use the selection tool to 
+drag select all UV coordinates in the UV Editor.<br>
+2. Click <b>2D Tools | UV Mapping | Box</b>.  Use default options and click <b>OK</b>.<br>
+3. You should see the exact same UV mapping in the UV Editor.<br>
+<br>
+<br>
+
+</font><h2><font face="arial">Exporting the UV Map</font></h2>
+
+<font face="arial">Now that our UV mapping work is done, we can export our UV map to a bitmap for painting. Click <b>File | Export | UV Map</b>:<br>
+<br>
+<img src="tutorial_begin.aspx_files/tut_begin4.png" alt="tut_begin4.png" border="0"><br>
+<br>
+
+There are several options here, but for now, select <b>Default color</b>, uncheck <b>Fill</b>, set the <b>Background color</b> to gray (128,128,128),
+select <b>Use line color</b>, set the <b>Line size</b> to <b>8</b>, and set the <b>Line color</b> to black (0,0,0). Click the <b>Preview</b> to view
+the bitmap before saving it:<br>
+<br>
+
+<table border="0" cellpadding="4" cellspacing="0" width="550">
+<tbody><tr>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin5.png" alt="tut_begin5.png" border="0"><br></td>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin6.png" alt="tut_begin6.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+
+As you can see, this creates thick black lines, which will work out nicely after our texture map is painted.<br>
+<br>
+Painting the texture is a relatively easy task. The basic colors for a
+Rubik's Cube are red/yellow, green/white, and orange/blue. Open up the
+UV map bitmap in your favorite paint program (e.g. Photoshop, Paint
+Shop Pro) and fill in the colors as shown above.<br>
+<br>
+<br>
+
+</font><h2><font face="arial">Materials and Textures</font></h2>
+
+<font face="arial">Now that we have our painted texture map, we can import it back into Unwrap3D.
+But, first, we need to create a material for it.  In the Scene Window, right-click 
+on <b>Materials</b>, and select <b>Add</b>.  You can also use the <b>Insert</b> hotkey to quickly add items in the Scene Window:<br>
+
+<br>
+<table border="0" cellpadding="4" cellspacing="0" width="350">
+<tbody><tr>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin7.png" alt="tut_begin7.png" border="0"><br></td>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin8.png" alt="tut_begin8.png" border="0"><br></td>
+</tr>
+</tbody></table>
+
+<br>
+This adds a new material called Untitled, but we can rename it to anything we want.  Right-click on 
+the new material and select <b>Rename</b>. Let's call it cube_mat.<br>
+<br>
+Now, double-click on cube_mat.  You should see the <b>Material Editor</b> dialog box appear.
+Go straight to the <b>Maps</b> property sheet. Here, we want to load a bitmap from file, so select
+<b>Bitmap</b> for the diffuse texture map. Then, click on the <b>Properties</b> button:<br>
+<br>
+
+<img src="tutorial_begin.aspx_files/tut_begin9.png" alt="tut_begin9.png" border="0"><br>
+<br>
+<br>
+Here, we can load our texture map. Click the <b>Change</b> button 
+to browse for it and then click <b>OK</b>.<br>
+<br>
+Just a quick note for future reference, whenever you import a model,
+Unwrap3D will look in the same directory as the model for its textures.  So, it is best if you keep all
+files in the same directory.<br>
+
+<br>
+<img src="tutorial_begin.aspx_files/tut_begin10.png" alt="tut_begin10.png" border="0"><br>
+<br>
+<br>
+
+If you take a look at the Scene Window again, you will see a <b>T</b> icon next to our cube_mat material.
+This means that it has a loaded texture map:<br>
+<br>
+<img src="tutorial_begin.aspx_files/tut_begin11.png" alt="tut_begin11.png" border="0"><br>
+<br>
+<br>
+
+</font><h2><font face="arial">Materials and Assignment</font></h2>
+
+<font face="arial">Now that we created a material and loaded a texture for it, the next step is to assign faces to it.  First, click <b>Ctrl+A</b>
+to select everything.  Note that when assigning faces, <b>Select | Face</b> must be enabled.<br>
+<br>
+While the UV coordinates are still selected, right-click on cube_mat, and select <b>Assign</b>:<br>
+<br>
+<img src="tutorial_begin.aspx_files/tut_begin12.png" alt="tut_begin12.png" border="0"><br>
+<br>
+In the 3D perspective view, you should see our texture map. Also, if
+you select cube_mat again, the texture map
+will automatically appear in the UV Editor background. Unwrap3D will
+also automatically adjust the UV map to the texture's aspect ratio. In
+this case, since the texture map is 512x512, the aspect ratio is 1x1,
+so no adjustments are required:<br>
+<br>
+<table border="0" cellpadding="4" cellspacing="0" width="450">
+<tbody><tr>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin13.png" alt="tut_begin13.png" border="0"><br></td>
+<td align="center"><img src="tutorial_begin.aspx_files/tut_begin14.png" alt="tut_begin14.png" border="0"><br></td>
+</tr>
+</tbody></table>
+<br>
+Congratulations, you just UV mapped a Rubik's Cube!<br>
+<br>
+<br>
+
+</font><h2><font face="arial">Summary</font></h2>
+<font face="arial">In this tutorial, we learned some basic UV mapping techniques such as box mapping, learned how 
+to create a UV map, learned how to create a material, load a texture map for it, and assign faces to it.<br>
+<br>
+If you want to improve upon the Rubik's Cube, here's a couple ideas:<br>
+<br>
+1. Add some randomness. Fill in some random colors on each side.<br>
+2. Can we use a box with only 6 faces instead of 54 faces?  Yes, you can.  In fact, you can use the same texture map as above, 
+   so you don't have to paint in the missing lines.<br>
+3. Rotate a section of the cube 45 degrees.  You can do this by creating 3 individual segmented boxes instead of just one.
+   Each box will have dimensions of 3x6x6 and divisions by 1x3x3.  You can then freely rotate one of the sections.<br>
+
+<br>
+That's it! If you have any other questions, please let me know.<br>
+<br>
+<br>
+
+</font>
+
+</td>
+</tr>
+</tbody></table> 
+<!-- main table -->
+
+</body></html>

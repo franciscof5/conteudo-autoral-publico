@@ -1,0 +1,56 @@
+
+#buscaUsuariosAcoes
+{
+	margin-bottom: 20px;
+}
+
+#buscaUsuariosAcoes
+{
+	clear:both;
+	margin-top:10px;
+}
+
+#txtNusp
+{
+	width:100px;
+}
+
+#txtNome
+{
+	width:350px;
+}
+
+#buscaUsuario label
+{
+	display:inline-block;
+	width:80px;
+	margin-top:4px;
+}
+
+#buscaUsuario input
+{
+	margin-top:4px;
+}
+
+#buscaUsuariosAcoes
+{
+	border-bottom-style: solid;
+	border-bottom-width: 1px;
+	border-bottom-color: #333333;
+	padding-bottom: 5px;
+}
+
+#buscaUsuario TD
+{
+	text-align: center;
+}
+
+#buscaUsuario TD:LAST-CHILD
+{
+	text-align: left;
+}
+#buscaUsuario .loader
+{
+	margin-left:45%;
+	display: none;
+}

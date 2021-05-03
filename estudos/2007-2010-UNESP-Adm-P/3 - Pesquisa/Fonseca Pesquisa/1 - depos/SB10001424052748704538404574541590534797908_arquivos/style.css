@@ -1,0 +1,261 @@
+/* WSJ custom style */
+
+#_loomia_si_anchor {
+	clear: both;
+}
+
+.loomia_pub_970 {
+	width:377px;
+	padding-bottom: 11px;
+	color:#333;
+}
+.loomia_pub_970 div {
+	line-height: auto;
+}
+.loomia_pub_970 h3 {
+	padding:5px 0 4px 7px;
+	margin:0;
+	font-size:17px;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	border-top:4px #AECBDD solid;
+	border-bottom:1px dotted #D0DFE9;
+	background:#EFF4F8;
+	color: #333;
+}
+
+.loomia_pub_970 ul.tab {
+	width: 370px;
+	background:url(tabs_back.jpg) bottom repeat-x #EFF4F8;
+        height: 27px; /* this works for the new WSJ page */
+	padding-top:4px;
+	padding-left:7px;
+	font-size:12px;
+	font-family:Arial, Helvetica, sans-serif;
+	position: relative;
+}
+
+.loomia_pub_970 ul.tab li {
+	float: left;
+	margin: 0;
+	margin-left: 8px;
+}
+
+.loomia_pub_970 .tab li a {
+	height: 15px; 
+	/* these borders keep the heights between hovered and non-hovered states the same */	
+	border-top: 1px solid #EFF4F8;
+	border-bottom: 2px solid #CADFE4; 
+	padding: 6px 10px 3px 10px;
+	color: #225487;
+	display: block;
+	text-decoration: none;
+}		
+
+.loomia_pub_970 .tab li.selected a,
+.loomia_pub_970 .tab li.selected a:hover,
+.loomia_pub_970 .tab li a:hover {
+	color: #225487;
+	padding-left: 9px;
+	padding-right: 9px;
+	border-left:1px solid #CADFE4;
+	border-top:1px solid #CADFE4;
+	border-right:1px solid #CADFE4;				
+	border-bottom:2px solid #fff;
+	background:#fff;
+}		
+
+.loomia_pub_970 .tab li a:hover {
+	background: #F7FAFC;
+	border-bottom: 2px solid #CADFE4;				
+}			
+
+
+/* orange background on social tab */						
+.loomia_simwidget li#tab_socialsite.selected a {
+	background: #FCDFB5;
+	border-top: 1px solid #CADFE4;
+	border-right: 1px solid #CADFE4;		
+	border-bottom: 2px solid #FCDFB5;
+}			
+
+.loomia_pub_970 .loomia_socialsite {
+	background: none;
+	border: none;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	font-family: Arial, Helvetica, sans-serif;
+	position:relative;	
+	overflow: visible;		
+}
+.loomia_pub_970 .loomia_usermessage {
+
+}
+.loomia_pub_970 .loomia_usermessage strong {
+	font-weight: bold;
+}
+.loomia_pub_970 .loomia_usermessage .social_prompt {
+	margin-bottom: 7px;
+	font-size: 1.1em;
+}
+
+.loomia_pub_970 .loomia_socialuser {
+	padding: 7px;
+	margin-bottom: 0;
+}
+.loomia_pub_970 .loomia_similaritems,
+.loomia_pub_970 .loomia_socialitems {
+	padding-left: 8px;
+}
+.loomia_pub_970 .loomia_socialitems h4.loomia_heading {
+	margin-top: 5px;
+}
+.loomia_pub_970 .loomia_similaritems ul {
+	clear: both;
+}
+.loomia_pub_970 .loomia_similaritems ul li,
+.loomia_pub_970 .loomia_socialitems ul li {
+	font-size: 1.1em;
+	margin: 0;
+	padding-top:10px;
+	padding-bottom:7px;			
+	border-top:1px dotted #E4E8EB;
+	display:block;
+ 
+}
+.loomia_pub_970 .loomia_socialann {
+	font-family: Arial, Helvetica, sans;
+}
+.loomia_pub_970 .loomia_similaritems ul li.first,
+.loomia_pub_970 .loomia_socialitems ul li.first {
+	border-top: 0;
+	margin-top: 0;
+	padding-top: 4px;
+}
+.loomia_pub_970 .loomia_itemtitle {
+	font-family: Georgia, times new roman, serif;
+	font-weight: normal;
+}
+
+.loomia_pub_970 div.loomia_summary {
+    /* outer */
+    border: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    width: 343px;
+    background: #fff url(hover_bottom.png) bottom center no-repeat;
+    -webkit-box-shadow: none;
+}
+
+.loomia_pub_970 .loomia_summary span {
+    /* inner */
+    display: block;
+    border: 2px solid #D56736;
+    border-bottom: 0;
+    padding: 5px;
+    color: #444;
+}
+
+
+
+.loomia_pub_970 div.group_hover {   			
+	width: 200px;
+}
+.loomia_pub_970 div.group_hover ol {
+	margin-top: 5px;
+	list-style: disc outside;
+}
+.loomia_pub_970 div.group_hover ol li {
+	border: 0;
+	font-size: 11px;
+	margin: 3px 0;
+	padding: 0;
+	list-style: disc outside;
+}
+.loomia_pub_970 .loomia_socfooter {
+	height: 35px;
+	background: #EFF4F8;
+	margin:0;
+}
+.loomia_pub_970 .loomia_login .login_button {
+	position: absolute;
+	margin: 0;
+	top: 10px;
+	left: 5px;
+	background: url('../../images/social/btn-connect-to-fb.gif') top left no-repeat;
+}
+.loomia_pub_970 .loomia_socfooter .login_button a {
+	width: 185px;
+}			
+.loomia_pub_970 .loomia_socfooter .loomia_seenthis_logo {
+	top: 7px;
+	right: 5px;
+}
+.loomia_pub_970 .loomia_share {
+	width:129px;
+	height:14px;
+	background:url(share_back.jpg) repeat-x left top;
+	border:1px solid #EDEEF0;
+	margin:5px 0 0 7px;
+	padding-right: 5px;
+	text-align: left;
+	border: 1px solid #ddd;
+}
+.loomia_pub_970 .loomia_share a {
+	margin-top:1px;
+	display:block;
+	background:url(blue_arrow.jpg) center right no-repeat;
+	padding: 0;
+	width: 129px;
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #4e7294;
+}
+.loomia_pub_970 #loomia_whatsthis {
+	top: 0;		
+}
+.loomia_pub_970 #loomia_whatsthis,
+.loomia_pub_970 #loomia_whatsthis p {
+	margin: 5px;	
+	font-family: Arial, Helvetica, sans;
+	font-size: 11px;
+}
+.loomia_pub_970 #loomia_whatsthis .loomia_headerbar {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.loomia_pub_970 #loomia_whatsthis strong {
+	font-weight: bold;
+}
+
+/* Hacks for IE 6 */
+
+* html .loomia_pub_970 .loomia_share a#loomia_share_btn {
+	color: #4e7294;
+	font-weight: bold;
+}
+* html .teaser_recs .teaser_recs_preview {
+	top: 1px;
+	right: 0px;
+	border: 0;
+}
+* html .loomia_simwidget #tab_socialsite.selected {
+	padding-bottom: 0;
+	border-bottom: 2px solid #FCDFB5;
+	margin-bottom: 0;
+	font-weight: bold;
+}
+* html #loomia_socialsite {
+	height: 1%;
+}
+
+* html .loomia_pub_970 .teaser_recs {
+	height: 1%;
+}
+
+
+/* Hacks for IE 7 */
+*+html #loomia_socialsite {
+	zoom: 1;
+}

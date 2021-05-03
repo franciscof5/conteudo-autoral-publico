@@ -1,0 +1,2 @@
+r_drawviewmodel 0 = para a maum do cara sumir e
+hud_draw 0 

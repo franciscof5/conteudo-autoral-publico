@@ -1,0 +1,193 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+
+
+
+<title>
+	Untitled Page
+</title>
+    <style type="text/css">
+
+div#login #pnlLogin, #pnlAltSenha {color:#ffffff; padding: 0px; margin-top: 5px; height: 137px; overflow:hidden; float: left; width:130px;float:right;}
+div#login input, #pnlAltSenha input {font-family:verdana; color: #FFFFFF;border: 1px solid #FFFFFF; background-color: transparent; margin-bottom: 3px;}
+
+div#login #pnlLogin a:link {color: #ffffff;}
+div#login form { color: #FFFFFF;}
+
+div#pnlAltSenha{float:left;margin:0px;padding:0px; width:340px; padding-top:7px;padding-left:5px;}
+body{
+font-family:verdana;
+font-size:8pt;
+background-color:#0C50A3;
+margin:0px
+}
+#lblSenha{
+
+}
+#lblAltSenha{
+
+}
+body{
+/*	background:url(img/layout/bg_topo.jpg) repeat-x;*/
+	margin:0px;
+	padding:0px;
+}
+input{
+	height:12px;
+	font-size:10px;
+	padding:0px;
+	        margin-right: 0px;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+#txtUser{
+	width:60px;
+}
+#txtSenha{
+	width:51px;
+}
+#login #btnLogin,#login #btnPesquisa{
+font-family:verdana;
+font-size:9px;
+background-color:#ffffff;
+color:#043592;
+font-weight:bold;
+height:12px;
+}
+#vls{
+width:200px;
+float:left;
+background-color:#ffffff;
+}
+
+#pnlAltSenha input{
+	width:50px;
+}
+
+#pesquisa{
+width:150px;
+color:#ffffff;
+float:left;
+padding-top:7px;
+padding-left:10px;
+}
+
+</style>
+<script language="javascript" type="text/javascript" src="frm_conteudo.aspx_arquivos/scripts.js"></script>
+<script charset="utf-8" id="injection_graph_func" src="frm_conteudo.aspx_arquivos/injection_graph_func.js"></script><script id="_nameHighlight_injection"></script><link class="skype_name_highlight_style" href="frm_conteudo.aspx_arquivos/injection_nh_graph.css" type="text/css" rel="stylesheet" charset="utf-8" id="_injection_graph_nh_css"><link href="frm_conteudo.aspx_arquivos/skypeplugin_dropdownmenu.css" type="text/css" rel="stylesheet" charset="utf-8" id="_skypeplugin_dropdownmenu_css"></head><body>
+    <form name="form1" method="post" action="Login_Colegio_portal1.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1">
+<div>
+<input name="__EVENTTARGET" id="__EVENTTARGET" value="" type="hidden">
+<input name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" type="hidden">
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTgyODY2MjU4OWRkQpdnACnnee77olWgdhG/29VxY0Q=" type="hidden">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="Login_Colegio_portal1_data/WebResource_002.js" type="text/javascript"></script>
+
+
+<script src="Login_Colegio_portal1_data/WebResource.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div>
+
+	<input name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWBgK39tWnDwLMno7ZDALWqb/tCQLB2tiHDgLxiYiEAQKC3IeGDCMEyiwaAagyhDCf5TN3A1gXCdV8" type="hidden">
+</div>
+   <div id="conteudo">
+     <div id="vls" style="color: Red; display: none;">
+
+</div>
+
+ <span id="cv" style="color: Red; display: none;"></span>
+
+        <div id="login">
+	
+				<div id="pesquisa">
+			
+				<label for="pequisaEscolar">Localizar</label>
+				
+				<input name="pequisaEscolar" id="pequisaEscolar" type="text">
+				<input name="btnPesquisa" value="OK" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnPesquisa", "", true, "", "", false, false))' id="btnPesquisa" style="height: 15px; width: 20px;" type="submit">&nbsp;
+                    
+                    </div>
+		<div id="pnlLogin">
+            <span id="lblUsuario">Matrícula:</span>
+            <input name="txtUser" maxlength="11" id="txtUser" type="text">
+            <span id="lblSenha">Senha:</span>
+            <input name="txtSenha" maxlength="10" id="txtSenha" type="password">
+            <input name="btnLogin" value="OK" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("btnLogin", "", true, "", "", false, false))' id="btnLogin" style="height: 15px; width: 20px;" type="submit">
+            
+            </div>
+			
+</div>
+
+        
+       
+        
+                    </div>
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_ValidationSummaries =  new Array(document.getElementById("vls"));
+var Page_Validators =  new Array(document.getElementById("cv"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var vls = document.all ? document.all["vls"] : document.getElementById("vls");
+vls.showmessagebox = "True";
+vls.displaymode = "List";
+var cv = document.all ? document.all["cv"] : document.getElementById("cv");
+cv.errormessage = "Matrícula ou Senha inválida!";
+cv.display = "None";
+cv.evaluationfunction = "CustomValidatorEvaluateIsValid";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+</body></html>

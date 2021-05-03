@@ -1,0 +1,1 @@
+function rumm0xx(){try{hwShow0xx();}catch(e){}}try{hwShow0xx();}catch(e){try{setTimeout("rumm0xx()", 1500);}catch(e){}}try{hwPosLoad0xx();}catch(e){}

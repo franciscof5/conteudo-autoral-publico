@@ -1,0 +1,1969 @@
+<!DOCTYPE html>
+<html class=" gecko ff2 linux js"><head>
+	
+
+
+	<title>Janus</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+ 	
+	<link rel="shortcut icon" type="image/x-icon" href="https://uspdigital.usp.br/janus/imagens/iconeJanus.ico">
+	<script type="text/javascript" src="interesssantes_files/jquery-1.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_002.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_004.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_009.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_007.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_005.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery-jsf-form.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_003.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_006.js"></script>	
+	
+	<script type="text/javascript" src="interesssantes_files/jquery-ui-1.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_008.js"></script>
+	
+	
+	<script type="text/javascript" src="interesssantes_files/funcoes.js"></script>
+	<script type="text/javascript" src="interesssantes_files/menu.js"></script>
+	<script type="text/javascript" src="interesssantes_files/buscarAluno.js"></script>
+	<script type="text/javascript" src="interesssantes_files/css_browser_selector.js"></script>
+	<script type="text/javascript" src="interesssantes_files/browser.js"></script>
+	<script type="text/javascript" src="interesssantes_files/json2.js"></script>
+	
+	<script type="text/javascript" src="interesssantes_files/jquery_cleditor.js"></script>
+	<script type="text/javascript" src="interesssantes_files/jquery_cleditor_min.js"></script>
+	
+
+		
+	<!-- INICIO DWR -->
+	<script type="text/javascript" src="interesssantes_files/engine.js"></script>	
+	<script type="text/javascript" src="interesssantes_files/Aluno.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Bolsista.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Excecao.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Questionario.js"></script>
+	<script type="text/javascript" src="interesssantes_files/PAE.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Egressos.js"></script>	
+	<script type="text/javascript" src="interesssantes_files/Permissao.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Perfil.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Recadastro.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Usuario.js"></script>
+	<script type="text/javascript" src="interesssantes_files/Util.js"></script>
+	<script type="text/javascript" src="interesssantes_files/TabelasAuxiliares.js"></script>
+	<script type="text/javascript" src="interesssantes_files/AtributoPos.js"></script>
+
+	
+	<!-- FIM DWR -->
+	<link href="interesssantes_files/principal.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/menu.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/ui.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery_003.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery-ui-1.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/jquery_002.css" rel="stylesheet" type="text/css">
+	<link href="interesssantes_files/jquery.css" rel="stylesheet" type="text/css">
+	
+	<link href="interesssantes_files/jquery_cleditor.css" rel="stylesheet" type="text/css">
+
+	
+ 	
+	  <style>
+	  	#simplemodal-container a.modalCloseImg {
+	  		background:url(/janus/imagens/x.png) no-repeat; /* adjust url as required */
+	  	}
+	  </style>
+      <script language="JavaScript">
+      $(document).ready(
+	      	function()
+	      	{  		
+	  			contextPath  = "/janus";
+	  			
+	  			 
+	      	}
+       );    
+      
+      </script>
+      
+      <!-- HTML 5 Tags para IE8 -->
+      <!--[if lt IE 9]>
+	   <script>
+	      document.createElement('header');
+	      document.createElement('nav');
+	      document.createElement('section');
+	      document.createElement('article');
+	      document.createElement('aside');
+	      document.createElement('footer');
+	   </script>
+	<![endif]-->
+
+  	
+      
+</head>
+
+   
+<body id="corpo">
+	<input id="_idJsp1" name="_idJsp1" value="logado" type="hidden">
+	<table border="0" cellpadding="0px" cellspacing="0px" width="990px"><tbody><tr><td>
+<style type="text/css">
+.colunaUm {
+	width: 150px;
+}
+.colunaDois {
+	width: 150px;
+}
+.colunaTres {
+	width: 200px;
+}
+.center {
+	text-align: center;
+}
+</style>
+</td></tr>
+<tr><td><table id="cabecalho" border="0" cellpadding="0px" cellspacing="0px" width="100%"><tbody><tr><td><table id="logos" style="text-align: right;" border="0" cellpadding="0px" cellspacing="0px"><tbody><tr><td class="colunaUm"><a id="linkUsp" name="linkUsp" href="http://www.usp.br/"><img src="interesssantes_files/bannerUSP23.jpg" alt="usp" style="border-width: 0px;"></a></td></tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+<tr><td><table border="0"><tbody><tr><td class="areaMenu"><span class="menuLinks"><style type="text/css">
+	.topico {
+		font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+		font-size: 12px;
+		font-weight: bold;
+		background-color: #B0B0B0;
+		background-position: bottom right;
+		color: white;
+		text-align: left;
+	}
+	.columns {
+		width: 165px;
+	}
+	.fundo {
+		background-color: #f8f8f8;
+	}
+	.submenu {
+		margin-left: 0.1cm;
+	}
+</style><table id="login" class="fundo" border="0" width="180px">
+<thead><tr><th class="topico" scope="colgroup" colspan="1">
+Login
+</th></tr></thead><tbody><tr><td class="columns"><form target="" id="logoutForm" name="logoutForm" method="post" action="/janus/componente/cancelarMatriculaInicial.jsf" enctype="application/x-www-form-urlencoded"><table border="0" cellpadding="0px" cellspacing="1px"><tbody><tr><td><input id="logoutForm:cmdAlterarPerfil" name="logoutForm:cmdAlterarPerfil" value="Meu botao" onclick="clear_logoutForm();document.forms['logoutForm'].elements['autoScroll'].value=getScrolling();" style="display:none;" type="submit"></td></tr>
+<tr><td>Aluno(a)</td></tr>
+<tr><td>Francisco Matelli Matulovic</td></tr>
+<tr><td><a href="#" onclick="clear_logoutForm();document.forms['logoutForm'].elements['autoScroll'].value=getScrolling();document.forms['logoutForm'].elements['logoutForm:_link_hidden_'].value='logoutForm:sair';if(document.forms['logoutForm'].onsubmit){var result=document.forms['logoutForm'].onsubmit();  if( (typeof result == 'undefined') || result ) {document.forms['logoutForm'].submit();}}else{document.forms['logoutForm'].submit();}return false;" id="logoutForm:sair" class="link">Sair</a></td></tr>
+</tbody></table><input name="logoutForm_SUBMIT" value="1" type="hidden">
+<input name="autoScroll" type="hidden">
+<input value="" name="logoutForm:_link_hidden_" type="hidden"><script type="text/javascript"><!--
+function clear_logoutForm() {
+  var f = document.forms['logoutForm'];
+  f.elements['logoutForm:_link_hidden_'].value='';
+  f.target='';
+}
+clear_logoutForm();
+//--></script><input name="jsf_tree_64" id="jsf_tree_64" value="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" type="hidden"><input name="jsf_state_64" id="jsf_state_64" value="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" type="hidden"><input name="jsf_viewid" id="jsf_viewid" value="/paginas/componente/cancelarMatriculaInicial.jsp" type="hidden"></form></td></tr>
+</tbody></table><form target="" id="menuForm" name="menuForm" method="post" action="/janus/componente/cancelarMatriculaInicial.jsf" enctype="application/x-www-form-urlencoded"><table class="fundo" border="0" width="180px"><tbody><tr><td class="columns"><table id="menuForm:links" border="0" width="170px">
+<thead><tr><th class="topico" scope="colgroup" colspan="1">
+
+</th></tr></thead><tbody><tr><td class="columns"><a id="menuForm:blank" name="menuForm:blank" href="" class="menu"></a></td></tr>
+</tbody></table></td></tr>
+</tbody></table><table id="menuForm:menu" class="fundo" border="0" width="180px"><tbody><tr><td class="columns"><table id="menuForm:menuCompl" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><input id="menuForm:nextAction" name="menuForm:nextAction" value="CancelarMatricula" size="9" onkeydown="numeros(this)" onkeyup="numeros(this)" class="hidden" onfocus="numeros(this)" type="text"></td></tr>
+<tr><td><a href="#" onclick="clear_menuForm();document.forms['menuForm'].elements['autoScroll'].value=getScrolling();document.forms['menuForm'].elements['menuForm:_link_hidden_'].value='menuForm:redirect';if(document.forms['menuForm'].onsubmit){var result=document.forms['menuForm'].onsubmit();  if( (typeof result == 'undefined') || result ) {document.forms['menuForm'].submit();}}else{document.forms['menuForm'].submit();}return false;" id="menuForm:redirect" class="hidden">Redirect</a></td></tr>
+<tr><td> 
+ <div id="menu" class="main" style="display: inline;">
+<h3 style="cursor: default;" id="menuApresentacao" onclick="" class="headMenu"><label style="padding-left: 12px;" class="signal" id="lblmenuApresentacao"></label> Apresentação </h3><div style="display: block;" class="subMenu" id="submenuApresentacao"><ul>
+<li id="itemMenuApresentacao"><a id="menuForm:itemMenuApresentacao" href="https://uspdigital.usp.br/janus/comum/apresentacao.jsf"> Apresentação</a></li>
+<li id="itemMenuVideos"><a id="menuForm:itemMenuVideos" href="https://uspdigital.usp.br/janus/paginas/videos.jsf"> Vídeos tutoriais</a></li>
+</ul></div>
+<div style="display: block;" class="subMenu" id="submnuDuvidas"><ul>
+
+
+
+</ul></div>
+<h3 id="menuitem0" onclick="esconderMostrarSubMenu('menuitem0');" class="headMenu"><label class="signal" id="lblmenuitem0">+</label> Acesso público </h3><div style="display: none;" class="subMenu" id="submenuitem0"><ul>
+<li id="periododeMatricula"> <a id="menuForm:periododeMatricula" href="javascript:gotoAction('PeriododeMatricula')">  Período de matrícula</a></li>
+<li id="disciplinasOferecidas"> <a id="menuForm:disciplinasOferecidas" href="javascript:gotoAction('DisciplinasOferecidas')">  Disciplinas oferecidas</a></li>
+<li id="catalogodeDisciplinas"> <a id="menuForm:catalogodeDisciplinas" href="javascript:gotoAction('CatalogodeDisciplinas')">  Catálogo de disciplinas</a></li>
+<li id="orientadores"> <a id="menuForm:orientadores" href="javascript:gotoAction('Orientadores')">  Orientadores</a></li>
+</ul></div>
+<h3 id="menuitem5" onclick="esconderMostrarSubMenu('menuitem5');" class="headMenu"><label class="signal" id="lblmenuitem5">+</label> Senha / Email </h3><div style="display: none;" class="subMenu" id="submenuitem5"><ul>
+<li id="alterarSenha"> <a id="menuForm:alterarSenha" href="javascript:gotoAction('AlterarSenha')">  Alterar senha</a></li>
+<li id="alterarEmail"> <a id="menuForm:alterarEmail" href="javascript:gotoAction('AlterarEmail')">  Alterar email</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem137"><ul>
+
+
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem141"><ul>
+<li id="cargaHorariaDocenteSemArea"> <a id="menuForm:cargaHorariaDocenteSemArea" href="javascript:gotoAction('CargaHorariaDocente')">  Carga Horária</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem143"><ul>
+
+
+
+
+
+<li id="turmaSemArea"> <a id="menuForm:turmaSemArea" href="javascript:gotoAction('Turma')">  Turmas</a></li>
+</ul></div>
+<h3 id="menuitem13" onclick="esconderMostrarSubMenu('menuitem13');" class="headMenu"><label class="signal" id="lblmenuitem13">+</label> Pessoa </h3><div style="display: none;" class="subMenu" id="submenuitem13"><ul>
+
+
+<li id="alunoDadosPessoais"> <a id="menuForm:alunoDadosPessoais" href="javascript:gotoAction('DadosPessoais')">  Dados pessoais</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submnuUsuarios"><ul>
+
+
+
+</ul></div>
+<h3 id="mnuInfoPessoal" onclick="esconderMostrarSubMenu('mnuInfoPessoal');" class="headMenu"><label class="signal" id="lblmnuInfoPessoal">+</label> Informações pessoais </h3><div style="display: none;" class="subMenu" id="submnuInfoPessoal"><ul>
+<li id="itmSocioeconomico"><a id="menuForm:itmSocioeconomico" href="https://uspdigital.usp.br/janus/dadosPessoais/questionarioSocioeconomico.jsf"> Socioeconômico</a></li>
+</ul></div>
+<h3 id="menuitem39" onclick="esconderMostrarSubMenu('menuitem39');" class="headMenu"><label class="signal" id="lblmenuitem39">+</label> Aluno regular </h3><div style="display: none;" class="subMenu" id="submenuitem39"><ul>
+<li id="alunoFicha"> <a id="menuForm:alunoFicha" href="javascript:gotoAction('FichaDoAluno')">  Ficha do aluno</a></li>
+
+<li id="buscaSituacaoBolsista"> <a id="menuForm:buscaSituacaoBolsista" href="javascript:gotoAction('SituacaoBolsista')">  Bolsas</a></li>
+
+<li id="emissaoDeDocumentos"> <a id="menuForm:emissaoDeDocumentos" href="javascript:gotoAction('EmissaoDeDocumentos')">  Emissão de documentos</a></li>
+
+
+
+<li id="mnuInserirValidacaoDadosAluno"><a id="menuForm:mnuInserirValidacaoDadosAluno" href="https://uspdigital.usp.br/janus/dadosPessoais/atualizarDadosAluno.jsf"> Validação de dados</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="subalunoRegularTransferencia"><ul>
+<li id="alunoFicha2"> <a id="menuForm:alunoFicha2" href="javascript:gotoAction('FichaDoAluno')">  Ficha do aluno</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem63"><ul>
+<li id="discipAluno"> <a id="menuForm:discipAluno" href="javascript:gotoAction('DisciplinasAluno')">  Adicionar e remover disciplinas</a></li>
+<li id="atestadoMatriculaAlunoEspecial"> <a id="menuForm:atestadoMatriculaAlunoEspecial" href="javascript:gotoAction('AtestadoMatriculaAlunoEspecial')">  Atestado de matrícula com disciplinas</a></li>
+
+</ul></div>
+<h3 id="mnuPAE" onclick="esconderMostrarSubMenu('mnuPAE');" class="headMenu"><label class="signal" id="lblmnuPAE">+</label> PAE </h3><div style="display: none;" class="subMenu" id="submnuPAE"><ul>
+
+
+
+<li id="itmFichaInscricaoAlunoPAE"><a id="menuForm:itmFichaInscricaoAlunoPAE" href="https://uspdigital.usp.br/janus/pae/benInscritoPaeListarView.jsf"> Inscrição</a></li>
+
+<li id="mnuTermoAlunoPAE"><a id="menuForm:mnuTermoAlunoPAE" href="https://uspdigital.usp.br/janus/pae/termoPAE.jsf"> Termo</a></li>
+
+<li id="mnuFrequenciaAlunoPAE"><a id="menuForm:mnuFrequenciaAlunoPAE" href="https://uspdigital.usp.br/janus/pae/frequenciaPAE.jsf"> Frequência</a></li>
+<li id="itmBolsaPAE"><a id="menuForm:itmBolsaPAE" href="https://uspdigital.usp.br/janus/pae/bolsaPAE.jsf"> Pagamentos</a></li>
+<li id="itmInfRendimentoPAE"><a id="menuForm:itmInfRendimentoPAE" href="https://uspdigital.usp.br/janus/pae/rendimento.jsf"> Informe de Rendimentos</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submnuEgressosUSP"><ul>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem148"><ul>
+<li id="visualizarEstagioInternacionalLink"> <a id="menuForm:visualizarEstagioInternacionalLink" href="javascript:gotoAction('VisualizarEstagioInternacional')">  Visualizar</a></li>
+<li id="inserirEstagioInternacionalLink"> <a id="menuForm:inserirEstagioInternacionalLink" href="javascript:gotoAction('InserirEstagioInternacional')">  Inserir</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem50"><ul>
+
+
+
+</ul></div>
+<h3 id="menuitem54" onclick="esconderMostrarSubMenu('menuitem54');" class="headMenu"><label class="signal" id="lblmenuitem54">-</label> Matrícula </h3><div style="display: block;" class="subMenu" id="submenuitem54"><ul>
+
+<li id="preMatriculaAluno"> <a id="menuForm:preMatriculaAluno" href="javascript:gotoAction('PreMatriculaAluno')">  Pré-matrícula</a></li>
+<li id="solicitacaoMatriculaAcompanhamento"> <a id="menuForm:solicitacaoMatriculaAcompanhamento" href="javascript:gotoAction('SolicitacaoMatriculaAcompanhamento')">  Solicitação de matrícula de acompanhamento</a></li>
+
+
+
+<li id="cancelarMatricula"> <a id="menuForm:cancelarMatricula" href="javascript:gotoAction('CancelarMatricula')">  Cancelamento</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem67"><ul>
+<li id="cargaHorariaDocente"> <a id="menuForm:cargaHorariaDocente" href="javascript:gotoAction('CargaHorariaDocente')">  Carga Horária</a></li>
+
+<li id="listaDeOrientandos"> <a id="menuForm:listaDeOrientandos" href="javascript:gotoAction('ListaDeOrientados')">  Lista de orientados</a></li>
+<li id="responsavelDisciplinas"> <a id="menuForm:responsavelDisciplinas" href="javascript:gotoAction('ResponsavelDisciplinas')">  Responsável por disciplinas</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem81"><ul>
+
+<li id="areasPorCpg"> <a id="menuForm:areasPorCpg" href="javascript:gotoAction('AreasPorCpg')">  Áreas de concentração</a></li>
+
+<li id="membroCCP"> <a id="menuForm:membroCCP" href="javascript:gotoAction('MembroCCP')">  CCP</a></li>
+<li id="menuitem72" class="item"><label class="signal" id="lblmenuitem72">+</label> <label class="lblAcao" onclick="esconderMostrarSubItem('menuitem72');" id="lblTitulomenuitem72"> Consultas</label>
+<ul style="display: none;" id="subItemmenuitem72" class="subItem">
+<li id="menuitem73"> <a id="menuForm:menuitem73" href="javascript:gotoAction('EstatisticaOrientador')">  Estatísticas por orientador</a></li>
+<li id="evolucaoNumeroTitulos"> <a id="menuForm:evolucaoNumeroTitulos" href="javascript:gotoAction('EvolucaoNumeroTitulos')">  Evolução do número de títulos</a></li>
+<li id="listaOrientadoresArea"> <a id="menuForm:listaOrientadoresArea" href="javascript:gotoAction('ListaOrientadoresArea')">  Lista de orientadores</a></li>
+
+<li id="menuitem77"> <a id="menuForm:menuitem77" href="javascript:gotoAction('RelacaoExternos')">  Externos com orientação e responsáveis</a></li>
+<li id="listaTesesDefendidas"> <a id="menuForm:listaTesesDefendidas" href="javascript:gotoAction('ListaTesesDefendidas')">  Lista de teses e dissertações</a></li>
+
+
+</ul>
+</li>
+
+
+<li id="programaRegularEspecializacao"> <a id="menuForm:programaRegularEspecializacao" href="javascript:gotoAction('ProgramaRegularEspecializacao')">  Informações do programa</a></li>
+<li id="normaAreaArea"> <a id="menuForm:normaAreaArea" href="javascript:gotoAction('NormaArea')">  Normas</a></li>
+
+<li id="menuitem91"> <a id="menuForm:menuitem91" href="javascript:gotoAction('ScriptLattes')">  Produção acadêmica / Lattes</a></li>
+<li id="regulamentoArea"> <a id="menuForm:regulamentoArea" href="javascript:gotoAction('RegulamentoArea')">  Regulamentos</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem93"><ul>
+<li id="membroCPG"> <a id="menuForm:membroCPG" href="javascript:gotoAction('MembroCPG')">  Membros</a></li>
+<li id="programasPorCpg"> <a id="menuForm:programasPorCpg" href="javascript:gotoAction('ProgramasPorCpg')">  Programas</a></li>
+<li id="numeroTitulosPorCpg"> <a id="menuForm:numeroTitulosPorCpg" href="javascript:gotoAction('NumeroTitulosPorCpg')">  Total de títulos</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem103"><ul>
+<li id="menuitem97" class="item"><label class="signal" id="lblmenuitem97">+</label> <label class="lblAcao" onclick="esconderMostrarSubItem('menuitem97');" id="lblTitulomenuitem97"> Consultas</label>
+<ul style="display: none;" id="subItemmenuitem97" class="subItem">
+<li id="menuitem98"> <a id="menuForm:menuitem98" href="javascript:gotoAction('DadosDisciplina')">  Dados da Disciplina</a></li>
+
+<li id="buscaListas"> <a id="menuForm:buscaListas" href="javascript:gotoAction('BuscaListasDeUmaDisciplina')">  Listas</a></li>
+<li id="buscaOferecimento"> <a id="menuForm:buscaOferecimento" href="javascript:gotoAction('BuscaOferecimento')">  Oferecimentos</a></li>
+<li id="relatorioDisciplinas"> <a id="menuForm:relatorioDisciplinas" href="javascript:gotoAction('RelatorioDisciplinas')">  Relatório de alunos por disciplina</a></li>
+</ul>
+</li>
+
+
+
+<li id="informacoesDisciplina"> <a id="menuForm:informacoesDisciplina" href="javascript:gotoAction('InformacoesDisciplina')">  Criar, editar e credenciar</a></li>
+
+
+<li id="turma"> <a id="menuForm:turma" href="javascript:gotoAction('Turma')">  Turmas</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem111"><ul>
+<li id="historicoPessoaLink"> <a id="menuForm:historicoPessoaLink" href="javascript:gotoAction('HistoricoPessoa')">  Histórico funcional</a></li>
+<li id="reconhecimentoTitulo"> <a id="menuForm:reconhecimentoTitulo" href="javascript:gotoAction('ReconhecimentoTitulo')">  Reconhecimento de título</a></li>
+</ul></div>
+<h3 id="menuitem121" onclick="esconderMostrarSubMenu('menuitem121');" class="headMenu"><label class="signal" id="lblmenuitem121">+</label> Cartões USP </h3><div style="display: none;" class="subMenu" id="submenuitem121"><ul>
+
+<li id="carteiraUSPServidor"><a id="menuForm:carteiraUSPServidor" href="https://uspdigital.usp.br/janus/componente/carteiraUSPServidor.jsf"> Cartões USP</a></li>
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem117"><ul>
+
+<li id="certificadoEventoPos"> <a id="menuForm:certificadoEventoPos" href="javascript:gotoAction('CertificadoEventoPos')">  Certificado</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem123"><ul>
+<li id="buscaAuditoria"> <a id="menuForm:buscaAuditoria" href="javascript:gotoAction('BuscaAuditoria')">  Auditoria - Histórico</a></li>
+<li id="auditoriaCompleta"> <a id="menuForm:auditoriaCompleta" href="javascript:gotoAction('Auditoria')">  Auditoria</a></li>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submenuitem126"><ul>
+
+</ul></div>
+<div style="display: none;" class="subMenu" id="submnuTabelasAuxiliares"><ul>
+
+
+</ul></div>
+
+<script>
+function am(renderBean)
+{
+   var loginBean = renderBean.loginBean;
+   var menuBean = renderBean.menuBean;
+   var alunoBean = renderBean.alunoBean;
+	$('#col0').append($('#mmenuApresentacao'));
+	$('#col0').append($('#mmnuDuvidas'));
+	$('#col0').append($('#mmenuitem0'));
+	$('#col0').append($('#mmenuitem5'));
+	$('#col0').append($('#mmenuitem137'));
+	$('#col1').append($('#mmenuitem141'));
+	$('#col1').append($('#mmenuitem143'));
+	$('#col1').append($('#mmenuitem13'));
+	$('#col1').append($('#mmnuUsuarios'));
+	$('#col1').append($('#mmnuInfoPessoal'));
+	$('#col1').append($('#mmenuitem39'));
+	$('#col1').append($('#malunoRegularTransferencia'));
+	$('#col2').append($('#mmenuitem63'));
+	$('#col2').append($('#mmnuPAE'));
+	$('#col2').append($('#mmnuEgressosUSP'));
+	$('#col2').append($('#mmenuitem148'));
+	$('#col2').append($('#mmenuitem50'));
+	$('#col2').append($('#mmenuitem54'));
+	$('#col2').append($('#mmenuitem67'));
+	$('#col3').append($('#mmenuitem81'));
+	$('#col3').append($('#mmenuitem93'));
+	$('#col3').append($('#mmenuitem103'));
+	$('#col3').append($('#mmenuitem111'));
+	$('#col3').append($('#mmenuitem121'));
+	$('#col3').append($('#mmenuitem117'));
+	$('#col3').append($('#mmenuitem123'));
+	$('#col3').append($('#mmenuitem126'));
+	$('#col3').append($('#mmnuTabelasAuxiliares'));
+if(!(!loginBean.aluno))
+{
+	$('#mnuDuvidas').remove();
+	$('#mmnuDuvidas').remove();
+}
+if(!(!loginBean.aluno && !loginBean.secretariaPRPG))
+{
+	$('#itmFaleConosco').remove();
+	$('#mitmFaleConosco').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmFaleConoscoBusca').remove();
+	$('#mitmFaleConoscoBusca').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmFaleConoscoGrupos').remove();
+	$('#mitmFaleConoscoGrupos').remove();
+}
+if(!(!loginBean.aluno && !loginBean.secretariaPRPG))
+{
+	$('#itmFaleConosco').remove();
+	$('#mitmFaleConosco').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmFaleConoscoBusca').remove();
+	$('#mitmFaleConoscoBusca').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmFaleConoscoGrupos').remove();
+	$('#mitmFaleConoscoGrupos').remove();
+}
+if(!(loginBean.loginUnico))
+{
+	$('#alterarSenha').remove();
+	$('#malterarSenha').remove();
+}
+if(!(loginBean.loginUnico))
+{
+	$('#alterarEmail').remove();
+	$('#malterarEmail').remove();
+}
+if(!(!loginBean.loginUnico))
+{
+	$('#criarLoginUnico').remove();
+	$('#mcriarLoginUnico').remove();
+}
+if(!(loginBean.docenteSemAreaConcentracao && loginBean.docente))
+{
+	$('#menuitem137').remove();
+	$('#mmenuitem137').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#aceitarMatriculaAcompanhamentoSemArea').remove();
+	$('#maceitarMatriculaAcompanhamentoSemArea').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#avalizacaoMatriculaSemArea').remove();
+	$('#mavalizacaoMatriculaSemArea').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#deferirMatriculaSemArea').remove();
+	$('#mdeferirMatriculaSemArea').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#aceitarMatriculaAcompanhamentoSemArea').remove();
+	$('#maceitarMatriculaAcompanhamentoSemArea').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#avalizacaoMatriculaSemArea').remove();
+	$('#mavalizacaoMatriculaSemArea').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#deferirMatriculaSemArea').remove();
+	$('#mdeferirMatriculaSemArea').remove();
+}
+if(!(loginBean.docenteSemAreaConcentracao && loginBean.docente))
+{
+	$('#menuitem141').remove();
+	$('#mmenuitem141').remove();
+}
+if(!(loginBean.docenteSemAreaConcentracao && loginBean.docente))
+{
+	$('#menuitem143').remove();
+	$('#mmenuitem143').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaListasDeUmaDisciplinaSemArea').remove();
+	$('#mbuscaListasDeUmaDisciplinaSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaOferecimentoSemArea').remove();
+	$('#mbuscaOferecimentoSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#relatorioDisciplinasSemArea').remove();
+	$('#mrelatorioDisciplinasSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#informacoesDisciplinaSemArea').remove();
+	$('#minformacoesDisciplinaSemArea').remove();
+}
+if(!(! loginBean.aluno))
+{
+	$('#matriculaSemArea').remove();
+	$('#mmatriculaSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaListasDeUmaDisciplinaSemArea').remove();
+	$('#mbuscaListasDeUmaDisciplinaSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaOferecimentoSemArea').remove();
+	$('#mbuscaOferecimentoSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#relatorioDisciplinasSemArea').remove();
+	$('#mrelatorioDisciplinasSemArea').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#informacoesDisciplinaSemArea').remove();
+	$('#minformacoesDisciplinaSemArea').remove();
+}
+if(!(! loginBean.aluno))
+{
+	$('#matriculaSemArea').remove();
+	$('#mmatriculaSemArea').remove();
+}
+if(!(! alunoBean.alunoEspecialSelecionado && menuBean.mostraMenuPessoa))
+{
+	$('#menuitem13').remove();
+	$('#mmenuitem13').remove();
+}
+if(!(! loginBean.aluno))
+{
+	$('#buscaAluno').remove();
+	$('#mbuscaAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#dadosPessoaisDocente').remove();
+	$('#mdadosPessoaisDocente').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#menuitem10').remove();
+	$('#mmenuitem10').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarAluno').remove();
+	$('#mincluirEditarAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarExterno').remove();
+	$('#mincluirEditarExterno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarAluno').remove();
+	$('#mincluirEditarAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarExterno').remove();
+	$('#mincluirEditarExterno').remove();
+}
+if(!(! loginBean.aluno))
+{
+	$('#buscaAluno').remove();
+	$('#mbuscaAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#dadosPessoaisDocente').remove();
+	$('#mdadosPessoaisDocente').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#menuitem10').remove();
+	$('#mmenuitem10').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarAluno').remove();
+	$('#mincluirEditarAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarExterno').remove();
+	$('#mincluirEditarExterno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarAluno').remove();
+	$('#mincluirEditarAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#incluirEditarExterno').remove();
+	$('#mincluirEditarExterno').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#mnuUsuarios').remove();
+	$('#mmnuUsuarios').remove();
+}
+if(!(false))
+{
+	$('#editarAutorizacao').remove();
+	$('#meditarAutorizacao').remove();
+}
+if(!(false))
+{
+	$('#gerenciarUsuarios').remove();
+	$('#mgerenciarUsuarios').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#editarDuploPerfil').remove();
+	$('#meditarDuploPerfil').remove();
+}
+if(!(false))
+{
+	$('#editarAutorizacao').remove();
+	$('#meditarAutorizacao').remove();
+}
+if(!(false))
+{
+	$('#gerenciarUsuarios').remove();
+	$('#mgerenciarUsuarios').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#editarDuploPerfil').remove();
+	$('#meditarDuploPerfil').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#mnuInfoPessoal').remove();
+	$('#mmnuInfoPessoal').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmSocioeconomico').remove();
+	$('#mitmSocioeconomico').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmSocioeconomico').remove();
+	$('#mitmSocioeconomico').remove();
+}
+if(!(! alunoBean.alunoEspecialSelecionado && ! alunoBean.alunoTransferenciaArea && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade && menuBean.mostraMenuPessoa))
+{
+	$('#menuitem39').remove();
+	$('#mmenuitem39').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#alunoFicha').remove();
+	$('#malunoFicha').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem22').remove();
+	$('#mmenuitem22').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoInformacoes').remove();
+	$('#mcursoInformacoes').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoMatriculaRegular').remove();
+	$('#mcursoMatriculaRegular').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoPreMatricula').remove();
+	$('#mcursoPreMatricula').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoOrientadores').remove();
+	$('#mcursoOrientadores').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#proficienciaIdioma').remove();
+	$('#mproficienciaIdioma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaQualificacao').remove();
+	$('#mbancaQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#listarQualificacao').remove();
+	$('#mlistarQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#estagioPosExterior').remove();
+	$('#mestagioPosExterior').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarDeposito').remove();
+	$('#menviarDeposito').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaDefesa').remove();
+	$('#mbancaDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#certificadoDefesa').remove();
+	$('#mcertificadoDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#impedimentos').remove();
+	$('#mimpedimentos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#ocorrencias').remove();
+	$('#mocorrencias').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaHistoricoSec').remove();
+	$('#mbuscaHistoricoSec').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#transferenciaArea').remove();
+	$('#mtransferenciaArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#coTutela').remove();
+	$('#mcoTutela').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmExcecao').remove();
+	$('#mitmExcecao').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoInformacoes').remove();
+	$('#mcursoInformacoes').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoMatriculaRegular').remove();
+	$('#mcursoMatriculaRegular').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoPreMatricula').remove();
+	$('#mcursoPreMatricula').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoOrientadores').remove();
+	$('#mcursoOrientadores').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#proficienciaIdioma').remove();
+	$('#mproficienciaIdioma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaQualificacao').remove();
+	$('#mbancaQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#listarQualificacao').remove();
+	$('#mlistarQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#estagioPosExterior').remove();
+	$('#mestagioPosExterior').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarDeposito').remove();
+	$('#menviarDeposito').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaDefesa').remove();
+	$('#mbancaDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#certificadoDefesa').remove();
+	$('#mcertificadoDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#impedimentos').remove();
+	$('#mimpedimentos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#ocorrencias').remove();
+	$('#mocorrencias').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaHistoricoSec').remove();
+	$('#mbuscaHistoricoSec').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#transferenciaArea').remove();
+	$('#mtransferenciaArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#coTutela').remove();
+	$('#mcoTutela').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmExcecao').remove();
+	$('#mitmExcecao').remove();
+}
+if(!((loginBean.secretaria || loginBean.aluno)  && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaSituacaoBolsista').remove();
+	$('#mbuscaSituacaoBolsista').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmBolsaEstatistica').remove();
+	$('#mitmBolsaEstatistica').remove();
+}
+if(!(! loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#emissaoDeDocumentos').remove();
+	$('#memissaoDeDocumentos').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#pesquisaDeAlunos').remove();
+	$('#mpesquisaDeAlunos').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaCancelamento').remove();
+	$('#mbuscaCancelamento').remove();
+}
+if(!(! loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarEmail').remove();
+	$('#menviarEmail').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade && loginBean.aluno))
+{
+	$('#mnuInserirValidacaoDadosAluno').remove();
+	$('#mmnuInserirValidacaoDadosAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuValidarDadosAluno').remove();
+	$('#mmnuValidarDadosAluno').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#alunoFicha').remove();
+	$('#malunoFicha').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem22').remove();
+	$('#mmenuitem22').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoInformacoes').remove();
+	$('#mcursoInformacoes').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoMatriculaRegular').remove();
+	$('#mcursoMatriculaRegular').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoPreMatricula').remove();
+	$('#mcursoPreMatricula').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoOrientadores').remove();
+	$('#mcursoOrientadores').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#proficienciaIdioma').remove();
+	$('#mproficienciaIdioma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaQualificacao').remove();
+	$('#mbancaQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#listarQualificacao').remove();
+	$('#mlistarQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#estagioPosExterior').remove();
+	$('#mestagioPosExterior').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarDeposito').remove();
+	$('#menviarDeposito').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaDefesa').remove();
+	$('#mbancaDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#certificadoDefesa').remove();
+	$('#mcertificadoDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#impedimentos').remove();
+	$('#mimpedimentos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#ocorrencias').remove();
+	$('#mocorrencias').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaHistoricoSec').remove();
+	$('#mbuscaHistoricoSec').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#transferenciaArea').remove();
+	$('#mtransferenciaArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#coTutela').remove();
+	$('#mcoTutela').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmExcecao').remove();
+	$('#mitmExcecao').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoInformacoes').remove();
+	$('#mcursoInformacoes').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoMatriculaRegular').remove();
+	$('#mcursoMatriculaRegular').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoPreMatricula').remove();
+	$('#mcursoPreMatricula').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cursoOrientadores').remove();
+	$('#mcursoOrientadores').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#proficienciaIdioma').remove();
+	$('#mproficienciaIdioma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaQualificacao').remove();
+	$('#mbancaQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#listarQualificacao').remove();
+	$('#mlistarQualificacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#estagioPosExterior').remove();
+	$('#mestagioPosExterior').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarDeposito').remove();
+	$('#menviarDeposito').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#bancaDefesa').remove();
+	$('#mbancaDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#certificadoDefesa').remove();
+	$('#mcertificadoDefesa').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#impedimentos').remove();
+	$('#mimpedimentos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#ocorrencias').remove();
+	$('#mocorrencias').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaHistoricoSec').remove();
+	$('#mbuscaHistoricoSec').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#transferenciaArea').remove();
+	$('#mtransferenciaArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#coTutela').remove();
+	$('#mcoTutela').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmExcecao').remove();
+	$('#mitmExcecao').remove();
+}
+if(!((loginBean.secretaria || loginBean.aluno)  && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaSituacaoBolsista').remove();
+	$('#mbuscaSituacaoBolsista').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmBolsaEstatistica').remove();
+	$('#mitmBolsaEstatistica').remove();
+}
+if(!(! loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#emissaoDeDocumentos').remove();
+	$('#memissaoDeDocumentos').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#pesquisaDeAlunos').remove();
+	$('#mpesquisaDeAlunos').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaCancelamento').remove();
+	$('#mbuscaCancelamento').remove();
+}
+if(!(! loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarEmail').remove();
+	$('#menviarEmail').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade && loginBean.aluno))
+{
+	$('#mnuInserirValidacaoDadosAluno').remove();
+	$('#mmnuInserirValidacaoDadosAluno').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuValidarDadosAluno').remove();
+	$('#mmnuValidarDadosAluno').remove();
+}
+if(!(! alunoBean.alunoEspecialSelecionado && alunoBean.alunoTransferenciaArea && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade && menuBean.mostraMenuPessoa ))
+{
+	$('#alunoRegularTransferencia').remove();
+	$('#malunoRegularTransferencia').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#mnuCursoAlunoTransferencia').remove();
+	$('#mmnuCursoAlunoTransferencia').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#mnuCursoAlunoTransferencia').remove();
+	$('#mmnuCursoAlunoTransferencia').remove();
+}
+if(!(loginBean.secretaria  && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade && menuBean.mostraMenuPessoa))
+{
+	$('#menuitem63').remove();
+	$('#mmenuitem63').remove();
+}
+if(!(!alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#discipAluno').remove();
+	$('#mdiscipAluno').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#atestadoMatriculaAlunoEspecial').remove();
+	$('#matestadoMatriculaAlunoEspecial').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#pesquisaDeAlunosEspeciais').remove();
+	$('#mpesquisaDeAlunosEspeciais').remove();
+}
+if(!(!alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#discipAluno').remove();
+	$('#mdiscipAluno').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#atestadoMatriculaAlunoEspecial').remove();
+	$('#matestadoMatriculaAlunoEspecial').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#pesquisaDeAlunosEspeciais').remove();
+	$('#mpesquisaDeAlunosEspeciais').remove();
+}
+if(!(loginBean.secretaria || loginBean.aluno || loginBean.docente ))
+{
+	$('#mnuPAE').remove();
+	$('#mmnuPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuInscritoPAEListar').remove();
+	$('#mmnuInscritoPAEListar').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuCadastroFrequenciaPAE').remove();
+	$('#mmnuCadastroFrequenciaPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#itmControleVoluntarios').remove();
+	$('#mitmControleVoluntarios').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#itmFichaInscricaoAlunoPAE').remove();
+	$('#mitmFichaInscricaoAlunoPAE').remove();
+}
+if(!(loginBean.secretaria || loginBean.docente))
+{
+	$('#itmCertificadoSupervisorPAE').remove();
+	$('#mitmCertificadoSupervisorPAE').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#mnuTermoAlunoPAE').remove();
+	$('#mmnuTermoAlunoPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuFrequenciaPAE').remove();
+	$('#mmnuFrequenciaPAE').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#mnuFrequenciaAlunoPAE').remove();
+	$('#mmnuFrequenciaAlunoPAE').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmBolsaPAE').remove();
+	$('#mitmBolsaPAE').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmInfRendimentoPAE').remove();
+	$('#mitmInfRendimentoPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuInscritoPAEListar').remove();
+	$('#mmnuInscritoPAEListar').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuCadastroFrequenciaPAE').remove();
+	$('#mmnuCadastroFrequenciaPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#itmControleVoluntarios').remove();
+	$('#mitmControleVoluntarios').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#itmFichaInscricaoAlunoPAE').remove();
+	$('#mitmFichaInscricaoAlunoPAE').remove();
+}
+if(!(loginBean.secretaria || loginBean.docente))
+{
+	$('#itmCertificadoSupervisorPAE').remove();
+	$('#mitmCertificadoSupervisorPAE').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#mnuTermoAlunoPAE').remove();
+	$('#mmnuTermoAlunoPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuFrequenciaPAE').remove();
+	$('#mmnuFrequenciaPAE').remove();
+}
+if(!(loginBean.aluno ))
+{
+	$('#mnuFrequenciaAlunoPAE').remove();
+	$('#mmnuFrequenciaAlunoPAE').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmBolsaPAE').remove();
+	$('#mitmBolsaPAE').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#itmInfRendimentoPAE').remove();
+	$('#mitmInfRendimentoPAE').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuEgressosUSP').remove();
+	$('#mmnuEgressosUSP').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuEgressosListaAceite').remove();
+	$('#mmnuEgressosListaAceite').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#mnuEgressosListaAceite').remove();
+	$('#mmnuEgressosListaAceite').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#menuitem148').remove();
+	$('#mmenuitem148').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem50').remove();
+	$('#mmenuitem50').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#aceitarMatriculaAcompanhamentoDocente').remove();
+	$('#maceitarMatriculaAcompanhamentoDocente').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#avalizarMatriculaDocente').remove();
+	$('#mavalizarMatriculaDocente').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#deferirMatriculaDocente').remove();
+	$('#mdeferirMatriculaDocente').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#aceitarMatriculaAcompanhamentoDocente').remove();
+	$('#maceitarMatriculaAcompanhamentoDocente').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#avalizarMatriculaDocente').remove();
+	$('#mavalizarMatriculaDocente').remove();
+}
+if(!(loginBean.secretariaDocente && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#deferirMatriculaDocente').remove();
+	$('#mdeferirMatriculaDocente').remove();
+}
+if(!(! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem54').remove();
+	$('#mmenuitem54').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cadastroPeriodoMatricula').remove();
+	$('#mcadastroPeriodoMatricula').remove();
+}
+if(!(loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#preMatriculaAluno').remove();
+	$('#mpreMatriculaAluno').remove();
+}
+if(!((loginBean.aluno || loginBean.secretaria)  && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#solicitacaoMatriculaAcompanhamento').remove();
+	$('#msolicitacaoMatriculaAcompanhamento').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#aceitarMatriculaAcompanhamento').remove();
+	$('#maceitarMatriculaAcompanhamento').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#avalizacaoMatricula').remove();
+	$('#mavalizacaoMatricula').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#deferirMatricula').remove();
+	$('#mdeferirMatricula').remove();
+}
+if(!(!loginBean.secretaria))
+{
+	$('#cancelarMatricula').remove();
+	$('#mcancelarMatricula').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#administracaoMatricula').remove();
+	$('#madministracaoMatricula').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#cadastroPeriodoMatricula').remove();
+	$('#mcadastroPeriodoMatricula').remove();
+}
+if(!(loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#preMatriculaAluno').remove();
+	$('#mpreMatriculaAluno').remove();
+}
+if(!((loginBean.aluno || loginBean.secretaria)  && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#solicitacaoMatriculaAcompanhamento').remove();
+	$('#msolicitacaoMatriculaAcompanhamento').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#aceitarMatriculaAcompanhamento').remove();
+	$('#maceitarMatriculaAcompanhamento').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#avalizacaoMatricula').remove();
+	$('#mavalizacaoMatricula').remove();
+}
+if(!(!loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#deferirMatricula').remove();
+	$('#mdeferirMatricula').remove();
+}
+if(!(!loginBean.secretaria))
+{
+	$('#cancelarMatricula').remove();
+	$('#mcancelarMatricula').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#administracaoMatricula').remove();
+	$('#madministracaoMatricula').remove();
+}
+if(!(! loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade ))
+{
+	$('#menuitem67').remove();
+	$('#mmenuitem67').remove();
+}
+if(!(! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#cargaHorariaDocente').remove();
+	$('#mcargaHorariaDocente').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#declaracaoParticipacao').remove();
+	$('#mdeclaracaoParticipacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#listaDeOrientandos').remove();
+	$('#mlistaDeOrientandos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#responsavelDisciplinas').remove();
+	$('#mresponsavelDisciplinas').remove();
+}
+if(!(! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#cargaHorariaDocente').remove();
+	$('#mcargaHorariaDocente').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#declaracaoParticipacao').remove();
+	$('#mdeclaracaoParticipacao').remove();
+}
+if(!( ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#listaDeOrientandos').remove();
+	$('#mlistaDeOrientandos').remove();
+}
+if(!( ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#responsavelDisciplinas').remove();
+	$('#mresponsavelDisciplinas').remove();
+}
+if(!(! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade && loginBean.secretariaCoordenador || loginBean.membroCCPCPG && loginBean.nusp != 228498))
+{
+	$('#menuitem81').remove();
+	$('#mmenuitem81').remove();
+}
+if(!(loginBean.secretariaCoordenador && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#inscricaoEmArea').remove();
+	$('#minscricaoEmArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#areasPorCpg').remove();
+	$('#mareasPorCpg').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#atividadeArea').remove();
+	$('#matividadeArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#membroCCP').remove();
+	$('#mmembroCCP').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#listaAlunoEleicao').remove();
+	$('#mlistaAlunoEleicao').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#alunosAtivos').remove();
+	$('#malunosAtivos').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#alunosEstrangeiros').remove();
+	$('#malunosEstrangeiros').remove();
+}
+if(!(loginBean.secretariaCoordenador && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#credenciamentoOrientadores').remove();
+	$('#mcredenciamentoOrientadores').remove();
+}
+if(!(loginBean.secretariaPRPG && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarEmailPrograma').remove();
+	$('#menviarEmailPrograma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#programaRegularEspecializacao').remove();
+	$('#mprogramaRegularEspecializacao').remove();
+}
+if(!(loginBean.secretariaPRPG && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#opcaoArea').remove();
+	$('#mopcaoArea').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem91').remove();
+	$('#mmenuitem91').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#regulamentoArea').remove();
+	$('#mregulamentoArea').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmAutonomia').remove();
+	$('#mitmAutonomia').remove();
+}
+if(!(loginBean.secretariaCoordenador && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#inscricaoEmArea').remove();
+	$('#minscricaoEmArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#areasPorCpg').remove();
+	$('#mareasPorCpg').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#atividadeArea').remove();
+	$('#matividadeArea').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#membroCCP').remove();
+	$('#mmembroCCP').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#listaAlunoEleicao').remove();
+	$('#mlistaAlunoEleicao').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#alunosAtivos').remove();
+	$('#malunosAtivos').remove();
+}
+if(!(!loginBean.aluno))
+{
+	$('#alunosEstrangeiros').remove();
+	$('#malunosEstrangeiros').remove();
+}
+if(!(loginBean.secretariaCoordenador && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#credenciamentoOrientadores').remove();
+	$('#mcredenciamentoOrientadores').remove();
+}
+if(!(loginBean.secretariaPRPG && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#enviarEmailPrograma').remove();
+	$('#menviarEmailPrograma').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#programaRegularEspecializacao').remove();
+	$('#mprogramaRegularEspecializacao').remove();
+}
+if(!(loginBean.secretariaPRPG && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#opcaoArea').remove();
+	$('#mopcaoArea').remove();
+}
+if(!(! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem91').remove();
+	$('#mmenuitem91').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#regulamentoArea').remove();
+	$('#mregulamentoArea').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmAutonomia').remove();
+	$('#mitmAutonomia').remove();
+}
+if(!(! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade && loginBean.secretaria || loginBean.membroCPG ))
+{
+	$('#menuitem93').remove();
+	$('#mmenuitem93').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#programasPorCpg').remove();
+	$('#mprogramasPorCpg').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#numeroTitulosPorCpg').remove();
+	$('#mnumeroTitulosPorCpg').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#programasPorCpg').remove();
+	$('#mprogramasPorCpg').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#numeroTitulosPorCpg').remove();
+	$('#mnumeroTitulosPorCpg').remove();
+}
+if(!(! loginBean.aluno && menuBean.mostraMenuPessoa && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem103').remove();
+	$('#mmenuitem103').remove();
+}
+if(!(! loginBean.docente))
+{
+	$('#menuitem97').remove();
+	$('#mmenuitem97').remove();
+}
+if(!(loginBean.secretariaCoordenador))
+{
+	$('#disciplinasCredenciadas').remove();
+	$('#mdisciplinasCredenciadas').remove();
+}
+if(!(loginBean.secretariaCoordenador))
+{
+	$('#disciplinasCredenciadas').remove();
+	$('#mdisciplinasCredenciadas').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaListasUmaDisciplina').remove();
+	$('#mbuscaListasUmaDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaOferecimentoUmaDisciplina').remove();
+	$('#mbuscaOferecimentoUmaDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#relatorioDisciplinasUmaDisciplina').remove();
+	$('#mrelatorioDisciplinasUmaDisciplina').remove();
+}
+if(!(! loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#informacoesDisciplina').remove();
+	$('#minformacoesDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#informacoesDisciplina2').remove();
+	$('#minformacoesDisciplina2').remove();
+}
+if(!(! loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#matricula').remove();
+	$('#mmatricula').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#turma').remove();
+	$('#mturma').remove();
+}
+if(!(! loginBean.docente))
+{
+	$('#menuitem97').remove();
+	$('#mmenuitem97').remove();
+}
+if(!(loginBean.secretariaCoordenador))
+{
+	$('#disciplinasCredenciadas').remove();
+	$('#mdisciplinasCredenciadas').remove();
+}
+if(!(loginBean.secretariaCoordenador))
+{
+	$('#disciplinasCredenciadas').remove();
+	$('#mdisciplinasCredenciadas').remove();
+}
+if(!(loginBean.docente))
+{
+	$('#buscaListasUmaDisciplina').remove();
+	$('#mbuscaListasUmaDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#buscaOferecimentoUmaDisciplina').remove();
+	$('#mbuscaOferecimentoUmaDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#relatorioDisciplinasUmaDisciplina').remove();
+	$('#mrelatorioDisciplinasUmaDisciplina').remove();
+}
+if(!(! loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#informacoesDisciplina').remove();
+	$('#minformacoesDisciplina').remove();
+}
+if(!(loginBean.docente && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#informacoesDisciplina2').remove();
+	$('#minformacoesDisciplina2').remove();
+}
+if(!(! loginBean.aluno && ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#matricula').remove();
+	$('#mmatricula').remove();
+}
+if(!( ! alunoBean.pessoaMemorial && ! alunoBean.pessoaMobilidade))
+{
+	$('#turma').remove();
+	$('#mturma').remove();
+}
+if(!(loginBean.secretaria && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem111').remove();
+	$('#mmenuitem111').remove();
+}
+if(!(!loginBean.docente))
+{
+	$('#menuitem121').remove();
+	$('#mmenuitem121').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#carteiraUSP').remove();
+	$('#mcarteiraUSP').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#carteiraUSPServidor').remove();
+	$('#mcarteiraUSPServidor').remove();
+}
+if(!(loginBean.secretaria))
+{
+	$('#carteiraUSP').remove();
+	$('#mcarteiraUSP').remove();
+}
+if(!(loginBean.aluno))
+{
+	$('#carteiraUSPServidor').remove();
+	$('#mcarteiraUSPServidor').remove();
+}
+if(!(loginBean.secretariaPRPG || loginBean.coordenadorMembroCCP || loginBean.presidenteMembroCPG))
+{
+	$('#menuitem117').remove();
+	$('#mmenuitem117').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#eventoPos').remove();
+	$('#meventoPos').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#inserirEventoPos').remove();
+	$('#minserirEventoPos').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#eventoPos').remove();
+	$('#meventoPos').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#inserirEventoPos').remove();
+	$('#minserirEventoPos').remove();
+}
+if(!(loginBean.secretariaPRPG && menuBean.mostraMenuPessoa && loginBean.secretariaPRPGOficial))
+{
+	$('#menuitem123').remove();
+	$('#mmenuitem123').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmAcoesSistema').remove();
+	$('#mitmAcoesSistema').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmAcoesSistema').remove();
+	$('#mitmAcoesSistema').remove();
+}
+if(!(menuBean.mostraMenuPessoa && (loginBean.secretariaPRPGOficial || loginBean.secretarioCPG) && !alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#menuitem126').remove();
+	$('#mmenuitem126').remove();
+}
+if(!(menuBean.mostraMenuPessoa && (loginBean.secretariaPRPGOficial || loginBean.secretarioCPG) && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#diplomaLink').remove();
+	$('#mdiplomaLink').remove();
+}
+if(!(menuBean.mostraMenuPessoa && (loginBean.secretariaPRPGOficial || loginBean.secretarioCPG) && ! alunoBean.pessoaMemorial  && ! alunoBean.pessoaMobilidade))
+{
+	$('#diplomaLink').remove();
+	$('#mdiplomaLink').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#mnuTabelasAuxiliares').remove();
+	$('#mmnuTabelasAuxiliares').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmSitReconhecimentoTitulo').remove();
+	$('#mitmSitReconhecimentoTitulo').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmMotivDeslig').remove();
+	$('#mitmMotivDeslig').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmSitReconhecimentoTitulo').remove();
+	$('#mitmSitReconhecimentoTitulo').remove();
+}
+if(!(loginBean.secretariaPRPG))
+{
+	$('#itmMotivDeslig').remove();
+	$('#mitmMotivDeslig').remove();
+}
+}</script>
+
+</div>
+
+  </td></tr>
+</tbody></table></td></tr>
+<tr><td class="columns"><table border="0"><tbody><tr><td><table id="menuForm:linksMapa" border="0" width="170px">
+<thead><tr><th class="topico" scope="colgroup" colspan="1">
+
+</th></tr></thead><tbody><tr><td class="columns"><div id="itemAvisoWeb"></div></td></tr>
+<tr><td class="columns"><a id="menuForm:mapaDoc" name="menuForm:mapaDoc" href="https://uspdigital.usp.br/janus/comum/mapaDoSiteSecretaria.jsf" class="menu"><img src="interesssantes_files/circulo.gif"> Mapa do <i>site</i></a></td></tr>
+<tr><td class="columns"><a id="menuForm:emailEnviado" name="menuForm:emailEnviado" href="https://uspdigital.usp.br/janus/comum/emailEnviado.jsf" class="menu"><img src="interesssantes_files/circulo.gif"> E-mails automáticos</a></td></tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+</tbody></table><table id="menuForm:links" border="0" width="180px">
+<thead><tr><th class="topico" scope="colgroup" colspan="1">
+
+</th></tr></thead><tbody><tr><td class="columns"><a id="menuForm:linkEgresso" name="menuForm:linkEgresso" href="https://uspdigital.usp.br/egressosusp/" target="blank" class="menu"><img src="interesssantes_files/circulo.gif"> Egressos USP</a></td></tr>
+</tbody></table><input name="menuForm_SUBMIT" value="1" type="hidden">
+<input name="autoScroll" type="hidden">
+<input value="" name="menuForm:_link_hidden_" type="hidden"><script type="text/javascript"><!--
+function clear_menuForm() {
+  var f = document.forms['menuForm'];
+  f.elements['menuForm:_link_hidden_'].value='';
+  f.target='';
+}
+clear_menuForm();
+//--></script><input name="jsf_tree_64" id="jsf_tree_64" value="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" type="hidden"><input name="jsf_state_64" id="jsf_state_64" value="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" type="hidden"><input name="jsf_viewid" id="jsf_viewid" value="/paginas/componente/cancelarMatriculaInicial.jsp" type="hidden"></form></span></td><td class="areaConteudo"><table class="conteudo" border="0" cellpadding="0" cellspacing="0"><tbody><tr><td><span class="titulo">Cancelamento de matrícula em disciplina</span></td></tr>
+<tr><td><img src="interesssantes_files/barraTitulo.gif" alt="barra"></td></tr>
+<tr><td>
+
+        <iframe name="casca" src="interesssantes_files/ListaMatriculasCancelaveis.html" frameborder="0" height="600" scrolling="auto" width="800"></iframe>
+
+</td></tr>
+<tr><td>
+				
+				    <div class="div_buscaAlunoSelecionado">
+					      <p class="titulo" id="buscaAlunoSelecionado"> Busca</p>
+					      <p> <img src="interesssantes_files/barraTitulo.gif" alt="barra"> </p><p>
+					      </p><p>
+					         <label>NUSP:</label> <input class="input_NUSP" maxlength="8" size="8" type="text"> <label>Nome:</label> <input class="input_Nome" maxlength="50" size="50" type="text">
+					      </p>
+					      <p>
+					         <input class="buttonDestacado" onclick="buscarAlunoSelecionado('R')" value="       Busca rápida       " type="button">  <input class="button" onclick="buscarAlunoSelecionado('E')" value="Busca exata" type="button">
+					      </p>
+					      <p>
+					      	Utilize o caractere asterisco (*) para substituir parte do 
+nome. Por exemplo, uma busca por José * Sampaio irá encontrar tanto <i>José Oliveira Sampaio</i> quanto <i>José da Silva Sampaio. </i>
+					      </p>
+					      
+					      <p class="msg_buscaNaoEncontrada">
+					            0 aluno(s) encontrado(s)
+					      </p>
+					      
+					      <div id="ajaxload_buscaAluno">
+					      	  <p>Carregando...</p>
+							  <img src="interesssantes_files/ajax-loader.gif">
+					      </div>
+					  
+					 
+					      <div class="alunoEncontrado" id="tabelaAlunoEncontrado">
+				  		  <p><span class="numeroAlunoEncontrado"></span> </p>
+					      <table class="table_list"> 
+					        <tbody><tr class="tr_head_aluno_encontrado">
+					          <td class="tabelaCabecalho"> NUSP</td>
+					          <td class="Nome">Nome </td>
+					        </tr>
+					        </tbody></table>
+					       </div>
+			      
+			        </div>
+				    <div class="div_AlunoSelecionado">
+					   <label class="lbl_codAlunoSelecionado"> NUSP: </label>
+					     <span class="span_codAlunoSelecionado"> </span>
+					   <label class="lbl_nomAlunoSelecionado"> Nome: </label> 
+					     <span class="span_nomAlunoSelecionado"></span>
+					   <a onclick="fecharAluno()" class="fechaDivAlunoSelecionado"> Fechar Pessoa </a>
+                    </div>
+                                                           
+                    
+                    <table class="table_list" id="tabelaCursoAlunoSelecionado">
+					  <thead>
+					  <tr class="tr_head_curso">
+					    <th></th>
+					    <td class="tabelaCabecalho">Curso</td>
+					    <td class="tabelaCabecalho">Área</td>
+					    <td class="tabelaCabecalho">Nº Sequêncial</td>
+					    <td class="tabelaCabecalho">Situação</td>
+					    <td class="tabelaCabecalho">Visualização</td>       
+					  </tr>  
+					  </thead>
+					  <tbody class="tbody_curso">
+					  </tbody>  
+					</table>
+					
+					<table class="table_list" id="tabelaBuscaAlunos">
+					  <thead>
+					  <tr class="tr_head_curso">
+					    <td class="tabelaCabecalho">NUSP</td>
+					    <td class="tabelaCabecalho">Pessoa</td>
+					    <td class="tabelaCabecalho">Visualização</td>   
+					  </tr>  
+					  </thead>
+					  <tbody class="tbody_alunos">
+					  </tbody>  
+					</table>
+				    
+					
+				</td></tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+<tr><td><table class="rodape" border="0"><tbody><tr><td><table style="width: 800px; text-align: center;" class="rodape" align="center" border="0" cellpadding="0px" cellspacing="0px"><tbody><tr><td><hr size="1"></td></tr>
+<tr><td><table align="center" border="0"><tbody><tr><td><a id="creditos" name="creditos" href="https://uspdigital.usp.br/janus/comum/creditos.jsf" class="link">Créditos</a></td><td>|</td><td><span class="link">Fale Conosco: <f:verbatim><a href="mailto:spgfea@usp.br">spgfea@usp.br</a></f:verbatim></span></td><td>|</td><td><span style="font-size: 12px">2006-2011 - Pós-Graduação/USP</span></td><td>|</td><td><a id="regimento" name="regimento" href="http://www.leginf.usp.br/?resolucao=resolucao-no-6542-de-18-de-abril-de-2013" target="blank" class="link">Regimento da Pós-Graduação</a></td></tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+</tbody></table></td></tr>
+</tbody></table>
+<!-- MYFACES JAVASCRIPT -->
+
+<script type="text/javascript"><!--
+function getScrolling() {
+    var x = 0; var y = 0;
+    if (self.pageXOffset || self.pageYOffset) {
+        x = self.pageXOffset;
+        y = self.pageYOffset;
+    } else if ((document.documentElement && document.documentElement.scrollLeft)||(document.documentElement && document.documentElement.scrollTop)) {
+        x = document.documentElement.scrollLeft;
+        y = document.documentElement.scrollTop;
+    } else if (document.body) {
+        x = document.body.scrollLeft;
+        y = document.body.scrollTop;
+    }
+    return x + "," + y;
+}
+
+//--></script>
+
+
+
+ </body></html>

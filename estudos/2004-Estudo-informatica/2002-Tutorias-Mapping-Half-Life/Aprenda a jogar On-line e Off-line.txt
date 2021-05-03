@@ -1,0 +1,36 @@
+Aprenda a jogar On-line e Off-line
+Help com Cd-Key's
+
+
+Após muitas pessoas irem perguntar a mesma coisa todos os dias no forum da Cs-Internet , eu criei este tutorial 
+explicando o basico sobre como jogar Counter-Strike on-line e off-line (com bots) .
+
+Jogando On-line 
+Quando eu tento jogar online da um erro . Meu Half life eh pirata , o que eu faço ?
+
+Para jogar on line voce precisara ter uma chave que vem na capa do cd original do Half-Life . Sem essa chave original eh impossivel jogar na internet . Se voce for insistente e procura uma cd key na internet , com certeza ira achar . Mas pense em quantas pessoas ao redor do mundo tiveram essa brilhante ideia .
+Resumindo , não comprou Half-Life nao tem jogo online .
+
+Po , mas eu so mais chato que esse cara ai em cima e nao quero comprar Half life original! 
+
+Claro , tem os safados que jogam na internet sem comprar Half Life original .
+Existem varios metodos , muito dificieis , de conseguir uma cd key valida para se jogar online . 
+
+1- Pedir a um amigo troxa seu (...)
+2- Roubar de um amigo trouxa seu
+3- Roubar de uma langame
+4- Ir olhar o preço de Half life original e pedir pra ver a capa , em um rapido desvio de olhar do atendente anotar o cd key que vem atras da caixa.
+
+Viu mané , catei/pedi a um amigo trouxa e ele me deu ! Como que eu mudo de CDkey ? 
+
+Serio !? Ai espertao vc heim ... idiota ... Existem 2 jeitos de trocar a cdkey . Com o programa CdkeyChanger que pode ser encontrado no site www.csinternet.com.br.tf . E o outro eh ir no menu Iniciar / Execultar . E la digitar 'regedit' sem ' ' (aspas) . Ira abrir um programa parecido com o Windows explorer , com algumas pastas ( que na verdade nao sao pastas , sao entradas do registro ) . Vc deve ir na pasta HKEY_CURRENT_USER / Software / Valve / Half-life / Settings . Na pasta settings vao aparecer algumas entradas ao lado direto da tela . Uma dessas entradas se chama Key . Edite esta entrada e no lugar do numero , coloque sua nova cdkey . Feche o programa e abra o Counter-strike . Recoloque sua cd key em uma janela de confirmação que ira aparecer e vai jogar com a cd key do seu amigo , ou seja la como vc arrumou . 
+Jogando Com Bot's (off-line) 
+Existem varios Bots , simulador de jogadores , de counter-strike para voce baixar . O Melhor deles eh o PodBot , ele eh o mais inteligente até hoje e sua instalação eh facil .
+Estarei citando apenas como jogar com o PodBot , que pode ser encontrado em www.csinternet.com.br.tf .
+Após a instalação abra o counter-strike . Va em Play Cs / Play on lan / Create . Escolhe um mapa e have fun ;] . Automaticamente entrará 7 bots no jogo , 8 com voce . Se vc quiser jogar com mais de 8 bots , escolha o limite de players antes de criar o mapa , na mesma tela de criação tem isso . Para adicionar bots aperte a tecla "=" dentro do jogo criado , perto do backspace , que aparecera um menu bem facilzinho tb . Nesse menu tambem pode ser alterados niveis de dificuldade . Acho que eh so .
+
+Deu erro de waypoint sei la oq .. Como concerto ?
+
+Isso na verdade nao eh um erro . Waypoint eh um arquivo que especifica o que os bots iram fazer no mapa , quais suas rotas , etc . Eh dificil um mapa nao vir com o seu proprio waypoint , mas voce pode baixar caso nao venha . Ou criar o seu , nao estarei explicando isso aqui pois acho que ja estaria fugindo muito do assunto .
+
+
