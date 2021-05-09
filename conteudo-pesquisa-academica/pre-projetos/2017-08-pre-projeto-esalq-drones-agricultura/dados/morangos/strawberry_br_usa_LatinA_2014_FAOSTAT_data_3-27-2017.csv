@@ -1,0 +1,15 @@
+Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+QC,Crops,58,Ecuador,5510,Production,544,Strawberries,2014,2014,tonnes,1620,Im,FAO data based on imputation methodology
+QC,Crops,169,Paraguay,5510,Production,544,Strawberries,2014,2014,tonnes,2850,,Official data
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2014,2014,tonnes,3257,Im,FAO data based on imputation methodology
+QC,Crops,19,Bolivia (Plurinational State of),5510,Production,544,Strawberries,2014,2014,tonnes,4856,,Official data
+QC,Crops,9,Argentina,5510,Production,544,Strawberries,2014,2014,tonnes,12605,Im,FAO data based on imputation methodology
+QC,Crops,170,Peru,5510,Production,544,Strawberries,2014,2014,tonnes,35023,,Official data
+QC,Crops,40,Chile,5510,Production,544,Strawberries,2014,2014,tonnes,43706,Im,FAO data based on imputation methodology
+QC,Crops,44,Colombia,5510,Production,544,Strawberries,2014,2014,tonnes,44844,,Official data
+QC,Crops,236,Venezuela (Bolivarian Republic of),5510,Production,544,Strawberries,2014,2014,tonnes,49775,,Official data
+QC,Crops,5207,South America,5510,Production,544,Strawberries,2014,2014,tonnes,198535,A,"Aggregate, may include official, semi-official, estimated or calculated data"
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2014,2014,tonnes,1371573,,Official data
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,"22059,4444444444",,

@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1500"
+   height="500"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="cronologia-nota-fiscal-paulista.svg"
+   inkscape:export-filename="/home/francisco/Dropbox/#1416-mestrado-usp/artigos-e-pesquisas/5adminova/cronologia-nota-fiscal-paulista.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <marker
+       inkscape:stockid="EmptyTriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="EmptyTriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path3921"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;fill:#FFFFFF;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8) translate(-6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="TriangleOutL"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="TriangleOutL"
+       style="overflow:visible">
+      <path
+         id="path3903"
+         d="M 5.77,0.0 L -2.88,5.0 L -2.88,-5.0 L 5.77,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt"
+         transform="scale(0.8)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Mend"
+       style="overflow:visible;">
+      <path
+         id="path3788"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(0.6) rotate(180) translate(0,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow2Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow2Lend"
+       style="overflow:visible;">
+      <path
+         id="path3782"
+         style="fill-rule:evenodd;stroke-width:0.62500000;stroke-linejoin:round;"
+         d="M 8.7185878,4.0337352 L -2.2072895,0.016013256 L 8.7185884,-4.0017078 C 6.9730900,-1.6296469 6.9831476,1.6157441 8.7185878,4.0337352 z "
+         transform="scale(1.1) rotate(180) translate(1,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Send"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Send"
+       style="overflow:visible;">
+      <path
+         id="path3776"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.2) rotate(180) translate(6,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Mend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Mend"
+       style="overflow:visible;">
+      <path
+         id="path3770"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.4) rotate(180) translate(10,0)" />
+    </marker>
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path3764"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="844.96928"
+     inkscape:cy="210.62467"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-552.36218)">
+    <path
+       style="fill:none;stroke:#000000;stroke-width:9.52640247;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:10;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Send)"
+       d="m 46.3248,770.42928 1359.6721,0"
+       id="path4383"
+       inkscape:connector-curvature="0" />
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="431.29944"
+       y="741.21503"
+       id="text6485"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6487"
+         x="431.29944"
+         y="741.21503">2004</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="816.11218"
+       y="818.47058"
+       id="text6489"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6491"
+         x="816.11218"
+         y="818.47058">2006</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1020.2136"
+       y="741.21503"
+       id="text6493"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6495"
+         x="1020.2136"
+         y="741.21503">2007</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:6.05925417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 431.51583,772.5933 0,-24.88622"
+       id="path6497"
+       inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6499"
+       d="m 815.67934,795.31551 0,-24.88623"
+       style="fill:none;stroke:#000000;stroke-width:6.05925417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <path
+       inkscape:connector-curvature="0"
+       id="path6501"
+       d="m 1019.5643,772.5933 0,-24.88622"
+       style="fill:none;stroke:#000000;stroke-width:6.05925417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="16.612724"
+       y="1028.3622"
+       id="text6522"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6524"
+         x="16.612724"
+         y="1028.3622">Cronologia de eventos Programa Nota Fiscal Paulista</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="1485.1429"
+       y="1029.505"
+       id="text6526"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6528"
+         x="1485.1429"
+         y="1029.505">Fonte: Elaboração Própria</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="789.02643"
+       y="846.26892"
+       id="text6530"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6532"
+         x="789.02643"
+         y="846.26892">Prefeitura de São Paulo</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6534"
+       y="876.68268"
+       x="787.51752"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="876.68268"
+         x="787.51752"
+         id="tspan6536"
+         sodipodi:role="line">Nota Fiscal Paulistana</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text6538"
+       y="846.06183"
+       x="785.37805"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="846.06183"
+         x="785.37805"
+         id="tspan6540"
+         sodipodi:role="line">Local:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="785.37805"
+       y="875.64124"
+       id="text6542"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan6544"
+         x="785.37805"
+         y="875.64124">Programa:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3030"
+       y="708.43011"
+       x="409.04346"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="708.43011"
+         x="409.04346"
+         id="tspan3032"
+         sodipodi:role="line">Prefeitura de Angra dos Reis</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="407.53448"
+       y="679.77002"
+       id="text3034"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3036"
+         x="407.53448"
+         y="679.77002">Nota Fiscal de Serviços Eletrônica</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="405.39502"
+       y="708.22302"
+       id="text3038"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3040"
+         x="405.39502"
+         y="708.22302">Local:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3042"
+       y="678.72864"
+       x="405.39502"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="678.72864"
+         x="405.39502"
+         id="tspan3044"
+         sodipodi:role="line">Programa:</tspan></text>
+    <path
+       inkscape:connector-curvature="0"
+       id="path3086"
+       d="m 431.51583,772.5933 0,-24.88622"
+       style="fill:none;stroke:#000000;stroke-width:6.05925417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3112"
+       y="818.47058"
+       x="211.53214"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="818.47058"
+         x="211.53214"
+         id="tspan3114"
+         sodipodi:role="line">2001</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:6.05925417;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 211.09927,795.31551 0,-24.88623"
+       id="path3116"
+       inkscape:connector-curvature="0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3118"
+       y="846.26892"
+       x="184.44635"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="846.26892"
+         x="184.44635"
+         id="tspan3120"
+         sodipodi:role="line">Estado de São Paulo</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="182.93741"
+       y="876.68268"
+       id="text3122"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3124"
+         x="182.93741"
+         y="876.68268">Padronização tecnológica ECF</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="180.79797"
+       y="846.06183"
+       id="text3126"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3128"
+         x="180.79797"
+         y="846.06183">Local:</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3130"
+       y="875.64124"
+       x="180.79797"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="875.64124"
+         x="180.79797"
+         id="tspan3132"
+         sodipodi:role="line">Iniciativa:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:19.69362259px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="168.28375"
+       y="717.51422"
+       id="text3170"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3172"
+         x="168.28375"
+         y="717.51422" /></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       x="995.16718"
+       y="708.43011"
+       id="text3200"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3202"
+         x="995.16718"
+         y="708.43011">Estado de São Paulo</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3204"
+       y="679.77002"
+       x="993.6582"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:start;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:start;fill:#808080;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="679.77002"
+         x="993.6582"
+         id="tspan3206"
+         sodipodi:role="line">Nota Fiscal Eletrônica Estadual</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3208"
+       y="708.22302"
+       x="991.51892"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       xml:space="preserve"><tspan
+         y="708.22302"
+         x="991.51892"
+         id="tspan3210"
+         sodipodi:role="line">Local:</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:24.23701668px;font-style:normal;font-weight:normal;text-align:end;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:end;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+       x="991.51892"
+       y="678.72864"
+       id="text3212"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3214"
+         x="991.51892"
+         y="678.72864">Programa:</tspan></text>
+  </g>
+</svg>

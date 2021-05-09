@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){function a(){cot_hojeemdia=new Cotacao(1,0),cot_hojeemdia.carregar(0)}nome_arquivos[0]="/xml/cotacoes.xml",tag_ativos="COTACOES",campo_variacao="variacao",mostrar_imagem=!1,arredonda_decimal=!1,campo_data="horageracao",a()});

@@ -1,0 +1,109 @@
+Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1961,1961,tonnes,50,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1962,1962,tonnes,50,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1963,1963,tonnes,100,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1964,1964,tonnes,100,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1965,1965,tonnes,130,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1966,1966,tonnes,150,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1967,1967,tonnes,200,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1968,1968,tonnes,300,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1969,1969,tonnes,600,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1970,1970,tonnes,600,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1971,1971,tonnes,700,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1972,1972,tonnes,600,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1973,1973,tonnes,500,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1974,1974,tonnes,500,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1975,1975,tonnes,500,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1976,1976,tonnes,500,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1977,1977,tonnes,550,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1978,1978,tonnes,550,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1979,1979,tonnes,600,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1980,1980,tonnes,1800,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1981,1981,tonnes,2000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1982,1982,tonnes,1000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1983,1983,tonnes,1000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1984,1984,tonnes,2000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1985,1985,tonnes,2000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1986,1986,tonnes,2000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1987,1987,tonnes,2100,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1988,1988,tonnes,2200,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1989,1989,tonnes,2000,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1990,1990,tonnes,2100,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1991,1991,tonnes,2200,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1992,1992,tonnes,2238,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1993,1993,tonnes,2300,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1994,1994,tonnes,2329,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1995,1995,tonnes,2368,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1996,1996,tonnes,2410,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1997,1997,tonnes,2453,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1998,1998,tonnes,2500,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,1999,1999,tonnes,2543,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2000,2000,tonnes,2600,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2001,2001,tonnes,2641,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2002,2002,tonnes,2700,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2003,2003,tonnes,2725,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2004,2004,tonnes,2750,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2005,2005,tonnes,2793,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2006,2006,tonnes,2800,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2007,2007,tonnes,2875,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2008,2008,tonnes,2948,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2009,2009,tonnes,3007,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2010,2010,tonnes,3065,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2011,2011,tonnes,3122,Im,FAO data based on imputation methodology
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2012,2012,tonnes,3200,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2013,2013,tonnes,3200,F,FAO estimate
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2014,2014,tonnes,3257,Im,FAO data based on imputation methodology
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1961,1961,tonnes,230110,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1962,1962,tonnes,236031,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1963,1963,tonnes,231332,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1964,1964,tonnes,249476,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1965,1965,tonnes,195952,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1966,1966,tonnes,210467,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1967,1967,tonnes,215003,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1968,1968,tonnes,238589,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1969,1969,tonnes,220445,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1970,1970,tonnes,224982,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1971,1971,tonnes,235867,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1972,1972,tonnes,208651,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1973,1973,tonnes,217723,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1974,1974,tonnes,244031,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1975,1975,tonnes,249475,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1976,1976,tonnes,263082,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1977,1977,tonnes,300277,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1978,1978,tonnes,299369,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1979,1979,tonnes,289390,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1980,1980,tonnes,318420,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1981,1981,tonnes,335657,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1982,1982,tonnes,400470,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1983,1983,tonnes,405283,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1984,1984,tonnes,449462,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1985,1985,tonnes,462100,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1986,1986,tonnes,462340,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1987,1987,tonnes,506800,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1988,1988,tonnes,534800,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1989,1989,tonnes,518000,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1990,1990,tonnes,568940,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1991,1991,tonnes,619600,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1992,1992,tonnes,606000,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1993,1993,tonnes,656620,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1994,1994,tonnes,748330,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1995,1995,tonnes,727200,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1996,1996,tonnes,737492,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1997,1997,tonnes,738354,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1998,1998,tonnes,743750,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,1999,1999,tonnes,831258,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2000,2000,tonnes,862828,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2001,2001,tonnes,748885,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2002,2002,tonnes,854845,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2003,2003,tonnes,977945,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2004,2004,tonnes,1004163,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2005,2005,tonnes,1053242,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2006,2006,tonnes,1090436,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2007,2007,tonnes,1109215,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2008,2008,tonnes,1148350,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2009,2009,tonnes,1270640,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2010,2010,tonnes,1294180,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2011,2011,tonnes,1317234,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2012,2012,tonnes,1526000,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2013,2013,tonnes,1382096,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2014,2014,tonnes,1371573,,Official data

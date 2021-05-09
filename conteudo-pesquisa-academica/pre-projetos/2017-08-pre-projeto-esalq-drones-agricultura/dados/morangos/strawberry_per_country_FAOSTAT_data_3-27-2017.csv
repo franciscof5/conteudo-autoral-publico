@@ -1,0 +1,80 @@
+Domain Code,Domain,Area Code,Area,Element Code,Element,Item Code,Item,Year Code,Year,Unit,Value,Flag,Flag Description
+QC,Crops,4,Algeria,5510,Production,544,Strawberries,2014,2014,tonnes,,M,Data not available
+QC,Crops,9,Argentina,5510,Production,544,Strawberries,2014,2014,tonnes,12605,Im,FAO data based on imputation methodology
+QC,Crops,10,Australia,5510,Production,544,Strawberries,2014,2014,tonnes,38394,,Official data
+QC,Crops,11,Austria,5510,Production,544,Strawberries,2014,2014,tonnes,14470,,Official data
+QC,Crops,57,Belarus,5510,Production,544,Strawberries,2014,2014,tonnes,63800,*,Unofficial figure
+QC,Crops,255,Belgium,5510,Production,544,Strawberries,2014,2014,tonnes,39300,,Official data
+QC,Crops,19,Bolivia (Plurinational State of),5510,Production,544,Strawberries,2014,2014,tonnes,4856,,Official data
+QC,Crops,80,Bosnia and Herzegovina,5510,Production,544,Strawberries,2014,2014,tonnes,8473,,Official data
+QC,Crops,21,Brazil,5510,Production,544,Strawberries,2014,2014,tonnes,3257,Im,FAO data based on imputation methodology
+QC,Crops,27,Bulgaria,5510,Production,544,Strawberries,2014,2014,tonnes,4203,,Official data
+QC,Crops,33,Canada,5510,Production,544,Strawberries,2014,2014,tonnes,20210,,Official data
+QC,Crops,40,Chile,5510,Production,544,Strawberries,2014,2014,tonnes,43706,Im,FAO data based on imputation methodology
+QC,Crops,41,"China, mainland",5510,Production,544,Strawberries,2014,2014,tonnes,3113000,,Official data
+QC,Crops,214,"China, Taiwan Province of",5510,Production,544,Strawberries,2014,2014,tonnes,9036,,Official data
+QC,Crops,44,Colombia,5510,Production,544,Strawberries,2014,2014,tonnes,44844,,Official data
+QC,Crops,48,Costa Rica,5510,Production,544,Strawberries,2014,2014,tonnes,7437,,Official data
+QC,Crops,98,Croatia,5510,Production,544,Strawberries,2014,2014,tonnes,3339,,Official data
+QC,Crops,50,Cyprus,5510,Production,544,Strawberries,2014,2014,tonnes,1433,,Official data
+QC,Crops,167,Czechia,5510,Production,544,Strawberries,2014,2014,tonnes,3510,,Official data
+QC,Crops,54,Denmark,5510,Production,544,Strawberries,2014,2014,tonnes,7313,,Official data
+QC,Crops,58,Ecuador,5510,Production,544,Strawberries,2014,2014,tonnes,1620,Im,FAO data based on imputation methodology
+QC,Crops,59,Egypt,5510,Production,544,Strawberries,2014,2014,tonnes,283471,,Official data
+QC,Crops,63,Estonia,5510,Production,544,Strawberries,2014,2014,tonnes,1533,,Official data
+QC,Crops,67,Finland,5510,Production,544,Strawberries,2014,2014,tonnes,12940,,Official data
+QC,Crops,68,France,5510,Production,544,Strawberries,2014,2014,tonnes,58924,,Official data
+QC,Crops,73,Georgia,5510,Production,544,Strawberries,2014,2014,tonnes,1400,,Official data
+QC,Crops,79,Germany,5510,Production,544,Strawberries,2014,2014,tonnes,168791,,Official data
+QC,Crops,84,Greece,5510,Production,544,Strawberries,2014,2014,tonnes,49780,,Official data
+QC,Crops,89,Guatemala,5510,Production,544,Strawberries,2014,2014,tonnes,8258,Im,FAO data based on imputation methodology
+QC,Crops,97,Hungary,5510,Production,544,Strawberries,2014,2014,tonnes,5070,,Official data
+QC,Crops,102,Iran (Islamic Republic of),5510,Production,544,Strawberries,2014,2014,tonnes,40291,Im,FAO data based on imputation methodology
+QC,Crops,104,Ireland,5510,Production,544,Strawberries,2014,2014,tonnes,6800,,Official data
+QC,Crops,105,Israel,5510,Production,544,Strawberries,2014,2014,tonnes,26939,,Official data
+QC,Crops,106,Italy,5510,Production,544,Strawberries,2014,2014,tonnes,135320,,Official data
+QC,Crops,110,Japan,5510,Production,544,Strawberries,2014,2014,tonnes,164000,,Official data
+QC,Crops,112,Jordan,5510,Production,544,Strawberries,2014,2014,tonnes,2022,,Official data
+QC,Crops,108,Kazakhstan,5510,Production,544,Strawberries,2014,2014,tonnes,6375,,Official data
+QC,Crops,114,Kenya,5510,Production,544,Strawberries,2014,2014,tonnes,3940,,Official data
+QC,Crops,118,Kuwait,5510,Production,544,Strawberries,2014,2014,tonnes,261,,Official data
+QC,Crops,113,Kyrgyzstan,5510,Production,544,Strawberries,2014,2014,tonnes,2200,*,Unofficial figure
+QC,Crops,119,Latvia,5510,Production,544,Strawberries,2014,2014,tonnes,922,,Official data
+QC,Crops,121,Lebanon,5510,Production,544,Strawberries,2014,2014,tonnes,1791,Im,FAO data based on imputation methodology
+QC,Crops,126,Lithuania,5510,Production,544,Strawberries,2014,2014,tonnes,4100,,Official data
+QC,Crops,256,Luxembourg,5510,Production,544,Strawberries,2014,2014,tonnes,19,,Official data
+QC,Crops,134,Malta,5510,Production,544,Strawberries,2014,2014,tonnes,855,,Official data
+QC,Crops,138,Mexico,5510,Production,544,Strawberries,2014,2014,tonnes,458972,,Official data
+QC,Crops,143,Morocco,5510,Production,544,Strawberries,2014,2014,tonnes,137388,,Official data
+QC,Crops,150,Netherlands,5510,Production,544,Strawberries,2014,2014,tonnes,57700,,Official data
+QC,Crops,156,New Zealand,5510,Production,544,Strawberries,2014,2014,tonnes,6307,Im,FAO data based on imputation methodology
+QC,Crops,162,Norway,5510,Production,544,Strawberries,2014,2014,tonnes,8316,,Official data
+QC,Crops,299,Occupied Palestinian Territory,5510,Production,544,Strawberries,2014,2014,tonnes,3335,Im,FAO data based on imputation methodology
+QC,Crops,169,Paraguay,5510,Production,544,Strawberries,2014,2014,tonnes,2850,,Official data
+QC,Crops,170,Peru,5510,Production,544,Strawberries,2014,2014,tonnes,35023,,Official data
+QC,Crops,171,Philippines,5510,Production,544,Strawberries,2014,2014,tonnes,781,,Official data
+QC,Crops,173,Poland,5510,Production,544,Strawberries,2014,2014,tonnes,202511,,Official data
+QC,Crops,174,Portugal,5510,Production,544,Strawberries,2014,2014,tonnes,4697,,Official data
+QC,Crops,117,Republic of Korea,5510,Production,544,Strawberries,2014,2014,tonnes,209901,,Official data
+QC,Crops,146,Republic of Moldova,5510,Production,544,Strawberries,2014,2014,tonnes,3750,,Official data
+QC,Crops,182,Réunion,5510,Production,544,Strawberries,2014,2014,tonnes,446,Im,FAO data based on imputation methodology
+QC,Crops,183,Romania,5510,Production,544,Strawberries,2014,2014,tonnes,21935,,Official data
+QC,Crops,185,Russian Federation,5510,Production,544,Strawberries,2014,2014,tonnes,189000,*,Unofficial figure
+QC,Crops,190,Saint Pierre and Miquelon,5510,Production,544,Strawberries,2014,2014,tonnes,3,Im,FAO data based on imputation methodology
+QC,Crops,272,Serbia,5510,Production,544,Strawberries,2014,2014,tonnes,23307,,Official data
+QC,Crops,199,Slovakia,5510,Production,544,Strawberries,2014,2014,tonnes,973,,Official data
+QC,Crops,198,Slovenia,5510,Production,544,Strawberries,2014,2014,tonnes,1597,,Official data
+QC,Crops,202,South Africa,5510,Production,544,Strawberries,2014,2014,tonnes,6941,,Official data
+QC,Crops,203,Spain,5510,Production,544,Strawberries,2014,2014,tonnes,291870,,Official data
+QC,Crops,210,Sweden,5510,Production,544,Strawberries,2014,2014,tonnes,16020,,Official data
+QC,Crops,211,Switzerland,5510,Production,544,Strawberries,2014,2014,tonnes,10906,,Official data
+QC,Crops,154,The former Yugoslav Republic of Macedonia,5510,Production,544,Strawberries,2014,2014,tonnes,4762,,Official data
+QC,Crops,222,Tunisia,5510,Production,544,Strawberries,2014,2014,tonnes,9857,Im,FAO data based on imputation methodology
+QC,Crops,223,Turkey,5510,Production,544,Strawberries,2014,2014,tonnes,376070,,Official data
+QC,Crops,230,Ukraine,5510,Production,544,Strawberries,2014,2014,tonnes,66860,,Official data
+QC,Crops,229,United Kingdom,5510,Production,544,Strawberries,2014,2014,tonnes,104411,,Official data
+QC,Crops,231,United States of America,5510,Production,544,Strawberries,2014,2014,tonnes,1371573,,Official data
+QC,Crops,235,Uzbekistan,5510,Production,544,Strawberries,2014,2014,tonnes,5500,*,Unofficial figure
+QC,Crops,236,Venezuela (Bolivarian Republic of),5510,Production,544,Strawberries,2014,2014,tonnes,49775,,Official data
+QC,Crops,181,Zimbabwe,5510,Production,544,Strawberries,2014,2014,tonnes,228,Im,FAO data based on imputation methodology
+QC,Crops,351,China,5510,Production,544,Strawberries,2014,2014,tonnes,3122036,A,"Aggregate, may include official, semi-official, estimated or calculated data"

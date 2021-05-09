@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:ct="http://www.abisource.com/changetracking.dtd" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="117" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="3.0.0" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="AppVersion">14.0000</m>
+<m key="DocSecurity">0</m>
+<m key="HyperlinksChanged">false</m>
+<m key="LinksUpToDate">false</m>
+<m key="ScaleCrop">false</m>
+<m key="ShareDoc">false</m>
+<m key="abiword.date_last_changed">2014-08-11T16:12:04.863779946</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">2014-07-30T03:06:00</m>
+<m key="dc.format">application/x-abiword</m>
+<m key="meta:editing-cycles">5</m>
+<m key="meta:editing-duration">PT2H44M12S</m>
+<m key="meta:initial-creator">ana</m>
+</metadata>
+<rdf>
+<t  s="styles.xml"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/odf#StylesFile</t>
+<t  s="content.xml"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/odf#ContentFile</t>
+<t  s="manifest.rdf"  p="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#hasPart"  objecttype="1"  xsdtype=""  >styles.xml</t>
+<t  s="manifest.rdf"  p="http://docs.oasis-open.org/ns/office/1.2/meta/pkg#hasPart"  objecttype="1"  xsdtype=""  >content.xml</t>
+<t  s="manifest.rdf"  p="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  objecttype="1"  xsdtype=""  >http://docs.oasis-open.org/ns/office/1.2/meta/pkg#Document</t>
+</rdf>
+<styles>
+<s type="P" name="Normal (Web)" basedon="Standard" followedby="Normal (Web)" props="margin-top:0.1945in; line-height:1.000000; margin-bottom:0.1945in; font-family:Times New Roman; font-size:12pt"/>
+<s type="P" name="Standard" followedby="Standard" props="margin-top:0in; orphans:2; dom-dir:ltr; margin-bottom:0.139in; font-size:12pt; line-height:1.150000; text-align:justify; lang:pt-BR; font-family:Times New Roman; widows:2"/>
+<s type="P" name="Heading 1" basedon="Título1" followedby="Text body" props="font-weight:bold; font-size:16pt"/>
+<s type="P" name="Título1" basedon="Standard" followedby="Text body" props="margin-top:0.1665in; keep-with-next:yes; margin-bottom:0.0835in; font-family:Arial; font-size:14pt"/>
+<s type="P" name="Text body" basedon="Standard" followedby="Text body" props="margin-bottom:0.0835in; margin-top:0in"/>
+<s type="P" name="Normal" props="lang:pt-BR; default-tab-interval:0.4917in; font-size:12pt; font-family:Liberation Serif; dom-dir:ltr"/>
+<s type="C" name="Ref. de comentário_text" followedby="Ref. de comentário_text" props="font-size:8pt"/>
+<s type="C" name="Strong Emphasis_text" followedby="Strong Emphasis_text" props="font-weight:bold"/>
+<s type="C" name="Internet link_text" followedby="Internet link_text" props="lang:zxx-none; text-decoration:underline; color:#000080"/>
+<s type="P" name="Footer" basedon="Standard" followedby="Footer" props="tabstops:2.9528in/C0,5.9055in/R0"/>
+<s type="P" name="Assunto do comentário" basedon="Texto de comentário" followedby="Texto de comentário" props="font-weight:bold"/>
+<s type="C" name="Assunto do comentário Char_text" basedon="Texto de comentário Char_text" followedby="Assunto do comentário Char_text" props="font-weight:bold"/>
+<s type="P" name="Bibliography 1" basedon="Standard" followedby="Bibliography 1" props="margin-top:0in; margin-left:0.5in; text-indent:-0.5in; margin-bottom:0in; tabstops:6.6929in/R1; line-height:0.3335in+; margin-right:0in; font-family:FreeSerif"/>
+<s type="C" name="Cabeçalho Char_text" followedby="Cabeçalho Char_text" props="font-family:Calibri; font-size:11pt"/>
+<s type="P" name="Caption" basedon="Standard" followedby="Caption" props="margin-top:0.0835in; font-size:12pt; margin-bottom:0.0835in; font-style:italic"/>
+<s type="C" name="Emphasis_text" followedby="Emphasis_text" props="font-style:italic"/>
+<s type="P" name="Header" basedon="Standard" followedby="Header" props="tabstops:2.9528in/C0,5.9055in/R0"/>
+<s type="P" name="Heading" basedon="Standard" followedby="Text body" props="margin-top:0.1665in; keep-with-next:yes; margin-bottom:0.0835in; font-family:Liberation Sans; font-size:14pt"/>
+<s type="P" name="Heading 2" basedon="Título1" followedby="Text body" props="font-weight:bold; font-family:Times New Roman; font-size:18pt"/>
+<s type="P" name="Legenda1" basedon="Standard" followedby="Legenda1" props="margin-top:0.0835in; font-size:12pt; margin-bottom:0.0835in; font-style:italic"/>
+<s type="P" name="List Paragraph" basedon="Standard" followedby="List Paragraph" props="text-indent:0in; margin-left:0.5in; margin-right:0in"/>
+<s type="P" name="Revisão" followedby="Revisão" props="widows:2; lang:pt-BR; font-size:12pt; font-family:Times New Roman; orphans:2"/>
+<s type="C" name="Rodapé Char_text" followedby="Rodapé Char_text" props="font-family:Calibri; font-size:11pt"/>
+<s type="P" name="Texto de balão" basedon="Standard" followedby="Texto de balão" props="margin-top:0in; line-height:1.000000; margin-bottom:0in; font-family:Tahoma; font-size:8pt"/>
+<s type="C" name="Texto de balão Char_text" followedby="Texto de balão Char_text" props="font-family:Tahoma; font-size:8pt"/>
+<s type="P" name="Texto de comentário" basedon="Standard" followedby="Texto de comentário" props="font-size:10pt"/>
+<s type="C" name="Texto de comentário Char_text" followedby="Texto de comentário Char_text" props="font-family:Calibri"/>
+<s type="C" name="WW8Num2z0_text" followedby="WW8Num2z0_text" props="font-family:Symbol; color:#181818"/>
+<s type="C" name="WW8Num2z1_text" followedby="WW8Num2z1_text" props="font-family:Courier New"/>
+<s type="C" name="WW8Num2z2_text" followedby="WW8Num2z2_text" props="font-family:Wingdings"/>
+<s type="C" name="WW8Num2z3_text" followedby="WW8Num2z3_text" props="font-family:Symbol"/>
+</styles>
+<lists>
+<l id="1040" parentid="0" type="5" start-value="1" list-delim="%L" list-decimal="."/>
+</lists>
+<pagesize pagetype="A4" orientation="portrait" width="8.267717" height="11.692913" units="in" page-scale="1.000000"/>
+<section footer="0" xid="3" props="page-margin-right:0.7874in; page-width:8.2681in; page-margin-left:1.1811in; page-margin-footer:0.5in; page-orientation:portrait; background-color:#ffffff; page-margin-bottom:3.170936cm; page-margin-top:1.1811in; page-height:11.6929in">
+<p style="Normal (Web)" xid="4" props="margin-top:0in; shading-pattern:1; color:#555555; line-height:0.2165in+; bgcolor:#ffff00; margin-bottom:0.2083in; shading-foreground-color:#ffff00">(primeira página do semead)</p>
+<p style="Normal (Web)" xid="5" props="margin-top:0in; shading-pattern:1; color:#555555; line-height:0.2165in+; bgcolor:#ffffff; margin-bottom:0.2083in; shading-foreground-color:#ffffff">- Área temática;</p>
+<p level="1" style="Heading 1" xid="6"><field type="list_label" xid="7"></field>	<c props="font-size:12pt; font-family:Times New Roman; color:#555555">- Título do trabalho;</c><c props="font-family:Times New Roman; font-size:12pt"> </c><ann xml:id="anno0" annotation="0" name="__Fieldmark__0_734960687" xid="8"><annotate annotation-id="0" props="annotation-author:Rosaria; annotation-date:07-01-2014">
+<p level="2" style="Normal" xid="9"><field type="list_label" xid="10"></field>R	Achei o nome muito extenso e com informações desnecessárias.</p>
+<p style="Normal" xid="11">Sugiro: Seleção de implementação de um sistema de gestão hospitalar: estudo do uso do AHP</p>
+</annotate><c props="font-weight:normal; font-family:Times New Roman; font-size:12pt">O uso do AHP na seleção de um software de gestão em um hospital privado sem fins lucrativos na cidade de são paulo: estudo de cas</c><c style="Ref. de comentário_text" props="font-weight:bold; font-family:Times New Roman; font-size:12pt">o</c></ann></p>
+<p style="Normal (Web)" xid="13" props="bgcolor:#ffffff; margin-top:0in; line-height:0.2165in+; margin-bottom:0.2083in; shading-pattern:1; shading-foreground-color:#ffffff"><c props="color:#555555">- Resumo </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#555555">(200 palavras no mesmo idioma do trabalho);</c></p>
+<p style="Normal (Web)" xid="14" props="bgcolor:#ffffff; margin-top:0in; line-height:0.2165in+; margin-bottom:0.2083in; shading-pattern:1; shading-foreground-color:#ffffff"><c props="color:#555555">- Abstract </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#555555">(200 palavras);</c></p>
+<p style="Normal (Web)" xid="15" props="bgcolor:#ffffff; margin-top:0in; line-height:0.2165in+; margin-bottom:0in; shading-pattern:1; shading-foreground-color:#ffffff"><c props="color:#555555">- </c><c style="Strong Emphasis_text" props="color:#444444">Palavras chaves:</c><c props="color:#555555"> AHP; Sistema de gestão hospitalar, seleção de projetos </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#555555">(3)</c></p>
+<p style="Standard" xid="16" props="text-align:center"><c></c></p>
+<p xid="17"><pbr/></p>
+<p style="Standard" props="" xid="18"><c></c></p>
+<p style="Text body" xid="19">1. INTRODUÇÃO</p>
+<p style="Standard" xid="20" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in">Embasados em conceitos oriundos da Psicologia e da Economia, os primeiros Sistemas de Suporte à Decisão (SSD) começaram a ser comercializados na década de 70 nos Estados Unidos (Keen&amp; Morton,1978). Ainda na década de 70 surge o AHP - Analytic Hierarchy Process ou Processo de Análise Hierárquica, como é chamado no Brasil. Criado pelo cientista Tomas Saaty e utilizado até hoje na tomada de diferentes tipos de decisão nas organizações, o método envolve critérios múltiplos para a priorização de alternativas (Saaty, 1977). O AHP é utilizado em vários países tanto para fins de pesquisa quanto para tomada de decisão em organizações, além de ser utilizado por profissionais de áreas de conhecimento muito diferentes. No final da década de 80, começou a haver um aumento no número de estudos de caso sobre a aplicação do AHP em organizações do setor da Saúde, que se tornou mais acentuado a partir do final dos anos noventa. O tipo de decisão mais frequentemente encontrado na literatura do uso do AHP em organizações prestadoras de serviços de saúde é o que visa a escolha de novas tecnologias e projetos (Liberatore e Nydick, 2007). Dentro desta categoria, encontra-se a escolha de softwares, foco do interesse do presente estudo. Este artigo teve por objetivo esclarecer como<c props="color:#000000"> a ferramenta AHP pode auxiliar na identificação de critérios para a escolha de um sistema de gestão num hospital, a partir de um estudo de caso de</c> uso do AHP no processo de seleção de um software de gestão para um hospital privado na cidade de São Paulo. Através de entrevistas semiestruturadas com os participantes do projeto, foram obtidas informações sobre o cenário anterior ao início da aplicação do AHP, sobre o processo de aplicação em si e sobre os impactos do projeto na organização.  </p>
+<p style="Standard" xid="21" props="margin-top:0in; line-height:2.000000; margin-bottom:0in"><c></c></p>
+<p style="Text body" xid="22">2. REVISÃO DA LITERATURA</p>
+<p style="Standard" xid="23"><c></c></p>
+<p xid="24"><pbr/>O AHP é baseado em princípios do pensamento analítico, envolve estruturas hierárquicas, definindo prioridades e provê lógica à tomada de decisão (Saaty,1990 apud Singpurwalla, Forman, &amp; Zalkind, 1999). De acordo com Vaidya e Kumar, 2006, o AHP é umas das ferramentas de múltiplos critérios mais adotadas. De acordo com os mesmos autores, uma importante característica da metodologia é fornecer uma escala numérica válida e confiável para valores quantitativos e qualitativos, permitindo que grupos cheguem a um consenso, algo desejável numa organização. Para Liberatore e Nydick, o AHP é uma ferramenta de suporte promissora para decisões compartilhadas entre pacientes e médicos, avaliação e seleção de terapiase tratamentos e avaliação de tecnologias para saúde e assistência médica. A saúde como um todo sofre um grande impacto com os avanços na tecnologia e a automação de processos proporcionada pelos novos sistemas de informação. Diversas aplicações do AHP na seleção e avaliação de projetos e tecnologia no segmento de saúde foram relatadas na literatura (Liberatore &amp; Nydick, 2008).</p>
+<p style="Standard" xid="25" props="bgcolor:#ffff00; line-height:2.000000; color:#000000; shading-pattern:1; shading-foreground-color:#ffff00">Precisa incluir fundamentação sobre o processo AHP</p>
+<p style="Text body" xid="26" props="margin-top:0in; line-height:2.000000; margin-bottom:0in; color:#000000">3.METODOLOGIA</p>
+<p style="Standard" xid="27" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Para responder a questão de pesquisa formulada foi escolhido o método de estudo de caso único, pois para Yin (2001, p.19), ela “representa a melhor estratégia quando os pesquisadores têm pouco controle sobre os eventos e quando o foco se encontra em fenômenos contemporâneos inseridos em algum contexto da vida real". Esse autor também sugere que o estudo de caso deve ser a estratégia adotada quando as questões a serem respondidas são do tipo “como” ou “por que”.</p>
+<p style="Standard" xid="28" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#000000">A unidade de análise é o processo de seleção do sistema de gestão para o Hospital que utilizou a ferramenta AHP de maneira a gerar critérios de seleção e obter o consenso para a escolha da melhor alternativa. A escolha do Hospital como o caso central se justifica pelas seguintes razões: pelo porte da organização (detalhar); pela situação peculiar na qual ela se encontrava, pois não havia nenhuma experiência da organização tanto no uso de um sistema de gestão, quanto na escolha de um sistema desse porte; além de não haver um consenso sobre qual seriam as funcionalidades requeridas para o respectivo sistema.</p>
+<p style="Standard" xid="29" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#000000">Foram aplicadas duas entrevistas de cerca de uma hora cada uma, sendo entrevistados o consultor que facilitou a aplicação da técnica na organização e o gerente do projeto responsável pela aquisição do sistema de gestão, que ocupava o cargo de Diretor da área de Tecnologia da Informação </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#000000">(confirmar essa informação)</c></p>
+<p xid="30"><pbr/>, assim como pela escolha dos envolvidos na aplicação da técnica. Foram acessados os relatórios resultantes da aplicação da técnica, além do artigo de Padovani et al (2008). Na entrevista com o gerente de projetos foi aplicado o roteiro anexo (anexar ao trabalho) com questões abertas. Esse roteiro foi elaborado em uma disciplina sobre tomada de decisão na Universidade de São Paulo como base para um conjunto de estudos que visam identificar as características da utilização da feramente AHP nas organizações.</p>
+<p style="Standard" xid="31" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Este estudo é exploratório e como em todos os que usam o método do estudo de caso, as limitações são: a impossibilidade de generalizar os resultados e a possibilidade de viés, pela falta de interlocução com todos <c props="font-style:italic; color:#000000">stakeholders </c><c props="color:#000000">envolvidos no processo de seleção e pelo acesso restrito às informações do processo.</c></p>
+<p style="Text body" xid="32" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#000000"><c></c></p>
+<p style="Text body" xid="33" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#000000">4.ANÁLISE DO CASO</c></p>
+<p style="Text body" xid="34" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#000000">4.1. O Hospital </p>
+<p style="Standard" xid="35" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#000000">Localizado na cidade de São Paulo e fundado há 65 anos, o hospital estudado é uma instituição privada sem fins lucrativos que iniciou suas atividades focando em uma única especialidade clínica, aumentando gradualmente seu escopo de atuação que atualmente engloba mais de 50 especialidades. Contando com um corpo clínico de mais de 700 médicos, o hospital realiza anualmente mais de 12 mil cirurgias, 13 mil internações, 200 mil consultas ambulatoriais, 140 mil atendimentos de Pronto-Socorro e 1,3 milhão de exames (Hospital Edmundo Vasconcelos, 2014).</c></p>
+<p xid="36"><pbr/> Sua governança é profissionalizada e conta com executivos de um grande grupo brasileiro de serviços financeiros. Como a maioria dos grandes hospitais da cidade, este hospital já esteve em dificuldades financeiras, mas hoje goza de uma saudável expansão orgânica, com investimentos altos e constantes em infra-estrutura e tecnologia, além de sempre ter contato com ativos importantes como prédios bem localizados e projetados por arquitetos importantes. Recentemente o hospital anunciou um investimento de 20 milhões na renovação de um de seus centros médicos e outro de 3,8 milhões em TI, que incluirá a implementação de prontuários eletrônicos. Em 2013, a liderança do hospital desenvolveu um plano estratégico para o período 2013-2020, que já está sendo posto em prática. A instituição possui ainda certificação ISO de Qualidade, certificação de acreditação hospitalar ONA nível III, certificação internacional <c props="font-style:italic; color:#000000">Great Places to Work</c> e está entre os melhores hospitais da América Latina (Associação Nacional de Hospitais Privados - ANAHP, 2014).</p>
+<p style="Text body" xid="37" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#000000">4.2. As Alternativas – Definição de Critérios </p>
+<p style="Standard" xid="38" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">É importante ressaltar que, apesar das entrevistas terem sido realizadas em 2014, o projeto de uso do AHP em questão se deu há mais de 10 anos, período durante o qual o hospital enfrentou dificuldades financeiras e também início da positiva participação de seu maior credor em sua governança. O sucesso e o crescimento que se deu na instituição nos últimos anos - por meio de vários indicadores - se iniciou de maneira profissionalizada exatamente na época da aplicação do AHP. Na verdade, este mesmo credor indicou a consultoria especializada em AHP para ajudar o hospital na seleção do software de gestão que se pretendia adquirir na época.</p>
+<p style="Standard" xid="39" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Era o final da década de 90 e o responsável pelo TI do hospital buscava uma solução de software que ajudasse na gestão da organização. Na época, houve muita dúvida se esta solução englobaria processos clínicos e administrativos ou só administrativos, conforme depoimento do responsável porTI: </p>
+<p style="Standard" xid="40" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="font-style:italic; color:#000000">“Existiam crises de crescimentos, pressões internas da parte da farmácia, do faturamento, da gestão de leitos, do pessoal assistencial e etc. E nós não tínhamos como atender, tínhamos basicamente o sistema de faturamento...” </c></p>
+<p style="Standard" xid="41" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c></c></p>
+<p xid="42"><pbr/><c props="color:#000000">Haviam três</c> <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1">(OU QUATRO?)</c><c props="color:#000000"> possíveis alternativas de fornecedores e um deles deveria ser contratado para fornecer o software:</c></p>
+<p level="1" listid="1040" parentid="0" xid="43" props="font-family:Times New Roman; margin-top:0in; list-style:Bullet List; margin-left:0.991108cm; dom-dir:ltr; text-indent:-0.635000cm; text-align:justify; orphans:2; lang:pt-BR; margin-right:0in; margin-bottom:0in; line-height:1.500000; font-size:12pt; widows:2; field-font:NULL"><field type="list_label" xid="44"></field>	<c props="color:#181818">A </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#181818">MEDTRACK</c><c props="color:#181818">, empresa australiana de um software especializado em empresas provedoras de serviços de saúde, que já havia atendido outros hospitais; </c></p>
+<p level="1" listid="1040" parentid="0" xid="45" props="font-family:Times New Roman; margin-top:0in; list-style:Bullet List; margin-left:0.991108cm; dom-dir:ltr; text-indent:-0.635000cm; text-align:justify; orphans:2; lang:pt-BR; margin-right:0in; margin-bottom:0in; line-height:1.500000; font-size:12pt; widows:2; field-font:NULL"><field type="list_label" xid="46"></field>	<c props="color:#181818">a </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#181818">MV</c><c props="color:#181818">, uma empresa mineira desenvolvedora de softwares para hospitais; </c></p>
+<p level="1" listid="1040" parentid="0" xid="47" props="font-family:Times New Roman; margin-top:0in; dom-dir:ltr; text-indent:-0.635000cm; lang:pt-BR; text-align:justify; margin-left:0.991108cm; list-style:Bullet List; orphans:2; widows:2; margin-bottom:0.0417in; line-height:1.500000; font-size:12pt; field-font:NULL"><field type="list_label" xid="48"></field>	<c props="color:#181818">a </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#181818">STEFANINI</c><c props="color:#181818">, empresa nacional que pretendia produzir um software totalmente customizado;</c><c props="color:#000000">   </c></p>
+<p level="1" listid="1040" parentid="0" xid="49" props="font-family:Times New Roman; margin-top:0in; dom-dir:ltr; text-indent:-0.635000cm; lang:pt-BR; text-align:justify; margin-left:0.991108cm; list-style:Bullet List; orphans:2; widows:2; margin-bottom:0.0417in; line-height:1.500000; font-size:12pt; field-font:NULL"><field type="list_label" xid="50"></field>	<c props="color:#000000">A </c><c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#000000">CPM Braxis Capgemini</c><c props="color:#000000"> (na época CPM somente), que também pretendia </c><c props="color:#181818">produzir um software customizado.</c><c props="color:#000000">   </c></p>
+<p style="Standard" xid="51" props="margin-top:0in; line-height:1.500000; margin-bottom:0.0417in"> </p>
+<p style="Standard" xid="52" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#181818">As três empresas fornecedoras foram convidadas a apresentar suas propostas de produtos, e uma comissão de representantes dos departamentos deveria assistir a estas apresentações. Os líderes do departamento médico tinham preferência pela australiana MEDTRACK, cujo software havia sido implementado num grande hospital de referência da cidade. Já a diretoria considerava o software muito caro para não ser uma solução tão customizada. Já havia dois anos que os gestores tentavam entrar num acordo sobre como escolher o melhor software e foi neste contexto que o credor/administrador recomendou uma consultoria especializada em AHP para ajudar de maneira imparcial nesta tomada de decisão.  </p>
+<p style="Standard" xid="53" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#181818">A consultoria já havia aplicado a técnica em inúmeras organizações e sugeriu que o processo fosse desenvolvido em 3 etapas, conforme figura 1. A primeira etapa do trabalho da consultoria em AHP foi se reunir com os diferentes gestores da organização para junto a eles definir critérios importantes na escolha do software. </c></p>
+<p style="Text body" xid="54" props="text-align:center; margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c></c></p>
+<p xid="55"><pbr/><image dataid="0" xid="56" props="height:2.7693in; width:4.4291in"/></p>
+<p style="Text body" xid="57" props="text-align:center; margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Figura 1 – Etapas da aplicação do AHP</p>
+<p style="Standard" xid="58" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; font-style:italic"><c></c></p>
+<p style="Standard" xid="59" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c props="color:#000000">Um time de decisores foi formado </c>com a participação de<c props="color:#000000"> gestores de diversas áreas do hospital</c> e capacitados na metodologia AHP. Além dos critérios levantados por cada gestor, a consultoria em AHP sugeriu alguns critérios extras referentes à gestão de projetos e gestão de operações, como prazo, garantias e evidências de capacidade de entrega. Os critérios definidos constam na figura 2. <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1">(FALTA DESCREVER OS CRITÉRIOS – VER ARTIGO DO CAMANHO)</c> Segundo o consultor: <c props="font-style:italic">“... a participação de todos os gestores na definição dos critérios de escolha do software [foi] um fator decisivo no sucesso de sua implementação: a motivação gerada pela sensação de que sua opinião foi importante facilitou a adesão ao software escolhido.”</c>. Foi possível assim determinar o que exatamente o hospital necessitava, tarefa que possibilitou dirimir conflitos e democratizar decisões subjetivas. </p>
+<p style="Standard" xid="60" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in; text-indent:0in; margin-right:0in; margin-left:0in"><c></c></p>
+<p style="Standard" xid="61" props="text-align:center; margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c></c></p>
+<p xid="62"><pbr/><image dataid="1" xid="63" props="height:2.4898in; width:2.75in"/></p>
+<p style="Standard" xid="64" props="text-align:center; margin-top:0in; line-height:1.150000; margin-bottom:0.139in">Figura 2 – Critérios definidos </p>
+<p style="Standard" xid="65" props="text-align:center; margin-top:0in; line-height:1.150000; margin-bottom:0.139in">Fonte: Software <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1">XXXXXX</c></p>
+<p style="Standard" xid="66" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Na segunda etapa, as três empresas fornecedoras foram convidadas a apresentarem suas propostas de produtos. Nessas reuniões praticamente todo o time de decisores participavam, sem pedir inclusão de informação, para balizar o tratamento dado a cada uma delas, e ao mesmo tempo pontuar as características aderentes aos critérios definidos e priorizados na etapa anterior.</p>
+<p style="Standard" xid="67" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">A terceira etapa foi composta por reuniões consecutivas,nas quais as alternativas eram pareadas com base nos critérios estabelecidos. Devido à dificuldade em casar as agendas de todos os gestores, o processo total até a seleção da melhor alternativa durou dois meses. Deste modo, todos participaram tanto da elaboração de critérios quanto da atribuição de valores a estes critérios. </p>
+<p style="Standard" xid="68" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">A alternativa escolhida foi a MV.  <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1; color:#000000">PRECISAVA EXPLICAR MAIS</c>. <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1">NÃO FOI A MEDTRACK?</c> </p>
+<p style="Text body" xid="69" props="text-align:center; margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#181818"><c></c></p>
+<p xid="70"><pbr/></p>
+<p style="Standard" xid="71" props="text-align:center">Figura 3 – Resultado da aplicação da técnica AHP com a representação gráfica</p>
+<p style="Standard" xid="72" props="text-align:center">Fonte: Software <c props="bgcolor:#ffff00; shading-foreground-color:#ffff00; shading-pattern:1">XXXXXX</c></p>
+<p style="Text body" xid="73" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#181818"><c></c></p>
+<p style="Text body" xid="74" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#181818">5 Conclusão</c></p>
+<p style="Standard" xid="75" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in">Ao contrário do que se esperava, o processo levou à escolha do software da MV, uma alternativa que não teria sido considerada caso o AHP não tivesse sido utilizado. Este software continua em uso no hospital 10 anos depois, período durante o qual os indicadores e certificações da organização só melhoraram. Esse é um diferencial para a área de TI: </p>
+<p style="Standard" xid="76" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="font-style:italic; color:#181818">“Todos os grandes hospitais da cidade tiveram que gastar muito tempo e dinheiro trocando softwares de gestão inadequados nestes últimos 12, menos nós.”</c><c props="color:#181818"> (Responsável pelo TI). </c></p>
+<p style="Standard" xid="77" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c></c></p>
+<p xid="78"><pbr/>Para a consultoria especializada em AHP, o processo como um todo teve um papel importante na gestão de conflitos entre as áreas e na motivação dos gestores e suas equipes em implementar o software escolhido – já que todas as áreas participaram igualmente na decisão. Portanto, os autores concluem que o projeto foi bem sucedido e que o AHP é uma ferramenta válida para tomada de decisão, motivação e gestão de conflitos em diferentes indústrias.</p>
+<p style="Standard" xid="79" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="font-style:italic; color:#181818">“No fundo, constrói-se um novo entendimento, coletivo e consensual, da necessidade real da organização.”</c><c props="color:#181818"> (Consultor AHP).</c></p>
+<p style="Standard" xid="80" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"> Entretanto, na ausência do consultor a ferramenta não foi utilizada posteriormente. Concluímos pelas entrevistas que isto se deu por três motivos: (i) muitas das pessoas que foram capacitadas para utilizar o AHP não estão mais na organização; (ii) a apercepção do responsável pelo TI de que a ferramenta requer um certo nível de formação que a grande maioria dos funcionários do hospital não têm; (iii) as empresas tendem a se concentrar no seu core business e só interrompem suas operações para fazer reuniões de aplicação de ferramentas diversas quando sob muita pressão, uma pressão maior do que a de entrega do trabalho do dia a dia. </p>
+<p style="Text body" xid="81" props="margin-top:0in; line-height:2.000000; margin-bottom:0.0417in; color:#181818"> </p>
+<p style="Text body" xid="82" props="text-align:justify; margin-top:0in; line-height:2.000000; margin-bottom:0.0417in"><c props="color:#000000">6. REFERÊNCIAS</c></p>
+<p style="Text body" xid="83" props="margin-top:0in; shading-pattern:1; margin-bottom:0.0417in; line-height:2.000000; bgcolor:#ffff00; text-align:left; shading-foreground-color:#ffff00"><c></c></p>
+<p style="Standard" xid="84">ANAHP. (2013). Acesso em 25 de julho de 2014. <a xlink:href="http://anahp.com.br/hospitais-membros/associados-tilulares" xid="85"><c style="Internet link_text" props="color:#000000">http://anahp.com.br/hospitais-membros/associados-tilulares</c></a>. </p>
+<p style="Standard" xid="87">Camanho, R. (2004) Decisão na aquisição de software para gestão hospitalar. Acesso em 30 de agosto de 2004. <a xlink:href="http://www.saudebusinessweb.com.br/" xid="88"><c style="Internet link_text">www.saudebusinessweb.com.br</c></a> </p>
+<p style="Standard" xid="90" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c props="lang:en-US">Keen, P. G. W. E &amp; Morton, S. (1978) Decision support systems: an organizational perspective. Reading, Mass., Addison-Wesley.</c></p>
+<p style="Standard" xid="91" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c props="lang:en-US">Liberatore, M. J. &amp; Nydick, R.L. (2008). The analytic hierarchy process in medical and health care decision making: A literature review. </c><c props="font-style:italic">European Journal of Operational Research</c> 189 (2008), 194–207.<c props="lang:pt-BR"> </c></p>
+<p style="Standard" xid="92">Oleskovicz<c props="lang:pt-BR">, M., </c>Crepaldi<c props="lang:pt-BR">, A.M., </c>Morioka<c props="lang:pt-BR">, S.N., </c>Fonseca<c props="lang:pt-BR">, F.</c>,<c props="lang:pt-BR"> </c>&amp;<c props="lang:pt-BR"> </c>Rodrigues<c props="lang:pt-BR">, F. (2013) O uso do AHP na priorização de projetos de p&amp;d: estudo de caso em uma </c>multinacional brasileira. Trabalho apresentado no XVI SEMEAD da FEA-USP. Acesso online em 28 de julho de 2014. <a xlink:href="http://semead6.tempsite.ws/16semead/resultado/trabalhosPDF/1209.pdf" xid="93"><c style="Internet link_text">http://semead6.tempsite.ws/16semead/resultado/trabalhosPDF/1209.pdf</c></a></p>
+<p style="Standard" xid="95" props="margin-top:0in; line-height:0.0693in+; margin-bottom:0in"><c></c></p>
+<p xid="96"><pbr/><c props="color:#111111">Padovani</c><c props="lang:pt-BR; color:#111111">, M.; Muscat, A. R. N.; Camanho, R.; </c><c props="color:#111111">Carvalho, M. M. DE. </c><c props="lang:en-US; color:#111111">(2008, December) Looking for the right criteria to define projects portfolio : Multiple case study analysis. </c><c props="lang:en-US; color:#111111; font-style:italic">Development</c><c props="lang:en-US; color:#111111">, 6, 127-134.</c></p>
+<p style="Standard" xid="97"><c props="lang:en-US">Saaty TL. (1990) </c><c props="font-style:italic; lang:en-US">Multicriteria decision making: the Analytic Hierarchy Process</c><c props="lang:en-US">. Pittsburgh: RWS, 1990.</c></p>
+<p style="Standard" xid="98" props="margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c props="lang:en-US">Saaty, T. L. (1977). A scaling method for priorities in hierarchical structures. </c><c props="font-style:italic; lang:en-US">Journal of Mathematical Psychology</c><c props="font-weight:bold; lang:en-US">, </c><c props="lang:en-US">15(3), 234-281.</c></p>
+<p style="Standard" xid="99" props="line-height:0.139in+">SINDHOSP (2014). Acesso em 25 de julho de 2014. <a xlink:href="http://www.sindhosp.com.br/noticias" xid="100"><c style="Internet link_text">http://www.sindhosp.com.br/noticias</c></a>.</p>
+<p style="Standard" xid="102" props="line-height:0.139in+"><c props="font-family:Times New Roman; lang:pt-BR">Vaidya, O. S., &amp; Kumar, S. (2006). </c><c props="lang:en-US">Analytic hierarchy process: An overview of applications. </c><c props="lang:en-US; font-family:Times New Roman; font-style:italic"> </c><c props="lang:pt-BR; font-family:Times New Roman; font-style:italic">European Journal of Operational Research</c><c props="font-family:Times New Roman; lang:pt-BR">, </c><c props="lang:pt-BR; font-family:Times New Roman; font-style:normal">169</c><c props="font-family:Times New Roman; lang:pt-BR">(1), 1–29.</c></p>
+<p style="Standard" xid="103"><c props="lang:pt-BR; color:#000000">YIN, R. K.</c> (2001). <c props="lang:pt-BR; color:#000000; font-style:italic">Estudo de Caso</c><c props="lang:pt-BR; color:#000000">: Planejamento e Métodos. Rio de Janeiro: Bookman.</c><c props="lang:pt-BR"> </c></p>
+<p style="Standard" xid="104"><c></c></p>
+<p style="Standard" xid="105" props="lang:en-US; margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c></c></p>
+<p style="Standard" xid="106" props="lang:pt-BR; margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c></c></p>
+<p style="Standard" xid="107"><c></c></p>
+<p style="Standard" xid="108"><c></c></p>
+<p style="Standard" xid="109" props="lang:en-US; margin-top:0in; line-height:0.0693in+; margin-bottom:0in; color:#111111"><c></c></p>
+<p style="Standard" xid="110" props="lang:en-US; margin-top:0in; line-height:0.139in+; margin-bottom:0.139in; font-family:Times New Roman"><c></c></p>
+<p style="Standard" xid="111" props="bgcolor:#ffff00; margin-top:0in; line-height:1.150000; margin-bottom:0.139in; shading-pattern:1; shading-foreground-color:#ffff00"><c></c></p>
+<p xid="112"><pbr/></p>
+<p style="Standard" xid="113" props="lang:pt-BR; margin-top:0in; line-height:1.150000; margin-bottom:0.139in"><c></c></p>
+</section>
+<section id="0" type="footer" xid="114">
+<p style="Footer" xid="115" props="text-align:right"><field type="page_number" xid="116"></field></p>
+<p style="Footer" xid="117"></p>
+</section>
+<data>
+<d name="0" mime-type="image/png" base64="yes">
+iVBORw0KGgoAAAANSUhEUgAAAnYAAAGKCAIAAAAOjptRAAAAAXNSR0IArs4c6QAAAAlwSFlz
+AAAOxAAADsQBlSsOGwAAWi1JREFUeF7tvQtsXVd633sovt9vUtSLpEXSGllx7Ok0U8hTp5jc
+YCC5bo3JXMW5Tm20Qek0mMYKUrXJ1K0xgDpJY6TXLoImQyBT2Bk3HWEyMGCYutM2vvc6ttAp
+MpkZR1ZkkrJEvSm+36RIkf3vvfbZZ5999tnvvc9+/DcIP85Zz99a5H+vtb71fWW7u7sZPiRA
+AiRAAiRAAn4T2ON3gSyPBEiABEggUQRW1u6vb24lqkthdYYSGxZp1kMCJEAC8SSAzc6JybnZ
+hbV4Nr+UrabElpI+6yYBEiCB6BOoqizf2d29ObV0/c7ig52d6Dc4Oi2kxEZnLNgSEiABEogi
+gYoKRSnml9axnN28vx3FVkayTZTYSA4LG0UCJEACkSFQvmdPebkiFhv3t8euzc4trkemdZFu
+CCU20sPDxpEACZBAFAhUZiUWjcGm8Y27i/jhhRTLoaHEWiJiAhIgARJIOwEcx+oQYCE7fp2b
+xhYTgxKb9t8c9p8ESIAELAmox7HalOsbW1DZhSVuGhflR4m1nFpMQAIkQAJpJ1BZoV/FCiIP
+HuxM3lm8NbXETWPDKUKJTftvDvtPAiRAApYECjeKtVlmFtawnL2/9cCynLQloMSmbcTZXxIg
+ARJwTKAye2+nWE5sGo9Nzi6ubDguOtEZKLGJHl52jgRIgAT8IGC+ilU3ja/dWrg9vcxNYxU5
+JdaP2ccySIAESCDRBAzNnQx7PD23euXG3PY2nUBJeCixif61YOdIgARIwA8CWu8TluWtrm9d
+vjazvLppmTLxCSixiR9idpAESIAEfCBgZ69YrQaWxp/enL87s+JDxXEughIb59Fj20mABEgg
+LAJaB08265yaXUn5pjEl1uZUYTISIAESSDUBR6tYlRRizY5NzuCf6WRHiU3nuLPXJEACJOCM
+gBoJwFm2TGZrewdr2XRuGlNinc4WpicBEiCBNBJwt4pVSYlN47SFm6XEpvFXhX0mARIgAacE
+PEosqsN28SdXZ9bWt5xWHd/0lNj4jh1bTgIkQALhEbB08GSnKdg0Hr8+e282LZbGlFg7s4Jp
+SIAESCDtBLyvYlWCd2ZWrt1eSMOmMSU27b827D8JkAAJ2CFQVlbm2uKpsPzF5Y2xa7OJ3zSm
+xNqZWkxDAiRAAiSQ8XEhC5qIzAMDqOn51QSTpcQmeHDZNRIgARLwk4AL7xPm1e/s7t6+t3z9
+zmJSN40psX7OP5ZFAiRAAgkm4O8qVgU1v7Q+MTm3vplAS2NKbIJ/Hdg1EiABEvCTgC9GxYYN
+2ri/DZWdXVjzs7kRKIsSG4FBYBNIgARIIA4EKirKg2smNo1vTi1h0zhJ4WYpscFNGJZMAiRA
+AokiENBGsZYRNo1habx5fzsZ4CixyRhH9oIESIAEAicQgsSiD9g0hsrOLa4H3p/gK6DEBs+Y
+NZAACZBAIggEdxarw4NN4xt3F29NLcV905gSm4iJz06QAAmQQPAE4H0iNJVFb2YW1savz8V6
+05gSG/ysZA0kQAIkkBQCgVo8FUJa39iCyi4sxXXTmBKblInPfpAACZBA8ATCOY7V9uPBg53J
+O4u3p5fjuGlMiQ1+SrIGEiABEkgKAd8dPNkEMz23Cm+L8LloM31EklFiIzIQbAYJkAAJxIBA
+mGexOhyr61tjk7OLKxsxwJRtIiU2RoPFppIACZBAiQmEfBar6y02ja/dWsCmcYkp2K6eEmsb
+FROSAAmQQOoJhH8WW4gcm8YT12e3t3eiPxqU2OiPEVtIAiRAAlEhEAWJBQtsGl++NrO8uhkV
+LkXaQYmN+ACxeSRAAiQQIQIRkVgQwabxpzfn786sRIhOQVMosVEeHbaNBEiABCJHoIQWT4Us
+pmZXYGkc2U1jSmzkpi8bRAIkQAJRJhCdhaygtLJ2f2xyBv+MIDRKbAQHhU0iARIggegSKK1R
+sSGXre0drGXvzUZu05gSG915zJaRAAmQQAQJRG0VqyK6M7Ny9eb8g50IWRpTYiM4gdkkEiAB
+EogugYo9ZZFt3NLq5idXZ9bWtyLSQkpsRAaCzSABEiCBeBCI7CpW4MOm8fj12en51SjQpMRG
+YRTYBhIgARKIDYEInsUWsrt9b/na7YWSbxpTYmMzrdlQEiABEogCgYivYlVEi8sbY9dmS7tp
+TImNwoxlG0iABEggNgTiIrEAisg8sDSeXVgrFdyyOEbgKxUs1ksCJEACqSWwvrm1vrG9cX8b
+YdKjeQnVZGham2r3dzeW7wl7VUmJTe3vCztOAiRAAmYEYq2phR2rqao4tK+5troyzFGnxIZJ
+m3WRAAmQQHQJJExTC0HvKSvb19XY3lIX2hhQYkNDzYpIgARIIFoEEq+phrjbmmsPdDeVlYVx
+u5cSG60Zz9aQAAmQQHAE0qmphpvGfftbqqsqgkMtSqbEBk2Y5ZMACZBAyQjApHZt/f7aZixt
+lAKlhk3jg3ubWppqA62FEhsoXhZOAiRAAqESwCURhCuHxS9MfyGucHUUavVxq6yjpQ6ns8Ft
+GlNi4zYj2F4SIAESyCeweX8bsoq7NKsb0j+JxxGB2prK3p7mgDaNKbGOxoKJSYAESKD0BOAX
+EFdUsVQVsvrgAZeqngalvHwPNo2bG2o8lWKUmRLrO1IWSAIkQAL+E4ClEnwBrm1I/8QmsP8V
+pL7Ezrb6no4GfzeNKbGpn1YEQAIkEEkCWKpCTbEDvAp7pfWtnd3dSDYzUY2qr6081NPio4dI
+Smyi5gc7QwIkEGsCMADG9q/QVC5VSzKU/m4aU2JLMoislARIgAQUAmIHWDYD3qQBcESmRXd7
+w96OBu+NocR6Z8gSSIAESMAZAWgqBBXXVbFmpbGSM3Zhpcamcd++1ooKT5EDKLFhDRfrIQES
+SDcBqKm6CcyD1VjMBWwa9+1raairct1aSqxrdMxIAiRAAmYEVHslLFixD0xYMSXgZdOYEhvT
+QWezSYAEokhge3tH3QGmF4gojpCrNmEh29vT4mLTmBLrijczkQAJkECWAFar8g7w1vLKJs2A
+kzovKiuwadxaV+ss3CwlNqnzgf0iARIIlsDyqrT9y03gYClHrHT4puhqd2BpTImN2ACyOSRA
+AhEmICyBl2XDpQg3k00LkEBTffWhfc3le2xZGlNiAxwJFk0CJJAAAri3qu4D0xI4AQPqvQv2
+N40psd5pswQSIIGkERBeluQfuoNI2uD60h+Em93b2dDZWm9eGiXWF9oshARIIPYEhDEwjleX
+VjchsbHvDzsQPIHmxhqE6DHZNKbEBj8IrIEESCDCBGC1JM5WeccmwqMU3aYhZkDf/pbaamNL
+Y0psdEeOLSMBEgiIAGKYY6kqrtnweDUgyOkpFpvG+7oa21vqCrtMiU3PNGBPSSDVBHZ3dyGr
+K6v3uQ+c6nkQWOdbm2r3dzfqNo0psYHxZsEkQAIRICAWrEJZI9AcNiHJBGqqKrBpXF1VoXaS
+Epvk8WbfSCCdBOBuCTvAOGHFOSvDw6VzDpSq19g03t/d1NZcKxpAiS3VQLBeEiABnwngAiuU
+VRyy+lw0iyMBJwQgsQe6m8rw4HzCSUamJQESIIEIEcBNG1lTuWCN0KCwKSBQW1M51NtOieVk
+IAESiB8BnLAuLm8srGzypk38Bi8dLcYqFjbGlNh0jDZ7SQKJIICz1SV5K5iuIRIxnontBPwY
+9x9o5VlsYgeYHSOBxBCA7dLi8iZcQ2DZyjusiRnWBHekvHzPkb4OEVyWq9gEDzS7RgIxJiAu
+20BWabsU41FMZdN7e5pbmmhRnMqxZ6dJIOIEsFqFsjK2ecSHic0rRgC2xAf3NqvfchXLqUIC
+JFBiAuo11sWVzQcPdkrcGlZPAm4JIMjdw/0dWgdPlFi3LJmPBEjAGwGYLKnmS95KYm4SiASB
+wwfbGuqqtE2hxEZiYNgIEkgPARyyzi9t4JB14/52enrNniaeQGdb/b7ORl03KbGJH3d2kAQi
+QYDKGolhYCOCIQDvxEN97fDmRIkNBjBLJQESMCIAp4ZYs9J8ibMjwQTglxhbxHW1BiFjuYpN
+8LizayRQMgJCWbEbTB8RJRsDVhwWge72hr0dDYa1UWLDGgTWQwIpICAcRND7UgqGml1UCNTX
+Vg4cai+GgxLLiUICJOCVgFDWxZUNRo7zipL5Y0UAW8S4pVNVWU6JjdW4sbEkEAcC0FSEOqey
+xmGs2MZACAhf/yZFcxUbCHcWSgIJJoDLrAvSmpVuIhI8yOyaNQHV1z8l1hoWU5AACZgTgAXT
+3MI616ycJyQAAnDkNNSr+PqnxHJKkAAJuCQg7rPOL63TNtglQWZLIgGtr39KbBJHmH0igSAJ
+bG/vYME6u7jOmOdBYmbZsSSg8/VPiY3lKLLRJBA+ARGcVVy8Cb921kgC0ScA+2E4ctL6+qfE
+Rn/U2EISKDGBhaX1JZgHJyLsOfzYwRSltqYCTOtqKlW3dqvr9/HJxub28up9vEyUmDirjyeB
+Ql//lNh4jiRbTQLBE8CVVpyzJsM8uKJiD5S1qaEa/yz0FqtjCbto9Br/5Blz8LMsOTUY+vqn
+xCZngNkTEvCFAIyYcM6KlWsynEVAXLva6jtb613AwZHznekVAHGRl1lSRaCYr39KbKqmATtL
+AkUJwIhpfnkdd28SE0gOq9Xu9vqO1jrd2dgnN5d+dGUWLxCf3FpScfR3N9TXVAztb/rsgN7j
+3dzi+p2ZZfDh7CEBQwJw5DTQ21ZbbeDrnxLLOUMCaScgjlqxJ5wkEDA86dvfov2rB2X9/g9v
+QVznV6Rj12IPhPazh9u/8EjX5490qmlwOvvpzfm19a0kIWJf/CJg4uufEusXZJZDAjEjkLAN
+YS19xA576ECruni9t7Dxx/9t/AeXpx2N0LG+1mef7MM/Ra7d3d2bU0tY0ToqhIkTT8Dc1z8l
+NvETgB0kgTwC4u7N3OLaakLXZLiYCPewwqbp/vbOd/7/q3/24aTrSYC17K//g89gaStKmJpd
+uTuz4ro0ZkwYAUtf/5TYhI04u0MCRQkIC+GFpY2d3d2kYmqoq8L6Vejr6sb275z764vX5j12
+tqul5rdPPdq/V4n6ibXs7MKaxzKZPRkELH39U2KTMdDsBQkUJYCbJzhthZFw4q+gaC/+X727
+8jvnPsIWsS8zA6vY3/zyI8ISCjvGOJfF+4ovJbOQ+BKw4+ufEhvf8WXLScCCAJQVPoRT4owJ
+K9fBrFUnDJr+1bf+0i99FZSrKvb8+3/yObGWxWb72LXZxL+y8BfMhIBNX/8mJewhXxIggTgS
+gB3TramlixP3Ju8spkRfMUw9nQ3Cfhjnr7//vY/91VdRLJbFwhoZhlT7uhrjODfYZr8I7Ots
+xJVrL6V5yuylYuYlARJwQQBLK5wRfnJ15vLVmZmFtQcPUnSPE3/sOrLhr2Hf5P381ZA/ZBvi
+Lb5qbqjBua+LYWKWBBCASV1LU63HjlBiPQJkdhIIiYBYtv7NpzOwxEmM4whH7Pa2NwgTJxzB
+erEftqwU4q1e/uFC1hJXIhPgyN+XoafEJnJ6sFPJIQC7G1zTnLg+m8Jlq3YU8SevPbuE/a/v
+Xw16gP/kvSvYNEYt2JdurK8OujqWHzUCB/c224ylY95ySmzURpbtIQGFAAxtcDvz4yvTN+4u
+JvV6q/3Bxp6tSAz/TU79S9ivRU15c2YNXqLE/7Y0KlW7KIdZ4kgAvv79OiCgxMZxArDNCScA
+I+GrN+f/5tNp+EBI1Wmrybgifo74VlW+oCeBWlFzI1exQcOOUPnw9d/ToVyP9t4sSqx3hiyB
+BPwhAB/0WLZeupIuI2E77LBlBw92SInN2x984sxFop3yDdNgISssllG7X2sa141hxnAIwJHT
+oX3NlpEQ7TeGEmufFVOSQFAEELX0+p3Fj6/cw7I1GdHl/CWFdaT4qzd2cxHunPwt3KS0v/h4
+SnzL49jQmJe2IkRtchpLx7zBlNjSDihrTzUB3MC5N7uCDWE4EkpYDBx/xxW2TqLAH12Z87dk
+89I+nlwQCaqrlAaEWTvrCpkAdkq62n3bIhaNp8SGPIisjgQkAoiYBiOmSxPTd2ZW6D/Ick5U
+VigKZx6izrIcpwnuLSghdyrLKbFO4cUsvbRF3NPie6Mpsb4jZYEkYEZA3MAZvz6L/0iwp35/
+JwH82IkC7y36447YZvNURVeX0TYzMlnsCOzvbgpilCmxsZsJbHAsCYg9YZgy8QaOi/FTndgt
+rGy6yO46C859xe1Yj170XDeAGcMhAF//8OUURF2U2CCoskwSyBGAVyZ1T5imTO5mhuoEQAhe
+mA+HLEzaJakLeyRwNBFQ1ZTYgMCyWBLIwE4Y11vhlYl7wh5ng3pc3doQqsdgBN4RcdqxCeGx
+C8weWQLYIg5ul4ISG9lxZ8PiSgAuD+GpX9gJpycGTqCjpUpsVzC7ecUa35JVdFxZDrSDLLxU
+BLA/rDoOC6INlNggqLLMlBJQXR7CUz/thH2cBNvZgEKq5vlYuElRXS3K+RxHMxzgIdfil69/
+k2ZTYkMeU1aXTAK4hAPfEXR5GNDoqotIESw9tOfh/U2iLkpsaMzDrMgvX/+U2DBHjXWli4B6
+CYe+I4Ib+MUV5a7O5x/uxPlocBXpSn78cJv4ZHlVCtLOJ0kEutsbQvCLGd5kTdLYsC8kwEs4
+Yc4BLCLXN7dQI4yPhg4EZfyp6xFMq471teJDHK7zTD3M4Q6hLvj6h6/EECqixIYAmVUkioBw
+1o/Q6HDMxBsdoQ3tUvZG7Bce6Qqn0i880i0qWlm7D5UNp1LWEgIB3339m7SZEhvCgLKKhBDA
+Wur29DIPXEsynOo68os/3RPCiSy2o7/8RK/o6cJyqC6lSoI3VZX67uufEpuq+cPO+k8A4gr3
+ERDX6blVej30n6+NEmFQJvaKIX7PPtlvI4enJF/6W/vFHVxsWswvUWI9wYxU5iB8/VNiIzXE
+bEycCODP+rXbCxBXmDXFqd1JbOud6RXRrc8f6Qx0IQtx/Uc/d1jUdW9ulbvEiZlNAfn6p8Qm
+ZoawI+ERwAnclRtzY9dmF7lPGB51s5rgLUs1Lf7tU48Kv0tBPP/8H3xG2C1jCTuzsBZEFSyz
+JAQC8vVPiS3JaLLSuBLA33EEw4G+QmXj2oeEtntqRllTdrXU/PapnwriAs+vfGnwswPtgh9c
+iHAJm5ipFJyvf0psYiYJOxIsAewGj03OXru1sLouHfvxiRoB7NvDxYdoFW7U/OpTD/vbwqc/
+fxA/okxsEauLZn9rYWnhEwjU179Jd8r4jhb+YLPGqBHAbwHEFX9S6cQnakNj2J6ezsauNuVS
+48Vr879z7q8Rdc57y7F+VfUV4oo3Le9lsoSIEOjb3xKoL+Ji3aTERmQCsBmlIQBxxWEb7IR5
+w7U0A+C21t59LS2NNSL3zZm13z33Ef7ptjDJo8VvfvkRdX8Ya+XxyTkuP1zzjFpG+PoPLlyd
+eWcpsVGbDGxPSAQoriGBDqwa7VoWlbzzgxvf+3ByfsXZ8TlOc3E/59mf7VeNp7B+nby9SH0N
+bNzCLhi+/of62tWQwyFXT4kNGTirKz0Bimvpx8CnFmAhe6inuaysTJSH7WII7fd/eMuO0EJT
+4fEYl3O0MWhxWHBnetmn1rGYSBA4fLAtBF/ExbpKiY3EJGAjwiFAcQ2Hc5i11FZXHuxpwj+1
+lX5yc+mDj6euTq1cvbusPabFmhUujg+01/3Mwx3qtrDIiPs5t+4t0ZFTmGMXQl3w9b+3I9To
+TLpOUWJDGGVWUXoCFNfSj0GQLcByFvvG2BI0rASLWpy1456P4bdyRIfV6fk1bg4HOUQlKLu2
+pnLwUJu6yVGCFmQy9FFcEuysNFQCswtrcM90+94ybZpC5R5iZVh9Xr46g2ushtdssBVsqK+4
+94xZ8TdXZgJ14XTjzacfO/L0W5Mh4nBSldy8Mx84yRKLtHDkdHBvU2n1FaAosbGYLWykSwK4
+igNxxV9eiqtLgvHJhjUo3qVw0+ajsanJ2wsYeijo5v28yzzYDcaH0GN4nL44fg/eRabnV7GK
+tdvL9888dqQn+xOyLF1965ekqp9/86rU2smR55Ooi3YHwka6MH39mzSHEmtjrJgkhgSEuOIv
+Ka+6xnD0PDUZWitEFAqKpe1PPrmr/nx8RZJVIcAOlFVujrTaG/72V0bu/Piy/DOS+eovjdzw
+1FInmd//T6/+6Jf/4PKFL50/Lqns5PhHTnKnLS3sm7raS3kEqwKnxKZt7iW/vxTX5I9xCXp4
+9f3zf5l5/OsvPJmt+8lXf/ynw4ojqODbc+Pa5czjg72Z/uf+9K2hbxyH2D/6tV/7QvD1xrEG
+eYu4OSItp8RGZCDYDB8IUFx9gMgijAlcvfqjTGZoIDRN1bXi4PPvZBX9iy/Ly+g3nw88ol9M
+50L4vv65URzTqcJm2yUAI5dPrs5wW9guL6ZzTKC///FM5jvPnX2/WM73zuaOaXuKJxPZTRNL
+56zqiW/OTkq2SzI5Cc4r87FX3ivaRc2JsnKym5/UqiLH7MLM0NxYA19OYdZoXhdXsdEZC7bE
+DQFE6sbpGoxcNvINW9yUxTwkUJRA/3O/+/VHM5nvDkPkCgydJFF87ru/+Fb2mPaXkayoypon
+hv596ZXM1y5kizry6m9JJ74fvNLz9JXfUD68/NZXMt/OOwnWlYkE33nuMcOjYpQvbTKL8qWT
+3ae/8ZfaTltUFO0ZAl//B7qaItVGSmykhoONcUAAxqIIlj5+fZYh5xxQY1LXBHqH37x84QzW
+spA3aTWZE9oPvvXKR49//Z2vf1Ep+8lfQ7Lv/qGxMZRp4qtv/eG3ceL779RN4OyJ7xe+fufH
+avmZL77wtc9lfvTO+8pFoKtv/VZ+AzJffHnklzM/euUN/ZpbVz5OdkWPco9pRQbscPcUtkWI
+EwcnD/jBISi8KeGn2B1l1/jtZMQWcYUc6Dc6T7RaEx0ubEmUCUiOeKaWYCzKYOlRHqYktg2a
+JJ2D/sEvCqEVKvve//cd3TFt/5MnIIHjRldhzRO7O/E1yvXkia9gzf3nuu3iwpRyU4s/smCV
+VddWdbbVQ0F7OhqEgh7p7/jph/fiZ6i3Hf/bf6AVTpTwg01aKC5+aqoqQp4AqLoksXTMu0mJ
+DXkasDpPBHDR4u7MCm7jIDyOp4KYmQQ8EMBS7x2sIzPfHhG3VPFgY1ZzFqvbfdVXVSzx5MRY
+JvPoYWM7JmzhqlXklW+ay7KXsn/n8tq6KrEM7e1p/vT3chWdOItt5MqOnrZ9nY1QUNyEEQpa
+baWgIa8msWg+0B2tLWJBnhJrOQOZIBIEcNkRXgJg0zQ1u7KzuxuJNrERKSZw8GefxtFs7lEP
+YsWtWenn1aKXaool7h0YymQ+upKV7Vzpkt+Jr37nc2e+rxQuC3z2KZorl6S8fI8sjRWSD8nq
+WgRPxdLzMw91Yhn6cFcVPuo52CYvQ+++caLuy986/to4fuGkZ/y14+4GubLC2Jmlu9Isc2GD
+uuSOnAwbSYm1HDsmKD2BhaV1bAvTA2LpR4ItUAnIzh+G+rDilI2NxybsuaEwT1zsW3mD9xd/
+47lewwFQct2pkHRUORb98f/4bibzj5/9yiOHu6Cjxwa65A3ez34OijlxfbqhBinl49KJd89d
+0BQ6fgn/N/zySwNeRzrMs1gsvksYS8ecFCXW60xi/kAJwJRpbHJ28g6dNAWKmYVbEZAuumgM
+iWHBOyzZJcmeKPqf+2eSbdHTmnsy0r0X42sz5omVb/+1uv+MeiXDYHFl6LzwJFz14b+SN4r3
+NLQI86K/dfbr/xQNOPF7P1SORRf++Bee/c+Z4dFvPVOVv2E78NLLw5kLp194fUIuaeL1JwZP
+axU2M3gUGjzy9nnB4/yLuq+tMOW+h3Gv/cReUsLeCr4SvZQQaF5G2gkULwt3T2B9c+vu9MrS
+6qb7IpiTBHwkIF93UcvDvZd85w+4lvocFo7Kg63grAEw5Pbpb2TOfP8dzRq0aGIpe15Ff/uV
+D//7rw6VV1X++b9oeeY/K6UPj44fPTt47tT4h7nlZr5cYqtX810+hfMvlp0cER8Nj+5+M4P/
+zeDfJ5RUmq/xfWFF9pDC4B87T/bSuk8FR04DvW26UIbuiwsgJyU2AKgs0hsBeBWGTdP80rq3
+YpibBOJBAAeltdUVOLzE5ioWf7Akqqz4b79e/fRFE5mMfM9wjot4DEE3ExbOEfFFXKynlNig
+5wDLd0AABsPTc2vTc6s0aHJAjUnjQwCrrrraSqGmNVXlFRXlxQ4RpbVkrDU2k7k4ce/BA9tR
+jJwPItBhY9x5vlBzUGJDxc3KTAjApun2NEO6co4kh0B9bWX5nj04LISg4qe2pgL/a7N78r7v
+Mc3+rc18EUoGK4r1ja2AGoSXlYf7O8I0qnLXEUqsO27M5ScBOEG8Pb20uh7Ub6OfbWVZJGBE
+AJ4WYFhUX1tVXl6Go0Ghqe5QqYeqZuep7ooON9fVm/PB2VLAzitSvoi5URzu5GJt9gjATxPu
+udKPhD1aTBUVAlieVlVWQETl/yi39MMQlXaH2w64YAvoVxu+/vv2tYTbG5e1cRXrEhyzeSdw
+b3bl3vxaoKc13hvJEkiAgupuDsBoES/Q7vKa5IJF2FBvR8jeo1z3ghLrGh0zuiewvLoJPxKM
+jeOeIHMGRkD4ZIBFkvgP1/u9gTUwNgUjfjPiS/reXLimiqAvYm4U+z7QLNANAdyWg7gGd0Lj
+pk3Mk2ICFNTgBh9+YxBo0t/ycf6KU1h/ywy0NLvmbYE2goWngYDw4D92bZb6mobhjmYfsSQV
+/gWxEhKxYnDrA3+y4Z4361AwpIbDpqms7AnFyZLsZkn7vyE1IuBqfHfwFFlf/yYgKbEBzzIW
+LxPAllFAHvzh+xu7RvgTiTgbIsyW+kcTL7xxObDhNAmIAISzo6VuX1cjZsWjQ91wfC/CrmHO
+0EYpIOZqsb7vsff2tETT1z8lNui5xPKLEsCFnInrsziS2dr2+RI6/npiLYK/m/gn1iXtLXUi
+zBZ+IK4iOjR8oA/1tcfCuJ9zyDsBLJsw+rpFKsJ0d7bW4/PY/XX2DqS0JQA4HFf51QYMK7x2
++FVaaOX41v/QWsyK4kIAO8NQ1vHrs75feMW9w4cOtGJdYsfqAYmhtRDaxvrquKBjO20SgFcH
+vD+JOOHHBruOHpbiyXCRapNeCMn8WshG3Ne/CUlaFIcwzdJYBXaG784E4qoJq9X9XY3aFcm9
+hY2/ujL78bWF+dX7gnVVxZ5Hels+e7i9f2+Dlj6uEOA8OI3jkZQ+w8MD/trCTRLenCIbv8wO
+bNm/REZ1Qqz7XzslxCLNtdsLi8sbHpsKR054RY7pxj5XsR5Hn9n1BGAzDK8uQewMQ1Zx4Iof
+VV9/cHn6q//pfw7/xwt/9O4nf/Hx1MVr8+LnryZm/+TPr/zGyP/6x//hA/zH6sa2aCX2mrDK
+se/EjqNbcgJYBsHPgBg4HArAZ96hnmax8Rty22SLpBfPC8sk8eD/8BR8oGkYPA3nHpHc9NGU
+lbOFUnPklabUnv0y27xsGhuVWTXGh+/hQNJ7KYhVF1N9Rd996L93giwhGQQQWwPeJIKzGYa4
+YgkrWH1ycwkK+jvn/vrmzJoJvfmV+3/24SRkGAIskkmuww+18lguslMOp3fiPBVnAThKh4ES
+/PgIi98IjNrIybLBSy9jpu/ujg5nRk4+8cQTug9UI2FZek+OIFyceEaHkdlU+C6cHswWPv7a
+cfyfNrWuNFGcXobxkRSXTnrU2HQlHWnvRsUY94jH0jEHTIkt6QRMUOUwa4K43plZCShIDv7I
+qlZL/88Pb/2bN//q6l27W74Q2t//s4//+Pvj92WTK+wx9u9vSRD7eHcF24BCU3t7miGoxwaU
+81ScnUfQIFwKsCoCq54489rxzIULOU/94oNz74po55nzr56+AC/DqtTJX4+czUlw4bDlCpdD
+p+dCo0OuX8gvLXPim9D4C6dfzV8ZayuMwrRAKCEvzcD7VrxuwRZ2lhLrZQIwr0RANWsKzlsT
+/triT7DA/c4PbmBbWIilowcZv/X9cZEFBWKz0VF2JvaRAI5U8cKEbQmcsf3UULewUWppqvXL
+OsbHpuYXdfzoYPEPBoaO5b48/zainh8bGsh9MvDUKUjwJWUKGjQxr/DBo8c1ScYvXdCVBo1/
+Jk+FpdTHTz2lqTAwCvYL9jig+zobPZZgv6kBpaTEBgQ2LcWKC6/4Z6Ad7ulU9BWHr1iMuq4L
+y18Ircje1VYfgY1H112JWUZ1qYrtX5j+4kgVqxNs+2NHIWY9cdRcbNxqnsHT0ElXz8TYRein
+Xt5dFRVuJi8CiTP4BFy3o8SGO+MSVFtwZk06SOofYqxc/2j0E48IYf2EfWMUgk1IrJw8lsbs
+JgQMl6rYP0iRuZl6EKucx7o9I5XXx2YL4KhORNdnsch4oKspqt1y0C5KrANYTCoIBG3WpOPc
+0lgjPlHV0ctAaHW6vaWWC1kvMAvzqpZKKVqqGhOUN3ovjikHs14pG5Umb0UPPyNOhiP64PfL
+ncpikyOCJ/EuKFNiXUBLdZagzZp0cPFrJq5nQBrf+8kdX9Bjt1nYIWM5Ff7dD1+6EJ1CsBPY
+2lQLD4WDh9qFy1/sDaRrqWo8GLLBUr5VsGQU7PIuTUFpKOvkSGZ4NBqGw2bz0YXFE/aHE+Mo
+hhIbnT9WUW9JCGZNhQhU/0247apeb/VO6oPsHR51iey9zPSUAFkVAU9gAIwfcVE1js7tgh2y
+E99Ubupkj2OlGzmuJRGl4SaPergr+61wX1qwPc8r3elxbBx9/ZvgpHenEOdanKtChNcgvElY
+IsHfcWHyACtiGCtZpreZAF6f/u/hn0FiLMrh4tFmrjQnwx8+rPjrayUX0E7/aKaZG/t+a2pp
+ZsHs8roOEbZDkvS6xlUsfwUsCIjF66c35333428HvXqQc3PWwW+pZcnwuSjSUC1MWOlWq+J1
+h8QsZxcTaAk4OouNqa9/kxGnxPLXwYwAFq8h3MkxaYFq8rCwsunjUGHPWdysTYZJhY9kKKs+
+wmRRjt5i4+vrnxLLqe6YQGkXr2pz1QseLnxNmPe5JItyx8MQSgasM7Rnq1ythkI9LZXYNHfC
+zWm490qehT9XsWmZ6I76WfLFq9ra+1sPxH+3Nvjp9h2heOprKlAs3iQckUlMYvxFa6qvhiXw
+kf4OxICjrCZmZKPWEZsnC7H29c9VbNRmXXTbE5HFa6HEdslGT349XS3KXdtt544Y/WpDScqR
+9+IkD/twW9h/oBWWwPGNYVISgKzUKQE7Eht3X/+UWKezIqXpo7N4VQdga1tZxT7S1+LjqBzr
+bRWlBedX2cfWeixK7ANjFw6Ba4Z628W9VY9lMjsJ2CdgbvGUAF//lFj7kyGlKaO2eFWHYWlV
+sXL6/MOdPo7NzzzcIUpb8tWKyscWeiyqcB8YTvZp2+WRKrO7I2C+kE2Ar39KrLuJkZZcEVy8
+quhxb1Ucx+Is9vNH/FFZFHWsT1nFqhKejMHmPnCpxlGOiG4QRb1U7YlUvSYWT8nw9U+JjdR8
+i1BjIrt41TJaWFbusD77ZL8v7H715MMwd0JRiysbCTiLxT4bXBjCXglugbkP7MsMSXYh51+E
+3W6obwPFVrGJ8fVPiU32r4zL3q2s3S/tnVeb7b47syKEEC6ZfuGJXpu5iiX77EC7uhqemln1
+WFoJsyOOTWdbPVzhIIY5XBjitDVFEWxKyJ1VOydQsafMMFNifP1TYp1PiqTngG5duTEXi7uh
+UmCfOUUL/9HPHYZGuh4ciPRvnfopkX16fnV9c8t1UaXKiI01RDKHZ2CEXMUhVpJczZUKaSD1
+RmTj2KgZku/k3Q9fCjF2u+EqtqOlLg1md7wXG8jvV5QLRZzXieuzU7MrUW6krm3wcYo1t/gQ
+Gvl3H+l20Xjo62+felRsEeN8V5VtF0WFnAV/ofD3qG9/y6ND3X37WhBA185FiJAbyepIoBiB
+wrNYTGDcyU4DMUpsGkY518e5xfXx63Or6zFbveGt+9qtBbwcoCfQyN/8hUee/Vln57JQ5X//
+Tz4nrsPiBBqlRf8Utr62sqejAa4hsGbd392EoEPJ830Tr18/eU2oPkXj0kmHnYOnLyCI+ulB
+ObU2pXwSmn20X8iF44NsAvm77IeamgtOUYu1qlgztCtbo3NZ+bNc7db9tRzEwjfC3p6WlExm
+Sqzl9EhIAmHZhJ8HD2LpzwjtRygCobJ4ILEIlWPHxhiL17PPPw5VFutXlDN5ezGyW8TCdgl3
+WGG7NHCovau9ga4hIvIbCOWRotEpz+hwZuRkEZshaScWgecymeOINyc92Qh2kridHBkeVctA
+bLp8ocYHJzPi+1zYO3yYrRnF5segNWlV0WZogJ54ZhhvAufe1USOz0Z6t99fywHSSWzyfP2b
+EKDEWk6PJCQQcdSxhI11Z7C7Oz45p+4Yyxu/P/UHv/Z3fuVLgw8faNJ17UBHHWyjsHKFEqtX
+dKDQKAGXlKLGAaaVYitY2C7hDittl6I2RpJi5WTvxBloaL42WTb4/KunL0B11ULkMkbOvq7R
+N0mVC0PKQpSVD+XQ7JmRt6UVrvx4bVVBP7IK67nkfByqyibS1z8l1nLyJznBvdkVhERVnf3G
+uqtYg8JKC8eoeMsXHYGUPv35g5DSt//tF/Gj/gekF7ZRWunF5R/oq7oOjgIHoayHD7bBS7DY
+Co5Cq9iGYAjI4nVsSGNmNPDUKej0pfFcfcdPPVVohnT86GAuxeBRLI99fHRtkBp5/LUzJ3ys
+QS5KOHhKqq9/Sqzf8yUm5eG4EZZNd2biZNlkB+2d6eVLn07DJFgVWjVX4XIWX+H+Kxbxk7cX
+IuL0H2/0uG8z1NculBUOWu30mmlKTkB7jioftjp/sOmreVwWkl+tx1bJGptdF8sKq8q8x5K1
+zayqlKJu7O1M3cEHN4qd/5LEJAd05fK1mdhZNtmki7eH2/eWP56YhnBiA1zdPVazY28cy1ac
+PX985R6Mm6Jw+CpuskJZYb6E+za11ZU2O8tkESAgzlGzp6vKYavzdqkHsdlDXe3us/Pi/GiV
+RmM1CutHyZr+wHknXiURdsJ5H+OdgxIb7/EzbD1+eSEt0JWYWjbZHxKsSoWOYvf4J5/c1f5g
+b1yob8kth6GssO+AYbC4yRpNZc1artpnn7aU45ewah1+2cN1UnmL9+KY9uTVM0TvrUIT5ANe
+aR2rXcP6UnKuf/gtgKMJz/2NXwGU2PiNmXmLsVxLgGVTsKPy/pnHjvRof55/86rvNcKsQ0Rj
+hbIiuA0Ng30nHG6BskCqdkbnX7TY4x0YOqY31ZWVLN8eWHqzKXr3x07/rFpl0AyjYiXD4pG3
+X8QusfoSYVWyndZp0sD7WDovc1NiHc6UaCeHZdPE5FwaArR5H4evjNz58WX55/tfz3zj+GO/
+NHLDe6GZDN7WcZkVW8FwF8xorH4QjUgZAy99KF/UESepuFkjX8sp/pz4JpIrF2OzKiqZ/44O
+a45jpbs4hQbEDnps2SqjZhiUL2vsCBT2mayhk2XJDlqZ5qRlhQYjacYR377L116XFrMe8+Pb
+kTBajlXs8LchsS8/qdR2482nn/7GX2o/cdoMvKHjPmtrU43/q1WsdAZPZ14bD9TlnVzJMfVu
+iNPuMz0JkIAhAa5ikzAxsDmMxSv11fVYHuw7grxj1xxvF4tbN8KCibvBrvkzIwkklQAlNvYj
+u7C0zs1hX0ZxqE9yyogV7WNHznyQee+sOK995b1s4dlPxOdnP1Dvs8KCycDRncEhW57zvILv
+tY7wlK1FE1d8ps78DIrSI9K0pYiTIset9WUUWAgJJIkAJTbGo4lN/ltTS5N3Fneyfhhi3JmS
+Nv2DP/92JvO5/lygvG9/9chzGXFY+/UvSk2bHHn+yHPf/cX/AivlheV16UTt2/9n48//Yb51
+qMbRHRJI53YaUxad8zxxJqcRN8mABtvB4i7HaOaknLWYDzxz53aGReUBRv7cBZTxU+cG9cY7
+rlpb0jFk5SQQRQKU2CiOip02wVsTbqogBI2dxExjRuD9M1/9TubRr/3H5zSxaB/92gX1pDaT
+ufq9r73y0c/83vifPgvvhrIPJsWK5FXVkZ1cgcb7nZwgZ4E68foL+c7z9CXku/6BtJpawZi6
+zbMsauL1s5ILnzeUCygwbNGZ7vjcWk4/EkgtAUpsLIcenhbGJmeT6lYinCH57nD23o5s+vTm
+89rQPZ/7khzJB7FucJnv2OD83R9mMo8dGyjTRJaWHahrnMVKCpvn/S7vGqR8yzDPeR5kWluC
++B+9V3hXKCyLKmyM7H0g94TZWlddZCYSiAkBSmxMBkrTTBFNPfFuJYIemNylncs502K10oYW
+6eINYt3gPl/5p+MXoZ9aR7F2GieuJAoHtBNjliVgYSqtJZUbHdaXJU2c2zktSt+bAFprBxjT
+kEDyCFBi4zSmuJlz9eZ8vKKpx4gvfJRDUA80w5lqVXNbQ+6mvFYs7fdHK1T2SsCOrXQQK5S2
+iA2SXL+1czvbRRn1x+fW2kfGlCSQNAKU2NiMqHDbtBS9QGyxIVi8oWJD+OhAJ/7ZUF34S2Hk
++k4N+pUrNi9mSiZvt9VmCXJZAy+9IQVK0wZg0TXdtnM746IKGzPx7jmtU3t/W5uACcIukIBL
+ApRYl+BCzja7sIabOckISBcyOpPqsE6F9+DchvCeYr8OBa7vsIw8CVc4ozqbJM1Z6vkXkSAX
+FcyqhDxPelJc0dzGtIEPPFPndiZFKSyUxrygBCqV3U7khY3x0NrojC5bQgIRIECJjcAgmDZB
+3My5ObXEmzl+DRU2hFFUY0er8Bdhy3WqON5UXd+J+zV6o18YFOO2jeJhTwrKonXIZF6CtNy8
+mI1zJt+nyeUt9IFn6tzOrKgsQjRmdFjx7lcmefGTLhlpH/et9WuUWA4JJIEAHShGehSxbL12
+e2F9YyvSrYxP47Ah3NZc19xYXV50weqyM6F4OXTZNmYjARIoFQGuYktF3rpeRDzFzRzqqzUp
+qxTl5ZKbQxsbwlYF8XsSIAEScEKAEuuEVohpEeiUN3O88xZ2TI8c7tzf3WRrQ9h7lSyBBEiA
+BLIEKLFRnAu3p5cRZpyHr67HRixbEatVXGzF6ajropiRBEiABFwT4Fmsa3SBZGRMOo9YEQgd
+4oqgcpRVjySZnQRIwDsBSqx3hr6VQOMm1yhhJNzSVNPeXFdXW+m6EGYkARIgAX8JUGL95em+
+NLgdhvEw3SI6JVhTVdHRWgd99d1I2GlLmJ4ESIAEdAQosZGYEvAscfveMg9f7Q8Gl632WTEl
+CZBAqQjQ3KlU5HP1wriJniXsD0NlxZ6ejgbh7NDDtnDOi761x337jStFymw0+FLUzTpJgARM
+CVBiSzlBhFv/6bnVUjYiPnXjBk5vT/PRw11d7Q0et4Vl94bDo3L4c9PArPGhw5aSAAlEjwAl
+tmRjAuMmuB2mW387A9DaVDt4qB03cFqaau2kt0pj4MLfKgu/JwESIAHHBCixjpH5kkHEVN+4
+v+1LaUktBNdb4ab/kcNdh3q87Akb43Ec/zWplNkvEiCBwAhQYgNDW7xgeG7C/jCNh03QwxPT
+ge4meGWCm/6KCs7SEsxSVkkCJOCdAP94eWforIS7Myv03GSCrKm++qEDUgyc9pa6INxHyGZO
+OIjNKHFmcpHPcwZQUqycfCOorElRNo38bfZD+d/iMYijnles3rRKkzU/s2kuzZdFArc77os8
+IiaVahsad/swZ7+wTE0CXghQYr3Qc5wX4jo1u+I4Wwoy4BIOPB3C5WH/gdbG+urgeowobSJy
+G+LFScZOImacpCAnRxT7JzkB4tbp5QsfnczoTaTwoRwMDg+i3UG3tQKkK1YuNfc9FE0ExRPP
+6LHTIoKrZS452J2o8tS5QV2sV5d9Ma30/IuahiJeH0U2uAnKkpNFgBIb0njizyE2h7FFHFJ9
+8alGewmnuqqiFA2feP2F0xegWjnbYiVE66vSYjX35CXJfgxdVvLJgcwzI2+rmaTQ6to8J868
+djwzclZEQp94/awUs/0NWeKlB+Iv672TXAgcC2HXttFlX0wrla3Djg0pDUU7aYRdimnKOuNI
+gBIbxqjhcs74dRoP61HjwBV3W7En7P0SjrdRHL90QSMhiuA9ky+X+PT4qaeycqiR3aODuf8Z
+PKqVu3xlklINPHXqeObCpXHpv40qlT53mksuM/e464t5pSdkFtoFuDfezE0CqSFAiQ18qHE5
+Z+waw77mcYazftxwhbhGIgzOxNhF6KdWKn2cFFAmzZPb1DWvtFguy4Z56UvxSrFwlRbLSgJu
+E1sOAxOQgEKAEhvsVFjflMKqQ2WDrSY+pTfUVR0+2DbU69cNVz96PjB0DNZPYm3p+5M731WO
+XBVfF+aVFstl2TwvfTGtFFvSynkzlLaIkZVl65iABNJGgBIb4Igvr27CuQQv5wjEzY01Q33t
+0FeobIDQ3RQt7+9eHJOPSLOPD94pjIrNVVDsW6e5Jt49h21u9XHXF/NKNcUPvPQGlrNBvY+4
+GTzmIYEoE6DEBjU6sGz69OY8PfsLU2HsCffta6mtjmakOdlOSWsMDPNa2cGiN7OegmKFsbCy
+z6p8K4yIpQcGxtLq0FEulKczKHbXF9NKNY0WxliB7aoH9cvIckmgVAQosYGQF5dfAyk6PoXC
+N1NnWz3EFTZNsGyKdMPFYaN6GCmuqHgTWKm/0g0h+aZO9pHu96jF4tvRYeV6rnRZNzMqbhA5
+yCXfF5KuIGked30xqVRauV7M9kG+MCTayYcESMCKAIPZWRFy/v2tqaWZhTXn+ZKTA/dw2prr
+OtvqPDrrTw4R9oQESCCVBCixfg477EEm7ywuLm/4WWisyoK4YuXaEYxjpliRYGNJgARIIEOJ
+9W0SiMh0q+tbvpUYq4IorrEaLjaWBEggDAKUWH8oQ1+v3Jhf30ijvlJc/ZlDLIUESCBxBCix
+Pgwprr1eu72QQn2luPowe1gECZBAcglQYr2OLfT1yo25tDmXoLh6nTfMTwIkkAIClFhPg5xC
+faW4epoxzEwCJJAmApRY96OdNn2luLqfK8xJAiSQSgKUWJfDDufDsG9KiXNEiqvLWcJsJEAC
+6SZA705uxj89+goPTfu6GuGhqbO1Hg6I3MCKfh54Lsx/6OU++oPGFpJALAhQYh0PU0r0Fb6F
+u9sbPvNQR5LFVTP4uTAz469lTg/K7oL5kAAJkIAnApRYZ/jW1lOxPwz3TFi57u1oSKMHRCWY
+zOlXzzubG85SS771k6LjSeqLs1FkahKwIECJdTBFEJwO93OSff6KkHNH+jv2dzdVVKR3bshB
+V/XR7RxMFCYlARIgAZlAev+MOp0A0NdrtxYSHJyuvrYSwVwRcq66qsIpnESmPzakhJORF2nq
+o8Siy3U572vt/nL+Ga8mn/SFHIMuG2ZHW2ZervzKtDUVNENEypNC5RVNlk2QrSJXRtGmopsG
+xWp6ab8v2Sh+KjmL7iRyUrFTaSNAibU14snW15qqir79LQOH2qMXLN3W6PieSA7HfvzooFQw
+JESOGCcexI0bOamTURH5Tvn+2GkRAFaSj5MjuQNeOaRdNqMUOA6x81CHkjEb306XS86k6uD5
+FzU1jWZOGogsKkYOtb1ya/XKhk8QNk9urqjWtKlZtppi0XJNbF27fRFB/fK02U53fB9bFkgC
+oRKgxFrjXlzZSOr6FbdxDnQ3Pdzf0dxQYw0iJSnOv4hw7Mdfe0PERJUkJBc49sQZKOOFc+8q
+plATr5/VJBWppViqE6+/cPoC9FOT8ZvQuwsW57tSuHNtLrm2kbPC8ErWfXVljYqKhLPVFHBC
+qjQz8nb+oXJeu2w3FW8LSoVy+PaCUnWTw5KA3e6kZNKxm0klQIm1GFmsX6/fXkze/jBu48gG
+w53tLXVJndyO+pWLmy4vPu0FHR+/hN1eVfZy9Rl9fuIZK2HKVx2ptIGnTkHRL43LWi/nL1iU
+6jt5/NRTmnDpg0exVr44pjWOzk+QsdlUZU0vapNLNX8si7XZHat6+D0JRJsAJdZsfBK5P4zb
+OAjpeqSvAwbDib3q6vy3Lrenq121yuVoDyrlI9TsMzF2Ud1Q1tZY7HM7rcpJvXT6q60OC1dp
+d1lJYLxNrK9BNtxSNNqwdi9NNemOjWLddMcOQKYhgSgRoMQWHY2VtfvJ2x+GwTC2hfd1NqbZ
+YNjJL6A4qMyemSpHqNkCigmYpbCZtEAr9coBb25HeOClD6XPhNLaublrKXVemmrSC3vFOu6O
+k5FjWhKIAgFKrPEowL8E4tMlaX+4tkYxGK6qLI/CzItJG+QNz+GXxblswWOwDyunMfpc3gYe
+fka2MDJ+ipVWkFq5uSs2kHVP/pK12E52LpO7plqOnpNizbpjWRETkECkCVBiDYYnYf6bhE3T
+UC8Nhl38KspSoRoMSUa9mo3ijGz5c0ExIpZKx56ytLhUPh9Ud3OxGIYN1fCoZkEqb+GqhlNS
+5oJcwtpXFJL7L6ka2EVlTZ71ndIc1yqGW2dMZN1OUy2xiTWreV90BGx3x7JyJiCBKBOgxOpH
+J2H6imNX7AzTpsntLyH2MsXVF/nBbRf5sk3uwYni6HD2equcQBhKiZNG9WBV3E/JswGWzX2V
+nFkplsyX5cst2Ue6fyNySUu9i9kv5K1rY4ssfIELPUpziyfL74JFUy3hFemLSbF2u2NZNROQ
+QKQJMNJO3vAkKT5dU301PPjTj0Skf/98bRxWhrKU27OG9rVqFkYCJGBIgKvYHJbE6CtcSTx0
+oLX/QCv1lb/2JEACJFBCApRYBX4y9BW3XXs6GrAz3FhfXcJZxapJgARIgARAgBIrTYMHOztX
+b85DZWM9JxAeB7ddu9obYt0LNp4ESIAEEkOAZ7GSvl65Mb++sRXfQYVvYRy71lZXxrcLbDkJ
+kAAJJI9A2iU27vqKCznwI9HSVJu8qckekQAJkEDcCaRaYuEnB/FfV9fjun7FhZzu9vo0Rk2P
++68d208CJJAOAqmWWPhvWlzeiONAI7brvs6mulruDMdx9NhmEiCBtBBIr8TemlqaWViL3TjL
+EXLqO1vrY9dyNpgESIAE0kYgpRJ7b3blzsxK7Aa7tamWHvxjN2psMAmQQGoJpFFi5xbXb9xd
+jNeQw5sEbIZ52zVeo8bWkgAJpJxA6iQ2diFgRXhXbA4ztmvKf1fZfRIggdgRSJfrCSlE3a04
+haiDn+GhvnbGTo/d71VgDdaGhy9TgvBkK5Oi1+R/JKe2F7w9sBazYBJIM4EUSSycN8GFU1xC
+wOLCa29PM/0Mp/mXU993ER4+F7NdjsljJzA7IZIACZSIQFokVnYxMbe1vVMizs6q7W6X/AzT
+oYQzaglPPfH6C6cvIFRdLiKeEkLuVTmeLB8SIIEIEkiFxMouJuLhghhmTYOHpJ1hOpSI4G9L
+SZs0fgnB4I8NScFo1efEM8OagPElbR4rJwESMCCQConF+WssXBBj8YqTVzqU4G+qAYGJsYuZ
+zPGjg4RDAiQQIwLJl1jcz1la3TQZEvjQ72qr793XcvhgW9/+Fqwg8UnI5rvq4jXkemM0U9Pe
+1IGhY5nMhUvjaefA/pNArAgkXGLvzqzgFmyxEUHE8iP9HVDWHnjSb6yBsjY31GApiU+OPtQZ
+2iVULl5j9StTqsYOHj2eyVwcm9DWf/7tkUxm+JkTms+0KeSVLx8SIIHSEUiyxEJcp2aLunDC
+yvXhvnaorCH8ioo9Dx1oPbi3OdBlJRevpZv5sat54KWXhzMXTg+qd3BgYHxyJDM8qto/DTx1
+6jhSKOZP+HrwNI5v+ZAACZSOQGJdT6ys3Te5ogN9xcpVYF/d2P6Lj6eu3V25ObvW1VzTv7fh
+C490tzZUiW8XVzZwlBvEAGHxSocSQYBNcpn5ugn74g9fyrN/yuAmLHRXfnC758wYZPbY6G7O
+CjnJcNg3EogegWRKLK7Ajk3OPnhgfEUHocsHe9vE8vSTm0u/e+6j+ZX72qGpr6n4lS8NfvGn
+e8SHOM012W12MaZYvGJ9TLMmF+iYhQRIgARiRCCBEosrOuPX54qZEENZ1f3hi9fmX37zR8VG
+69mf7ccPvsWd2stXZ7Z9ulPLxWuMfj3YVBIgARLwQiCBZ7GTdxZNrujAJaE4f8X+8O9/72MT
+dt/7cPLqXekoF1dU25pqvVAWeXny6p0hSyABEiCBGBFImsTChNg8ynptjWLf9N5P7uj2h3XD
+dn97550f3BAfet/UbWuuHeht815OjOYWm0oCJEACKSeQKImFaZKJCbGylKxWJHbs5pLl2F+d
+WhZpcHxrmbhYAgRRh7dhHL7SYZNrhsxIAiRAAnEkkByJRRSd67eto8CqYqnKp8mwiY1iPFWV
+5e5GF3dtj/TR27A7eMxFAiRAAvEmkBCJhUWSzSh1qtVSV4v18ap6dQflOx1nxHnt6ZC8WOCK
+rdO8TE8CJEACJJAAAkn46w8TYugrLurYGY/VDeV+Tn93g2X6oQPNIs36xrZlYm0CWDZBXLva
+C6vIxfuMYxjPwoikjrAwMQmQAAmkikASJPb2vWU4mrA5bBubiljCv0SV1fryC490KRK7uZV5
+/8xjR3ryf55+a9Kg2o6WumLe/M+/KPvjwUvBruQOQNZbBwE/baeXpVAtWvq/OAq6zSFlMomA
+POQO5hKpkQAJhEAg9hI7u7A2s7BmnxRCAkDekB5enL78RK9Jxr/7SDd+RILlVUXCvzJy58eX
+lZ93vpZ59Us9j73ynloILJvgdnF/d1MRt4sGLmXtt9xByvOvnr4AIR8/dW5Q+qMrh0HjkyOQ
+20qQXkTkJ0XiZPtFjVOGBEjAK4F4SywWr1jCOmKAs9hb2SyQWNWFk66Qzw60/+pTD4sPF5Y3
+lo1i9Rx8/p0fj/xy5jvPPf/mVSTDjVtYNlkGD9DGIzvxTci93gWeSXdsppe8v0vVDLz04eix
+04PwqHf8tTNaV/GOiCU1sbKZIO8ojL+WAScu9ZM61uwXCZSKQIwlFoev124v7MhLUkcPFr5C
+MrFR/Ov/8DP/9v/66WN9rXCaKD7Bf4sPxSeyJBe/3vPkr515PPPRN/7wb7oa+w+0RsSyCdKa
+FW5ZlB3JuCOUSUksERsdzoycTMNi1uaLWlBjyx3toMiy3CgSiKvESiZOtxeKeSG2JH397uLa
++pZIhgXr2ecff+tfPnnua38PP/hvdWkLQ2KkNHWd2P9//P2/ncn8yf/7P+uzlebtQqpHoPKn
+koN2xEpRNyZ1f22yxkTKSWrh/qXBXydNWu1uZ97HBquz/K1Sk4NaTcIi8mPcX8shiFyCE2de
+08SpiVzz2CASIIEYEoirxN6cWjLxkmg5EFDN8euzd6aXxbmseHTWT1jpwjWx4RaxmgWWTT//
+dx7PVScp28kRdQtydHjkpKJv8tIBC6UMoqOYriuRY/DSy8r25XFt8LLCXkHdBk9nRIFS8cdO
+v4CjV8mKKluEqDR/daZrJBKgTkP9lMO2KA2WT3b10dGK99dyCKKXQI4Flxl5+7zaNJO3B+07
+jO4NpWgu81cooyNS+bNc8XZfjMyLsn6xEzVquljwDuahj/IcUl40817+7PYuejOHLSKBogRi
+KbGIe+NL6Jt7c6ufXJudnl/VGiRjdYudZNwC+vTmvMn6Vfhski2bJLgiELZkZgRFUkOHyQuj
+kbOS7Nl/INBKAXKE0Ly/+XmlTLx+dgSK/YYazgwyLh/sSnKeC18mVmfn3lUaMfH6C/mNRHKo
+sBpmVPu+kFc+NlPHUZL28aW/9skEnXJg6JidtyVpoF/UvNqMZk5qY7gWecfKllz0FerEMxjs
+3DhJ6bXmcfZfjDABzIsy4KhplXgle+IJ9TVN/45m/V5VvI+YmfIkyr63Zaepk94FPQ1YPgn4
+SCB+Ert5f/vWlLXvQ5uMUBoMpq7cmPvJJ3fFD1a3WCLDF6NJCbU1lYOH2lo0sQGODUHa5L+I
+8n9lHxEk+9K4zdZIybTmUJnBo/malleObCicV52daoxyyX+Stcs3uaDClGKdpz6+9NdOm0NN
+Y+NtKb/jeKPJKoWdd46ir1C6d6E8hbX/YiSzMivKGGauVSLvhVyUWV1hnvpoXLnD3oU6HVgZ
+CXgiEDOJFV4mXJg4eYKUnxmbw9BXEa4Hj2S+q9VFvMFrHv3Oqo/t0FecV7R20y2vDaa53LQu
+tP66aZybPDbelsQrSfYMwNk7h8krlO6FTBLyrCm4/Rcj0RqTogyZ5LVKSqH9IG91b+e9yv5r
+omiM0965GVbmIYGSEIiZxGJ9uXHfmaMlf7E2tInNYXl3WFbYd8/lryW1d0GUM9Lcpq2fjZH/
+8BmtkMWmW3YrTtmZy9ZcNJfbpoXWX7cNtJ/P/tsSFq7SfqfyepF/UunhnUMWxuxugqywp56S
+90ScvxgVLco+DpOUHvpoUKrz3vnSCRZCAiEQiJPE+nUE6w5rjewKqqou37OxtGumLjXkbV2x
+zxjGU6w6eU0w/LJ6RJvfFqNcxi4xClOK9wn1Cbm/QTN19rYk3fORb9RKSqs1FvPyzqERRq3C
+Zly8GBUryheKXvpY2AAXvfOlFyyEBIInEBuJ9fcI1ilYRHsd6q7R5RKrRfhDzDqPkM2T8m2A
+g/RdqFQnGxHLD3aHpb/1svKpJ6uSZY5WFwsaiSbKvShYa+vKRzrdtnfI/XU6aA7Tu3tbGnjp
+DenoUhy3e3/nkJFKY5ensMYlW/gKK1aUQyz65N77WNgA+699HhvP7CQQNoF4SGwJj2ARMAeh
+XvEj9oa1O2SDp2ESorXdFba88h2Y7CNdnglmn1hqDaobHc7ef8C124uyebHk1EmyChVtOJkZ
+1RkCi11OtZHCNtawkXnly/eApGtHmifk/gb22+HsbSnvvUkoM3xp4fHjnUM65x15+0XsEms3
+Iuy/GGlHx7AojxA991GsWVULd0NuRV/7PDae2UkgdALKcWG0/3X9zoLqGTjM/7j86fTG5la0
+2eRft418WyPRQN2LgvRLZ7D1qX+h0CTJe2nJnXor15PzXkP0ufJSy+Xoq1ZaV9ii/FclXbV5
+d2GylA2L0qUsyFhYkuY+d/YKtqc+5vgXY6re6onEfGEjSMA1gTKt74XQ9d1WhTiCvXHXOta6
+rbKcJMLm8IGiDv2dFBR8WslFxMXXxh14Ow6+TayBBEiABFJPIOobxXAE4eMtWJvDjc1hiKu8
+OaxaDtvMWppk0lmWs9u3pWknayUBEiCBVBGItMTCRfDknbBvwVZW7EE09faWuljMA+HkDmZI
+jKUTi/FiI0mABFJFINIbxXD0v7hs5mXJ96Gqr63s2xeVgDm+944FkgAJkAAJhEkguqtYOAoO
+WV9x+Ir1a0QC0oU5CVgXCZAACZBAEAQiKrHCdXAQHS5W5r6uxhgdvoZJhnWRAAmQAAm4IxBF
+iYWRM0yIQ3NEjJg5WLx2tqoBX92RZC4SIAESIAESyCMQRYmdml1dzcZLD3q4EDNnqLe9oa4q
+6IriUn42pmlc2st2kgAJkEB0CUROYnFLZ3puNRxgrU21iJlTVVnue3VGMbFNK9HF3i6S1nGx
+vneMBZaYgL2JYqORnEs2IDEJCXglEC2JDXOLuLu94VBPRG6+nn/R2Euw19Fl/oQRkCYKvDoF
+55IzYbzYHRIoNYFoXdqBl4mZhbWgmeDw9eDepuYGvVv/AOuVXejDFbCh/yXpy3OnIuKbSW5p
+Lhx3gExYtFMCdOLllBjTk0CpCURoFbuydj8Efa2pqsDmcKj6ajXGUlg0+j60osTv5SATnCic
+CCQQJwJRkVg4coKv/6DJwbPEQG9bdVWFy4qELyXlUWKEZu2D5LMtPHJ8bvlDJYH0hRwFLhsS
+RxvBO5srl1VpmmWx2S7klSBq1zzaFuu/U5JpCtCGPdUUUrSRLjGmNVt2TIsOiuGgy7TMRtld
+sdopam8upXXY2G8S8EAgKhJ7a2p5a3vHQ0ess8K4CZdzyve47TL+yom4b0o8lWOnc5FaERkO
+QePkLwrOyaS1R17wkmwKEUFNjTUiB8HLl0GzYqUO60oQcfQ0OinFilVbPJo5WSiy0t6jdLon
+N3381LlBXUhYfRUGjbQmzxQaAhghOSyg9IiYg7pRKRh0q1GWC3derG5UbNXCkSQBEnBGwK3e
+OKvFIvXC0vr80rqvReoL82zcNPH62RFE2JLisYoHyqnZtHNhgyIFGtVmO3EGkc1GzqoB1qVK
+TIudeP2F/BLQJvzRvnD6VWUpK8fsPjaktBgN1su/rlPYsdaFls3YaWSgA5e8wjVjKo+XHIFd
+++QPuuUoK1kdFlsgsBZzKXnjwB6RQBgESi+x29s7NwN25AS3TXs7GrzhHL+ErV5VrvRlHT/1
+VFZ67VaTr39SroGnTukC5pgXa9QkKaC3+jdb/E/BMinXwsIS5DbkHjuNtNthppMJ5I+pFCMp
+c3FsQgNHN+iWoyyyOi1WNxo2a+EYkgAJOCNQeolFLJ0HD4LaIobx8EMHWuF82BmVwtQTYxfx
+Z+zooNdydPmhf5pHv0lrXpmNJmHhKi1LlVqKnMVadslLIy0LT3mCgaFjOKS/NF4Ug41RNshr
+Wawuj7taUj527D4J2CBQYomFr38YEttop5sk8Clx+GBrY321m8y6PE7/ZtmsUj2IVQ54jc5y
+ixVlr0mSubJ0zCorbRFzJovGemmkTQ6pTWapbfZGWc/Psthwpndqh5UdJ4EsgVJKbKC+/uEZ
+cfBQe211pU9jbbCj561k7wUalSDv7A4/c0LftoGX3oDI6pdLhSVMvHsOG+Lq472R3iAlMHf+
+GJifP0jdtznKTovVkbVZSwLHg10igUAJlFJig/P131RfjfWrr2HpBl56WbIkyhkRwxbX/qJQ
+rEXOvas5c1MKHNRs30pGnQ52cwtKQH6tl6i84iS7pYKdbl2nZLcTWoXNeG9koLM3loVrDsdl
+r17HXztT8Eak6ZjVKGeTOixWv4wV0zs3G3VzKZak2WgSKD2BkkkstogD8vXf0VLXf6DV/eWc
+YoOCg83R4ezd1jLpko4DNwCKre+genMWtUi3eeRLMNlHuszhyDeeOGtVSxA3dNQSpJXrxWzp
+8tWcwgbndUq+TCLZuGoe740s/SSPVAswDLg+JYa8yKDo2ms+ykpi58W6qSVSJNkYEogBgdI4
+UIQV8eVrM0FYOSHsK8PSxWDepbKJpm403RMJqFj3DWJOEiCBLIHSrGJv3lvyXV/3lJX19jRT
+Xzm3SYAESIAEIkKgBBK7uLKxuLzhb/9xOQebwy1Nni/n+NsslkYCJEACJJBiAmFLLHwRI5yO
+v8ChrzBuYlh1f6myNBIgARIgAY8Ewj6L9T1cHS6/wrmEe8/+HvkxOwmQAAmQAAkUIRDqKnZt
+fcvfcHWITAfP/tRXTm8SIAESIIEIEghPYuFiCFZOPiKAcwlEpsMq1scyWRQJkAAJkAAJ+EUg
+PImdml1d39jyq904ecX5q/+XX/1qH8shARIgARJIPYGQJBa+EqfnVv2iDedNOH+Nhb4aBb72
+C4MP5WSjeftQFIsgARIgARLQEQhJYm9OLe3s7vpCH2FzcD8HrnF8KS0mhchSWJb12OjQ0WIg
+fYT/yMJH9f5Y+K3OMWRBAvvOKAPpDgslARIggQAIhCGxPobTgXNEBH8NgEO0i5QcDCPezfip
+c4OSFMm+46Pw6GPw5Ht/zH0rvDwWqKg2Qeb0oAOfz1HoPNtAAiRAAlYEApdY+Eq8M7Ni1Qxb
+33e3N+zvbrKVNFmJpNBkUqxaBKYbPQYpklzbmrqOj1r3lTg/p189X6Rllgmi1iO2hwRIgARs
+EAhcYm9PL/viK/FAd9PejgYbPUpgEinmq+LBX/LKj8dBAIJo8JBDDZk9IsHFMU0somi0nK0g
+ARIgAdcEgpVYhFufX1p33Tg1IzaH21vqvJfjrQTlQFQ+gjQ7WrSKR5d3DqlPrK1Es3Oa97FB
+xLv8s02TFmgSFjn+tF2UE5o2Y4QfGxpwUirTkgAJkECkCQQrsVjCeu899BUmTt7L8VjC+RdF
+rDj5QTgyVcYk9Ts5op4ryuHpimqceWKom6aSXewKy/FppY+lOHNK3cOZkZNaedSVKQLkGeon
+CpLjp8kFSSe7uvCwGftFOaI58foLiEM7/PJLxQVUjiUv7YbzIQESIIHkEMj+4fb/3/fmVn58
++Y7HH5hK+d8yNyXKYVT15j2y2uKLrGoJ6XrteO6TvP+xSKxLW7SV+emMchk3tjCl/EmuV/aL
+KggrK/1CaOjogs4WktO1UP7fPIpuxoh5SIAESCBaBIJaxcLKyftF2IisX+X3qRPPQAUM1qfy
+6itvf3PgqVPHMxcujRu8hpknlg2FHW+VGuUSjX1bZ1xUmFJuau6xX5SSJ/+VQx9NPvutpJ8j
+uVV/rr5cNHp5FyB2B8zJedFmT0iABIIhEJTE3ptf3dre8dLmKOmrrLHflNeniizk7wTntEI6
+p9XvvuooFEtselypPSDNK9/mIaedkfCxqLzqTnxTFtmz0p533qNVaL0+22kw05AACZBAtAkE
+IrHrm1sel7BR01cxiJJlr7ITnH8aarCBXFwyiiWWbWqNVr/igDS3jSq2d5WnaC7n887HonSV
+nziDJl8ofmfHeVuZgwRIgARiQCAQib19z72V056yMjhHjIJ9U9HRUy5xiq3gwaPQO7t3TcwT
+F/tW3r8taitklEvekB5+5kR+FwpTTrx7TuvEwn5RTme22JEu2Lp2WgzTkwAJkECsCPgvsYsr
+G7ir4w4C9LVvf0tjfbW77AHmyvNZKDlbylq/Drz08jAWaIOanePi/g3NEyvfykbE8oPdYckw
+WFY+VZ4ky2atLhaUiepPjsD2qGAdrSsf6XRb2vaLckyaGusYGTOQAAnEn4DPEottVARdd4cl
+uvqK/kgr14snFa+88q6tapwjeYOQ78lkH+mCTbF9YvPE+HZ0GHqdrefia2/gnovk1Em6qCM+
+PZkZzdspzp4Sqw0Q134MG5BXvnwPSGf6Kw6c7RQlj3H+sbLqQ9lo/GX55jrW3a8Gc5EACcSU
+QBlE0cem35tdcecuMdL66iMgW0VJ11cvakTcViYmIgESIAESiBgBP1exuKiDoLAuOkh9zYcm
+3bm5cO5d+hJ0MZeYhQRIgASiQ8BPiYUvJxcR66ivhbNBOn01vlkbnZnDlpAACZAACVgQ8E1i
+19a3XLgjpr7qxkf4IoYZUsxi6fAXjQRIgARIoICAb2exY5Oz6xtbTglH8/6r014wPQmQAAmQ
+AAkUEvBnFQtPwtRXTi8SIAESIAES0BLwQWJhkzw16zjo+r6uxkj7l+A0IQESIAESIAFvBHyQ
+2JmFNafuiLvbGzpb6721nLlJgARIgARIINIEvEoslrBO3RFDX/d2NESaChtHAiRAAiRAAp4J
+eJVYXIR1tITF5jD11fOosQASIAESIIEYEPAksU6DwkJfYUIcAypsIgmQAAmQAAl4JuBJYhEU
+1r6viab6auqr5/FiASRAAiRAArEh4F5isYSdnV+z2VHoK0Lo2EzMZCRAAiRAAiSQAALuJdb+
+Erahrgr6CqdFCeDFLpAACZAACZCATQIuJfb+1gObS9jamkrqq83BYDISIAESIIEkEXApsTY9
+/ldVlh8+2Fq+x2UtSQLNvpAACZAACaSNgBvxW9/cWlzesCRVXr7n8ME26qslKCYgARIgARJI
+JAE3EmsnKCxC6Dy0vxWr2ERSY6dIgARIgARIwJKAY4m1uYTF+WtdbaVl9UxAAiRAAiRAAkkl
+4Fhi7SxhD3Q3NdZXJxUZ+0UCJEACJEACdgg4k9jFlQ3LU1i4IG5vqbNTN9OQAAmQAAmQQIIJ
+OJNYyyVsaxNdECd4trBrJEACJEACDgg4kNi19S3zuOuyi8QmB5UzKQmQAAmQAAkkl4ADiYU7
+JxMOcDFxaF8zXTgld6qwZyRAAiRAAs4I2JVYc0NiXM7p29fCK7DO2DM1CZAACZBAognYlViT
+U1i4mMAVHV6BTfQ8YedIgARIgAQcE7AlsfBIXMyQGC4msH6treYVWMfomYEESIAESCDZBGxJ
+7MxC0aB1sG9CIJ1kM2LvSIAESIAESMAFAWuJNYkLiyuwLU21LmplFhIgARIgARJIPAFriS0W
+F7a5sWZvR0PiAbGDJEACJEACJOCOgIXEPtjZMYwLW1NVwSuw7ogzFwmQAAmQQEoIWEjs3OL6
+zu6ujgVMiPsPMApsSmYIu0kCJEACJOCSgJnE7u7uTs/p3U0IE2Je0XHJm9lIgARIgARSQ8BM
+YmFIvLW9o0Oxr6uRJsSpmR7sKAmQAAmQgHsCRSXWcAnb0VLHKDruYTMnCZAACZBAmggUldil
+1U3dEhaLVyxh0wSHfSUBEiABEiAB9wSKSqzOY6LkhXh/C738uyfNnCRAAiRAAikjYCyxy6ub
+2rh1MCF+iCbEKZsZ7C4JkAAJkIBHAsYSO7u4ri0XV2Crqyo81sTsJEACJEACJJAqAgYSq3P6
+39PR0NxQkyoo7CwJkAAJkAAJeCdgILFap//wktjVTi+J3jmzBBIgARIggdQR0Ess7urAo5PA
+ABMneklM3Yxgh0mABEiABHwioJdYLGEfPJDcTUhenPa3lO+xjhPgU0tYDAmQAAmQAAkkioBe
+QeeXNkT/9nc3MdB6ooaanSEBEiABEgiXQJ7Eqnd12ppr8RNuS1gbCZAACZAACSSKQJ7Eirs6
+CFR3oLspUb1kZ0iABEiABEggdAI5id3e3llc3hBHsPTiFPpAsEISIAESIIGkEchJ7L15KW4d
+vUwkbYTZHxIgARIggRIRUCQWd3UWltY72+pbmngEW6KhYLUkQAIkQALJIqBILO7C4hYsHDkl
+q3fsDQmQAAmQAAmUjIAisQvLG4d6eARbsmFgxSRAAiRAAskjUIYt4pW1+w92duiIOHmjyx6R
+AAmQAAmUkICyiqW+lnAMWDUJkAAJkEAiCUir2ER2jJ0iARIgARIggdIS+N8/IPAhTeZLbQAA
+AABJRU5ErkJggg==
+</d>
+<d name="1" mime-type="image/png" base64="yes">
+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
+rkJggg==
+</d>
+</data>
+</abiword>

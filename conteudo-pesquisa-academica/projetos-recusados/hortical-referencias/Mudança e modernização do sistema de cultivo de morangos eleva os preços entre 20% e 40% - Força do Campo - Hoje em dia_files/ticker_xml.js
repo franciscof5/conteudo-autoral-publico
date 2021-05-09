@@ -1,0 +1,1 @@
+jQuery(document).ready(function(){function a(){cot_ticker=new Cotacao(2,0),setTimeout("cot_ticker.carregar(0)",64)}nome_arquivos[0]="/xml/cotacoes.xml",tag_ativos="COTACOES",campo_variacao="variacao",mostrar_imagem=!0,arredonda_decimal=!0,campo_data="horageracao",setInterval("carregarTodos()",3e5),a()});
