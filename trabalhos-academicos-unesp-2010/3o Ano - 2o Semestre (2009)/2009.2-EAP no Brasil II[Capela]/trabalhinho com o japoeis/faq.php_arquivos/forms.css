@@ -1,0 +1,101 @@
+/*
+	forms.css - estilo para formulários
+	Portal da Lei Antifumo
+	Autor: A2 Comunicação
+*/
+
+#navSubsection h4 a { height: 60px !important; }
+
+#faleconosco2			#navSubsection { height: 60px; background-image: url(../img/title_fale-conosco.png); }
+#faleconosco2.cadastre	#navSubsection { height: 60px; background-image: url(../img/title_informativo.png) !important; }
+#faleconosco2 #navSubsection  h4 a,
+
+/* FORMULÁRIO DE CONTATO */
+#content #formContato fieldset, #faleconosco2 #content fieldset {padding: 0 0 0 0;border:none;}
+
+#content #formContato fieldset div, #content #formContato fieldset .inputSubmit,
+#faleconosco2 #content fieldset div, #faleconosco2 #content fieldset .inputSubmit {clear:both;}
+
+#content #formContato fieldset div label, #faleconosco2 #content fieldset div label {float:left !important;}
+
+#content #formContato fieldset .inputSubmit , #content #formContato fieldset div, 
+#content #formContato fieldset div label input, #content #formContato fieldset div label, 
+#content #formContato fieldset div label span,
+#faleconosco2 #content fieldset .inputSubmit , #faleconosco2 #content fieldset div, 
+#faleconosco2 #content fieldset div label input, #faleconosco2 #content fieldset div label, 
+#faleconosco2 #content fieldset div label span 	{ display:block;}
+
+span#country { display: inline !important; } 
+ 
+#content #formContato fieldset div label, #faleconosco2 #content fieldset div label {margin-right:10px;*margin-right:5px;}
+#content #formContato #formContatoEstado span, #faleconosco2 #content fieldset #formContatoEstado span {*padding-bottom:3px;}
+
+#formContatoAssunto {width:520px;}
+#formContatoNome, #formContatoEmail,#formContatoComplemento, #formContatoBairro {width:250px;}
+select#formContatoPais { width: 260px; }
+select#formContatoCidade { width: 465px;}
+#formContatoCep { width: 180px }
+
+#formContatoTelefone1, #formContatoTelefone2 { width: 195px; }
+
+#formContatoEndereco { width: 440px; }
+#formContatoNumero { width: 60px; }
+#formContatoCidade {width:185px;*width:195px;}
+#formContatoDDD1, #formContatoDDD2 {width:35px;}
+#nomeDoFormEstado {width:54px;*width:51px;}
+
+#formContato input.inputCheckbox { clear: none; float: left; }
+#formContato div label.labelCheck { line-height: 20px; }
+
+#formContato p.verificaCep {
+	background: #FFF;
+	width: 55px;
+	float: left;
+	line-height: 25px;
+	margin-top: 25px;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-align: center;
+}
+#formContato p.verificaCep a { color: #FFF; display: block; background: #999; height: 25px; cursor: pointer; }
+#formContato p.verificaCep a:hover {
+	text-decoration: underline !important;
+	background: #666 !important;
+	display: block;
+	color: #fff;
+	height: 25px;
+}
+
+#content #formContato fieldset label, #content form#formContato fieldset label {
+	cursor: pointer; 
+	color: #666; 
+	font-weight: bold; 
+	margin-bottom: 5px;
+	text-align: left;
+	margin-top: 15px;
+}
+#content form#formContato fieldset input, #content form#formContato fieldset input {
+	display: block;
+	clear: both;
+}
+
+#content form#formContato fieldset select, #content form#formContato fieldset .inputText,
+#faleconosco2 #content fieldset select, #faleconosco2 #content fieldset .inputText {
+	border: 1px solid #CCC;	
+	padding: 4px;
+	color: #333; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;	
+}
+#faleconosco2 #content  input.inputText:focus 	{ background: #EEE; border: 1px solid #666; 	}
+#faleconosco2 #content  select.selectOne:focus 	{ background: #F5F5F5; border: 1px solid #666; 	}
+#faleconosco2 #content  textarea:focus 			{ background: #F5F5F5; border: 1px solid #666; 	}
+
+.inputTextarea{ 
+	display: block;
+	width: 520px; 
+	padding: 4px;
+	color: #333; 
+	font-family: Arial, Verdana, Helvetica, sans-serif;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;	
+}

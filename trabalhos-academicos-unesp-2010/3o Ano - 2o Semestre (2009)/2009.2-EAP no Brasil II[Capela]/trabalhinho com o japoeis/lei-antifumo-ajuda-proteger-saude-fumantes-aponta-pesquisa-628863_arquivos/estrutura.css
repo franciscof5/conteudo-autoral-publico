@@ -1,0 +1,436 @@
+*{list-style:none;margin:0;padding:0}
+body{background-color:#ffffff}
+body.atletico, body.botafogo, body.brasil , body.corinthians, body.cruzeiro, body.flamengo, body.fluminense, body.gremio, body.internacional, body.palmeiras, body.santos, body.sport, body.saopaulo, body.vasco, body.vitoria{background-attachment:fixed;background-position:top center;background-repeat:no-repeat}
+body.atletico{background-image:url(img/bg-gofans-atleticomg.jpg)}
+body.botafogo{background-image:url(img/bg-gofans-botafogo.jpg)}
+body.brasil{background-image:url(img/bg-gofans-brasil.jpg)}
+body.corinthians{background-image:url(img/bg-gofans-corinthians.jpg)}
+body.cruzeiro{background-image:url(img/bg-gofans-cruzeiro.jpg)}
+body.flamengo{background-image:url(img/bg-gofans-flamengo.jpg)}
+body.fluminense{background-image:url(img/bg-gofans-fluminense.jpg)}
+body.gremio{background-image:url(img/bg-gofans-gremio.jpg)}
+body.internacional{background-image:url(img/bg-gofans-internacional.jpg)}
+body.palmeiras{background-image:url(img/bg-gofans-palmeiras.jpg)}
+body.santos{background-image:url(img/bg-gofans-santos.jpg)}
+body.sport{background-image:url(img/bg-gofans-sport.jpg)}
+body.saopaulo{background-image:url(img/bg-gofans-saopaulo.jpg)}
+body.vasco{background-image:url(img/bg-gofans-vasco.jpg)}
+body.vitoria{background-image:url(img/bg-gofans-vitoria.jpg)}
+a{color:#000;text-decoration:none}
+.clearDiv,.clear{clear:both}
+select{border:1px outset}
+fieldset{border:none}
+#publiCabeca{width:958px;margin:0 auto;position:relative;z-index:3;background-color: #fff;}
+#tbBanner{height:95px;margin:0;padding:0;width:958px;text-align: center;}
+#tbBanner table {margin:0px auto;}
+#tbBC1,#tbBC3{width:30px;background-image:url(img/publi_but01.gif);background-repeat:no-repeat;background-position:center}
+#tbBC2{background-color:#e6e6e6;text-align:center}
+#tbBC4{background-color:#e6e6e6;text-align:center}
+#site-cabeca{width:960px;height:55px;border-color:#d5d5d5;border-style:solid;border-width:0 0 1px;margin:0 auto;padding:8px 0 0 0;position:relative;z-index:2;background-color: #fff;}
+#data-hoje{display:block;clear:both;font:300 10px verdana;text-align:center}
+.cabeca-dir,.cabeca-links{width:800px;float:right}
+.lgoAbril{background:url(img/logo-abril.gif) no-repeat 0 0;width:132px;height:44px;float:left}
+#menu-princ{width:800px}
+#menu-princ a,#menu-princ div{color:#fff;float:left;font:bold 14px arial;height:23px;line-height:23px;text-align:center}
+#menu-princ a:hover{text-decoration:none}
+#mnp-home{width:116px;background:#273855}
+#mnp-noticias{width:114px;background:#2c5666}
+#mnp-esportes{width:114px;background:#13819a}
+#mnp-diversao{width:114px;background:#436554}
+#mnp-saude{width:114px;background:#70a246}
+#mnp-blogs{width:114px;background:#d69200}
+#mnp-homem{width:114px;background:#193a73}
+#mnp-mulher{width:114px;background:#c52a2d}
+#mnp-revistas{width:114px;background:#c85813}
+#frm-busca{width:215px;float:left;margin:6px 0 0 0;}
+#frm-busca input{width:180px;height:14px;padding:2px;font:normal 10px arial;float:left;margin:0 2px 0 0;border:solid 1px #ccc;font:300 11px verdana}
+#frm-busca input.on{border-color:#000}
+#frm-busca a.bt{width:16px;height:14px;float:left;background:url(img/ico.png) 0 0}
+.cabeca-links .clk-dir{float:right;font:normal 10px verdana;width:212px;height:24px;margin-top:5px;display:inline;}
+.cabeca-links .clk-esq{font:normal 10px verdana;width:235px;height:21px;margin-top:8px;}
+.cabeca-links .clk-centro{width:235px;text-align:center;font:normal 12px verdana;margin:10px 0 0 5px}
+.cabeca-links .clk-centro a{color:#000;height:22px;line-height:22px;display:block;text-align:left;float:left;margin:0;padding:0 0 0 24px}
+.cabeca-links .clk-centro a.icBlogs{width:45px}
+.cabeca-links .clk-centro a.icPinFotos{width:65px}
+.cabeca-links .clk-centro a.icGostei{width:50px}
+.cabeca-links .clk-centro a.icFlii{width:40px}
+.cabeca-links .clk-dir a{font:normal 10px verdana;color:#000;height:20px;line-height:20px;width:20px;float:right;display:block;margin:0 0 0 5px;padding:0;clear:none !important}
+a.icBlogblogs, a.icBrasigo, a.icBlogs,a.icPinFotos,a.icGostei,a.icFlii,a.icLRGostei,a.icHome,a.icRSS,a.icComente,a.icEnvie,a.icImprima,a.icCelular,a.icAlbuns,a.icFotos,a.icBlog,a.icNoticia{background:url(img/bt.png) no-repeat;padding-left:24px}
+a.icNone{padding-left:24px}
+a.icBlogblogs {background-position:0 -1889px}
+a.icBrasigo {background-position:0 -1942px}
+a.icPinFotos{background-position:0 -1573px}
+a.icGostei{background-position:0 -1524px}
+a.icFlii{background-position:0 -1836px}
+a.icHome{background-position:0 -42px}
+a.icRSS{background-position:0 -1391px}
+a.icCelular{background-position:0 -1002px}
+a.icComente{background-position:0 -290px}
+a.icEnvie{background-position:0 -340px}
+a.icImprima{background-position:0 -370px}
+a.icLRGostei{background-position:0 -1521px}
+a.icAlbuns{background-position:0 -1679px}
+a.icFotos{background-position:0 -240px}
+a.icNoticia{background-position:0 -140px}
+#miolo{font:normal 12px verdana;width:960px;overflow:hidden;margin:0 auto 0;position:relative;z-index:1;background-color: #fff;}
+#miolo #title-indices h1, #title h1, #miolo #title h2, #miolo .titCanal{font:bold 18px verdana;border-style:solid;border-width:0 0 1px 10px;padding:2px 10px;display:block}/*SEO*/
+#miolo #title, #title-indices {padding:10px 0}
+.titLkPatro{font:bold 10px verdana;color:#858585}
+.sepHor{background-color:#000;line-height:1px;height:1px;clear:both;margin:5px 0}
+.txtMsg{font:bold 14px arial;text-align:center;border-top:solid 1px #000;border-bottom:solid 1px #000;margin:10px 0;padding:25px 0}
+h4{height:22px;padding-left:10px;font:bold 14px Arial;line-height:22px;border-left:solid 10px}
+.box{border:1px solid;position:relative;padding:10px}
+.square{width:300px;height:250px;margin:10px 0}
+.square *{margin:0 auto}
+.lkP300{width:310px;height:260px;margin-top:10px;float:left;padding:5px}
+.resposta .publiEsq{float:left;margin-right:6px;overflow:hidden}
+.borda{border:solid 1px;padding:10px}
+.brdtopo{border-width:1px 0 0;padding:10px 0}
+.modTV{float:left;width:316px}
+.modTV .credito{font:9px verdana;height:12px;position:relative;top:0;left:0}
+.modTV .controle{width:100%;font:14px arial;height:22px;background:#096876}
+.modTV .controle a{font:normal 14px verdana;text-decoration:none;color:#fff}
+.modTV .controle td.esq,.modTV .controle td.dir{width:90px}
+.modTV .controle a.esq,.modTV .controle a.dir{line-height:22px}
+.modTV .controle a.esq{float:left;text-align:left;padding-left:10px;border-left:solid 10px #4cb1cd}
+.modTV .controle .btns{text-align:center;vertical-align:middle}
+.modTV .controle .btns a{width:8px;height:17px;text-align:center;display:inline-block;line-height:17px;padding:0 5px}
+.modTV .controle a.dir{float:right;text-align:right;padding-right:10px;border-right:solid 10px #4cb1cd}
+.modTV .legenda{position:relative;height:92px;border-color:#044652;border-style:solid;border-width:0 1px}
+.modTV .legenda a big{font:normal 20px arial}
+.modTV .legenda a{font:normal 14px verdana;text-decoration:none;display:block;color:#0a6372;margin:0;padding:8px}
+.modTV .legenda a.seta{font:normal 12px verdana;display:inline;background:url(img/bt.png) no-repeat 8px -91px;padding:0 0 0 23px}
+.modTV .tvFt{width:100%;height:3px;background:url(img/spt-canto.gif) -3px -125px repeat}
+.modTV .tvFt span.esq{float:left;display:block;width:3px;height:3px;line-height:3px;background:url(img/spt-canto.gif) 0 -122px no-repeat}
+.modTV .tvFt span.dir{float:right;display:block;width:3px;height:3px;line-height:3px;background:url(img/spt-canto.gif) -6px -122px no-repeat}
+#modTV.home{width:386px}
+#modTV.home img{width:386px;height:280px}
+#modTV.home .legenda{height:112px}
+#modTV.canal{width:316px}
+#modTV.canal img{width:316px;height:150px}
+#modTV.canal .credito{display:none}
+#modTV.canal .legenda{height:92px}
+#modTV.canal .legenda a.seta{background-position:8px 2px}
+.catast2,.catast2 img,#modTV.catast1,.catast1 img,#modTV.catast1 .leg,#modTV.catast1 .fundo,#modTV.catast3{width:957px}
+.catast3{margin-top:6px}
+#modTV.catast2 img{height:287px}
+#modTV.catast1{display:table}
+#modTV.catast1 .credito{font:9px verdana}
+#modTV.catast1 .leg{display:table;height:97px;margin:-97px 0 0}
+#modTV.catast1 .leg h2{font:bolder 30px arial}
+#modTV.catast1 .leg a,#modTV.catast1 .leg li{z-index:3;color:#fff;position:relative}
+#modTV.catast1 .leg span{font:14px verdana}
+#modTV.catast1 .leg li{font:10px verdana;line-height:13px;background:url(img/bt.png) no-repeat 7px -1486px;padding:0 0 0 20px}
+.catast3 li{font:10px verdana;line-height:13px;background:url(img/bt.png) no-repeat 0 1px;padding:0 0 0 10px}
+#modTV.catast1 .text{padding:10px 0 0 10px}
+#modTV.catast1 h2,#modTV.catast1 span{margin:0 0 0 8px}
+#modTV.catast1 .fundo{z-index:1;position:absolute;background-color:#000;filter:alpha( opacity = 60 );opacity:.6;height:97px}
+.catast3 .dest1 h2{font:bolder 35px arial;border:0;margin:0;padding:0}
+.catast3 .dest1 a{font:16px arial;color:#000}
+.catast3 .dest2 .int{display:table;margin:10px 0 0}
+.catast3 .dest2 .int li{display:inline}
+.catast3 .dest2 .semfoto{width:545px}
+.intE{width:462px;float:left;clear:left}
+.intD{width:462px;float:right;clear:right}
+.catast3 .dest2 .int .tit{font:700 12px verdana;display:block;line-height:22px}
+.catast3 .sup h2{font:700 35px arial;margin-top:10px}
+.doisBlocos{width:385px;float:left;margin:0 0 10px}
+.doisBlocos .dest2 .int .tit{font:700 10px verdana;display:block;line-height:12px}
+.doisBlocos .dest2 .int .tit2{font:700 12px verdana;display:block;margin:5px 0}
+.doisBlocos .intE{width:190px;float:left;clear:left}
+.doisBlocos .intD{width:190px;float:right;clear:right}
+.generic .cor{color:#52595A}
+.generic .borda{border-color:#505050}
+.generic .bordaClara{color:#888D8D;border-color:#888D8D}
+.generic h1,.generic h1 a,.generic h2,.generic h2 a,.generic h4,.generic .titCanal{color:#505050;border-color:#505050}
+.generic #menu,.generic .barraPaginacao{background:#888d8d}
+.generic #menu ul#princ li a.ativo{background:#101010}
+.generic #menu ul#princ li a:hover{background:#757878}
+.generic #menu ul#sub li a{background:#888d8d;color:#fff}
+.generic #menu ul#sub li a.ativo{background:#616d6d}
+.generic #menu ul,.generic .fundo{background:#555858;color:#fff}
+.generic .seletorAbas td{background:#fff;border-left:solid 10px #505050}
+.generic .seletorAbas td.ativo{background:#eee;border-left:solid 10px #505050;color:#000}
+.generic .noticia .opNoticia{border-color:#888d8d}
+.modTV .controle .btns a.on{background:#53a4ad;border-top:solid 1px #a1dbe1;border-left:solid 1px #a1dbe1;border-right:solid 1px #044a56;border-bottom:solid 1px #044a56}
+.noticias .borda,.noticias .box{border-color:#335F72}
+.noticias .bordaClara,.noticias .espalhe-linha{color:#e3e6e2;border-color:#e3e6e2}
+.noticias h1, .noticias h2, .noticias h2 a, .noticias h1 a, .noticias h4, .noticias h4 a, .noticias .titCanal, .noticias span.titulo {color:#335F72;border-color:#335F72}
+.noticias #menu,.noticias .barraPaginacao{background:#e3e6e2}
+.noticias #menu ul#princ li a.ativo{background:#b6ccae}
+.noticias #menu ul#princ li a:hover{background:#def6d4}
+.noticias #menu ul#sub li a{background:#e3e6e2;color:#000}
+.noticias #menu ul#sub li a.ativo{background:#c3ccc0}
+.noticias #menu ul,.noticias .fundo{background:#d2dcce;color:#fff}
+.noticias .seletorAbas td{background:#fff;border-left:solid 10px #335F72}
+.noticias .seletorAbas td.ativo{background:#eee;border-left:solid 10px #335F72;color:#000}
+.noticias .noticia .opNoticia{border-color:#e3e6e2}
+.noticias .noticia .barraPaginacao div a.ativo{color:#000;font-weight:700}
+
+.noticias .modTV .controle{background:#2c5666}
+.noticias .modTV .controle a.esq{border-left:solid 10px #437e95}
+.noticias .modTV .controle a.dir{border-right:solid 10px #437e95}
+.noticias .modTV .legenda{border-color:#2c5666}
+.noticias .modTV .legenda a.seta{background-position:6px 0}
+.noticias .modTV .controle .btns a.on{background:#437E95;border:1px solid #20414E}
+
+.noticias .modTV .tvFt{background:url(img/spt-canto.gif) 0 -14px repeat}
+.noticias .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -11px no-repeat}
+.noticias .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -11px no-repeat}
+.esportes .borda,.esportes .box{border-color:#097B94}
+.esportes .bordaClara,.esportes .espalhe-linha{color:#3da3b9;border-color:#3da3b9}
+.esportes h1,.esportes h1 a,.esportes h2,.esportes h2 a,.esportes h4, .esportes h4 a,h4.azul, .esportes .titCanal, .esportes span.titulo {color:#097B94;border-color:#097B94}
+.esportes #menu,.esportes .barraPaginacao{background:#3da3b9}
+.esportes #menu ul#princ li a.ativo{background:#044654}
+.esportes #menu ul#princ li a:hover{background:#4d8490}
+.esportes #menu ul#sub li a{background:#3da3b9;color:#fff}
+.esportes #menu ul#sub li a.ativo{background:#0399ab}
+.esportes #menu ul,.esportes .fundo{background:#09738a;color:#fff}
+.esportes .seletorAbas td{background:#fff;border-left:solid 10px #097B94}
+.esportes .seletorAbas td.ativo{background:#eee;border-left:solid 10px #097B94;color:#000}
+.esportes .noticia .opNoticia{border-color:#3da3b9}
+.esportes .modTV .controle{background:#09738a}
+.esportes .modTV .controle a.esq{border-left:solid 10px #3da3b9}
+.esportes .modTV .controle a.dir{border-right:solid 10px #3da3b9}
+.esportes .modTV .legenda{border-color:#09738a}
+.esportes .modTV .controle .btns a.on{background:#57b0bb;border-top:solid 1px #aee9f0;border-left:solid 1px #aee9f0;border-right:solid 1px #1f5d54;border-bottom:solid 1px #1f5d54}
+.esportes .modTV .tvFt{background:url(img/spt-canto.gif) 0 -32px repeat}
+.esportes .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -29px no-repeat}
+.esportes .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -29px no-repeat}
+.diversao h4,.diversao h4 a{color:#157c71}
+.diversao .borda,.diversao .box{border-color:#157c71}
+.diversao .bordaClara,.diversao .espalhe-linha{color:#19ad85;border-color:#19ad85}
+.diversao h1,.diversao h1 a,.diversao h2,.diversao h2 a,.diversao h4,.diversao .titCanal, .diversao span.titulo{color:#157c71;border-color:#157c71}
+.diversao #menu,.diversao .barraPaginacao{background:#19ad85}
+.diversao #menu ul#princ li a.ativo{background:#002c43}
+.diversao #menu ul#princ li a:hover{background:#46b9ad}
+.diversao #menu ul#sub li a{background:#19ad85;color:#fff}
+.diversao #menu ul#sub li a.ativo{background:#004f45}
+.diversao #menu ul,.diversao .fundo{background:#157c71;color:#fff}
+.diversao .seletorAbas td{background:#fff;border-left:solid 10px #157c71}
+.diversao .seletorAbas td.ativo{background:#eee;border-left:solid 10px #157c71;color:#000}
+.diversao .noticia .opNoticia{border-color:#19ad85}
+.diversao .modTV .controle{background:#157c71}
+.diversao .modTV .controle a.esq{border-left:solid 10px #46b9ad}
+.diversao .modTV .controle a.dir{border-right:solid 10px #46b9ad}
+.diversao .modTV .legenda{border-color:#46b9ad}
+.diversao .modTV .controle .btns a.on{background:#46b9ad;border-top:solid 1px #61f5e6;border-left:solid 1px #61f5e6;border-right:solid 1px #318672;border-bottom:solid 1px #318672}
+.diversao .modTV .tvFt{background:url(img/spt-canto.gif) 0 -50px repeat}
+.diversao .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -47px no-repeat}
+.diversao .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -47px no-repeat}
+.saude .borda,.saude .box{border-color:#6F8E58}
+.saude .bordaClara,.saude .espalhe-linha{color:#e6eb8e;border-color:#e6eb8e}
+.saude h1,.saude h1 a,.saude h2,.saude h2 a,.saude h4,.saude h4 a,.saude .titCanal, .saude span.titulo{color:#6F8E58;border-color:#6F8E58}
+.saude #menu,.saude .barraPaginacao{background:#e6eb8e}
+.saude #menu ul#princ li a.ativo{background:#a2bf8a}
+.saude #menu ul#princ li a:hover{background:#c6cf88}
+.saude #menu ul#sub li a{background:#e6eb8e;color:#000}
+.saude #menu ul#sub li a.ativo{background:#d3d966}
+.saude #menu ul,.saude .fundo{background:#d6de95;color:#fff}
+.saude .seletorAbas td{background:#fff;border-left:solid 10px #6F8E58}
+.saude .seletorAbas td.ativo{background:#eee;border-left:solid 10px #6F8E58;color:#000}
+.saude .noticia .opNoticia{border-color:#e6eb8e}
+.saude .modTV .controle{background:#d6de95}
+.saude .modTV .controle a.esq{border-left:solid 10px #a2bf8a}
+.saude .modTV .controle a.dir{border-right:solid 10px #a2bf8a}
+.saude .modTV .legenda{border-color:#8cae71}
+.saude .modTV .controle .btns a.on{background:#a2bf8a;border-top:solid 1px #c1cf30;border-left:solid 1px #c1cf30;border-right:solid 1px #1f5d54;border-bottom:solid 1px #1f5d54}
+.saude .modTV .tvFt{background:url(img/spt-canto.gif) 0 -68px repeat}
+.saude .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -65px no-repeat}
+.saude .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -65px no-repeat}
+.mulher .borda,.mulher .box{border-color:#B20605}
+.mulher .bordaClara,.mulher .espalhe-linha{color:#ef433d;border-color:#ef433d}
+.mulher h1,.mulher h1 a,.mulher h2,.mulher h2 a,.mulher h4,.mulher h4 a,.mulher .titCanal, .mulher span.titulo{color:#B20605;border-color:#B20605}/*SEO*/
+.mulher #menu,.mulher .barraPaginacao{background:#ef433d}
+.mulher #menu ul#princ li a.ativo{background:#630203}
+.mulher #menu ul#princ li a:hover{background:#d94651}
+.mulher #menu ul#sub li a{background:#ef433d;color:#fff}
+.mulher #menu ul#sub li a.ativo{background:#c03537}
+.mulher #menu ul,.mulher .fundo{background:#b20605;color:#fff}
+.mulher .seletorAbas td{background:#fff;border-left:solid 10px #B20605}
+.mulher .seletorAbas td.ativo{background:#eee;border-left:solid 10px #B20605;color:#000}
+.mulher .noticia .opNoticia{border-color:#ef433d}
+.mulher .modTV .controle{background:#b20605}
+.mulher .modTV .controle a.esq{border-left:solid 10px #630203}
+.mulher .modTV .controle a.dir{border-right:solid 10px #630203}
+.mulher .modTV .legenda{border-color:#b20605}
+.mulher .modTV .controle .btns a.on{background:#770302;border-top:solid 1px #febd4c;border-left:solid 1px #febd4c;border-right:solid 1px #1f5d54;border-bottom:solid 1px #1f5d54}
+.mulher .modTV .tvFt{background:url(img/spt-canto.gif) 0 -86px repeat}
+.mulher .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -83px no-repeat}
+.mulher .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -83px no-repeat}
+.blogs h4, .blogs h4 a{color:#d69200}
+.blogs .borda,.blogs .box{border-color:#d69200}
+.blogs .bordaClara,.blogs .espalhe-linha{color:#eda202;border-color:#eda202}
+.blogs h1,.blogs h1 a,.blogs h2,.blogs h2 a,.blogs h4,.blogs .titCanal, .blogs span.titulo, .blogs span.titulo a{color:#d69200;border-color:#d69200}
+.blogs span.titulo a {cursor:pointer;}
+.blogs #menu,.blogs .barraPaginacao{background:#eda202}
+.blogs #menu ul#princ li a.ativo{background:#b07800}
+.blogs #menu ul#princ li a:hover{background:#f0a401}
+.blogs #menu ul#sub li a{background:#eda202;color:#fff}
+.blogs #menu ul#sub li a:hover{background:#ffb71d}
+.blogs #menu ul#sub li a.ativo{background:#ce9c30}
+.blogs #menu ul,.blogs .fundo{background:#d69200;color:#fff}
+.blogs .seletorAbas td{background:#fff;border-left:solid 10px #d69200}
+.blogs .seletorAbas td.ativo{background:#eee;border-left:solid 10px #d69200;color:#000}
+.blogs .noticia .opNoticia{border-color:#eda202}
+.blogs .modTV .controle{background:#d69200}
+.blogs .modTV .controle a.esq{border-left:solid 10px #ffb71d}
+.blogs .modTV .controle a.dir{border-right:solid 10px #ffb71d}
+.blogs .modTV .legenda{border-color:#ffb71d}
+.blogs .modTV .controle .btns a.on{background:#ffb71d;border-top:solid 1px #f5c661;border-left:solid 1px #f5c661;border-right:solid 1px #866b31;border-bottom:solid 1px #866b31}
+.blogs .modTV .tvFt{background:url(img/spt-canto.gif) 0 -50px repeat}
+.blogs .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -47px no-repeat}
+.blogs .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -47px no-repeat}
+.revistas .borda,.revistas .box{border-color:#FF4800}
+.revistas .bordaClara,.revistas .espalhe-linha{color:#fd8403;border-color:#fd8403}
+.revistas h1,.revistas h1 a,.revistas h2,.revistas h2 a,.revistas h4,.revistas .titCanal, .revistas span.titulo{color:#FF4800;border-color:#FF4800}
+.revistas #menu,.revistas .barraPaginacao{background:#fd8403}
+.revistas #menu ul#princ li a.ativo{background:#a82902}
+.revistas #menu ul#princ li a:hover{background:#ff6d0c}
+.revistas #menu ul#sub li a{background:#fd8403;color:#fff}
+.revistas #menu ul#sub li a.ativo{background:#ce5d02}
+.revistas #menu ul,.revistas .fundo{background:#fd3e03;color:#fff}
+.revistas .seletorAbas td{background:#fff;border-left:solid 10px #FF4800}
+.revistas .seletorAbas td.ativo{background:#eee;border-left:solid 10px #FF4800;color:#000}
+.revistas .noticia .opNoticia{border-color:#fd8403}
+.revistas .modTV .controle{background:#fd3e03}
+.revistas .modTV .controle a.esq{border-left:solid 10px #ffa508}
+.revistas .modTV .controle a.dir{border-right:solid 10px #ffa508}
+.revistas .modTV .legenda{border-color:#fd3e03}
+.revistas .modTV .controle .btns a.on{background:#ff6d0c;border-top:solid 1px #febd4c;border-left:solid 1px #febd4c;border-right:solid 1px #af2a01;border-bottom:solid 1px #af2a01}
+.revistas .modTV .tvFt{background:url(img/spt-canto.gif) 0 -104px repeat}
+.revistas .modTV .tvFt span.esq{background:url(img/spt-canto.gif) 0 -101px no-repeat}
+.revistas .modTV .tvFt span.dir{background:url(img/spt-canto.gif) -6px -101px no-repeat}
+
+#menu{float:left;width:148px}
+#menu ul{width:148px;font-size:12px}
+#menu ul li{border-color:#fff;border-style:solid;border-width:0 0 1px}
+#menu ul li a{color:#fff;display:block;text-decoration:none;width:138px;padding:10px 0 10px 10px}
+
+#cont-menu{width:642px;padding:0 10px}
+#cont{width:790px}
+#cont-menu-total{width:810px;float:left;padding:0}
+#buscape{float:right;border:1px solid #f7d8bc;width:156px}
+#buscape img{clear:both;float:left}
+#buscape span img{float:none;clear:none}
+#buscape span{float:left;font-size:11px;font-weight:700;background:#f7d8bc;height:26px;line-height:23px;width:73px;padding:0 0 0 5px}
+#buscapeHorizontal{float:left;border:1px solid #f7d8bc;width:628px}
+#buscapeHorizontal .tituloBuscape{background:#f7d8bc;height:26px}
+#buscapeHorizontal span{float:left;font-size:11px;font-weight:700;line-height:23px;width:530px;padding:0 0 0 5px}
+#buscapeHorizontal span.logo{width:80px}
+.google{font:bold 12px Arial;border:1px solid #000;margin-bottom:10px;float:left;width:135px;overflow:hidden;padding:5px 10px 0}
+.gg_ver{height:165px}
+.gg_ver p{color:#424242}
+.gg_hor{height:90px}
+.gg_hor p{color:#858585}
+span.esqBtn{background:url(img/esqButton.jpg) no-repeat;float:left;display:inline;font:700 10px verdana;height:20px;vertical-align:middle;margin:2px 0 2px 2px;padding:2px 5px 4px 12px}
+span.esqBtn a{text-decoration:none;color:#fff}
+span.esqBtn a:hover{color:#ccc;text-decoration:underline}
+span.dirBtn{background:url(img/dirButton.jpg) no-repeat;width:7px;display:inline;float:left;height:20px;vertical-align:middle;margin:2px 2px 2px 0;padding:2px 0 4px}
+.rodape{font:10px Verdana;width:958px;margin:0 auto;background-color: #fff;}
+.rodape p.copy{text-align:center;padding-top:19px}
+.rodape p.lkRodape{text-align:center;padding:4px 0}
+.rodape p.lkRodape a{border-right:1px solid #000;color:#000;padding:0 5px}
+.rodape p.lkRodape a.pri{border-left:1px solid #000}
+.rodape h4.tit{font:bold 16px Arial;height:20px;border-color:#507360;border-style:solid;border-width:0 0 1px 10px}
+.rodape h4.tit a{color:#507360;background-image:url(img/sprite_openclose.gif);background-position:0 -18px;background-repeat:no-repeat;padding-left:15px}
+.rodape h4.tit a.open{background-position:0 7px}
+.rodape h4.tit small{font:12px Arial;color:#507360}
+.rodape .lkSites{border:10px solid #D4DDDA;margin-bottom:15px;position:relative;float:left;width:918px;padding:10px}
+.rodape .lkSites ul{float:left;margin:0 5px 0 0}
+.rodape .lkSites ul li{width:140px;padding:3px 4px 4px}
+.espalhe .clear{clear:both;font-size:0}
+.espalhe .bts{padding-bottom:5px;border-bottom:1px solid #CCC;margin:5px 0}
+.espalhe .bts span a{background:transparent url(img/bt-add.png) no-repeat;display:block;width:92px;height:20px;float:left;margin-right:1px}
+.espalhe .bts span.addNetvibes a{background-position:0 -96px}
+.espalhe .bts span.addYahoo a{background-position:0 -31px}
+.espalhe .bts span.addPageflakes a{background-position:0 -63px}
+.espalhe .bts span.addiGoogle a{background-position:0 0}
+.espalhe .bts span.addMsn a{background-position:0 -128px;width:75px}
+.espalhe .bts span.addGostei a{background-position:0 -158px;width:75px}
+.espalhe .bts span.addBlogBlogs a{background-position:0 -188px}
+.espalhe .icons span a, .espalhe a.bmBlogBlogs{background:transparent url(img/bt.png) no-repeat;display:block;width:25px;height:22px;float:left;text-indent:-1500em;margin-right:3px}
+.espalhe a.bmBlogBlogs{width:auto;text-indent:0;padding:0 0 0 26px}
+.espalhe .com-label span a{display:block;width:70px;height:22px;float:left;text-indent:0;font:normal 11px verdana;margin:0;padding:4px 0 0 26px}
+.espalhe .icons span.bmFavoritos a{background-position:3px -397px}
+.espalhe .icons span.bmDelicious a{background-position:3px -437px}
+.espalhe .icons span.bmFacebook a{background-position:3px -477px}
+.espalhe .icons span.bmRec6 a{background-position:3px -957px}
+.espalhe .icons span.bmYahoo a{background-position:3px -517px}
+.espalhe .icons span.bmNewsvine a{background-position:3px -557px}
+.espalhe .icons span.bmTechnorati a{background-position:3px -597px}
+.espalhe .icons span.bmNetvibes a{background-position:3px -637px}
+.espalhe .icons span.bmWindowsLive a{background-position:3px -677px}
+.espalhe .icons span.bmFeedMeLinks a{background-position:3px -717px}
+.espalhe .icons span.bmGoogle a{background-position:3px -757px}
+.espalhe .icons span.bmDigg a{background-position:3px -797px}
+.espalhe .icons span.bmTwitter a{background-position:3px -837px}
+.espalhe .icons span.bmReddit a{background-position:3px -877px}
+.espalhe .icons span.bmBlinkList a{background-position:3px -917px}
+.espalhe a.bmBlogBlogs{background-position:3px -1730px}
+.espalhe-linha{height:20px;border-bottom:solid 1px;clear:both}
+.espalhe-linha a{display:block;float:left;width:19px;height:19px;background-image:url(img/bt-p.png);background-repeat:no-repeat;padding:0}
+.espalhe-linha a.bmFavoritos{background-position:0 -400px}
+.espalhe-linha a.bmDelicious{background-position:0 -440px}
+.espalhe-linha a.bmFacebook{background-position:0 -480px}
+.espalhe-linha a.bmRec6{background-position:0 -960px}
+.espalhe-linha a.bmYahoo{background-position:0 -520px}
+.espalhe-linha a.bmNewsvine{background-position:0 -560px}
+.espalhe-linha a.bmTechnorati{background-position:0 -600px}
+.espalhe-linha a.bmNetvibes{background-position:0 -640px}
+.espalhe-linha a.bmWindowsLive{background-position:0 -680px}
+.espalhe-linha a.bmFeedMeLinks{background-position:0 -720px}
+.espalhe-linha a.bmGoogle{background-position:0 -760px}
+.espalhe-linha a.bmDigg{background-position:0 -800px}
+.espalhe-linha a.bmTwitter{background-position:0 -840px}
+.espalhe-linha a.bmReddit{background-position:0 -880px}
+.espalhe-linha a.bmBlinkList{background-position:0 -920px}
+.espalhe-linha a.bmGostei{background-position:0 -1529px}
+.espalhe-linha a.bmBlogBlogs{background-position:0 -1585px}
+h4.sem-pe{border-bottom:0}
+.boxAba h4{float:left;padding-right:10px}
+.boxAba h4.selected{background:#EAEBE9}
+.boxAba div.box{display:none}
+.boxesportes .box{clear:both;border-color:#097B94}
+.boxesportes h4 a{color:#1796B2}
+.contAba a{color:#000;font:normal 11px verdana}
+a:hover,.modTV .legenda a:hover{text-decoration:underline}
+.cabeca-esq,.cabeca-links .clk-esq,.cabeca-links .clk-centro,#cont-menu,#cont,div.btnL{float:left}
+#assine, .noticia .square,.resposta .publiDir,div.btnR{float:right}
+.not-agencia .square{float:left}
+a.icBlogs,a.icBlog{background-position:0 -1629px}
+.modTV img,.catast3 .dest2 .int span,.boxAba div.selected{display:block}
+.catast3 .dest2 h2 a,.catast3 .dest2,.catast3 .dest2 span a{font:12px verdana}
+.generic #menu ul#princ li a,.esportes #menu ul#princ li a,.esportes .modTV .controle a,.diversao #menu ul#princ li a,.diversao .modTV .controle a,.mulher #menu ul#princ li a,.mulher .modTV .controle a,.revistas #menu ul#princ li a,.revistas .modTV .controle a{color:#fff}
+.generic #menu ul#sub li a:hover,.generic #menu ul#sub li a.ativo:hover{background:#acadad}
+.noticias #menu ul#sub li a:hover,.noticias #menu ul#sub li a.ativo:hover{background:#f5f8f4}
+.esportes #menu ul#sub li a:hover,.esportes #menu ul#sub li a.ativo:hover{background:#57b0bb}
+.diversao #menu ul#sub li a:hover,.diversao #menu ul#sub li a.ativo:hover{background:#2cb431}
+.saude #menu ul#sub li a:hover,.saude #menu ul#sub li a.ativo:hover{background:#fbfecf}
+.mulher #menu ul#sub li a:hover,.mulher #menu ul#sub li a.ativo:hover{background:#f69679}
+.revistas #menu ul#sub li a:hover,.revistas #menu ul#sub li a.ativo:hover{background:#ffa508}
+.noticias .noticia .barraPaginacao div a,.catast3 a,.noticias #menu ul#princ li a,.noticias .modTV .legenda a,.esportes .modTV .legenda a,.diversao .modTV .legenda a,.saude #menu ul#princ li a,.saude .modTV .legenda a,.saude .modTV .controle a,.mulher .modTV .legenda a,.revistas .modTV .legenda a,.rodape .lkSites ul li a{color:#000}
+.noticias .noticia .barraPaginacao .anterior,.noticias .noticia .barraPaginacao .proxima{font-weight:300}
+#homeLateral{float:right;width:150px}
+.bannerFlutuante {position:absolute;display:none}
+.noborder,img{border:0}
+.topoPrint, .rodapePrint{display:none}
+.cabeca-links .pbc-patrocinio{float:left;margin:2px 5px 0 0;width:117px;height:30px}
+.bt-patrocinio {height:21px;overflow: hidden;float:right;border-left:none !important}
+#pbc-Bottom1{text-align:center;margin:0 0 20px 0}
+
+
+#publiWallpaper{
+	margin: 0 auto;
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:115%;
+	overflow:hidden;
+}
+
+#publiWallpaper img{display:none;}
+#publiWallpaper a {display:block;width:100%;height:404px;}
+
+
+

@@ -1,0 +1,51 @@
+{ 
+ 
+var google_ads = new Array(); 
+var google_ad; 
+var google_radlinks = new Array(); 
+var google_radlink; 
+var google_info = new Object(); 
+google_ad = new Object(); 
+google_ad.n = 1; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BavwDP3MgS7ysAYeclAet-s2gD7P4w6wBxdePtRHAjbcBoP4KEAEYASCf_v4GKAM4AFC3oJaD______8BYM3A64CsA6AB5afn9wOyARB3d3cuYWJyaWwuY29tLmJyyAEB2gF2aHR0cDovL3d3dy5hYnJpbC5jb20uYnIvbm90aWNpYXMvY2llbmNpYS1zYXVkZS9sZWktYW50aWZ1bW8tYWp1ZGEtcHJvdGVnZXItc2F1ZGUtZnVtYW50ZXMtYXBvbnRhLXBlc3F1aXNhLTYyODg2My5zaHRtbKkCXg33byYOoz6oAwHoAy3oA3voA0v1AwAAAIQ&amp;num=1&amp;sig=AGiWqtx2Z3gUSogzTI96eMhx3g2FXehJww&amp;client=ca-abril_js&amp;adurl=http://www.tecnodesign.com.br"; 
+google_ad.visible_url = "www.tecnodesign.com.br/websi"; 
+google_ad.line1 = "Placas Nova Lei Anti fumo"; 
+google_ad.line2 = "N&#227;o seja multado, adquira j&#225; as"; 
+google_ad.line3 = "placas de sinaliza&#231;&#227;o da nova lei."; 
+google_ad.regionname = ""; 
+google_ads[0] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 2; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BX_HcP3MgS7ysAYeclAet-s2gD8vGv8MBr-nP_w_AjbcBoP4KEAIYAiCf_v4GKAM4AFC1n9VAYM3A64CsA7IBEHd3dy5hYnJpbC5jb20uYnLIAQHaAXZodHRwOi8vd3d3LmFicmlsLmNvbS5ici9ub3RpY2lhcy9jaWVuY2lhLXNhdWRlL2xlaS1hbnRpZnVtby1hanVkYS1wcm90ZWdlci1zYXVkZS1mdW1hbnRlcy1hcG9udGEtcGVzcXVpc2EtNjI4ODYzLnNodG1sqQJeDfdvJg6jPqgDAegDLegDe-gDS_UDAAAAhA&amp;num=2&amp;sig=AGiWqtytSBJrHa1pddxHJ1YQy_Rrrv5yUQ&amp;client=ca-abril_js&amp;adurl=http://www.proibidofumar.com.br"; 
+google_ad.visible_url = "www.proibidofumar.com.br"; 
+google_ad.line1 = "Placas Rio Sem Fumo"; 
+google_ad.line2 = "Nova Lei - Compre j&#225; !"; 
+google_ad.line3 = "vendas@proibidofumar.com.br"; 
+google_ad.regionname = ""; 
+google_ads[1] = google_ad; 
+google_ad = new Object(); 
+google_ad.n = 3; 
+google_ad.type = "text"; 
+google_ad.bidtype = "CPC"; 
+google_ad.targeting_type = "contextual"; 
+google_ad.url = "http://googleads.g.doubleclick.net/aclk?sa=l&amp;ai=BQRCBP3MgS7ysAYeclAet-s2gD72j64wB6Ynq4wrAjbcBsM1eEAMYAyCf_v4GKAM4AFCj05Dz______8BYM3A64CsA7IBEHd3dy5hYnJpbC5jb20uYnLIAQHaAXZodHRwOi8vd3d3LmFicmlsLmNvbS5ici9ub3RpY2lhcy9jaWVuY2lhLXNhdWRlL2xlaS1hbnRpZnVtby1hanVkYS1wcm90ZWdlci1zYXVkZS1mdW1hbnRlcy1hcG9udGEtcGVzcXVpc2EtNjI4ODYzLnNodG1sgAIBqQJeDfdvJg6jPsgC0ZTbDKgDAegDLegDe-gDS_UDAAAAhA&amp;num=3&amp;sig=AGiWqtxnNjPjBZZOlNIuxKs6nSCVanMZ5Q&amp;client=ca-abril_js&amp;adurl=http://www.imoveisdinamica.com.br"; 
+google_ad.visible_url = "www.imoveisdinamica.com.br"; 
+google_ad.line1 = "Administra&#231;&#227;o condom&#237;nios"; 
+google_ad.line2 = "Problemas em seu condom&#237;nio? Temos"; 
+google_ad.line3 = "solu&#231;&#245;es inteligentes. Consulte-nos"; 
+google_ad.regionname = ""; 
+google_ads[2] = google_ad; 
+google_info.feedback_url = "https://www.google.com/adsense/support/bin/request.py?contact\x3dabg_afc\x26url\x3dhttp://www.abril.com.br/noticias/ciencia-saude/lei-antifumo-ajuda-proteger-saude-fumantes-aponta-pesquisa-628863.shtml\x26hl\x3dpt-BR\x26client\x3dca-abril_js\x26adU\x3dwww.tecnodesign.com.br/websi\x26adT\x3dPlacas+Nova+Lei+Anti+fumo\x26adU\x3dwww.proibidofumar.com.br\x26adT\x3dPlacas+Rio+Sem+Fumo\x26adU\x3dwww.imoveisdinamica.com.br\x26adT\x3dAdministra%C3%A7%C3%A3o+condom%C3%ADnios\x26gl\x3dBR\x26hideleadgen\x3d1"; 
+if (window.google_ad_request_done) { 
+google_ad_request_done(google_ads); 
+} 
+if (window.google_radlink_request_done) { 
+google_radlink_request_done(google_radlinks); 
+} 
+}
